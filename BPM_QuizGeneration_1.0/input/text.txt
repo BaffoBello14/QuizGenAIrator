@@ -1,64 +1,41 @@
-2 Process
-2.1 NLP
-2.1.1 Preprocessing
-The stages of our NLP preprocessing are as follows
-1.Data cleaning . We used regular expression in order to remove punctuation and special
-characters and substitute words that were spelled wrong in the original data set. We also
-turned all the characters into lowercase characters and removed extra spaces.
-2.Tokenization . We broke a stream of textual data into the smallest units of a sentence called
-tokens.
-3.Filtering. We removed stop words, words which are filtered out because they are insignificant.
-4.Part-of-speech tagging . We used part-of-speech tagging, which is the process of marking up a
-word in a text as corresponding to a particular part of speech, based on both its definiton and
-its context.
-5.Lemmatisation . We grouped together the inflected forms of a word into its lemma, the canonical
-form of a set of word forms.
-2.1.2 Document similarity
-After performing NLP preprocessing we wanted to check if resumes belonging to the same categories
-were similar to each other. We chose Cosine similarity to measure the similarity between the resumes.
-Cosine similarity is a measure of similarity between two sequences of numbers (the vectorized resumes
-in our case). The sequences are viewed as vectors and the cosine similarity is defined as the cosine
-of the angle between them. Cosine similarity gives a useful measure of how similar two documents
-are likely to be.
-For each resume we computed
-•the mean of the cosine similarity between the resume and all the other resumes
-•the mean of the cosine similarity between the resume and all the resumes belonging to the
-same category
-Then, for each category, we computed the mean of the two values. We can see from figure 4that
-resumes belonging to the same category have a much higher similarity, so we decided to proceed
-with the classification.
-2.2 Classification
-The goal of this project is to develop a classifier that is able to perform automatic CV classification.
-The classifier will be used by employment offices and postgraduate orientation centers so that the
-classifier will suggest a list of suitable jobs to the user based on his/her resume.
-3Figure 4: Cosine similarity
-2.2.1 Text Vectorization: Term Frequency - Inverse Document Frequency (TFIDF)
-TFIDF is based on the Bag of Words (BoW) model, which converts the text into a feature vector by
-counting the occurrence of words in a document. The Term Frequency (TF) is a measure of the
-frequency of a word in a document. TF is defined as the ratio of a word’s occurrence in a document
-to the total number of words in a document.
-occurences of w in document d
-total number of words in document d
-TheInverse Document Frequency (IDF) is the measure of the importance of a word. IDF
-provides weightage to each word based on its frequency in the corpus D.
-lntotal number of documents
-number of documents containing w
-AfterapplyingTFIDF,textinresumescanberepresentedasaTFIDFsparsematrixofdimensions
-(number of documents) x (vocabulary words). The value corresponding to each word represents the
-importance of that word in a particular document.
-2.2.2 Classifiers comparison
-We evaluated different classifiers using the accuracy as evaluation metric and a K-Fold Cross
-Validation with K = 10 for a better accuracy result.
-Considering this metric the decided to use the Linear Support Vector classifier
-4Figure 5: Cosine similarity
-2.2.3 Classification remarks
-Looking at figure 6we can see that the categories with the higher misclassified resumes are the ones
-that have the lowest similarity according to figure 4.
-5Figure 6: Misclassifications
-3 Results
-On the cleaned data, a model was built based on Classification. Based on the curriculum and
-category, the model was designed to classify the curriculum into the right category.
-3.1 Classification
-The classification was done using Linear Support Vector model: a supervised learning models with
-associated learning algorithms that analyze data for classification and regression analysis. The Linear
-Support Vector classifier yielded an accuracy of 0.78 on 10-fold cross-validation. 
+Immagine familiare di guerra  
+  
+Mia madre scende dal marciapiedi con la minore delle mie sorelle. Sta per attraversare la piazza del Popolo, ha 
+una borsa sotto il braccio, un cappotto scuro di taglio militare. È robusta, solida, irriconoscibile rispetto alla 
+piccola gracile donna della m ia infanzia, e all’anziana signora di dopo la pensione, tutta nervi, impalpabile quasi 
+nella sensibilità che la fa sussultare ad ogni rumore.  
+Qui il volto è teso, duro, pieno d’ombre; dietro affissa al muro, una striscia di carta, la pubblicità d’un giorna le: 
+Secolo XIX. Con la tensione cupa di mia madre, contrasta la figuretta di mia sorella appena treenne, con un 
+cappottino di pelliccia di gatto e un cappuccetto che la fa assomigliare a un folletto di bosco; è biondina e 
+trotterellante, per mano a mia mad re, ma un passo dietro, quasi trainata su una strada che sembra percorra 
+malvolentieri. Forse vorrebbe andare al Pincio o a Villa Borghese, a giocare, non sa che non si gioca, che è 
+pericoloso anche andare in strada, non sa che una schiera di quegli uomini  vestiti di verde che parlano una lingua 
+sconosciuta potrebbero bloccare all’improvviso le strade e urlare e caricare tutti su un camion, colpendo gli 
+attardati con il calcio del fucile. Ha grandi occhi ingenui; non ha mai veduto, e forse non vedrà mai, la  foto di un 
+altro bambino, ebreo, con le mani alzate e i neri occhi sgranati davanti al mitra di uno di quegli uomini con 
+l’elmetto in testa e una smorfia di belva tranquilla in viso. La stretta di mia madre la guida verso la casa, la 
+penombra, la sicurezz a, non verso i giochi pericolosi del sole e dei bambini. Mia madre la protegge con 
+un’espressione in volto di concentrato timore rovesciato in decisione.  
+Chissà se quegli anni rivivono nella mente delle mie sorelle, o sono passati come un sogno nella loro lieve 
+coscienza. Non hanno ricevuto danni personali dalla guerra, forse essa è passata come una nuvola nera, come 
+uno scoppio di tuoni sulle loro testoline di creature.  
+Mia madre invece la guerra l’ha passata tutta combattendo nella sua trincea, prima nell e cantine - rifugio, poi 
+correndo agli allarmi aerei con tutti noi verso il tunnel della Roma -Nord, poi partendo per il suo lavoro di 
+maestra alle sei del mattino alla volta di Sant’Oreste, per cinque ore di lezione nelle gelide aule del palazzo del 
+Vignol a, pranzo portato in borsa e una minestra calda nell’Osteria degli Scarponi, poi due ore di attesa nel fumo 
+dell’osteria o nella tramontana della valle del Tevere, la corriera, il ritorno in treno alle quindici e trenta, a Roma, 
+e ancora a fare la misera s pesa per la cena, e l’oscuramento, la breve notte, e alle sei del mattino di nuovo in 
+piedi. Stremata, s’era infine stabilita con la minore delle sorelle a Sant’Oreste, mentre la maggiore era presso gli 
+zii. 
+Quegli anni senza requie, con poco denaro e poch i cibi, di corse, di patemi, di orrori visti o risaputi, avrebbero 
+potuto spezzarla, con quell’accenno di male ai polmoni che aveva avuto da giovane, e invece la fecero rifiorire, 
+senza la grazia dei fiori, ma con la durezza dei cardi.  
+Non so dove fossi io , al tempo della foto, forse in montagna, forse chiuso in qualche casa, o forse libero e 
+guardingo come un gatto selvatico. Mio padre era sempre in viaggio, con i suoi trasporti, e una volta gli 
+mitragliarono anche il camion che s’incendiò e lui si salvò b uttandosi in un prato. Portava sempre qualcosa del 
+carico: lo pagavano in natura; una volta un prosciutto, che lui tagliava a tavola tenendolo come un violino, una 
+volta una latta piena di miele, un’altra volta cinquanta bottiglie di cognac che mettemmo so tto la mia branda, e 
+bevevamo a tavola come vino, senza ubriacarci, malgrado pochi bocconi che mandavamo giù.  
+La guerra ci ha torturato lentamente, ma non ci ha colpito come tanti altri. Siamo sempre riusciti a scampare, a 
+sopravvivere. Ne è segno, non ero ico, non funebre o epico, non disperato, ma aspramente prosaico, 
+quotidianamente ribattuto nel ferro di una resistenza isolata, questa foto con la mia piccola sorel

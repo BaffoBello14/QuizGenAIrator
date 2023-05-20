@@ -8,8 +8,8 @@ class Question:
 
 
 
-    #def generate(self,i):
-    def generate(self):
+    def generate(self,i):
+    #def generate(self):
         conversation = []
 
         prompt = self.text + " " + self.query
@@ -21,7 +21,7 @@ class Question:
         )
         conversation.append({'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
 
-        #file_path = 'results/quiz'+str(i)+'.txt'
-        file_path = 'results/quiz.txt'
+        file_path = 'D:/ProgettoBPM/BPM/BPM_QuizGeneration_1.0/results/quiz'+str(i)+'.txt'
+        #file_path = 'results/quiz.txt'
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(conversation[-1]['content'].strip())

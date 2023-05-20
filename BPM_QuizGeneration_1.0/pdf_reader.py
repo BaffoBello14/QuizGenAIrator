@@ -18,6 +18,6 @@ class PDFReader:
             if len(text) > 4096:
                 text = text[:4096]  # Taglia il testo se supera il limite consentito
 
-            file_path = 'input/text.txt'
+            file_path = 'D:/ProgettoBPM/BPM/BPM_QuizGeneration_1.0/input/text.txt'
             with open(file_path, 'w', encoding='utf-8') as file:
                 file.write(text)

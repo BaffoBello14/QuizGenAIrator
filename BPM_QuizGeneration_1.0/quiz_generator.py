@@ -7,20 +7,20 @@ class QuizGenerator:
     def __init__(self):
         super().__init__()
 
-        file_path = 'input/text.txt'
+        file_path = 'D:/ProgettoBPM/BPM/BPM_QuizGeneration_1.0/input/text.txt'
         with open(file_path, encoding='utf-8') as file:
             file_contents = file.read()
         self.text = file_contents
 
-        file_path = 'input/query.txt'
+        file_path = 'D:/ProgettoBPM/BPM/BPM_QuizGeneration_1.0/input/query.txt'
         with open(file_path, encoding='utf-8') as file:
             file_contents = file.read()
         self.query = file_contents
 
         self.model_id = 'gpt-3.5-turbo'
 
-    #def generate(self,i):
-    def generate(self):
+    def generate(self,i):
+    #def generate(self):
         conversation = []
 
         prompt = self.text + " " + self.query
@@ -32,7 +32,7 @@ class QuizGenerator:
         )
         conversation.append({'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
 
-        #file_path = 'results/quiz'+str(i)+'.txt'
-        file_path = 'results/quiz.txt'
+        file_path = 'D:/ProgettoBPM/BPM/BPM_QuizGeneration_1.0/results/quiz'+str(i)+'.txt'
+        #file_path = 'results/quiz.txt'
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(conversation[-1]['content'].strip())
