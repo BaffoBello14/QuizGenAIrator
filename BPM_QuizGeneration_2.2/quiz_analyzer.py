@@ -1,7 +1,6 @@
 import spacy
 import enchant
 
-
 class QuizAnalyzer:
     def __init__(self, quiz, text):
         super().__init__()
@@ -60,7 +59,12 @@ class QuizAnalyzer:
 
             question_text = self.quiz.get_question(i).get_text()
             question_doc = self.nlp(question_text)
-            similarity_score = text_doc.similarity(question_doc)  # Calcola la similarità del coseno
+
+            if len(question_doc) > 0 and len(text_doc) > 0:
+                similarity_score = text_doc.similarity(question_doc)
+            else:
+                similarity_score = 0.0  # Assegna uno score di similarità basso o nullo in caso di documenti vuoti o senza parole valide
+
             print("Question:", question_text)
             print("Similarity Score:", similarity_score)
 
@@ -69,7 +73,11 @@ class QuizAnalyzer:
                 answer_text = self.quiz.get_question(i).get_answer(j)
                 answer_doc = self.nlp(answer_text)
 
-                similarity_score = text_doc.similarity(answer_doc)  # Calcola la similarità del coseno
+                if len(answer_doc) > 0 and len(text_doc) > 0:
+                    similarity_score = text_doc.similarity(answer_doc)
+                else:
+                    similarity_score = 0.0  # Assegna uno score di similarità basso o nullo in caso di documenti vuoti o senza parole valide
+
                 print("\tAnswer:", answer_text)
                 print("\tSimilarity Score:", similarity_score)
 
