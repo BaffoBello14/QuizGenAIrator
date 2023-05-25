@@ -1,69 +1,139 @@
-1. What is Edge computing?
-A) A model of data processing happening at a distance from sensors
-B) A type of cloud computing
-C) A model of distributed computing where data is processed close to where it is requested
-D) A type of telecom network
+e privacy
+
+1. What are the questions in the level 0 of Bloom's taxonomy?
+A) Questions that require the understanding of concepts.
+B) Questions that require the application of concepts.
+C) Questions that require the knowledge of definitions.
+D) Questions that require the evaluation of ideas.
+
 Correct answer: C
 
-2. What is Congestion Control?
-A) A network function virtualization
-B) A type of device used for data storage
-C) A solution to buffer congestion issues in data packet switching
-D) A type of authentication method
-Correct answer: C
+2. What do the questions in the level 1 of Bloom's taxonomy require?
+A) The knowledge of definitions.
+B) The ability to evaluate concepts.
+C) The understanding of scenarios.
+D) The application of concepts.
 
-3. What is the 5G network?
-A) A low-bandwidth network
-B) A low-densification network
-C) An infrastructure that allows for advanced services through the connection of physical and virtual objects
-D) A network with a reduced 5 millisecond delay in transmission
 Correct answer: D
 
-4. What is Zerynth?
-A) A company that offers an IoT platform based on low-level programming languages
-B) A company that provides low-level programming languages for microcontrollers
-C) A company that provides an IoT platform based on Python language for microcontrollers
-D) A company that offers an IoT platform based on Assembly language for microcontrollers
+3. What do the questions in the level 3 of Bloom's taxonomy require?
+A) The understanding of scenarios.
+B) The application of concepts in specific situations.
+C) The evaluation of analyses performed at the previous levels.
+D) The ability to identify efficient methods to solve problems.
+
+Correct answer: B and C
+
+4. What do the questions in the level 4 of Bloom's taxonomy require?
+A) The ability to evaluate and judge analyses performed at the previous levels.
+B) The understanding of definitions.
+C) The application of concepts in specific situations.
+D) The ability to identify efficient methods to solve problems.
+
+Correct answer: A
+
+5. What are some elements that are necessary to understand the IoT world?
+A) Sensors, microcontrollers, gateways, and carriers.
+B) Gateways, carriers, agents, and edge computing.
+C) Microcontrollers, agents, carriers, and cloud computing.
+D) Sensors, attuators, microcontrollers, and cloud computing.
+
+Correct answer: A
+
+1. What is edge computing?
+A) A model of data processing that happens far from where the data is requested
+B) A model of data processing that happens close to where the data is requested
+C) A model of data processing that happens in the cloud
+D) A model of data processing that happens on mobile devices
+Correct answer: B
+Bloom taxonomy level: 0
+
+2. What is the difference between cloud computing and edge computing?
+A) Cloud computing processes data close to where it is requested
+B) Edge computing processes data far from where it is requested
+C) Cloud computing is used for time-sensitive data, while edge computing is used for less time-sensitive data
+D) There is no difference between cloud computing and edge computing
+Correct answer: C
+Bloom taxonomy level: 1
+
+3. What is Congestion Control?
+A) A model of data processing that happens far from where the data is requested
+B) A model of data processing that happens close to where the data is requested
+C) A way to prevent data buffers from becoming congested and slowing down data transmission
+D) A way to increase data buffer size to prevent congestion
+Correct answer: C
+Bloom taxonomy level: 3
+
+4. What is the difference between software define networking and network function virtualization?
+A) There is no difference between the two paradigms
+B) Software define networking separates software and hardware, while network function virtualization involves machines running on data centers
+C) Network function virtualization separates software and hardware, while software define networking involves machines running on data centers
+D) Software define networking and network function virtualization both involve machines running on data centers
+Correct answer: B
+Bloom taxonomy level: 3
+
+5. What is the purpose of the Internet of Things?
+A) To create devices that can see and hear the world
+B) To create smart objects that can communicate data about themselves and access aggregated data from other devices
+C) To create devices that are easy to program with high-level languages like Python
+D) To create devices that are easy to program with low-level languages like Assembly
+Correct answer: B
+Bloom taxonomy level: 0
+
+Correct answers:
+1. B
+2. C
+3. C
+4. B
+5. B
+
+1. What are the questions that check if the student has acquired the basic elements of the course?
+A) Questions that require the combination of definitions
+B) Questions that require applying definitions to specific situations
+C) Definitional questions
+D) Questions that require critical evaluation
+
 Correct answer: C
 
-5. What are the questions that control if a student has acquired the basic elements of a course?
-A) questions combinatories
-B) scenario questions
-C) definitional questions
-D) evaluation questions
-Correct answer: C
+Bloom taxonomy level: 0
 
-6. How does a smart object become a smart object?
-A) By being connected to the internet
-B) By being able to communicate data about itself
-C) By having an identification
-D) All of the above
+2. Which is one of the basic rules to prevent attacks on IoT devices?
+A) Strong authentication methods and passwords
+B) Disabling encryption
+C) Sharing personal information online
+D) Ignoring software updates
+
+Correct answer: A
+
+Bloom taxonomy level: 1
+
+3. What is the definition of domande combinatorie in Bloom taxonomy?
+A) Questions that check if the student has acquired the basic elements of the course
+B) Questions that require the combination of definitions
+C) Questions that require applying definitions to specific situations
+D) Questions that require critical evaluation
+
+Correct answer: B
+
+Bloom taxonomy level: 0
+
+4. Given a specific scenario, what skills are required to answer a scenario-based question in Bloom taxonomy?
+A) Understanding of the glossary
+B) Critical evaluation
+C) Combination of definitions
+D) Application of definitions
+
 Correct answer: D
 
-7. What level of difficulty represent combinatorial questions?
-A) level 0
-B) level 1
-C) level 2
-D) level 3
+Bloom taxonomy level: 3
+
+5. What are the basic rules for protecting IoT devices from potential attacks?
+A) Disabling encryption and keeping software updated
+B) Keeping hardware and software components updated and protected
+C) Sharing personal information online and keeping devices connected to unsecure networks
+D) Using weak authentication methods and passwords
+
 Correct answer: B
 
-8. A student needs to apply the learned definitions to specific situations to answer which type of questions?
-A) definitional questions
-B) combinatorial questions
-C) scenario questions
-D) evaluation questions
-Correct answer: C
+Bloom taxonomy level: 2
 
-9. To prevent potential attacks, what rules must be followed?
-A) encryption and storage device protection
-B) storage device protection
-C) strong passwords and encryption
-D) device updating and encryption
-Correct answer: C
-
-10. In a dynamic world, what is necessary to ensure maximum protection and privacy in IoT devices?
-A) use only hardware components
-B) keep all the software components updated
-C) limit access to the data storing devices
-D) increase the number of IoT devices used
-Correct answer: B

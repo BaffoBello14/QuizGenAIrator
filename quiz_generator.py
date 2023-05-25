@@ -101,6 +101,7 @@ class QuizGenerator:
                 .append(math.ceil(self.num_questions_level[i] / num_partitions))
             temp_query = temp_query + " " + str(num_questions_level_partition[i]) + " questions for the level " + str(i)
             if(i==4):
+                temp_query = temp_query + "."
                 break
             temp_query = temp_query + ","
 
