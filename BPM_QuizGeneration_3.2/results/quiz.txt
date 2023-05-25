@@ -1,0 +1,211 @@
+1. What type of questions belong to the level 0 of Bloom's taxonomy?
+A) Scenario questions
+B) Combinatorial questions
+C) Definitional questions
+D) Evaluation questions 
+Correct answer: C
+
+2. What do combinatorial questions require students to do?
+A) Apply knowledge to specific scenarios
+B) Remember definitions
+C) Analyze data and information
+D) Combine definitions of key words 
+Correct answer: D
+
+3. What do scenario questions require students to do at level 3 of Bloom's taxonomy?
+A) Remember definitions
+B) Analyze data and information
+C) Evaluate analyses and draw appropriate conclusions
+D) Combine definitions of key words 
+Correct answer: C
+
+4. What is the definition of IoT?
+A) The extension of the concept of Internet to concrete objects and places
+B) A type of cloud computing
+C) A language used for programming microcontrollers
+D) An alternative to commutative circuits in telecommunications 
+Correct answer: A
+
+5. What are the three principles that smart objects must have?
+A) Identification, memory, and computation
+B) Connection, communication, and access to aggregated data
+C) Artificial intelligence, processing power, and integration
+D) Security, privacy, and encryption 
+Correct answer: B
+
+6. Which type of computing model involves data processing closer to the sensor location?
+A) Cloud computing
+B) Edge computing
+C) Distributed computing
+D) Cluster computing 
+Correct answer: B
+
+7. What is the main concern regarding the security of IoT devices?
+A) The limited computational power of microcontrollers
+B) The lack of communication protocols for smart objects
+C) The possibility of data interception and cyber attacks
+D) The inability to identify smart objects accurately 
+Correct answer: C
+
+8. What is the purpose of a gateway in IoT?
+A) To control a process or influence the external environment
+B) To access aggregated data from other devices
+C) To collect and manage data from smart objects
+D) To allow minimum resource communication 
+Correct answer: D
+
+Correct answers: 
+1. C
+2. D
+3. C
+4. A
+5. B
+6. B
+7. C
+8. D
+
+1. What is the purpose of definitional questions in Bloom's taxonomy?
+A) To test if the student can apply knowledge to scenarios
+B) To test if the student can analyze data
+C) To test if the student has basic knowledge of the course
+D) To test if the student can evaluate findings
+Correct answer: C
+
+2. What is the purpose of combinatorial questions in Bloom's taxonomy?
+A) To test if the student can remember definitions
+B) To test if the student can understand the connection between different concepts
+C) To test if the student can apply knowledge to scenarios
+D) To test if the student can evaluate findings
+Correct answer: B
+
+3. What are scenario questions in Bloom's taxonomy?
+A) Questions that require the student to analyze data
+B) Questions that require the student to evaluate findings
+C) Questions that require the student to apply knowledge to specific situations
+D) Questions that require the student to remember definitions
+Correct answer: C
+
+4. What is the purpose of evaluation questions in Bloom's taxonomy?
+A) To test if the student can remember definitions
+B) To test if the student can understand the connection between different concepts
+C) To test if the student can apply knowledge to scenarios
+D) To test if the student can evaluate findings and make appropriate conclusions
+Correct answer: D
+
+5. What is the Internet of Things (IoT)?
+A) An online shopping platform
+B) A network of physical and virtual objects connected through the internet
+C) A type of computer hardware
+D) A social media platform
+Correct answer: B
+
+6. What is edge computing?
+A) A model of centralized data processing
+B) A model of distributed data processing where computation occurs in proximity to where data is collected 
+C) A model of data analysis
+D) A model of cloud computing
+Correct answer: B
+
+7. What is cloud computing?
+A) A model of distributed data processing where computation occurs in proximity to where data is collected
+B) A model of centralized data processing
+C) A model of data analysis
+D) A model of distributed data processing where computation occurs through the internet
+Correct answer: D
+
+8. What is the main characteristic of the 5G network?
+A) Slow internet speed
+B) High latency
+C) low bandwidth
+D) Low latency and high bandwidth
+Correct answer: D
+
+9. What is the main concern related to IoT security?
+A) Password and authentication strength
+B) Quantity of data collected
+C) Encryption of data transmission 
+D) Utility of data analysis
+Correct answer: A
+
+10. What is Zerynth?
+A) A hardware device for IoT communication
+B) A programming language for IoT devices 
+C) A software platform that bridges between hardware and cloud for IoT 
+D) A new network protocol for IoT communication
+Correct answer: C
+
+Bloom taxonomy level: 0
+
+1. What type of questions require knowledge of definitions?
+A) Analyzing
+B) Evaluating
+C) Remembering
+D) Applying
+Correct answer: C
+
+2. What category of questions include true/false or multiple choice questions that require direct or indirect knowledge of definitions?
+A) Scenario
+B) Combinatorial
+C) Evaluative
+D) Definitional
+Correct answer: D
+
+Bloom taxonomy level: 1
+
+1. What type of questions requires the ability to combine definitions of key terms?
+A) Definitional
+B) Evaluative
+C) Scenario
+D) Combinatorial
+Correct answer: D
+
+2. What type of questions require understanding of the content of the glossary and the ability to complete words in a text?
+A) Scenario
+B) Combinatorial
+C) Definitional
+D) Analyzing
+Correct answer: B
+
+Bloom taxonomy level: 2
+
+1. What type of questions require the application of definitions to specific situations?
+A) Combinatorial
+B) Evaluative
+C) Analyzing
+D) Scenario
+Correct answer: D
+
+2. What type of questions may include problems or exercises to solve in math-related courses?
+A) Combinatorial
+B) Evaluative
+C) Analyzing
+D) Scenario
+Correct answer: D
+
+Bloom taxonomy level: 3
+
+1. What type of questions require the correct analysis of a situation in order to correctly apply knowledge?
+A) Valuative
+B) Combinatorial
+C) Scenario
+D) Analyzing
+Correct answer: C
+
+2. What type of questions may require the ability to identify and correct errors in incorrect applications of knowledge?
+A) Valuative
+B) Combinatorial
+C) Scenario
+D) Analyzing
+Correct answer: A
+
+Quiz Correct Answers: 
+
+1. C
+2. D
+3. D
+4. D
+5. C
+6. D
+7. C
+8. A
+
