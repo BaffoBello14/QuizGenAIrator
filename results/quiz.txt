@@ -1,139 +1,69 @@
-e privacy
+1. What is Internet of Things (IoT)?
+A) An extension of the concept of Internet to the world of objects
+B) A technology used only for communication between smartphones
+C) A new kind of smartphone
+D) A programming language for microcontrollers
+Correct answer: A
 
-1. What are the questions in the level 0 of Bloom's taxonomy?
-A) Questions that require the understanding of concepts.
-B) Questions that require the application of concepts.
-C) Questions that require the knowledge of definitions.
-D) Questions that require the evaluation of ideas.
-
+2. What are the basic elements necessary to consider an object as a smart object?
+A) It has to be small and lightweight
+B) It has to be able to fly
+C) It has to be recognizable, communicate data about itself, and have access to data from other devices
+D) It has to be opaque and not transparent
 Correct answer: C
 
-2. What do the questions in the level 1 of Bloom's taxonomy require?
-A) The knowledge of definitions.
-B) The ability to evaluate concepts.
-C) The understanding of scenarios.
-D) The application of concepts.
+3. What is Edge computing?
+A) A model where data processing takes place as close as possible to where the data is requested
+B) A model where data processing takes place in a distant cloud
+C) A model where data is processed only by human brains
+D) A model where data processing takes place using quantum computers
+Correct answer: A
 
+4. What is a gateway in the context of IoT?
+A) A device that controls a process or influences the external environment
+B) A device that collects data from sensors and allows minimal use of communication resources
+C) A type of network that allows internet connection and data transfer
+D) A device that makes smart objects recognizable
+Correct answer: B
+
+5. What are the two new paradigms of telecommunications that enable progress in IoT?
+A) Hardware and software separation and network function virtualization
+B) Augmented reality and virtual reality
+C) Machine learning and deep learning
+D) Voice over IP and data over IP
+Correct answer: A
+
+6. What is required to answer domande combinatorie?
+A) Memorization of the glossary
+B) Understanding and comprehension of key word definitions
+C) The ability to apply key word definitions to specific scenarios
+D) The ability to evaluate and judge previous analysis
+Correct answer: B
+
+7. What is required to answer domande di scenario?
+A) Knowledge of key word definitions
+B) The ability to evaluate and judge previous analysis
+C) The ability to apply key word definitions to specific scenarios
+D) Both B and C are required
 Correct answer: D
 
-3. What do the questions in the level 3 of Bloom's taxonomy require?
-A) The understanding of scenarios.
-B) The application of concepts in specific situations.
-C) The evaluation of analyses performed at the previous levels.
-D) The ability to identify efficient methods to solve problems.
-
-Correct answer: B and C
-
-4. What do the questions in the level 4 of Bloom's taxonomy require?
-A) The ability to evaluate and judge analyses performed at the previous levels.
-B) The understanding of definitions.
-C) The application of concepts in specific situations.
-D) The ability to identify efficient methods to solve problems.
-
-Correct answer: A
-
-5. What are some elements that are necessary to understand the IoT world?
-A) Sensors, microcontrollers, gateways, and carriers.
-B) Gateways, carriers, agents, and edge computing.
-C) Microcontrollers, agents, carriers, and cloud computing.
-D) Sensors, attuators, microcontrollers, and cloud computing.
-
-Correct answer: A
-
-1. What is edge computing?
-A) A model of data processing that happens far from where the data is requested
-B) A model of data processing that happens close to where the data is requested
-C) A model of data processing that happens in the cloud
-D) A model of data processing that happens on mobile devices
-Correct answer: B
-Bloom taxonomy level: 0
-
-2. What is the difference between cloud computing and edge computing?
-A) Cloud computing processes data close to where it is requested
-B) Edge computing processes data far from where it is requested
-C) Cloud computing is used for time-sensitive data, while edge computing is used for less time-sensitive data
-D) There is no difference between cloud computing and edge computing
-Correct answer: C
-Bloom taxonomy level: 1
-
-3. What is Congestion Control?
-A) A model of data processing that happens far from where the data is requested
-B) A model of data processing that happens close to where the data is requested
-C) A way to prevent data buffers from becoming congested and slowing down data transmission
-D) A way to increase data buffer size to prevent congestion
-Correct answer: C
-Bloom taxonomy level: 3
-
-4. What is the difference between software define networking and network function virtualization?
-A) There is no difference between the two paradigms
-B) Software define networking separates software and hardware, while network function virtualization involves machines running on data centers
-C) Network function virtualization separates software and hardware, while software define networking involves machines running on data centers
-D) Software define networking and network function virtualization both involve machines running on data centers
-Correct answer: B
-Bloom taxonomy level: 3
-
-5. What is the purpose of the Internet of Things?
-A) To create devices that can see and hear the world
-B) To create smart objects that can communicate data about themselves and access aggregated data from other devices
-C) To create devices that are easy to program with high-level languages like Python
-D) To create devices that are easy to program with low-level languages like Assembly
-Correct answer: B
-Bloom taxonomy level: 0
-
-Correct answers:
-1. B
-2. C
-3. C
-4. B
-5. B
-
-1. What are the questions that check if the student has acquired the basic elements of the course?
-A) Questions that require the combination of definitions
-B) Questions that require applying definitions to specific situations
-C) Definitional questions
-D) Questions that require critical evaluation
-
+8. What is Commutatione a Pacchetto?
+A) A telecommunications protocol used only for telephones
+B) A data networking protocol used only for computers
+C) A data networking protocol suitable for both telephone and computer networks
+D) A traditional network switching protocol
 Correct answer: C
 
-Bloom taxonomy level: 0
-
-2. Which is one of the basic rules to prevent attacks on IoT devices?
-A) Strong authentication methods and passwords
-B) Disabling encryption
-C) Sharing personal information online
-D) Ignoring software updates
-
-Correct answer: A
-
-Bloom taxonomy level: 1
-
-3. What is the definition of domande combinatorie in Bloom taxonomy?
-A) Questions that check if the student has acquired the basic elements of the course
-B) Questions that require the combination of definitions
-C) Questions that require applying definitions to specific situations
-D) Questions that require critical evaluation
-
+9. What is the purpose of Congestion Control?
+A) To allow for a variable bit rate in digital networks
+B) To prevent congestions in network buffers
+C) To enable the use of a circuit switching protocol
+D) To reduce the amount of data sent over a network
 Correct answer: B
 
-Bloom taxonomy level: 0
-
-4. Given a specific scenario, what skills are required to answer a scenario-based question in Bloom taxonomy?
-A) Understanding of the glossary
-B) Critical evaluation
-C) Combination of definitions
-D) Application of definitions
-
+10. What do the principles for smart objects include?
+A) Ability to communicate data on themselves
+B) Ability to aggregate data from other devices
+C) Must be recognizable
+D) All of the above
 Correct answer: D
-
-Bloom taxonomy level: 3
-
-5. What are the basic rules for protecting IoT devices from potential attacks?
-A) Disabling encryption and keeping software updated
-B) Keeping hardware and software components updated and protected
-C) Sharing personal information online and keeping devices connected to unsecure networks
-D) Using weak authentication methods and passwords
-
-Correct answer: B
-
-Bloom taxonomy level: 2
-

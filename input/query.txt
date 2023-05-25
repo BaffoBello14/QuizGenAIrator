@@ -1,7 +1,7 @@
 Provide me a multiple choice quiz with questions that respects the following requirements:
 each question must be unique,
 for each question must generate 4 possible answers of which only one must be the correct one.
-Specify all the correct answers at the end.
+Specify after the fouth answer the correct answer and the level of the Bloom Taxonomy.
 The format for the lists must be the same as following:
 1. <question text>?
 A) <option A>
