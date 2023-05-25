@@ -1,0 +1,69 @@
+1. What is Edge computing?
+A) A model of data processing happening at a distance from sensors
+B) A type of cloud computing
+C) A model of distributed computing where data is processed close to where it is requested
+D) A type of telecom network
+Correct answer: C
+
+2. What is Congestion Control?
+A) A network function virtualization
+B) A type of device used for data storage
+C) A solution to buffer congestion issues in data packet switching
+D) A type of authentication method
+Correct answer: C
+
+3. What is the 5G network?
+A) A low-bandwidth network
+B) A low-densification network
+C) An infrastructure that allows for advanced services through the connection of physical and virtual objects
+D) A network with a reduced 5 millisecond delay in transmission
+Correct answer: D
+
+4. What is Zerynth?
+A) A company that offers an IoT platform based on low-level programming languages
+B) A company that provides low-level programming languages for microcontrollers
+C) A company that provides an IoT platform based on Python language for microcontrollers
+D) A company that offers an IoT platform based on Assembly language for microcontrollers
+Correct answer: C
+
+5. What are the questions that control if a student has acquired the basic elements of a course?
+A) questions combinatories
+B) scenario questions
+C) definitional questions
+D) evaluation questions
+Correct answer: C
+
+6. How does a smart object become a smart object?
+A) By being connected to the internet
+B) By being able to communicate data about itself
+C) By having an identification
+D) All of the above
+Correct answer: D
+
+7. What level of difficulty represent combinatorial questions?
+A) level 0
+B) level 1
+C) level 2
+D) level 3
+Correct answer: B
+
+8. A student needs to apply the learned definitions to specific situations to answer which type of questions?
+A) definitional questions
+B) combinatorial questions
+C) scenario questions
+D) evaluation questions
+Correct answer: C
+
+9. To prevent potential attacks, what rules must be followed?
+A) encryption and storage device protection
+B) storage device protection
+C) strong passwords and encryption
+D) device updating and encryption
+Correct answer: C
+
+10. In a dynamic world, what is necessary to ensure maximum protection and privacy in IoT devices?
+A) use only hardware components
+B) keep all the software components updated
+C) limit access to the data storing devices
+D) increase the number of IoT devices used
+Correct answer: B

@@ -1,7 +1,0 @@
-From the previous multi choice quiz:
-extract only the 10 better questions in terms of quality,
-you must not extract questions that are similar and
-every extracted question must have 4 possible answers
-then assign a correct sequential numeration, from 1 to 10, to all the questions.
-You have to remove any empty line between last option and the correct answer.
-The format for the lists must be the same as the provided input.
