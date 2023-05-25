@@ -26,7 +26,8 @@ def num_tokens_from_messages(messages, model="gpt-3.5-turbo-0301"):
         tokens_per_message = 3
         tokens_per_name = 1
     else:
-        raise NotImplementedError(f"""num_tokens_from_messages() is not implemented for model {model}. See https://github.com/openai/openai-python/blob/main/chatml.md for information on how messages are converted to tokens.""")
+        raise NotImplementedError(
+            f"""num_tokens_from_messages() is not implemented for model {model}. See https://github.com/openai/openai-python/blob/main/chatml.md for information on how messages are converted to tokens.""")
     num_tokens = 0
     for message in messages:
         num_tokens += tokens_per_message
@@ -71,16 +72,16 @@ class QuizGenerator:
 
     def generate(self):
 
-        file_path = 'results/quiz.txt'
+        file_path = 'results/raw_quiz.txt'
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write("")
 
         limit_len = 10000
-        overlap_value = math.floor(limit_len/2)
+        overlap_value = math.floor(limit_len / 2)
         lower_index = 0
         upper_index = limit_len
         text_partitions = []
-        num_partitions = math.floor(len(self.text)/overlap_value)
+        num_partitions = math.floor(len(self.text) / overlap_value)
 
         for i in range(num_partitions):
             text_partitions.append(self.text[lower_index:upper_index])
@@ -96,20 +97,19 @@ class QuizGenerator:
         num_questions_level_partition = []
 
         temp_query = "Generate"
-        for i in range(5):
-            num_questions_level_partition \
-                .append(math.ceil(self.num_questions_level[i] / num_partitions))
+        for i in range(len(self.num_questions_level)):
+            num_questions_level_partition.append(math.ceil(self.num_questions_level[i] / num_partitions))
             temp_query = temp_query + " " + str(num_questions_level_partition[i]) + " questions for the level " + str(i)
-            if(i==4):
+            if i == (len(self.num_questions_level) - 1):
                 temp_query = temp_query + "."
                 break
             temp_query = temp_query + ","
 
-        for partition in text_partitions:
+        print("num x level partition", num_questions_level_partition)
 
+        for partition in text_partitions:
             conversation = []
             prompt = self.level_query + " " + temp_query + " " + self.query + " " + partition
-            print(prompt)
             conversation.append({'role': 'user', 'content': prompt})
             print("TOKENS BEFORE RESPONSE", num_tokens_from_messages(conversation, self.model_id))
 
@@ -121,7 +121,7 @@ class QuizGenerator:
                 {'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
             print("\tTOKENS WITH RESPONSE", num_tokens_from_messages(conversation, self.model_id))
 
-            file_path = 'results/quiz.txt'
+            file_path = 'results/raw_quiz.txt'
             with open(file_path, 'a', encoding='utf-8') as file:
                 file.write(conversation[-1]['content'].strip())
                 file.write("\n\n")
@@ -132,7 +132,7 @@ class QuizGenerator:
 
     def refactor(self):
 
-        file_path = 'results/quiz.txt'
+        file_path = 'results/raw_quiz.txt'
         with open(file_path, encoding='utf-8') as file:
             file_contents = file.read()
         raw_quiz = file_contents
@@ -157,10 +157,11 @@ class QuizGenerator:
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(conversation[-1]['content'].strip())
 
-
 # partizionamento sovrapposto
 # estrarre x domande da ogni partizione
 # eventualmente implementare una classe TextCleaner per rimuovere sommario o altre robe
 # usare gpt per fare la append di domande mantentento la numerazione
 # usare gpt per rimuovere dal quiz globale eventuali risposte simili
 # e formattare nuovamente il testo delle domande (rimuovere eventuali righe vuote ecc...)
+
+# estrarre in base al livello nella refactor o con temp_query concatenata

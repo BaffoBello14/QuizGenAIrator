@@ -4,5 +4,18 @@ you must not extract questions that are similar and
 every extracted question must have 4 possible answers
 then assign a correct sequential numeration, from 1 to 10, to all the questions.
 You have to remove any empty line between last option and the correct answer.
+Include also the Bloom taxonomy level for each extracted question.
 The format for the lists must be the same as the provided input.
+You have also to choose the language for the response in this way:
+the chosen language must be the main language used in the questions.
+Do not specify in the response which is the chosen language.
+If an extracted question is in a different language respect to the chosen language you must tranlate it.
+The format for the lists must be the same as following:
+1. <question text>?
+A) <option A>
+B) <option B>
+C) <option C>
+D) <option D>
+Correct answer: C
+Bloom taxonomy level: 2
 The number of extracted questions must be:

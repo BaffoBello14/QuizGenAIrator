@@ -1,12 +1,12 @@
 
 class Question:
-    def __init__(self, question, answers, correct_answer):
+    def __init__(self, question, answers, correct_answer, level):
         super().__init__()
 
         self.text = question
         self.answers = answers
         self.correct_answer = correct_answer
-        self.level = 0  # tbd
+        self.level = level
 
     def get_text(self):
         return self.text
@@ -16,6 +16,9 @@ class Question:
 
     def get_correct_answer(self):
         return self.correct_answer
+
+    def get_level(self):
+        return self.level
 
     def get_num_answers(self):
         return len(self.answers)

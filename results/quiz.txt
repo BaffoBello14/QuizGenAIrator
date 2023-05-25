@@ -1,69 +1,79 @@
-1. What is Internet of Things (IoT)?
-A) An extension of the concept of Internet to the world of objects
-B) A technology used only for communication between smartphones
-C) A new kind of smartphone
-D) A programming language for microcontrollers
-Correct answer: A
-
-2. What are the basic elements necessary to consider an object as a smart object?
-A) It has to be small and lightweight
-B) It has to be able to fly
-C) It has to be recognizable, communicate data about itself, and have access to data from other devices
-D) It has to be opaque and not transparent
+1. What is the definition of Internet of Things (IoT)?
+A) An advanced computer system
+B) A virtual reality network
+C) A network of connected physical objects
+D) A platform for online gaming
 Correct answer: C
+Bloom taxonomy level: 0
 
-3. What is Edge computing?
-A) A model where data processing takes place as close as possible to where the data is requested
-B) A model where data processing takes place in a distant cloud
-C) A model where data is processed only by human brains
-D) A model where data processing takes place using quantum computers
-Correct answer: A
-
-4. What is a gateway in the context of IoT?
-A) A device that controls a process or influences the external environment
-B) A device that collects data from sensors and allows minimal use of communication resources
-C) A type of network that allows internet connection and data transfer
-D) A device that makes smart objects recognizable
-Correct answer: B
-
-5. What are the two new paradigms of telecommunications that enable progress in IoT?
-A) Hardware and software separation and network function virtualization
-B) Augmented reality and virtual reality
-C) Machine learning and deep learning
-D) Voice over IP and data over IP
-Correct answer: A
-
-6. What is required to answer domande combinatorie?
-A) Memorization of the glossary
-B) Understanding and comprehension of key word definitions
-C) The ability to apply key word definitions to specific scenarios
-D) The ability to evaluate and judge previous analysis
-Correct answer: B
-
-7. What is required to answer domande di scenario?
-A) Knowledge of key word definitions
-B) The ability to evaluate and judge previous analysis
-C) The ability to apply key word definitions to specific scenarios
-D) Both B and C are required
+2. How are smart objects defined?
+A) By their ability to communicate with other devices
+B) By their physical appearance
+C) By their location within a network
+D) By their identification, connection, and data processing capabilities
 Correct answer: D
+Bloom taxonomy level: 1
 
-8. What is Commutatione a Pacchetto?
-A) A telecommunications protocol used only for telephones
-B) A data networking protocol used only for computers
-C) A data networking protocol suitable for both telephone and computer networks
-D) A traditional network switching protocol
-Correct answer: C
-
-9. What is the purpose of Congestion Control?
-A) To allow for a variable bit rate in digital networks
-B) To prevent congestions in network buffers
-C) To enable the use of a circuit switching protocol
-D) To reduce the amount of data sent over a network
+3. Qual è la differenza tra edge computing e cloud computing nell'IoT?
+A) Edge computing viene utilizzato solo per i dispositivi a lungo raggio, mentre cloud computing solo per i dispositivi a corto raggio
+B) Edge computing avviene più vicino possibile a dove i dati vengono richiesti, mentre cloud computing è un paradigma di erogazione di servizi offerti su richiesta da un fornitore a un cliente finale
+C) Edge computing viene utilizzato solo per i dati meno 'time-sensitive', mentre cloud computing per i dati più importanti
+D) Edge computing è un paradigma di comunicazione tra dispositivi IoT, mentre cloud computing viene utilizzato solo per la memorizzazione dei dati
 Correct answer: B
+Bloom taxonomy level: 3
 
-10. What do the principles for smart objects include?
-A) Ability to communicate data on themselves
-B) Ability to aggregate data from other devices
-C) Must be recognizable
+4. Qual è la funzione di un gateway nell'Internet of Things?
+A) Raccogliere i dati e permettere di utilizzare al minimo le risorse per la comunicazione
+B) Comunicare dati su se stesso
+C) Identificare gli altri dispositivi IoT della rete
+D) Memorizzare i dati raccolti
+Correct answer: A
+Bloom taxonomy level: 3
+
+5. How can sottoreti be used to prevent attacks in a large network?
+A) By limiting the network to a small number of devices
+B) By limiting the amount of data that can be transferred
+C) By dividing the network into smaller sub-networks
+D) By increasing the number of devices connected to the network
+Correct answer: C
+Bloom taxonomy level: 3
+
+6. What is the definition of sensors?
+A) Devices to control a process
+B) Devices to detect information from the physical environment
+C) Devices to perform an action
+D) Devices to influence the conditions of the environment
+Correct answer: B
+Bloom taxonomy level: 0
+
+7. Quali sono le caratteristiche chiave dei sensori SMART?
+A) Costi ingenti, problemi di privacy e sicurezza, implicazioni derivanti da un utilizzo non efficiente dei dispositivi
+B) Alimentazione, elaborazione e memoria, tecnologia di sensing, comunicazione
+C) Poter rielaborare le informazioni, comunicare in modalità bidirezionale, essere riconfigurabili, intraprendere azioni conseguenti ad eventi, trasmettere dati in real-time
+D) Sensori, attuatori, dispositivi periferici
+Correct answer: B
+Bloom taxonomy level: 1
+
+8. Qual è uno dei problemi degli oggetti smart?
+A) La loro capacità di rielaborare le informazioni
+B) I costi eccessivi per la loro realizzazione
+C) La loro capacità di comunicare in modalità bidirezionale
+D) Le implicazioni derivanti da un utilizzo non efficiente dei dispositivi
+Correct answer: D
+Bloom taxonomy level: 3
+
+9. Come vengono raccolti i dati per Google Maps?
+A) Dai sensori SMART sui vasetti di medicine
+B) Dalle ricostruzioni virtuali di un monumento
+C) Dall'analisi della guida di un'auto
+D) Dalla posizione dei cellulari degli utenti
+Correct answer: D
+Bloom taxonomy level: 3
+
+10. Which is the best method to prevent attacks on devices connected to a network?
+A) Create strong passwords
+B) Use encryption
+C) Keep software updated
 D) All of the above
 Correct answer: D
+Bloom taxonomy level: 4

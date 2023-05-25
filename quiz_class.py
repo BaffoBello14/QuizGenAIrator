@@ -20,16 +20,15 @@ class Quiz:
 
             # Extract the question and answers
             question = question_lines[0][question_lines[0].index('. ') + 2:]
-            answers = [line[2:] for line in question_lines[1:-1]]
-
-            # Extract the correct answer
-            correct_answer = question_lines[-1][-1]
+            answers = [line[2:] for line in question_lines[1:-2]]
+            correct_answer = question_lines[-2][-1]
+            level = question_lines[-1].split(": ")[-1].strip()
 
             # Add the question to the quiz object
-            self.add_question(question, answers, correct_answer)
+            self.add_question(question, answers, correct_answer, level)
 
-    def add_question(self, question, answers, correct_answer):
-        new_question = Question(question, answers, correct_answer)
+    def add_question(self, question, answers, correct_answer, level):
+        new_question = Question(question, answers, correct_answer, level)
         self.questions.append(new_question)
 
     def get_question(self, index):
@@ -44,6 +43,7 @@ class Quiz:
             options = question.get_answers()
             for j, option in enumerate(options, start=1):
                 print(f"{chr(64 + j)}. {option}")
+            print(f"Bloom taxonomy level:", question.get_level())  # to remove
             print()
 
     def print_correct_answers(self):

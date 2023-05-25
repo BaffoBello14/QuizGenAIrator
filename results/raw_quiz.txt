@@ -1,0 +1,125 @@
+Level 0:
+1. Cosa si intende con il termine Internet of Things?
+A) Un nuovo tipo di pesce
+B) Un gioco da tavolo
+C) L'estensione di Internet al mondo degli oggetti concreti
+D) Un ristorante italiano di lusso
+Correct answer: C
+Bloom taxonomy level: 0
+
+Level 1:
+2. Cosa sono i sensori nell'Internet of Things?
+A) Dispositivi output per il controllo di un processo
+B) Dispositivi di archiviazione dei dati
+C) Dispositivi input di rilevamento che raccolgono informazioni dall'ambiente fisico
+D) Dispositivi per l'elaborazione dei dati
+Correct answer: C
+Bloom taxonomy level: 1
+
+Level 3:
+3. Qual è la differenza tra edge computing e cloud computing nell'IoT?
+A) Edge computing viene utilizzato solo per i dispositivi a lungo raggio, mentre cloud computing solo per i dispositivi a corto raggio
+B) Edge computing avviene più vicino possibile a dove i dati vengono richiesti, mentre cloud computing è un paradigma di erogazione di servizi offerti su richiesta da un fornitore a un cliente finale
+C) Edge computing viene utilizzato solo per i dati meno 'time-sensitive', mentre cloud computing per i dati più importanti
+D) Edge computing è un paradigma di comunicazione tra dispositivi IoT, mentre cloud computing viene utilizzato solo per la memorizzazione dei dati
+Correct answer: B
+Bloom taxonomy level: 3
+
+4. Qual è la funzione di un gateway nell'Internet of Things?
+A) Raccogliere i dati e permettere di utilizzare al minimo le risorse per la comunicazione
+B) Comunicare dati su se stesso
+C) Identificare gli altri dispositivi IoT della rete
+D) Memorizzare i dati raccolti
+Correct answer: A
+Bloom taxonomy level: 3
+
+Level
+
+Level 0:
+1. What is the definition of Internet of Things (IoT)?
+A) An advanced computer system
+B) A virtual reality network
+C) A network of connected physical objects
+D) A platform for online gaming
+Correct answer: C
+Bloom taxonomy level: 0
+
+Level 1:
+2. How are smart objects defined?
+A) By their ability to communicate with other devices
+B) By their physical appearance
+C) By their location within a network
+D) By their identification, connection, and data processing capabilities
+Correct answer: D
+Bloom taxonomy level: 1
+
+Level 3:
+3. Given a scenario in a factory where a machine is malfunctioning, which knowledge would be required to fix the issue?
+A) Knowledge of the machine's function
+B) Knowledge of the factory's layout
+C) Knowledge of the materials used in the machine
+D) Knowledge of how to use the data collected by the smart objects to identify and fix the issue
+Correct answer: D
+Bloom taxonomy level: 3
+
+4. How can sottoreti be used to prevent attacks in a large network?
+A) By limiting the network to a small number of devices
+B) By limiting the amount of data that can be transferred
+C) By dividing the network into smaller sub-networks
+D) By increasing the number of devices connected to the network
+Correct answer: C
+Bloom taxonomy level: 3
+
+Level 4:
+5. Which is the best method to prevent attacks on devices connected to a network?
+A) Create strong passwords
+B) Use encryption
+C) Keep software updated
+D) All of the above
+Correct answer: D
+Bloom taxonomy level: 4
+
+Level 0:
+1. Cosa sono i sensori?
+A) Dispositivi per controllare un processo
+B) Dispositivi per rilevare informazioni dall'ambiente fisico
+C) Dispositivi per eseguire un'azione
+D) Dispositivi per influenzare le condizioni dell'ambiente
+Correct answer: B
+Bloom taxonomy level: 0
+
+Level 1:
+2. Quali sono le caratteristiche chiave dei sensori SMART?
+A) Costi ingenti, problemi di privacy e sicurezza, implicazioni derivanti da un utilizzo non efficiente dei dispositivi
+B) Alimentazione, elaborazione e memoria, tecnologia di sensing, comunicazione
+C) Poter rielaborare le informazioni, comunicare in modalità bidirezionale, essere riconfigurabili, intraprendere azioni conseguenti ad eventi, trasmettere dati in real-time
+D) Sensori, attuatori, dispositivi periferici
+Correct answer: B
+Bloom taxonomy level: 1
+
+Level 3:
+3. Qual è uno dei problemi degli oggetti smart?
+A) La loro capacità di rielaborare le informazioni
+B) I costi eccessivi per la loro realizzazione
+C) La loro capacità di comunicare in modalità bidirezionale
+D) Le implicazioni derivanti da un utilizzo non efficiente dei dispositivi
+Correct answer: D
+Bloom taxonomy level: 3
+
+4. Come vengono raccolti i dati per Google Maps?
+A) Dai sensori SMART sui vasetti di medicine
+B) Dalle ricostruzioni virtuali di un monumento
+C) Dall'analisi della guida di un'auto
+D) Dalla posizione dei cellulari degli utenti
+Correct answer: D
+Bloom taxonomy level: 3
+
+Level 4:
+5. Qual è uno dei compiti richiesti dalle domande di valutazione?
+A) Combinare le definizioni delle parole chiave
+B) Applicare le conoscenze a situazioni specifiche
+C) Rielaborare le informazioni acquisite
+D) Valutare e giudicare le analisi effettuate e trarre conclusioni appropriate
+Correct answer: D
+Bloom taxonomy level: 4
+
