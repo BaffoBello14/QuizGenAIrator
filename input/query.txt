@@ -12,7 +12,4 @@ Correct answer: C
 Bloom taxonomy level: 2
 Only empty line after the correct answer, before the next question.
 You don't have to put an empty line between last option and the correct answer.
-Questions must be impersonal and written in the same language of the text I will provide you.
-Before the questions print which is the main language of the text I will provide you.
-The questions must be in the main language of the text I will provide you.
-Questions must be related the following text:
+Questions must be impersonal and must be related to the following text:

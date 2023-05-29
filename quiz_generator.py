@@ -40,7 +40,7 @@ def num_tokens_from_messages(messages, model="gpt-3.5-turbo-0301"):
 
 
 class QuizGenerator:
-    def __init__(self, num_questions_level):
+    def __init__(self, num_questions_level, language):
         super().__init__()
 
         file_path = 'input/text.txt'
@@ -64,6 +64,7 @@ class QuizGenerator:
         self.refactor_query = file_contents
 
         self.num_questions_level = num_questions_level
+        self.language = language
 
         self.model_id = 'gpt-3.5-turbo'
 
@@ -76,7 +77,7 @@ class QuizGenerator:
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write("")
 
-        limit_len = 10000
+        limit_len = 9500
         overlap_value = math.floor(limit_len / 2)
         lower_index = 0
         upper_index = limit_len
@@ -102,6 +103,7 @@ class QuizGenerator:
             temp_query = temp_query + " " + str(num_questions_level_partition[i]) + " questions for the level " + str(i)
             if i == (len(self.num_questions_level) - 1):
                 temp_query = temp_query + "."
+                temp_query = temp_query + "The language of the quiz must be: " + self.language 
                 break
             temp_query = temp_query + ","
 
@@ -142,7 +144,7 @@ class QuizGenerator:
             tot_questions += self.num_questions_level[i]
 
         conversation = []
-        prompt = raw_quiz + " " + self.refactor_query + " " + str(tot_questions)
+        prompt = raw_quiz + " " + self.refactor_query + " " + str(tot_questions) + " and the language must be: " + self.language
         conversation.append({'role': 'user', 'content': prompt})
         print("(Refactoring) TOKENS BEFORE RESPONSE", num_tokens_from_messages(conversation, self.model_id))
 

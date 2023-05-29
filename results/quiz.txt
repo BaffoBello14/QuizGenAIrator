@@ -1,79 +1,79 @@
-1. What is the definition of Internet of Things (IoT)?
-A) An advanced computer system
-B) A virtual reality network
-C) A network of connected physical objects
-D) A platform for online gaming
+1. Cosa significa Internet of Things?
+A) Internet dedicato ai giovani
+B) Un gioco online
+C) Estensione del concetto di Internet al mondo degli oggetti e luoghi concreti
+D) Un social network per le aziende
 Correct answer: C
 Bloom taxonomy level: 0
 
-2. How are smart objects defined?
-A) By their ability to communicate with other devices
-B) By their physical appearance
-C) By their location within a network
-D) By their identification, connection, and data processing capabilities
-Correct answer: D
+2. Che cosa sono i sensori?
+A) Dispositivi che controllano un processo
+B) Dispositivi elettronici integrati su singolo circuito elettronico
+C) Dispositivi input di rilevamento che raccolgono informazioni dall'ambiente fisico
+D) Un tipo di rete di telecomunicazioni
+Correct answer: C
 Bloom taxonomy level: 1
 
-3. Qual è la differenza tra edge computing e cloud computing nell'IoT?
-A) Edge computing viene utilizzato solo per i dispositivi a lungo raggio, mentre cloud computing solo per i dispositivi a corto raggio
-B) Edge computing avviene più vicino possibile a dove i dati vengono richiesti, mentre cloud computing è un paradigma di erogazione di servizi offerti su richiesta da un fornitore a un cliente finale
-C) Edge computing viene utilizzato solo per i dati meno 'time-sensitive', mentre cloud computing per i dati più importanti
-D) Edge computing è un paradigma di comunicazione tra dispositivi IoT, mentre cloud computing viene utilizzato solo per la memorizzazione dei dati
+3. Qual è una delle regole base per prevenire attacchi informatici su dispositivi IoT?
+A) Utilizzare password e metodi di autenticazione poco robusti
+B) Non preoccuparsi troppo della cifratura (encryption)
+C) Non avere consapevolezza dei nuovi rischi
+D) Utilizzare password e metodi di autenticazione robusti, e cifrare i dati
+Correct answer: D
+Bloom taxonomy level: 3
+
+4. Quali sono le implicazioni derivanti da un utilizzo non efficiente dei dispositivi IoT?
+A) Costi ingenti
+B) Problemi di privacy e sicurezza
+C) Manutenzione delle componenti hardware
+D) Rischio di compromettere tutto il sistema
 Correct answer: B
-Bloom taxonomy level: 3
+Bloom taxonomy level: 4
 
-4. Qual è la funzione di un gateway nell'Internet of Things?
-A) Raccogliere i dati e permettere di utilizzare al minimo le risorse per la comunicazione
-B) Comunicare dati su se stesso
-C) Identificare gli altri dispositivi IoT della rete
-D) Memorizzare i dati raccolti
-Correct answer: A
-Bloom taxonomy level: 3
-
-5. How can sottoreti be used to prevent attacks in a large network?
-A) By limiting the network to a small number of devices
-B) By limiting the amount of data that can be transferred
-C) By dividing the network into smaller sub-networks
-D) By increasing the number of devices connected to the network
+5. Come si possono proteggere i dispositivi IoT da eventuali attacchi esterni?
+A) Utilizzando una password debole
+B) Non utilizzando la cifratura (encryption)
+C) Mantenendo tutte le componenti hardware aggiornate
+D) Accedendo ai dati tramite reti pubbliche non sicure
 Correct answer: C
 Bloom taxonomy level: 3
 
-6. What is the definition of sensors?
-A) Devices to control a process
-B) Devices to detect information from the physical environment
-C) Devices to perform an action
-D) Devices to influence the conditions of the environment
-Correct answer: B
-Bloom taxonomy level: 0
-
-7. Quali sono le caratteristiche chiave dei sensori SMART?
-A) Costi ingenti, problemi di privacy e sicurezza, implicazioni derivanti da un utilizzo non efficiente dei dispositivi
-B) Alimentazione, elaborazione e memoria, tecnologia di sensing, comunicazione
-C) Poter rielaborare le informazioni, comunicare in modalità bidirezionale, essere riconfigurabili, intraprendere azioni conseguenti ad eventi, trasmettere dati in real-time
-D) Sensori, attuatori, dispositivi periferici
-Correct answer: B
-Bloom taxonomy level: 1
-
-8. Qual è uno dei problemi degli oggetti smart?
-A) La loro capacità di rielaborare le informazioni
-B) I costi eccessivi per la loro realizzazione
-C) La loro capacità di comunicare in modalità bidirezionale
-D) Le implicazioni derivanti da un utilizzo non efficiente dei dispositivi
-Correct answer: D
-Bloom taxonomy level: 3
-
-9. Come vengono raccolti i dati per Google Maps?
-A) Dai sensori SMART sui vasetti di medicine
-B) Dalle ricostruzioni virtuali di un monumento
-C) Dall'analisi della guida di un'auto
-D) Dalla posizione dei cellulari degli utenti
-Correct answer: D
-Bloom taxonomy level: 3
-
-10. Which is the best method to prevent attacks on devices connected to a network?
-A) Create strong passwords
-B) Use encryption
-C) Keep software updated
-D) All of the above
+6. Qual è il livello di difficoltà delle domande di valutazione?
+A) Livello 0: Ricordare - domande definitorie
+B) Livello 1: Capire - domande combinatorie
+C) Livello 2 e 3: Applicare e Analizzare - domande di scenario
+D) Livello 4: Valutare - domande di valutazione
 Correct answer: D
 Bloom taxonomy level: 4
+
+7. Quali sono i fattori chiave nella scelta dei sensori?
+A) Costo e interfacciamento dell'uscita del sensore con l'elettronica di misurazione e controllo
+B) Gamma dinamica e linearità
+C) Linearità dinamica e tempi di risposta
+D) Sensibilità e precisione
+Correct answer: A
+Bloom taxonomy level: 2
+
+8. Cosa significa offset in un sensore?
+A) La misura di deviazione della curva effettiva dal valore ideale.
+B) Il tempo necessario per la variazione dell'uscita del sensore.
+C) L'uscita che si verifica rispetto all'uscita zero che dovrebbe verificarsi.
+D) La capacità del sensore di seguire variazioni rapide nel parametro di ingresso.
+Correct answer: C
+Bloom taxonomy level: 0
+
+9. Quali sono i sensori SMART?
+A) Dispositivi che hanno memoria per mantenere una collezione di misure e informazioni
+B) Dispositivi che permettono di stabilire una comunicazione affidabile e protetta
+C) Dispositivi che rilevano dati dell'ambiente fisico ed effettuano il controllo
+D) Dispositivi che determinano il tipo di dati rilevabili e le prestazioni ottenibili
+Correct answer: D 
+Bloom taxonomy level: 1
+
+10. Quali sono le caratteristiche delle domande di scenario nella tassonomia di Bloom?
+A) Richiedono la conoscenza delle definizioni delle parole chiave
+B) Richiedono la capacità di combinare le definizioni delle parole chiave
+C) Richiedono l'applicazione delle definizioni a situazioni specifiche
+D) Richiedono di valutare e giudicare le analisi svolte ai livelli precedenti
+Correct answer: C
+Bloom taxonomy level: 3
