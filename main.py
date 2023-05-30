@@ -5,11 +5,11 @@ from pdf_reader import PDFReader
 
 # 5 livelli possibili (len(num_questions_leve) è 5)
 while True:
-    language = input('Choose the language:')
+    language = input('Choose the language: ')
     if language == "italiano" or language == "english" or language == "francoise":
         break
 
-num_questions_level = [3, 2, 0, 4, 1]
+num_questions_level = [3, 2, 1, 4, 1]
 bloom_levels = ["Remembering", "Understanding", "Applying", "Analyzing", "Evaluating"]
 
 print("num x level global", num_questions_level)

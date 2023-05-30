@@ -1,79 +1,87 @@
-1. Quali sono gli elementi di base dell'Internet of Things?
-A) Riconoscibilità, comunicazione tra oggetti e dati aggregati
-B) Cifratura, controllo dei processi e interazione con l'ambiente esterno
-C) Sensori, gateway, carrier
-D) Agenti Intelligenti, reti mobili, cloud computing
-Correct answer: A
-Bloom taxonomy level: Remembering
-
-2. Perché la sicurezza e privacy sono problematiche fondamentali nell'IoT?
-A) Perché qualsiasi tipo di device diventa un punto di attacco potenziale
-B) Perché la connessione ad internet richiede sempre una password
-C) Perché i gateway non sono abbastanza protetti
-D) Perché i microcontrollori non sono affidabili
-Correct answer: A
-Bloom taxonomy level: Understanding
-
-3. Quali sono le caratteristiche chiave dei sensori SMART?
-A) Alimentazione e costi
-B) Elaborazione e memoria
-C) Tecnologia di sensing e comunicazione
-D) Gamma e linearità dinamica
+1. Quali sono gli elementi alla base dell'Internet of Things?
+A) Identificazione, raccolta dati, visione a lungo raggio
+B) Elaborazione dati, raccolta dati, connessione a corto raggio
+C) Identificazione, connessione, elaborazione dati
+D) Comunicazione, raccolta dati, visione a lungo raggio
 Correct answer: C
-Bloom taxonomy level: Understanding
-
-4. Che cos'è l'offset in un sensore?
-A) La differenza tra il valore di uscita effettivo e quello specificato in condizioni particolari
-B) L'uscita che si verifica rispetto all'uscita zero che dovrebbe verificarsi
-C) La variazione dell'uscita del sensore dalla condizione precedente fino a un valore finale stabilito
-D) La misura in cui la curva effettiva di un sensore devia dalla curva ideale
-Correct answer: B
 Bloom taxonomy level: Remembering
 
-5. Qual è il paradigma che sta dietro l'IoT?
-A) Cloud computing
-B) Edge computing
-C) Voice over IP
-D) Virtualizzazione
+2. Perché la sicurezza e la privacy sono importanti quando si parla di Internet of Things?
+A) Per impedire accessi a dispositivi interni alla rete
+B) Per proteggere i dati raccolti da attacchi informatici 
+C) Per impedire l'accesso alla rete da parte di dispositivi inaffidabili
+D) Per sorvegliare gli utenti della rete
 Correct answer: B
 Bloom taxonomy level: Understanding
 
-6. Cosa indicano la linearità dinamica di un sensore?
-A) La variazione dell'uscita della misura al variare dell'input (che subisce variazioni rapide)
-B) La capacità di un sensore di seguire variazioni rapide nel parametro di ingresso
-C) La misura in cui la curva effettiva di un sensore devia dalla curva ideale
-D) La variazione dell'uscita zero che dovrebbe verificarsi
-Correct answer: A
+3. Come si possono interfacciare i comuni sensori per le applicazioni IoT?
+A) Solo tramite interfaccia custom
+B) Solo tramite interfaccia analogica
+C) Tramite interfaccia analogica, modulata o digitale
+D) Tramite interfaccia modulata o digitale
+Correct answer: C
+Bloom taxonomy level: Applying
+
+4. Qual è la differenza tra sensibilità e precisione di un sensore?
+A) La sensibilità è la variazione incrementale dell'uscita, mentre la precisione è la ripetibilità delle misurazioni
+B) La sensibilità è la ripetibilità delle misurazioni, mentre la precisione è l'ingresso minimo del parametro fisico che creerà una variazione rilevabile dell'uscita
+C) La sensibilità è il massimo e il minimo valore misurabile del parametro applicato, mentre la precisione è il grado di ripetibilità di una misurazione
+D) La sensibilità è la pendenza della curva caratteristica di uscita, mentre la precisione è il grado di ripetibilità di una misurazione
+Correct answer: D
 Bloom taxonomy level: Analyzing
 
-7. Quali sono gli ambiti di applicazione degli smart objects menzionati nel testo?
-A) Smart Home/Building
-B) Smart Factory
-C) Smart Office
-D) Smart Car
-Correct answer: D
-Bloom taxonomy level: Remembering
-
-8. Che cosa sono i MEMS?
-A) Dispositivi di rilevamento che raccolgono informazioni dall'ambiente fisico.
-B) Dispositivi per controllare un processo, eseguire un'azione o influenzare le condizioni dell'ambiente esterno.
-C) Dispositivi a basso costo, ad esempio di silicio, con funzioni di sensori e attuatori altamente miniaturizzati.
-D) Dispositivi periferici che rilevano e azionano contemporaneamente sullo stesso sistema.
+5. Qual è una possibile strategia per limitare gli attacchi ad una rete aziendale con tanti dispositivi connessi tra di loro?
+A) Non avere una rete aziendale
+B) Cambiare spesso le password dei dispositivi
+C) Creare delle sottoreti per limitare gli attacchi a una certa porzione di rete
+D) Non aggiornare mai le componenti hardware e software dei dispositivi
 Correct answer: C
+Bloom taxonomy level: Analyzing
+
+6. Quali sono i fattori chiave nella scelta dei sensori?
+A) Colore e forma
+B) Dimensione e peso
+C) Costo e interfacciabilità
+D) Marca e prestigio
+Correct answer: C
+Bloom taxonomy level: Remembering 
+
+7. Quali sono le caratteristiche degli oggetti smart?
+A) Poter rielaborare le informazioni, comunicare in modalità unidirezionale e non essere riconfigurabili
+B) Non intraprendere azioni conseguenti ad eventi e non trasmettere dati in tempo reale
+C) Poter rielaborare le informazioni, comunicare in modalità bidirezionale e essere riconfigurabili
+D) Non trasmettere dati in tempo reale e non essere rielaborabili
+Correct answer: C
+Bloom taxonomy level: Understanding
+
+8. Come possono essere misurati i fenomeni di natura ottica?
+A) Attraverso la pressione di radiazione
+B) Con la spettroscopia
+C) Misurando accelerazioni
+D) Con l'intensità del flusso
+Correct answer: B
+Bloom taxonomy level: Analyzing
+
+9. Quali grandezze fisiche possono essere misurate dai sensori?
+A) Suoni, temperatura, potenziale cellulare, intensità del flusso
+B) Suoni, accelerazioni, intensità della radiazione luminosa, spettroscopia
+C) Temperatura, pH, potenziale cellulare, intensità della radiazione luminosa
+D) Pressioni, spettroscopia, intensità del flusso, intensità della radiazione luminosa
+Correct answer: A
 Bloom taxonomy level: Remembering
 
-9. Quali sono le regole base per prevenire gli attacchi informatici ai dispositivi IoT?
-A) Sottoreti
-B) Cifratura
-C) Software aggiornato
-D) Tutte le precedenti
-Correct answer: D
-Bloom taxonomy level: Evaluating
+10. Cosa sono i sensori MEMS?
+A) Dispositivi altamente costosi integrati su uno stesso substrato di materiale semiconduttore
+B) Dispositivi di varia natura integrati su uno stesso substrato di materiale semiconduttore
+C) Dispositivi altamente costosi con tecnologia semplice
+D) Dispositivi di varia natura con tecnologia semplice
+Correct answer: B
+Bloom taxonomy level: Understanding
 
-10. Quali sono i fattori chiave nella scelta dei sensori?
-A) Facilità con cui l'uscita del sensore si interfaccia con l'elettronica di misurazione e controllo
-B) Costo
-C) Tipi di uscita: analogica, modulata o digitale
-D) Tutte le precedenti
-Correct answer: D
+11. Quali sono i vantaggi dei sensori MEMS?
+A) Costo molto elevato e tecnologie semplici
+B) Funzioni di rilevazione limitate e prestazioni scarse
+C) Integrano in uno stesso dispositivo funzioni diverse e sostituiscono oggetti più ingombranti e costosi
+D) Utilizzano già tecnologie nano-elettromeccaniche
+Correct answer: C
 Bloom taxonomy level: Evaluating

@@ -78,7 +78,7 @@ class QuizGenerator:
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write("")
 
-        limit_len = 10000
+        limit_len = 11000
         overlap_value = math.floor(limit_len / 2)
         lower_index = 0
         upper_index = limit_len
@@ -118,26 +118,51 @@ class QuizGenerator:
         print("num x level partition", num_questions_level_partition)
 
         for partition in text_partitions:
-            conversation = []
-            # prompt = self.level_query + " " + temp_query + " " + self.query + " " + partition
-            prompt = temp_query + " " + self.query + " " + partition
-            conversation.append({'role': 'user', 'content': prompt})
-            print("TOKENS BEFORE RESPONSE", num_tokens_from_messages(conversation, self.model_id))
 
-            response = openai.ChatCompletion.create(
-                model=self.model_id,
-                messages=conversation
-            )
-            conversation.append(
-                {'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
-            print("\tTOKENS WITH RESPONSE", num_tokens_from_messages(conversation, self.model_id))
+            responseIsOk = False
+            content = ""
+
+            while responseIsOk == False:
+
+                conversation = []
+
+                # prompt = self.level_query + " " + temp_query + " " + self.query + " " + partition
+                prompt = temp_query + " " + self.query + " " + partition
+                conversation.append({'role': 'user', 'content': prompt})
+                print("TOKENS BEFORE RESPONSE", num_tokens_from_messages(conversation, self.model_id))
+
+                response = openai.ChatCompletion.create(
+                    model=self.model_id,
+                    messages=conversation
+                )
+                conversation.append(
+                    {'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
+                print("\tTOKENS WITH RESPONSE", num_tokens_from_messages(conversation, self.model_id))
+
+                # here
+                # conversation[-1]['content'].strip() deve contenere
+                # self.bloom_levels[i] per num_questions_level_partition[i] volte
+
+                for j in range(len(self.num_questions_level)):
+                    content = conversation[-1]['content'].strip()
+                    num_occurrences = content.count(self.bloom_levels[j])
+                    if num_occurrences != num_questions_level_partition[j]:
+                        responseIsOk = False
+                        break
+                    else:
+                        responseIsOk = True
+
+                if(responseIsOk == False):
+                    print("\t\tWrong number of questions for levels!!!")
+                    time.sleep(20)
+
+
+            time.sleep(20)
 
             file_path = 'results/raw_quiz.txt'
             with open(file_path, 'a', encoding='utf-8') as file:
-                file.write(conversation[-1]['content'].strip())
+                file.write(content)
                 file.write("\n\n")
-
-            time.sleep(20)
 
         self.refactor()
 
@@ -154,8 +179,8 @@ class QuizGenerator:
 
         temp_query = "In particular, you must extract"
         for i in range(len(self.num_questions_level)):
-            temp_query = temp_query + " only the better " + str(self.num_questions_level[i]) \
-                         + " questions in terms of quality for the level " + self.bloom_levels[i]
+            temp_query = temp_query + " exactly " + str(self.num_questions_level[i]) \
+                         + " questions of the level " + self.bloom_levels[i]
             if i == (len(self.num_questions_level) - 1):
                 temp_query = temp_query + ". The language of the quiz must be: " + self.language
                 break
@@ -163,21 +188,45 @@ class QuizGenerator:
 
         print(temp_query)
 
-        conversation = []
-        prompt = raw_quiz + " " + self.refactor_query + " " + str(tot_questions) + temp_query
-        conversation.append({'role': 'user', 'content': prompt})
-        print("(Refactoring) TOKENS BEFORE RESPONSE", num_tokens_from_messages(conversation, self.model_id))
+        responseIsOk = False
+        content = ""
 
-        response = openai.ChatCompletion.create(
-            model=self.model_id,
-            messages=conversation
-        )
-        conversation.append({'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
-        print("\tTOKENS WITH RESPONSE", num_tokens_from_messages(conversation, self.model_id))
+        while responseIsOk == False:
+
+            conversation = []
+
+            prompt = raw_quiz + " " + self.refactor_query + " " + str(tot_questions) + temp_query
+            conversation.append({'role': 'user', 'content': prompt})
+            print("(Refactoring) TOKENS BEFORE RESPONSE", num_tokens_from_messages(conversation, self.model_id))
+
+            response = openai.ChatCompletion.create(
+                model=self.model_id,
+                messages=conversation
+            )
+            conversation.append({'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
+            print("\tTOKENS WITH RESPONSE", num_tokens_from_messages(conversation, self.model_id))
+
+            # here
+            # conversation[-1]['content'].strip() deve contenere
+            # self.bloom_levels[i] per num_questions_level_partition[i] volte
+
+            for j in range(len(self.num_questions_level)):
+                content = conversation[-1]['content'].strip()
+                num_occurrences = content.count(self.bloom_levels[j])
+                print("\t\t\t", self.bloom_levels[j], " occurs: ", num_occurrences, " instead of ", self.num_questions_level[j])
+                if num_occurrences != self.num_questions_level[j]:
+                    responseIsOk = False
+                    break
+                else:
+                    responseIsOk = True
+
+            if (responseIsOk == False):
+                print("\t\t(Refactoring) Wrong number of questions for levels!!!")
+                time.sleep(20)
 
         file_path = 'results/quiz.txt'
         with open(file_path, 'w', encoding='utf-8') as file:
-            file.write(conversation[-1]['content'].strip())
+            file.write(content)
 
 # partizionamento sovrapposto
 # estrarre x domande da ogni partizione
