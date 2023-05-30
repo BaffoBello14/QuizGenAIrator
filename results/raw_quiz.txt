@@ -1,208 +1,160 @@
-Level 0:
-1. Cosa significa Internet of Things?
-A) Internet dedicato ai giovani
-B) Un gioco online
-C) Estensione del concetto di Internet al mondo degli oggetti e luoghi concreti
-D) Un social network per le aziende
-Correct answer: C
-Bloom taxonomy level: 0
-
-Level 1:
-1. Che cosa sono i sensori?
-A) Dispositivi che controllano un processo
-B) Dispositivi elettronici integrati su singolo circuito elettronico
-C) Dispositivi input di rilevamento che raccolgono informazioni dall'ambiente fisico
-D) Un tipo di rete di telecomunicazioni
-Correct answer: C
-Bloom taxonomy level: 1
-
-Level 3:
-1. Supponiamo di dover progettare un sistema di controllo di una serra automatizzata. Quali dispositivi e tecnologie dell'IoT dovremmo utilizzare per rilevare la temperatura e l'umidità all'interno della serra e attivare o disattivare il sistema di irrigazione?
-A) Sensori e microcontrollori
-B) Attuatori e gateway
-C) Cloud computing e reti mobili cellulari
-D) Intelligent trasportation service e Precise Agricultural Production
+1. Quali sono gli elementi di base dell'Internet of Things?
+A) Riconoscibilità, comunicazione tra oggetti e dati aggregati
+B) Cifratura, controllo dei processi e interazione con l'ambiente esterno
+C) Sensori, gateway, carrier
+D) Agenti Intelligenti, reti mobili, cloud computing
 Correct answer: A
-Bloom taxonomy level: 3
+Revised Bloom's Taxonomy level: Remembering
 
-Level 4:
-1. Supponiamo di dover valutare un'analisi di dati sensoriali effettuata per la gestione dell'illuminazione in un'azienda. Quali aspetti dovremmo prendere in considerazione per giudicare l'efficacia dell'analisi?
-A) La marca e il modello dei sensori
-B) Le password e la cifratura utilizzate per la sicurezza dei dati
-C) La correlazione tra i dati raccolti e i risultati ottenuti
-D) La velocità di trasmissione dati delle reti mobili cellulari utilizzate
-Correct answer: C
-Bloom taxonomy level: 4
-
-1. Cosa sono le domande definitorie?
-A) domande che richiedono l'applicazione delle definizioni a situazioni specifiche
-B) domande che richiedono l'analisi di uno scenario
-C) domande che richiedono la conoscenza delle definizioni delle parole chiave del corso
-D) domande che richiedono il giudizio e la valutazione dei dati
-Correct answer: C
-Bloom taxonomy level: 0
-
-2. Cosa sono le domande combinatorie?
-A) domande che richiedono l'applicazione delle definizioni a situazioni specifiche
-B) domande che richiedono l'analisi di uno scenario
-C) domande che richiedono la conoscenza delle definizioni delle parole chiave del corso
-D) domande che richiedono la valutazione delle analisi svolte
-Correct answer: B
-Bloom taxonomy level: 1
-
-3. Cosa sono le domande di scenario?
-A) domande che richiedono l'applicazione delle definizioni a situazioni specifiche
-B) domande che richiedono l'analisi di uno scenario
-C) domande che richiedono la conoscenza delle definizioni delle parole chiave del corso
-D) domande che richiedono il giudizio e la valutazione dei dati
+2. Perché la sicurezza e privacy sono problematiche fondamentali nell'IoT?
+A) Perché qualsiasi tipo di device diventa un punto di attacco potenziale
+B) Perché la connessione ad internet richiede sempre una password
+C) Perché i gateway non sono abbastanza protetti
+D) Perché i microcontrollori non sono affidabili
 Correct answer: A
-Bloom taxonomy level: 2
+Revised Bloom's Taxonomy level: Understanding
 
-4. Qual è il livello di difficoltà delle domande di valutazione?
-A) Livello 0: Ricordare - domande definitorie
-B) Livello 1: Capire - domande combinatorie
-C) Livello 2 e 3: Applicare e Analizzare - domande di scenario
-D) Livello 4: Valutare - domande di valutazione
-Correct answer: D
-Bloom taxonomy level: 4
-
-5. A cosa si riferisce il termine "Internet of Things" (IoT)?
-A) A una rete di telecomunicazioni
-B) A una rete di dati tra calcolatori
-C) A una rete che abilita nuovi servizi avanzati grazie all'interconnessione di oggetti fisici e virtuali
-D) A una rete di sensori e dispositivi che comunicano tra loro
-Correct answer: C
-Bloom taxonomy level: 0
-
-6. Qual è una delle regole base per prevenire attacchi informatici su dispositivi IoT?
-A) Utilizzare password e metodi di autenticazione poco robusti
-B) Non preoccuparsi troppo della cifratura (encryption)
-C) Non avere consapevolezza dei nuovi rischi
-D) Utilizzare password e metodi di autenticazione robusti, e cifrare i dati
-Correct answer: D
-B
-
-Level 0:
-
-1. Cosa sono i sensori?
-A) Dispositivi per controllare un processo
-B) Dispositivi che raccolgono informazioni dall'ambiente fisico
-C) Dispositivi che influenzano le condizioni dell'ambiente esterno
-D) Dispositivi che raccolgono e rielaborano dati
-
+3. Quali sono i due modelli di calcolo seguiti dagli Agenti Intelligenti nell'IoT?
+A) Cloud computing e reti mobili
+B) Elaborazione dei dati elettronica ed Edge computing
+C) Intelligenza artificiale e elaborazione del dato
+D) Zerynth e sensori
 Correct answer: B
-Bloom taxonomy level: 0
+Revised Bloom's Taxonomy level: Analyzing
 
-Level 1:
+4. Quali sono le reti utilizzate per la connessione all'internet nell'IoT?
+A) Wi-Fi e carrier
+B) 5G e cloud computing
+C) Reti di dati e reti telefoniche
+D) Congestion control e commutazione a pacchetto
+Correct answer: C
+Revised Bloom's Taxonomy level: Evaluating
 
-2. Qual è la principale caratteristica dei sensori SMART?
-A) La tecnologia di sensing
-B) L'alimentazione
-C) L'elaborazione e la memoria
-D) La comunicazione
+1. Che cosa significa IoT?
+A) Internet of Technology
+B) Internet of Things
+C) Internet of Telecommunications
+D) Internet of Transportation
+Correct answer: B
+Revised Bloom's Taxonomy level: Remembering
 
+2. Qual è il paradigma che sta dietro l'IoT?
+A) Cloud computing
+B) Edge computing
+C) Voice over IP
+D) Virtualizzazione
+Correct answer: B
+Revised Bloom's Taxonomy level: Understanding
+
+3. Qual è la soluzione alla congestione dei buffer di dati nella commutazione a pacchetto?
+A) Controllo di congestione
+B) Cifratura
+C) Password robuste
+D) Interconnessione di oggetti fisici e virtuali
 Correct answer: A
-Bloom taxonomy level: 1
+Revised Bloom's Taxonomy level: Analyzing
 
-Level 3:
-
-3. Come si possono proteggere i dispositivi IoT da eventuali attacchi esterni?
-A) Utilizzando una password debole
-B) Non utilizzando la cifratura (encryption)
-C) Mantenendo tutte le componenti hardware aggiornate
-D) Accedendo ai dati tramite reti pubbliche non sicure
-
-Correct answer: C
-Bloom taxonomy level: 3
-
-Level 4:
-
-4. Quali sono le implicazioni derivanti da un utilizzo non efficiente dei dispositivi IoT?
-A) Costi ingenti
-B) Problemi di privacy e sicurezza
-C) Manutenzione delle componenti hardware
-D) Rischio di compromettere tutto il sistema
-
-Correct answer: B
-Bloom taxonomy level: 4
-
-1. Cosa sono i sensori?
-A) Dispositivi per controllare un processo 
-B) Dispositivi che raccolgono informazioni dall'ambiente fisico 
-C) Dispositivi periferici che raccogliono dati
-D) Dispositivi che influenzano le condizioni dell'ambiente esterno 
-Correct answer: B
-Bloom taxonomy level: 0
-
-2. Come vengono definiti i sensori SMART?
-A) Dispositivi che hanno memoria per mantenere una collezione di misure e informazioni
-B) Dispositivi che permettono di stabilire una comunicazione affidabile e protetta
-C) Dispositivi che rilevano dati dell'ambiente fisico ed effettuano il controllo
-D) Dispositivi che determinano il tipo di dati rilevabili e le prestazioni ottenibili
-Correct answer: D
-Bloom taxonomy level: 1
-
-3. Quali sono le caratteristiche delle domande di scenario nella tassonomia di Bloom?
-A) Richiedono la conoscenza delle definizioni delle parole chiave
-B) Richiedono la capacità di combinare le definizioni delle parole chiave
-C) Richiedono l'applicazione delle definizioni a situazioni specifiche
-D) Richiedono di valutare e giudicare le analisi svolte nei livelli precedenti
-Correct answer: C
-Bloom taxonomy level: 3
-
-4. Quali sono i fattori chiave nella scelta dei sensori?
-A) Costo e interfacciamento dell'uscita del sensore con l'elettronica di misurazione e controllo
-B) Gamma dinamica e linearità
-C) Linearità dinamica e tempi di risposta
-D) Sensibilità e precisione
-Correct answer: A
-Bloom taxonomy level: 2
-
-5. Quali sono i vantaggi delle tecnologie MEMS?
-A) Minuscolo chip di silicio diventa un sensore di pressione, un accelerometro, un giroscopio, etc.
-B) Sono in grado di eseguire funzioni di oggetti molto ingombranti e costosi
-C) Integrazione di funzioni diverse in un unico dispositivo
+4. Quali sono le regole base per prevenire gli attacchi informatici ai dispositivi IoT?
+A) Sottoreti
+B) Cifratura
+C) Software aggiornato
 D) Tutte le precedenti
 Correct answer: D
-Bloom taxonomy level: 4
+Revised Bloom's Taxonomy level: Evaluating
 
-1. Cosa si intende per offset in un sensore?
-A) La misura di deviazione della curva effettiva dal valore ideale.
-B) Il tempo necessario per la variazione dell’uscita del sensore.
-C) L’uscita che si verifica rispetto all’uscita zero che dovrebbe verificarsi.
-D) La capacità del sensore di seguire variazioni rapide nel parametro di ingresso.
+1. Quale dei seguenti non è uno degli ambiti di applicazione degli smart objects menzionati nel testo?
+A) Smart Home/Building
+B) Smart Factory
+C) Smart Office
+D) Smart Car
 Correct answer: C
-Bloom taxonomy level: 0
+Revised Bloom's Taxonomy level: Remembering
 
-2. Cosa si intende per linearità dinamica di un sensore?
-A) La misura della capacità di un sensore di seguire variazioni rapide nel parametro di ingresso.
-B) La misura di deviazione della curva effettiva dal valore ideale.
-C) Il tempo necessario per la variazione dell’uscita del sensore.
-D) L’efficacia con cui un trasduttore è capace di seguire le variazioni del parametro di ingresso.
+2. Come si possono proteggere i dispositivi IoT dagli attacchi esterni?
+A) Disconnettere sempre i dispositivi dalla rete quando non vengono utilizzati
+B) Utilizzare password e metodi di autenticazioni robuste
+C) Nascondere i dispositivi per evitare che vengano individuati
+D) Non condividere mai i dati rilevati dai dispositivi con altri utenti
+Correct answer: B
+Revised Bloom's Taxonomy level: Understanding
+
+3. Quali sono le caratteristiche chiave degli smart objects menzionate nel testo?
+A) Possono essere connessi ad una rete, possono essere riconfigurabili e possono essere utilizzati per la rielaborazione delle informazioni
+B) Possono comunicare solo in modalità unidirezionale, possono essere alimentati solo tramite cavi e non sono dotati di memoria
+C) Possono essere utilizzati solo per la rilevazione di informazioni di tipo meccanico, possono trasmettere dati solo con una frequenza bassa e non possono intraprendere azioni conseguenti ad eventi
+D) Possono essere utilizzati solo all'interno di una rete privata, non possono trasmettere dati in real-time e non sono dotati di tecnologie avanzate di sensing
 Correct answer: A
-Bloom taxonomy level: 3
+Revised Bloom's Taxonomy level: Analyzing
 
-3. Quali sono i fattori chiave nella scelta dei sensori?
-A) Costo e velocità di risposta dell’uscita.
-B) Distanza massima di misura e durata del sensore.
-C) Facilità di installazione e temperatura massima di utilizzo.
-D) Costo e facilità di interfacciamento dell’uscita con l’elettronica di misurazione e controllo.
-Correct answer: D
-Bloom taxonomy level: 1
+4. Quali sono alcuni esempi di applicazioni dell'IoT nel settore logistico?
+A) Tracciabilità e monitoraggio della filiera, gestione della sicurezza in poli logistici complessi, gestione delle flotte tramite cassette postali e telefoni pubblici
+B) Monitoraggio della catena del freddo, gestione dei rifiuti e gestione del traffico aereo
+C) Tracciabilità e monitoraggio della filiera tramite tag RFID e sensoristica, monitoraggio della catena del freddo, gestione della sicurezza in poli logistici complessi, gestione delle flotte tramite GPS/GPRS
+D) Tracciabilità delle merci solo attraverso documenti cartacei
+Correct answer: C
+Revised Bloom's Taxonomy level: Evaluating
 
-4. Cosa si intende per domanda di valutazione in riferimento alla tassonomia di Bloom?
-A) Domande che richiedono la conoscenza delle definizioni delle parole chiave del corso.
-B) Domande che richiedono la capacità di combinare le definizioni delle parole chiave.
-C) Domande che richiedono l’analisi di situazioni specifiche.
-D) Domande che richiedono la valutazione e il giudizio delle analisi svolte ai livelli precedenti.
-Correct answer: D
-Bloom taxonomy level: 4
+1. Quali sono le caratteristiche chiave dei sensori SMART?
+A) Alimentazione e costi
+B) Elaborazione e memoria
+C) Tecnologia di sensing e comunicazione
+D) Gamma e linearità dinamica
+Correct answer: C
+Revised Bloom's Taxonomy level: Understanding
 
-5. Cosa sono i MEMS?
-A) Dispositivi di varia natura integrati su uno stesso substrato di materiale semiconduttore.
-B) Dispositivi che misurano fenomeni di natura biologica.
-C) Tecnologie che rivoluzioneranno intere categorie di prodotti.
-D) Sistemi intelligenti che integrano la tecnologia dei sensori e degli attuatori.
+2. Cosa sono i MEMS?
+A) Dispositivi di rilevamento che raccolgono informazioni dall'ambiente fisico.
+B) Dispositivi per controllare un processo, eseguire un'azione o influenzare le condizioni dell'ambiente esterno.
+C) Dispositivi a basso costo, ad esempio di silicio, con funzioni di sensori e attuatori altamente miniaturizzati.
+D) Dispositivi periferici che rilevano e azionano contemporaneamente sullo stesso sistema.
+Correct answer: C
+Revised Bloom's Taxonomy level: Remembering
+
+3. Qual è uno dei principali problemi nell'utilizzo di oggetti smart?
+A) Costi ingenti
+B) Poter rielaborare le informazioni
+C) Comunicare in modalità bidirezionale
+D) Trasmettere dati in real-time, ovvero in tempo reale
 Correct answer: A
-Bloom taxonomy level: 2
+Revised Bloom's Taxonomy level: Analyzing
+
+4. Quali sono le tipologie di uscita dei sensori per le applicazioni nel mondo IoT?
+A) Analogica, modulata, digitale
+B) Testuale, audio, video
+C) Grafica, scritta, numerica
+D) Colore, forma, dimensione
+Correct answer: A
+Revised Bloom's Taxonomy level: Remembering
+
+1. Che cos'è l'offset in un sensore?
+A) La differenza tra il valore di uscita effettivo e quello specificato in condizioni particolari
+B) L'uscita che si verifica rispetto all'uscita zero che dovrebbe verificarsi
+C) La variazione dell'uscita del sensore dalla condizione precedente fino a un valore finale stabilito
+D) La misura in cui la curva effettiva di un sensore devia dalla curva ideale
+Correct answer: B
+Revised Bloom's Taxonomy level: Remembering
+
+2. Cosa indica la linearità dinamica di un sensore?
+A) La variazione dell'uscita della misura al variare dell'input (che subisce variazioni rapide)
+B) La capacità di un sensore di seguire variazioni rapide nel parametro di ingresso
+C) La misura in cui la curva effettiva di un sensore devia dalla curva ideale
+D) La variazione dell'uscita zero che dovrebbe verificarsi
+Correct answer: A
+Revised Bloom's Taxonomy level: Analyzing
+
+3. Che cosa abbinano i MEMS (Micro Electro-Mechanical Systems)?
+A) Funzioni meccaniche, termiche, biologiche, chimiche e meccaniche in uno spazio ridottissimo
+B) Proprietà elettriche degli integrati a semiconduttore con proprietà opto-meccaniche
+C) La tecnologia dei sensori e degli attuatori con le funzioni di gestione dei processi
+D) Tutte le precedenti
+Correct answer: D
+Revised Bloom's Taxonomy level: Understanding
+
+4. Quali sono i fattori chiave nella scelta dei sensori?
+A) Facilità con cui l'uscita del sensore si interfaccia con l'elettronica di misurazione e controllo
+B) Costo
+C) Tipi di uscita: analogica, modulata o digitale
+D) Tutte le precedenti
+Correct answer: D
+Revised Bloom's Taxonomy level: Evaluating
 

@@ -3,7 +3,7 @@ import time
 import openai
 import tiktoken
 
-openai.api_key = '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'
+openai.api_key = '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'
 
 
 def num_tokens_from_messages(messages, model="gpt-3.5-turbo-0301"):
@@ -40,7 +40,7 @@ def num_tokens_from_messages(messages, model="gpt-3.5-turbo-0301"):
 
 
 class QuizGenerator:
-    def __init__(self, num_questions_level, language):
+    def __init__(self, num_questions_level, bloom_levels, language):
         super().__init__()
 
         file_path = 'input/text.txt'
@@ -64,6 +64,7 @@ class QuizGenerator:
         self.refactor_query = file_contents
 
         self.num_questions_level = num_questions_level
+        self.bloom_levels = bloom_levels
         self.language = language
 
         self.model_id = 'gpt-3.5-turbo'
@@ -77,7 +78,7 @@ class QuizGenerator:
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write("")
 
-        limit_len = 9500
+        limit_len = 10000
         overlap_value = math.floor(limit_len / 2)
         lower_index = 0
         upper_index = limit_len
@@ -97,21 +98,29 @@ class QuizGenerator:
 
         num_questions_level_partition = []
 
-        temp_query = "Generate"
+        tot_questions = 0
+        for i in range(len(self.num_questions_level)):
+            tot_questions += math.ceil(self.num_questions_level[i] / num_partitions)
+
+        temp_query = "Generate " + str(tot_questions) + " questions classified by the Revised Bloom's Taxonomy:"
         for i in range(len(self.num_questions_level)):
             num_questions_level_partition.append(math.ceil(self.num_questions_level[i] / num_partitions))
-            temp_query = temp_query + " " + str(num_questions_level_partition[i]) + " questions for the level " + str(i)
+            # temp_query = temp_query + " " + str(num_questions_level_partition[i]) + " questions for the Bloom level " + str(i)
+            temp_query = temp_query + " " + str(num_questions_level_partition[i]) \
+                         + " questions must be of the level " + self.bloom_levels[i]
             if i == (len(self.num_questions_level) - 1):
-                temp_query = temp_query + "."
-                temp_query = temp_query + "The language of the quiz must be: " + self.language 
+                temp_query = temp_query + ". The language of the quiz must be: " + self.language
                 break
             temp_query = temp_query + ","
+
+        print(temp_query)
 
         print("num x level partition", num_questions_level_partition)
 
         for partition in text_partitions:
             conversation = []
-            prompt = self.level_query + " " + temp_query + " " + self.query + " " + partition
+            # prompt = self.level_query + " " + temp_query + " " + self.query + " " + partition
+            prompt = temp_query + " " + self.query + " " + partition
             conversation.append({'role': 'user', 'content': prompt})
             print("TOKENS BEFORE RESPONSE", num_tokens_from_messages(conversation, self.model_id))
 
@@ -143,8 +152,19 @@ class QuizGenerator:
         for i in range(len(self.num_questions_level)):
             tot_questions += self.num_questions_level[i]
 
+        temp_query = "In particular, you must extract"
+        for i in range(len(self.num_questions_level)):
+            temp_query = temp_query + " only the better " + str(self.num_questions_level[i]) \
+                         + " questions in terms of quality for the level " + self.bloom_levels[i]
+            if i == (len(self.num_questions_level) - 1):
+                temp_query = temp_query + ". The language of the quiz must be: " + self.language
+                break
+            temp_query = temp_query + ","
+
+        print(temp_query)
+
         conversation = []
-        prompt = raw_quiz + " " + self.refactor_query + " " + str(tot_questions) + " and the language must be: " + self.language
+        prompt = raw_quiz + " " + self.refactor_query + " " + str(tot_questions) + temp_query
         conversation.append({'role': 'user', 'content': prompt})
         print("(Refactoring) TOKENS BEFORE RESPONSE", num_tokens_from_messages(conversation, self.model_id))
 

@@ -9,7 +9,7 @@ B) <option B>
 C) <option C>
 D) <option D>
 Correct answer: C
-Bloom taxonomy level: 2
+Revised Bloom's Taxonomy level: Understanding
 Only empty line after the correct answer, before the next question.
 You don't have to put an empty line between last option and the correct answer.
-Questions must be impersonal and must be related to the following text:
+Questions must be impersonal, must not be related to the previous text but only must be related to the following text:

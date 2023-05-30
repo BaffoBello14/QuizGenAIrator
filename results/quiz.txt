@@ -1,79 +1,79 @@
-1. Cosa significa Internet of Things?
-A) Internet dedicato ai giovani
-B) Un gioco online
-C) Estensione del concetto di Internet al mondo degli oggetti e luoghi concreti
-D) Un social network per le aziende
-Correct answer: C
-Bloom taxonomy level: 0
-
-2. Che cosa sono i sensori?
-A) Dispositivi che controllano un processo
-B) Dispositivi elettronici integrati su singolo circuito elettronico
-C) Dispositivi input di rilevamento che raccolgono informazioni dall'ambiente fisico
-D) Un tipo di rete di telecomunicazioni
-Correct answer: C
-Bloom taxonomy level: 1
-
-3. Qual è una delle regole base per prevenire attacchi informatici su dispositivi IoT?
-A) Utilizzare password e metodi di autenticazione poco robusti
-B) Non preoccuparsi troppo della cifratura (encryption)
-C) Non avere consapevolezza dei nuovi rischi
-D) Utilizzare password e metodi di autenticazione robusti, e cifrare i dati
-Correct answer: D
-Bloom taxonomy level: 3
-
-4. Quali sono le implicazioni derivanti da un utilizzo non efficiente dei dispositivi IoT?
-A) Costi ingenti
-B) Problemi di privacy e sicurezza
-C) Manutenzione delle componenti hardware
-D) Rischio di compromettere tutto il sistema
-Correct answer: B
-Bloom taxonomy level: 4
-
-5. Come si possono proteggere i dispositivi IoT da eventuali attacchi esterni?
-A) Utilizzando una password debole
-B) Non utilizzando la cifratura (encryption)
-C) Mantenendo tutte le componenti hardware aggiornate
-D) Accedendo ai dati tramite reti pubbliche non sicure
-Correct answer: C
-Bloom taxonomy level: 3
-
-6. Qual è il livello di difficoltà delle domande di valutazione?
-A) Livello 0: Ricordare - domande definitorie
-B) Livello 1: Capire - domande combinatorie
-C) Livello 2 e 3: Applicare e Analizzare - domande di scenario
-D) Livello 4: Valutare - domande di valutazione
-Correct answer: D
-Bloom taxonomy level: 4
-
-7. Quali sono i fattori chiave nella scelta dei sensori?
-A) Costo e interfacciamento dell'uscita del sensore con l'elettronica di misurazione e controllo
-B) Gamma dinamica e linearità
-C) Linearità dinamica e tempi di risposta
-D) Sensibilità e precisione
+1. Quali sono gli elementi di base dell'Internet of Things?
+A) Riconoscibilità, comunicazione tra oggetti e dati aggregati
+B) Cifratura, controllo dei processi e interazione con l'ambiente esterno
+C) Sensori, gateway, carrier
+D) Agenti Intelligenti, reti mobili, cloud computing
 Correct answer: A
-Bloom taxonomy level: 2
+Bloom taxonomy level: Remembering
 
-8. Cosa significa offset in un sensore?
-A) La misura di deviazione della curva effettiva dal valore ideale.
-B) Il tempo necessario per la variazione dell'uscita del sensore.
-C) L'uscita che si verifica rispetto all'uscita zero che dovrebbe verificarsi.
-D) La capacità del sensore di seguire variazioni rapide nel parametro di ingresso.
+2. Perché la sicurezza e privacy sono problematiche fondamentali nell'IoT?
+A) Perché qualsiasi tipo di device diventa un punto di attacco potenziale
+B) Perché la connessione ad internet richiede sempre una password
+C) Perché i gateway non sono abbastanza protetti
+D) Perché i microcontrollori non sono affidabili
+Correct answer: A
+Bloom taxonomy level: Understanding
+
+3. Quali sono le caratteristiche chiave dei sensori SMART?
+A) Alimentazione e costi
+B) Elaborazione e memoria
+C) Tecnologia di sensing e comunicazione
+D) Gamma e linearità dinamica
 Correct answer: C
-Bloom taxonomy level: 0
+Bloom taxonomy level: Understanding
 
-9. Quali sono i sensori SMART?
-A) Dispositivi che hanno memoria per mantenere una collezione di misure e informazioni
-B) Dispositivi che permettono di stabilire una comunicazione affidabile e protetta
-C) Dispositivi che rilevano dati dell'ambiente fisico ed effettuano il controllo
-D) Dispositivi che determinano il tipo di dati rilevabili e le prestazioni ottenibili
-Correct answer: D 
-Bloom taxonomy level: 1
+4. Che cos'è l'offset in un sensore?
+A) La differenza tra il valore di uscita effettivo e quello specificato in condizioni particolari
+B) L'uscita che si verifica rispetto all'uscita zero che dovrebbe verificarsi
+C) La variazione dell'uscita del sensore dalla condizione precedente fino a un valore finale stabilito
+D) La misura in cui la curva effettiva di un sensore devia dalla curva ideale
+Correct answer: B
+Bloom taxonomy level: Remembering
 
-10. Quali sono le caratteristiche delle domande di scenario nella tassonomia di Bloom?
-A) Richiedono la conoscenza delle definizioni delle parole chiave
-B) Richiedono la capacità di combinare le definizioni delle parole chiave
-C) Richiedono l'applicazione delle definizioni a situazioni specifiche
-D) Richiedono di valutare e giudicare le analisi svolte ai livelli precedenti
+5. Qual è il paradigma che sta dietro l'IoT?
+A) Cloud computing
+B) Edge computing
+C) Voice over IP
+D) Virtualizzazione
+Correct answer: B
+Bloom taxonomy level: Understanding
+
+6. Cosa indicano la linearità dinamica di un sensore?
+A) La variazione dell'uscita della misura al variare dell'input (che subisce variazioni rapide)
+B) La capacità di un sensore di seguire variazioni rapide nel parametro di ingresso
+C) La misura in cui la curva effettiva di un sensore devia dalla curva ideale
+D) La variazione dell'uscita zero che dovrebbe verificarsi
+Correct answer: A
+Bloom taxonomy level: Analyzing
+
+7. Quali sono gli ambiti di applicazione degli smart objects menzionati nel testo?
+A) Smart Home/Building
+B) Smart Factory
+C) Smart Office
+D) Smart Car
+Correct answer: D
+Bloom taxonomy level: Remembering
+
+8. Che cosa sono i MEMS?
+A) Dispositivi di rilevamento che raccolgono informazioni dall'ambiente fisico.
+B) Dispositivi per controllare un processo, eseguire un'azione o influenzare le condizioni dell'ambiente esterno.
+C) Dispositivi a basso costo, ad esempio di silicio, con funzioni di sensori e attuatori altamente miniaturizzati.
+D) Dispositivi periferici che rilevano e azionano contemporaneamente sullo stesso sistema.
 Correct answer: C
-Bloom taxonomy level: 3
+Bloom taxonomy level: Remembering
+
+9. Quali sono le regole base per prevenire gli attacchi informatici ai dispositivi IoT?
+A) Sottoreti
+B) Cifratura
+C) Software aggiornato
+D) Tutte le precedenti
+Correct answer: D
+Bloom taxonomy level: Evaluating
+
+10. Quali sono i fattori chiave nella scelta dei sensori?
+A) Facilità con cui l'uscita del sensore si interfaccia con l'elettronica di misurazione e controllo
+B) Costo
+C) Tipi di uscita: analogica, modulata o digitale
+D) Tutte le precedenti
+Correct answer: D
+Bloom taxonomy level: Evaluating
