@@ -1,0 +1,1 @@
+In which language is the previous text written? Answer only with the name of the language written in english and written all in lowercase without punctuation, so your answer must be like "italian" or "english" or "french":

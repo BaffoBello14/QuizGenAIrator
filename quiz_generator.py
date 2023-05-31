@@ -58,6 +58,11 @@ class QuizGenerator:
             file_contents = file.read()
         self.level_query = file_contents
 
+        file_path = 'input/language_query.txt'
+        with open(file_path, encoding='utf-8') as file:
+            file_contents = file.read()
+        self.language_query = file_contents
+
         file_path = 'input/refactor_query.txt'
         with open(file_path, encoding='utf-8') as file:
             file_contents = file.read()
@@ -71,6 +76,22 @@ class QuizGenerator:
 
     def get_starting_text(self):
         return self.text
+
+    def find_language(self):
+        conversation = []
+
+        prompt = self.text + " " + self.language_query + " "
+        conversation.append({'role': 'user', 'content': prompt})
+
+        response = openai.ChatCompletion.create(
+            model=self.model_id,
+            messages=conversation
+        )
+        conversation.append(
+            {'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
+
+        self.language = conversation[-1]['content'].strip()
+        print(self.language)
 
     def generate(self):
 

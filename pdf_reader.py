@@ -32,12 +32,3 @@ class PDFReader:
             file_path = 'input/text.txt'
             with open(file_path, 'w', encoding='utf-8') as file:
                 file.write(text)
-
-            file_path = 'input/query_language.txt'
-            with open(file_path, encoding='utf-8') as file:
-                query_lang = file.read()
-
-            query_lang += text[:500]
-            #sparare la query
-            #lingua = risposta query
-            #return lingua
