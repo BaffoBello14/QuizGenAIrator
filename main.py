@@ -33,4 +33,8 @@ quiz_analyzer = QuizAnalyzer(quiz, quiz_generator.get_starting_text())
 # quiz_analyzer.analyze_starting_text()
 quiz_analyzer.compare_text_quiz()
 
+# quiz.print_quiz()
+quiz.print_num_questions_for_each_level(bloom_levels)
+quiz.select_questions(num_questions_level, bloom_levels)
+quiz.print_num_questions_for_each_level(bloom_levels)
 quiz.print_quiz()

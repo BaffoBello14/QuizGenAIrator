@@ -55,4 +55,43 @@ class Quiz:
     def get_num_questions(self):
         return len(self.questions)
 
+    def print_num_questions_for_each_level(self, bloom_levels):
+        count_questions_by_level = {}
 
+        for level in bloom_levels:
+            count = 0
+            for question in self.questions:
+                if question.get_level() == level:
+                    count += 1
+            count_questions_by_level[level] = count
+
+        print("Number of questions for each Bloom level")
+        for level in bloom_levels:
+            count = count_questions_by_level[level]
+            print(f"Level {level} : {count}")
+        print()
+
+    def select_questions(self, num_questions_level, bloom_levels):
+        selected_questions_by_level = {}
+
+        sorted_questions_by_level = {}
+
+        for question in self.questions:
+            level = question.get_level()
+            if level not in sorted_questions_by_level:
+                sorted_questions_by_level[level] = []
+            sorted_questions_by_level[level].append(question)
+
+        for level, level_questions in sorted_questions_by_level.items():
+            sorted_questions_by_level[level] = sorted(level_questions, key=lambda q: q.get_score(), reverse=True)
+
+        for level, level_questions in sorted_questions_by_level.items():
+            num_questions = num_questions_level[bloom_levels.index(level)]
+            selected_questions = level_questions[:num_questions]
+            selected_questions_by_level[level] = selected_questions
+
+        self.questions = []
+
+        for level, level_questions in selected_questions_by_level.items():
+            for question in level_questions:
+                self.questions.append(question)
