@@ -1,5 +1,4 @@
 import spacy
-import enchant
 
 class QuizAnalyzer:
     def __init__(self, quiz, text, language):
@@ -17,14 +16,6 @@ class QuizAnalyzer:
             return spacy.load("it_core_news_lg")
         elif language == "french":
             return spacy.load("fr_dep_news_trf")
-
-    def load_enchant_dictionary(self, language):
-        if language == "english":
-            return enchant.Dict("en_US")
-        elif language == "italian":
-            return enchant.Dict("it_IT")
-        elif language == "french":
-            return enchant.Dict("fr_FR")
 
     def extract_questions_keywords(self):
         for i in range(self.quiz.get_num_questions()):
