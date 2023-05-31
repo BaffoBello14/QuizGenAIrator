@@ -1,16 +1,10 @@
-From the previous multi choice quiz:
-you must not extract questions that are similar and every extracted question must have 4 possible answers
-then assign a correct sequential numeration, starting from 1, to all the questions.
-You have to remove any empty line between last option and the correct answer.
-Include also the Bloom taxonomy level for each extracted question.
-The format for the lists must be the same as the provided input.
-Do not specify in the response which is the chosen language.
-The format for the lists must be the same as following:
+Starting from the previous quiz
+you have to remove any empty line between last option and the correct answer.
+The format for the single question must be as it follows:
 1. <question text>?
 A) <option A>
 B) <option B>
 C) <option C>
 D) <option D>
 Correct answer: C
-Bloom taxonomy level: 2
-The number of extracted questions must be:
+Revised Bloom's Taxonomy level: Understanding

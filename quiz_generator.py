@@ -105,7 +105,6 @@ class QuizGenerator:
         temp_query = "Generate " + str(tot_questions) + " questions classified by the Revised Bloom's Taxonomy:"
         for i in range(len(self.num_questions_level)):
             num_questions_level_partition.append(math.ceil(self.num_questions_level[i] / num_partitions))
-            # temp_query = temp_query + " " + str(num_questions_level_partition[i]) + " questions for the Bloom level " + str(i)
             temp_query = temp_query + " " + str(num_questions_level_partition[i]) \
                          + " questions must be of the level " + self.bloom_levels[i]
             if i == (len(self.num_questions_level) - 1):
@@ -113,16 +112,14 @@ class QuizGenerator:
                 break
             temp_query = temp_query + ","
 
-        print(temp_query)
-
         print("num x level partition", num_questions_level_partition)
 
         for partition in text_partitions:
 
-            responseIsOk = False
+            response_is_ok = False
             content = ""
 
-            while responseIsOk == False:
+            while not response_is_ok:
 
                 conversation = []
 
@@ -147,15 +144,14 @@ class QuizGenerator:
                     content = conversation[-1]['content'].strip()
                     num_occurrences = content.count(self.bloom_levels[j])
                     if num_occurrences != num_questions_level_partition[j]:
-                        responseIsOk = False
+                        response_is_ok = False
                         break
                     else:
-                        responseIsOk = True
+                        response_is_ok = True
 
-                if(responseIsOk == False):
+                if response_is_ok == False:
                     print("\t\tWrong number of questions for levels!!!")
                     time.sleep(20)
-
 
             time.sleep(20)
 
@@ -164,8 +160,6 @@ class QuizGenerator:
                 file.write(content)
                 file.write("\n\n")
 
-        self.refactor()
-
     def refactor(self):
 
         file_path = 'results/raw_quiz.txt'
@@ -173,66 +167,21 @@ class QuizGenerator:
             file_contents = file.read()
         raw_quiz = file_contents
 
-        tot_questions = 0
-        for i in range(len(self.num_questions_level)):
-            tot_questions += self.num_questions_level[i]
+        conversation = []
 
-        temp_query = "In particular, you must extract"
-        for i in range(len(self.num_questions_level)):
-            temp_query = temp_query + " exactly " + str(self.num_questions_level[i]) \
-                         + " questions of the level " + self.bloom_levels[i]
-            if i == (len(self.num_questions_level) - 1):
-                temp_query = temp_query + ". The language of the quiz must be: " + self.language
-                break
-            temp_query = temp_query + ","
+        # temp_query = "The language of the quiz must be: " + self.language
 
-        print(temp_query)
+        prompt = raw_quiz + " " + self.refactor_query
+        conversation.append({'role': 'user', 'content': prompt})
+        print("(Refactoring) TOKENS BEFORE RESPONSE", num_tokens_from_messages(conversation, self.model_id))
 
-        responseIsOk = False
-        content = ""
-
-        while responseIsOk == False:
-
-            conversation = []
-
-            prompt = raw_quiz + " " + self.refactor_query + " " + str(tot_questions) + temp_query
-            conversation.append({'role': 'user', 'content': prompt})
-            print("(Refactoring) TOKENS BEFORE RESPONSE", num_tokens_from_messages(conversation, self.model_id))
-
-            response = openai.ChatCompletion.create(
-                model=self.model_id,
-                messages=conversation
-            )
-            conversation.append({'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
-            print("\tTOKENS WITH RESPONSE", num_tokens_from_messages(conversation, self.model_id))
-
-            # here
-            # conversation[-1]['content'].strip() deve contenere
-            # self.bloom_levels[i] per num_questions_level_partition[i] volte
-
-            for j in range(len(self.num_questions_level)):
-                content = conversation[-1]['content'].strip()
-                num_occurrences = content.count(self.bloom_levels[j])
-                print("\t\t\t", self.bloom_levels[j], " occurs: ", num_occurrences, " instead of ", self.num_questions_level[j])
-                if num_occurrences != self.num_questions_level[j]:
-                    responseIsOk = False
-                    break
-                else:
-                    responseIsOk = True
-
-            if (responseIsOk == False):
-                print("\t\t(Refactoring) Wrong number of questions for levels!!!")
-                time.sleep(20)
+        response = openai.ChatCompletion.create(
+            model=self.model_id,
+            messages=conversation
+        )
+        conversation.append({'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
+        print("\tTOKENS WITH RESPONSE", num_tokens_from_messages(conversation, self.model_id))
 
         file_path = 'results/quiz.txt'
         with open(file_path, 'w', encoding='utf-8') as file:
-            file.write(content)
-
-# partizionamento sovrapposto
-# estrarre x domande da ogni partizione
-# eventualmente implementare una classe TextCleaner per rimuovere sommario o altre robe
-# usare gpt per fare la append di domande mantentento la numerazione
-# usare gpt per rimuovere dal quiz globale eventuali risposte simili
-# e formattare nuovamente il testo delle domande (rimuovere eventuali righe vuote ecc...)
-
-# estrarre in base al livello nella refactor o con temp_query concatenata
+            file.write(conversation[-1]['content'].strip())

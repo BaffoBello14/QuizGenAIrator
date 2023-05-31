@@ -61,8 +61,10 @@ class QuizAnalyzer:
             question_text = self.quiz.get_question(i).get_text()
             question_doc = self.nlp(question_text)
             similarity_score = text_doc.similarity(question_doc)  # Calcola la similarità del coseno
-            print("Question:", question_text)
-            print("Similarity Score:", similarity_score)
+            # print("Question:", question_text)
+            # print("Similarity Score:", similarity_score)
+
+            self.quiz.get_question(i).set_score(similarity_score)
 
             for j in range(self.quiz.get_question(i).get_num_answers()):
 
@@ -70,8 +72,8 @@ class QuizAnalyzer:
                 answer_doc = self.nlp(answer_text)
 
                 similarity_score = text_doc.similarity(answer_doc)  # Calcola la similarità del coseno
-                print("\tAnswer:", answer_text)
-                print("\tSimilarity Score:", similarity_score)
+                # print("\tAnswer:", answer_text)
+                # print("\tSimilarity Score:", similarity_score)
 
-            print(self.quiz.get_question(i).get_correct_answer(), self.quiz.get_question(i).get_correct_answer_text())
-            print()
+            # print(self.quiz.get_question(i).get_correct_answer(), self.quiz.get_question(i).get_correct_answer_text())
+            # print()

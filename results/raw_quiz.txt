@@ -1,200 +1,144 @@
-1. Qual è la definizione di Internet of Things (IoT) secondo la lezione?
-A) Un sistema di interconnessione di dati tra computer.
-B) Un insieme di oggetti intelligenti che raccolgono dati.
-C) Una rete di comunicazione tra elaboratori di dati.
-D) Un servizio di gestione e archiviazione di informazioni.
-Correct answer: B
+1. Cosa si intende per connessione degli oggetti nell'IoT?
+A) La capacità degli oggetti di elaborare i dati di altri dispositivi.
+B) L'identificazione degli oggetti in base alle loro caratteristiche.
+C) La possibilità degli oggetti di comunicare dati su loro stessi.
+D) La funzione degli attuatori nell'ambiente fisico.
+Correct answer: C
 Revised Bloom's Taxonomy level: Remembering
 
-2. Qual è il principale problema legato alla sicurezza degli oggetti connessi all'IoT?
-A) La mancanza di memoria di elaborazione dei dati.
-B) La complessità delle reti di comunicazione dei dati.
-C) La congestione dei buffer di dati.
-D) Il potenziale di attacchi informatici.
-Correct answer: D
-Revised Bloom's Taxonomy level: Understanding
-
-3. In cosa consiste il modello di elaborazione dei dati di Edge computing?
-A) L'elaborazione dei dati da remoto in un centro dati.
-B) La riduzione della larghezza di banda degli smart object.
-C) L'elaborazione dei dati il più vicino possibile alla sorgente.
-D) L'insieme dei dati raccolti da un smart object.
-Correct answer: C
-Revised Bloom's Taxonomy level: Applying
-
-4. Qual è la differenza tra la rete di dati e la rete telefonica?
-A) La rete telefonica fa uso di protocolli TCP/IP.
-B) La rete di dati è nata da Arpanet, mentre la rete telefonica ha origini più recenti.
-C) La rete di dati ha come caratteristica principale la commutazione di circuito, mentre la rete telefonica la commutazione a pacchetto.
-D) La rete telefonica è nata con l'obiettivo di diventare interattiva, mentre la rete di dati no.
-Correct answer: C
-Revised Bloom's Taxonomy level: Analyzing
-
-5. Cosa è possibile fare con la rete mobile cellulare 5G?
-A) Trasferire dati a una velocità inferiore al Gbit.
-B) Aumentare il ritardo di trasmissione a un minuto.
-C) Connettere un massimo di 100 dispositivi in un metro.
-D) Utilizzare una rete altamente densificata con banda larga ad 1 Gbit e ritardo di trasmissione ridotto a 1 millisecondo.
-Correct answer: D
-Revised Bloom's Taxonomy level: Evaluating
-
-1. Qual è il requisito fondante della rete telefonica?
-A) Congestion Control
-B) Interattività
-C) Bit rate variabile
-D) Commutazione a pacchetto
-Correct answer: B
-Revised Bloom's Taxonomy level: Remembering
-
-2. Cosa comporta la commutazione a pacchetto?
-A) Congestion dei buffer di dati
-B) Efficienza nel collegamento classico
-C) Requisito fondante dell'interattività
-D) Bit rate variabile costante
+2. Quali regole base sono necessarie per prevenire gli attacchi informatici nel mondo dell'IoT?
+A) Autenticazione forte e connessione sicura.
+B) Password deboli e dati non criptati.
+C) Accesso ad altri dispositivi e elaborazione di dati.
+D) Raccolta di informazioni dalla rete e analisi del traffico.
 Correct answer: A
 Revised Bloom's Taxonomy level: Understanding
 
-3. Qual è il nuovo paradigma delle telecomunicazioni che consente la separazione tra software e hardware?
-A) Network Function Virtualization
-B) Congestion Control
-C) Software Define Networking
-D) Commutazione a pacchetto
-Correct answer: C
+3. Qual è il paradigma di calcolo attualmente adottato nell'ambito dell'IoT?
+A) Cloud computing.
+B) Edge computing.
+C) Edge storage.
+D) Artificial intelligence.
+Correct answer: B
 Revised Bloom's Taxonomy level: Applying
 
-4. Cosa comporta l'introduzione di nuove tecnologie IoT?
-A) Vantaggi
-B) Problemi di sicurezza e privacy
-C) Nuove opportunità di business
-D) Riduzione dei costi di produzione
-Correct answer: B
+4. Quali sono i due nuovi paradigmi delle telecomunicazioni alla base dei progressi dell'IoT?
+A) Software define networking e network function virtualization.
+B) Cloud computing e big data analytics.
+C) Machine learning e deep learning.
+D) Blockchain e internet security.
+Correct answer: A
 Revised Bloom's Taxonomy level: Analyzing
 
-5. Qual è la definizione di sensori SMART?
-A) Dispositivi per controllare un processo
-B) Dispositivi di rilevamento che raccolgono informazioni dall'ambiente fisico
-C) Oggetti riconoscibili che hanno la capacità di comunicare dati su loro stessi
-D) Dispositivi di riconfigurazione
+5. Quali sono le possibili applicazioni dell'IoT nell'ambito industriale?
+A) Smart Home e Smart Building.
+B) Smart Healthcare e Smart Education.
+C) Smart Factory e Smart Logistics.
+D) Smart Retail e Smart Marketing.
+Correct answer: C
+Revised Bloom's Taxonomy level: Analyzing
+
+6. Qual è il principale rischio legato all'introduzione dei dispositivi IoT?
+A) La perdita di dati.
+B) Gli attacchi informatici.
+C) La saturazione della rete.
+D) La concorrenza sul mercato.
 Correct answer: B
 Revised Bloom's Taxonomy level: Evaluating
 
-1. Qual è lo scopo della protezione dei dispositivi IoT?
-A) Permettere un maggiore utilizzo dei dispositivi
-B) Limitare l'utilizzo dei dispositivi
-C) Assicurare la massima protezione e il massimo livello di privacy
-D) Monitorare l'utilizzo dei dispositivi
+1. Cos'è la definizione di smart object?
+A) Dispositivi che non possono essere riconosciuti
+B) Dispositivi che non comunicano dati su di loro
+C) Dispositivi che devono essere riconoscibili, comunicare dati su di loro e accedere a dati aggregati di altri dispositivi
+D) Dispositivi che non possono accedere a dati aggregati di altri dispositivi
 Correct answer: C
 Revised Bloom's Taxonomy level: Remembering
 
-2. Perché i dispositivi IoT sono spesso sottovalutati?
-A) Sono dispositivi sensoriali passivi
-B) Costano poco
-C) Sono semplici oggetti
-D) Tutte le precedenti
+2. Quali sono i presupposti per considerare un dispositivo come smart object?
+A) Deve essere connesso ad internet
+B) Deve avere una batteria ricaricabile
+C) Deve essere riconoscibile, comunicare dati su di sé e accedere a dati aggregati di altri dispositivi
+D) Deve essere in grado di svolgere una sola funzione
+Correct answer: C
+Revised Bloom's Taxonomy level: Understanding
+
+3. In quale settore ha maggiore rilevanza l'IoT?
+A) Settore alimentare
+B) Settore immobiliare
+C) Settore degli elettrodomestici
+D) Settore tecnologico
+Correct answer: D
+Revised Bloom's Taxonomy level: Applying
+
+4. Qual è l'importanza della sicurezza e della privacy nell'IoT?
+A) Non sono importanti
+B) Sono importanti solo per alcune categorie di dispositivi
+C) Sono importanti perché i dispositivi IoT sono fonti di ingenti moli di dati
+D) Sono importanti solo per i dispositivi IoT utilizzati in ambito medico
+Correct answer: C
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Quali sono le regole base per la prevenzione di attacchi informatici attraverso dispositivi IoT?
+A) Non sono necessarie regole specifiche
+B) Utilizzo di password e metodi di autenticazione robusti, e cifratura
+C) Utilizzo di password semplici e metodi di autenticazione debole, e cifratura
+D) Non utilizzare dispositivi IoT per la trasmissione di dati
+Correct answer: B
+Revised Bloom's Taxonomy level: Analyzing
+
+6. Quali sono le caratteristiche chiave degli oggetti smart?
+A) Riconoscere solo l'ambiente fisico in cui si trovano
+B) Comunicare solo in modalità unidirezionale
+C) Non essere riconfigurabili
+D) Poter rielaborare le informazioni, comunicare in modalità bidirezionale, essere riconfigurabili, intraprendere azioni conseguenti ad eventi e trasmettere dati in real-time
+Correct answer: D
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Quali sono le caratteristiche degli oggetti smart che permettono di rielaborare le informazioni?
+A) Poter intraprendere azioni conseguenti ad eventi
+B) Essere riconfigurabili
+C) Poter rielaborare le informazioni
+D) Comunicare in modalità bidirezionale
+Correct answer: C
+Revised Bloom's Taxonomy level: Remembering
+
+2. Che problema può causare un utilizzo non efficiente dei dispositivi IoT?
+A) Costi ingenti
+B) Problemi di privacy e sicurezza
+C) Implicazioni derivanti da un utilizzo non efficiente dei dispositivi
+D) Tutte le risposte sono corrette
 Correct answer: D
 Revised Bloom's Taxonomy level: Understanding
 
-3. Qual è una possibile soluzione per limitare un attacco ad una parte della rete poco importante?
-A) Limitare l'utilizzo dei dispositivi IoT
-B) Creare delle sottoreti
-C) Sottovalutare l'attacco
-D) Non fare nulla
-Correct answer: B
+3. Cosa sono gli attuatori?
+A) Dispositivi di rilevamento
+B) Dispositivi di memoria
+C) Dispositivi per controllare un processo o eseguire un'azione
+D) Tutte le risposte sono sbagliate
+Correct answer: C
 Revised Bloom's Taxonomy level: Applying
 
-4. Cosa significa la linearità dinamica di un sensore?
-A) La misura dell'efficacia di un trasduttore di seguire le variazioni del parametro di ingresso
-B) La misura in cui la curva effettiva di un sensore devia dalla curva ideale
-C) La misura del grado di ripetibilità di una misurazione
-D) La misura della capacit à di un sensore di seguire variazioni rapide nel parametro di ingresso
+4. Quali sono le caratteristiche degli oggetti smart che permettono di trasmettere dati in tempo reale?
+A) Poter intraprendere azioni conseguenti ad eventi
+B) Essere riconfigurabili
+C) Poter rielaborare le informazioni
+D) Trasmettere dati in real-time, ovvero in tempo reale
 Correct answer: D
 Revised Bloom's Taxonomy level: Analyzing
 
-5. Quali sono i fattori chiave nella scelta dei sensori?
-A) Costo e facilità di interfacciamento con l'elettronica di misurazione e controllo
-B) Precisione e offset
-C) Sensibilità e gamma
-D) Tutte le precedenti
-Correct answer: A
-Revised Bloom's Taxonomy level: Evaluating
-
-1. Qual è la definizione di sensibilità?
-A) La gamma totale del sensore dal valore minimo a quello massimo
-B) La pendenza della curva caratteristica di uscita
-C) L’ingresso minimo del parametro fisico che creerà una variazione rilevabile dell’uscita
-D) Il grado di ripetibilità di una misurazione
-Correct answer: C
-Revised Bloom's Taxonomy level: Remembering
-
-2. Qual è il vantaggio principale della tecnologia MEMS?
-A) Le funzioni più diverse integrate in uno stesso dispositivo
-B) La capacità di eseguire le stesse funzioni di oggetti ingombranti e costosi
-C) La possibilità di raccogliere informazioni dall'ambiente
-D) Il monitoraggio dell'ambiente circostante tramite gli altri dispositivi sensoriali presenti sullo stesso chip
+5. Quali sono le problematiche degli oggetti smart che comunicano informazioni sulla storia di un monumento?
+A) Costi ingenti
+B) Problemi di privacy e sicurezza
+C) Implicazioni derivanti da un utilizzo non efficiente dei dispositivi
+D) Nessuna delle risposte è corretta
 Correct answer: B
-Revised Bloom's Taxonomy level: Understanding
+Revised Bloom's Taxonomy level: Analyzing
 
-3. Qual è il meccanismo di memoria che permette di vedere un intero pacchetto o gli ultimi dati?
-A) Il meccanismo di comunicazione
-B) Il nodo centrale
-C) Il meccanismo di memoria
-D) Il Cloud
+6. Quali sono le caratteristiche degli oggetti smart che determinano il tipo di dato o dati rilevabili?
+A) Elaborazione e memoria
+B) Comunicazione
+C) Tecnologia di sensing
+D) Alimentazione
 Correct answer: C
-Revised Bloom's Taxonomy level: Applying
-
-4. Quali sono i fattori chiave nella scelta dei sensori?
-A) Il costo e la gamma del sensore
-B) La precisione e la linearità dinamica
-C) La sensibilità e l'offset
-D) Il tempi di risposta e l'accuratezza
-Correct answer: A
-Revised Bloom's Taxonomy level: Analyzing
-
-5. Qual è la definizione di linearità?
-A) La misura in cui la curva effettiva di un sensore devia dalla curva ideale
-B) L'efficacia con cui un trasduttore è capace di seguire le variazioni del parametro di ingresso
-C) La differenza massima tra il valore effettivo e il valore indicato in uscita al sensore
-D) Il massimo e minimo valore misurabile del parametro applicato
-Correct answer: A
-Revised Bloom's Taxonomy level: Evaluating
-
-1. Quale tipo di grandezze misurano i sensori presenti nel sistema descritto?
-A) Grandezze elettriche
-B) Grandezze acustiche
-C) Grandezze fisiche
-D) Grandezze biologiche
-Corretta risposta: C
-Revised Bloom's Taxonomy level: Remembering
-
-2. Qual è uno dei vantaggi principali delle tecnologie MEMS?
-A) Sono dispositivi molto grandi
-B) Sono dispositivi molto costosi
-C) Possono eseguire le stesse funzioni di dispositivi più ingombranti e costosi
-D) Possono soltanto eseguire funzioni di rilevazione
-Corretta risposta: C
-Revised Bloom's Taxonomy level: Understanding
-
-3. In cosa consiste l'elettronica del sistema descritto?
-A) Nel reagire alle informazioni derivate dai sensori
-B) Nella traduzione delle grandezze fisiche in impulsi elettrici
-C) Nell'elaborazione delle informazioni tramite opportune logiche
-D) In tutte le precedenti
-Corretta risposta: D
-Revised Bloom's Taxonomy level: Applying
-
-4. Cosa può misurare un sensore di tipo ottico?
-A) Pressione di radiazione
-B) Potenziale cellulare
-C) Flusso di calore
-D) pH
-Corretta risposta: A
-Revised Bloom's Taxonomy level: Analyzing
-
-5. Qual è la principale evoluzione dei sistemi MEMS?
-A) La miniaturizzazione alla microscala
-B) La miniaturizzazione alla nanoscala
-C) L'integrazione di funzioni diverse in dispositivi più grandi
-D) La riduzione dei costi di produzione
-Corretta risposta: B
 Revised Bloom's Taxonomy level: Evaluating
 

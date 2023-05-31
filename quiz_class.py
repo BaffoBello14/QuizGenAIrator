@@ -44,6 +44,7 @@ class Quiz:
             for j, option in enumerate(options, start=1):
                 print(f"{chr(64 + j)}. {option}")
             print(f"Bloom taxonomy level:", question.get_level())  # to remove
+            print(f"Score:", question.get_score())  # to remove
             print()
 
     def print_correct_answers(self):

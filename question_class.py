@@ -7,6 +7,7 @@ class Question:
         self.answers = answers
         self.correct_answer = correct_answer
         self.level = level
+        self.score = 0
 
     def get_text(self):
         return self.text
@@ -35,3 +36,9 @@ class Question:
             return self.answers[index]
         else:
             return None
+
+    def set_score(self, score):
+        self.score = score
+
+    def get_score(self):
+        return self.score

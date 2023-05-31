@@ -1,87 +1,143 @@
-1. Quali sono gli elementi alla base dell'Internet of Things?
-A) Identificazione, raccolta dati, visione a lungo raggio
-B) Elaborazione dati, raccolta dati, connessione a corto raggio
-C) Identificazione, connessione, elaborazione dati
-D) Comunicazione, raccolta dati, visione a lungo raggio
+1. Cosa si intende per connessione degli oggetti nell'IoT?
+A) La capacità degli oggetti di elaborare i dati di altri dispositivi.
+B) L'identificazione degli oggetti in base alle loro caratteristiche.
+C) La possibilità degli oggetti di comunicare dati su loro stessi.
+D) La funzione degli attuatori nell'ambiente fisico.
 Correct answer: C
-Bloom taxonomy level: Remembering
+Revised Bloom's Taxonomy level: Remembering
 
-2. Perché la sicurezza e la privacy sono importanti quando si parla di Internet of Things?
-A) Per impedire accessi a dispositivi interni alla rete
-B) Per proteggere i dati raccolti da attacchi informatici 
-C) Per impedire l'accesso alla rete da parte di dispositivi inaffidabili
-D) Per sorvegliare gli utenti della rete
-Correct answer: B
-Bloom taxonomy level: Understanding
-
-3. Come si possono interfacciare i comuni sensori per le applicazioni IoT?
-A) Solo tramite interfaccia custom
-B) Solo tramite interfaccia analogica
-C) Tramite interfaccia analogica, modulata o digitale
-D) Tramite interfaccia modulata o digitale
-Correct answer: C
-Bloom taxonomy level: Applying
-
-4. Qual è la differenza tra sensibilità e precisione di un sensore?
-A) La sensibilità è la variazione incrementale dell'uscita, mentre la precisione è la ripetibilità delle misurazioni
-B) La sensibilità è la ripetibilità delle misurazioni, mentre la precisione è l'ingresso minimo del parametro fisico che creerà una variazione rilevabile dell'uscita
-C) La sensibilità è il massimo e il minimo valore misurabile del parametro applicato, mentre la precisione è il grado di ripetibilità di una misurazione
-D) La sensibilità è la pendenza della curva caratteristica di uscita, mentre la precisione è il grado di ripetibilità di una misurazione
-Correct answer: D
-Bloom taxonomy level: Analyzing
-
-5. Qual è una possibile strategia per limitare gli attacchi ad una rete aziendale con tanti dispositivi connessi tra di loro?
-A) Non avere una rete aziendale
-B) Cambiare spesso le password dei dispositivi
-C) Creare delle sottoreti per limitare gli attacchi a una certa porzione di rete
-D) Non aggiornare mai le componenti hardware e software dei dispositivi
-Correct answer: C
-Bloom taxonomy level: Analyzing
-
-6. Quali sono i fattori chiave nella scelta dei sensori?
-A) Colore e forma
-B) Dimensione e peso
-C) Costo e interfacciabilità
-D) Marca e prestigio
-Correct answer: C
-Bloom taxonomy level: Remembering 
-
-7. Quali sono le caratteristiche degli oggetti smart?
-A) Poter rielaborare le informazioni, comunicare in modalità unidirezionale e non essere riconfigurabili
-B) Non intraprendere azioni conseguenti ad eventi e non trasmettere dati in tempo reale
-C) Poter rielaborare le informazioni, comunicare in modalità bidirezionale e essere riconfigurabili
-D) Non trasmettere dati in tempo reale e non essere rielaborabili
-Correct answer: C
-Bloom taxonomy level: Understanding
-
-8. Come possono essere misurati i fenomeni di natura ottica?
-A) Attraverso la pressione di radiazione
-B) Con la spettroscopia
-C) Misurando accelerazioni
-D) Con l'intensità del flusso
-Correct answer: B
-Bloom taxonomy level: Analyzing
-
-9. Quali grandezze fisiche possono essere misurate dai sensori?
-A) Suoni, temperatura, potenziale cellulare, intensità del flusso
-B) Suoni, accelerazioni, intensità della radiazione luminosa, spettroscopia
-C) Temperatura, pH, potenziale cellulare, intensità della radiazione luminosa
-D) Pressioni, spettroscopia, intensità del flusso, intensità della radiazione luminosa
+2. Quali regole base sono necessarie per prevenire gli attacchi informatici nel mondo dell'IoT?
+A) Autenticazione forte e connessione sicura.
+B) Password deboli e dati non criptati.
+C) Accesso ad altri dispositivi e elaborazione di dati.
+D) Raccolta di informazioni dalla rete e analisi del traffico.
 Correct answer: A
-Bloom taxonomy level: Remembering
+Revised Bloom's Taxonomy level: Understanding
 
-10. Cosa sono i sensori MEMS?
-A) Dispositivi altamente costosi integrati su uno stesso substrato di materiale semiconduttore
-B) Dispositivi di varia natura integrati su uno stesso substrato di materiale semiconduttore
-C) Dispositivi altamente costosi con tecnologia semplice
-D) Dispositivi di varia natura con tecnologia semplice
+3. Qual è il paradigma di calcolo attualmente adottato nell'ambito dell'IoT?
+A) Cloud computing.
+B) Edge computing.
+C) Edge storage.
+D) Artificial intelligence.
 Correct answer: B
-Bloom taxonomy level: Understanding
+Revised Bloom's Taxonomy level: Applying
 
-11. Quali sono i vantaggi dei sensori MEMS?
-A) Costo molto elevato e tecnologie semplici
-B) Funzioni di rilevazione limitate e prestazioni scarse
-C) Integrano in uno stesso dispositivo funzioni diverse e sostituiscono oggetti più ingombranti e costosi
-D) Utilizzano già tecnologie nano-elettromeccaniche
+4. Quali sono i due nuovi paradigmi delle telecomunicazioni alla base dei progressi dell'IoT?
+A) Software define networking e network function virtualization.
+B) Cloud computing e big data analytics.
+C) Machine learning e deep learning.
+D) Blockchain e internet security.
+Correct answer: A
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Quali sono le possibili applicazioni dell'IoT nell'ambito industriale?
+A) Smart Home e Smart Building.
+B) Smart Healthcare e Smart Education.
+C) Smart Factory e Smart Logistics.
+D) Smart Retail e Smart Marketing.
 Correct answer: C
-Bloom taxonomy level: Evaluating
+Revised Bloom's Taxonomy level: Analyzing
+
+6. Qual è il principale rischio legato all'introduzione dei dispositivi IoT?
+A) La perdita di dati.
+B) Gli attacchi informatici.
+C) La saturazione della rete.
+D) La concorrenza sul mercato.
+Correct answer: B
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Cos'è la definizione di smart object?
+A) Dispositivi che non possono essere riconosciuti.
+B) Dispositivi che non comunicano dati su di loro.
+C) Dispositivi che devono essere riconoscibili, comunicare dati su di loro e accedere a dati aggregati di altri dispositivi.
+D) Dispositivi che non possono accedere a dati aggregati di altri dispositivi.
+Correct answer: C
+Revised Bloom's Taxonomy level: Remembering
+
+2. Quali sono i presupposti per considerare un dispositivo come smart object?
+A) Deve essere connesso ad internet.
+B) Deve avere una batteria ricaricabile.
+C) Deve essere riconoscibile, comunicare dati su di sé e accedere a dati aggregati di altri dispositivi.
+D) Deve essere in grado di svolgere una sola funzione.
+Correct answer: C
+Revised Bloom's Taxonomy level: Understanding
+
+3. In quale settore ha maggiore rilevanza l'IoT?
+A) Settore alimentare.
+B) Settore immobiliare.
+C) Settore degli elettrodomestici.
+D) Settore tecnologico.
+Correct answer: D
+Revised Bloom's Taxonomy level: Applying
+
+4. Qual è l'importanza della sicurezza e della privacy nell'IoT?
+A) Non sono importanti.
+B) Sono importanti solo per alcune categorie di dispositivi.
+C) Sono importanti perché i dispositivi IoT sono fonti di ingenti moli di dati.
+D) Sono importanti solo per i dispositivi IoT utilizzati in ambito medico.
+Correct answer: C
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Quali sono le regole base per la prevenzione di attacchi informatici attraverso dispositivi IoT?
+A) Non sono necessarie regole specifiche.
+B) Utilizzo di password e metodi di autenticazione robusti, e cifratura.
+C) Utilizzo di password semplici e metodi di autenticazione debole, e cifratura.
+D) Non utilizzare dispositivi IoT per la trasmissione di dati.
+Correct answer: B
+Revised Bloom's Taxonomy level: Analyzing
+
+6. Quali sono le caratteristiche chiave degli oggetti smart?
+A) Riconoscere solo l'ambiente fisico in cui si trovano.
+B) Comunicare solo in modalità unidirezionale.
+C) Non essere riconfigurabili.
+D) Poter rielaborare le informazioni, comunicare in modalità bidirezionale, essere riconfigurabili, intraprendere azioni conseguenti ad eventi e trasmettere dati in real-time.
+Correct answer: D
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Quali sono le caratteristiche degli oggetti smart che permettono di rielaborare le informazioni?
+A) Poter intraprendere azioni conseguenti ad eventi.
+B) Essere riconfigurabili.
+C) Poter rielaborare le informazioni.
+D) Comunicare in modalità bidirezionale.
+Correct answer: C
+Revised Bloom's Taxonomy level: Remembering
+
+2. Che problema può causare un utilizzo non efficiente dei dispositivi IoT?
+A) Costi ingenti.
+B) Problemi di privacy e sicurezza.
+C) Implicazioni derivanti da un utilizzo non efficiente dei dispositivi.
+D) Tutte le risposte sono corrette.
+Correct answer: D
+Revised Bloom's Taxonomy level: Understanding
+
+3. Cosa sono gli attuatori?
+A) Dispositivi di rilevamento.
+B) Dispositivi di memoria.
+C) Dispositivi per controllare un processo o eseguire un'azione.
+D) Tutte le risposte sono sbagliate.
+Correct answer: C
+Revised Bloom's Taxonomy level: Applying
+
+4. Quali sono le caratteristiche degli oggetti smart che permettono di trasmettere dati in tempo reale?
+A) Poter intraprendere azioni conseguenti ad eventi.
+B) Essere riconfigurabili.
+C) Poter rielaborare le informazioni.
+D) Trasmettere dati in real-time, ovvero in tempo reale.
+Correct answer: D
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Quali sono le problematiche degli oggetti smart che comunicano informazioni sulla storia di un monumento?
+A) Costi ingenti.
+B) Problemi di privacy e sicurezza.
+C) Implicazioni derivanti da un utilizzo non efficiente dei dispositivi.
+D) Nessuna delle risposte è corretta.
+Correct answer: B
+Revised Bloom's Taxonomy level: Analyzing
+
+6. Quali sono le caratteristiche degli oggetti smart che determinano il tipo di dato o dati rilevabili?
+A) Elaborazione e memoria.
+B) Comunicazione.
+C) Tecnologia di sensing.
+D) Alimentazione.
+Correct answer: C
+Revised Bloom's Taxonomy level: Evaluating
