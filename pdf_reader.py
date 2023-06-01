@@ -9,26 +9,39 @@ class PDFReader:
         self.file_path = file_path
 
     def process_pdf(self):
+        # Open the PDF file in binary mode
         with open(self.file_path, 'rb') as file:
+            # Create a PDF reader object
             pdf_reader = PyPDF2.PdfReader(file)
 
+            # Initialize an empty string to store the extracted text
             text = ''
+
+            # Iterate over each page in the PDF
             for page in pdf_reader.pages:
+                # Extract the text from the page and append it to the 'text' variable
                 text += page.extract_text()
 
-            # Rimuovi spazi multipli consecutivi
+            # Remove consecutive multiple spaces
             text = re.sub(r'\s+', ' ', text)
-            # Rimuovi spazi iniziali e finali
+
+            # Remove leading and trailing spaces
             text = text.strip()
-            # Rimuovi i ritorni a capo
+
+            # Remove line breaks
             text = text.replace('\n', '')
-            # Rimuovi le righe vuote
+
+            # Remove empty lines
             lines = text.split('\n')
             lines = [line for line in lines if line.strip() != '']
             text = '\n'.join(lines)
-            # Rimuovi i caratteri non stampabili
+
+            # Remove non-printable characters
             text = re.sub(r'[\x00-\x08\x0B-\x0C\x0E-\x1F\x7F-\x9F]', '', text)
 
-            file_path = 'input/text.txt'
+            # Define the path to save the extracted plain text
+            file_path = 'input/extracted_plain_text.txt'
+
+            # Write the extracted text to a file
             with open(file_path, 'w', encoding='utf-8') as file:
                 file.write(text)
