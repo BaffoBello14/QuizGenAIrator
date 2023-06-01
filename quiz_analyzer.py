@@ -6,51 +6,17 @@ class QuizAnalyzer:
     def __init__(self, quiz, text):
         super().__init__()
 
-        self.nlp = spacy.load("en_core_web_lg")
         self.quiz = quiz
+        language = quiz.get_language()
+        # if (language) cambiare libreria
+        self.nlp = spacy.load("it_core_news_lg")
+
         self.text = text
 
-    def extract_questions_keywords(self):
-
-        for i in range(self.quiz.get_num_questions()):
-            # Process the text with spaCy
-            doc = self.nlp(self.quiz.get_question(i).get_text())
-
-            text_entities = doc.ents
-
-            # Extract the keywords
-            keywords = []
-            for chunk in doc.noun_chunks:
-                if chunk.root.pos_ == "NOUN":
-                    keywords.append(chunk.text)
-
-            # Print the keywords
-            print(self.quiz.get_question(i).get_text())
-            print(keywords)
-            print(text_entities)
-        print()
-
-    def analyze_starting_text(self):
-
-        text_doc = self.nlp(self.text)
-
-        # Named Entities: Extract named entities (people, organizations, locations, etc.)
-        text_entities = text_doc.ents
-        print("Text Named Entities")
-        print(text_entities)
-
-        # Keywords: Identify keywords or important terms
-        text_keywords = [token.text for token in text_doc if not token.is_stop and token.is_alpha]
-        print("Text Keywords")
-        print(text_keywords)
-
-        # Load the dictionary
-        dictionary = enchant.Dict("en_US")  # Replace "en_US" with the appropriate language code for your dictionary
-        # Keywords: Identify keywords or important terms
-        text_keywords = [token.text for token in text_doc if
-                         not token.is_stop and token.is_alpha and dictionary.check(token.text)]
-        print("Filtered Text Keywords")
-        print(text_keywords)
+        # Define weights for similarity, coherence, and clarity
+        self.similarity_weight = 0.6
+        self.coherence_weight = 0.3
+        self.clarity_weight = 0.1
 
     def compare_text_quiz(self):
         # Implementa una logica di confronto testo-quiz
@@ -67,7 +33,6 @@ class QuizAnalyzer:
             self.quiz.get_question(i).set_score(similarity_score)
 
             for j in range(self.quiz.get_question(i).get_num_answers()):
-
                 answer_text = self.quiz.get_question(i).get_answer(j)
                 answer_doc = self.nlp(answer_text)
 
@@ -77,3 +42,45 @@ class QuizAnalyzer:
 
             # print(self.quiz.get_question(i).get_correct_answer(), self.quiz.get_question(i).get_correct_answer_text())
             # print()
+
+    def calculate_weighted_standing(self):
+
+        for question in self.quiz.get_questions():
+
+            # TEXT <-> QUESTION + ANSWERS
+            # Combine the question and options into a single string
+            question_text = question.get_text() + ' '.join(question.get_answers())
+            # Process the combined text using NLP
+            doc_combined = self.nlp(question_text)
+            # Calculate the similarity between the combined text and the text
+            similarity_score = doc_combined.similarity(self.nlp(self.text))
+
+            # ANSWERS <-> QUESTION
+            # Combine the question and options into a single string
+            answers_text = ' '.join(question.get_answers())
+            # Process the combined text using NLP
+            doc_combined = self.nlp(answers_text)
+            # Calculate the similarity between the combined text and the text
+            coherence_score = doc_combined.similarity(self.nlp(question.get_text()))
+
+            # Process the question using NLP
+            doc_question = self.nlp(question.get_text())
+
+            # Calculate the average token vector similarity within the question
+            token_similarities = []
+            for token in doc_question:
+                token_similarity = token.similarity(doc_question)
+                token_similarities.append(token_similarity)
+
+            clarity_score = sum(token_similarities) / len(token_similarities)
+
+            # Calculate the weighted standing
+            weighted_standing = self.similarity_weight * similarity_score + self.coherence_weight * coherence_score \
+                                + self.clarity_weight * clarity_score
+
+            question.set_score(weighted_standing)
+
+            print(question.get_text())
+            print("\tsimilarity_score: ", similarity_score)
+            print("\tcoherence_score: ", coherence_score)
+            print("\tclarity_score", clarity_score)

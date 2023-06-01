@@ -2,10 +2,11 @@ from question_class import Question
 
 
 class Quiz:
-    def __init__(self):
+    def __init__(self, language):
         super().__init__()
 
         self.questions = []
+        self.language = language
 
         file_path = 'results/quiz.txt'
         with open(file_path, encoding='utf-8') as file:
@@ -27,9 +28,15 @@ class Quiz:
             # Add the question to the quiz object
             self.add_question(question, answers, correct_answer, level)
 
+    def get_language(self):
+        return self.language
+
     def add_question(self, question, answers, correct_answer, level):
         new_question = Question(question, answers, correct_answer, level)
         self.questions.append(new_question)
+
+    def get_questions(self):
+        return self.questions
 
     def get_question(self, index):
         if 0 <= index < len(self.questions):

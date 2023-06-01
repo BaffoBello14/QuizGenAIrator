@@ -40,7 +40,7 @@ def num_tokens_from_messages(messages, model="gpt-3.5-turbo-0301"):
 
 
 class QuizGenerator:
-    def __init__(self, num_questions_level, bloom_levels, language):
+    def __init__(self, num_questions_level, bloom_levels):
         super().__init__()
 
         file_path = 'input/text.txt'
@@ -70,9 +70,12 @@ class QuizGenerator:
 
         self.num_questions_level = num_questions_level
         self.bloom_levels = bloom_levels
-        self.language = language
-
         self.model_id = 'gpt-3.5-turbo'
+        self.language = ""
+        self.find_language()
+
+    def get_language(self):
+        return self.language
 
     def get_starting_text(self):
         return self.text
@@ -80,7 +83,7 @@ class QuizGenerator:
     def find_language(self):
         conversation = []
 
-        prompt = self.text + " " + self.language_query + " "
+        prompt = self.text[:500] + " " + self.language_query + " "
         conversation.append({'role': 'user', 'content': prompt})
 
         response = openai.ChatCompletion.create(
@@ -91,7 +94,6 @@ class QuizGenerator:
             {'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
 
         self.language = conversation[-1]['content'].strip()
-        print(self.language)
 
     def generate(self):
 
