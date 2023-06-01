@@ -1,0 +1,72 @@
+Question 1: Quali sono le caratteristiche chiave degli oggetti SMART?
+A.  Poter rielaborare i dati raccolti solo da un singolo sensore.
+B.  Comunicare in modalità unidirezionale.
+C.  Essere riconfigurabili.
+D.  Intraprendere azioni indipendenti dalle condizioni ambientali.
+Correct answer: C
+Bloom taxonomy level: Remembering
+Score: 0.6711370657484399
+
+Question 2: Cosa significa il paradigma dell'IoT?
+A.  Avere una rete di dispositivi sensoriali passivi
+B.  Avere oggetti riconoscibili, che comunicano dati su se stessi e accedono a dati aggregati di altri dispositivi
+C.  Avere un sistema di sicurezza avanzato sui dispositivi IoT
+D.  Avere una rete wireless connessa con internet
+Correct answer: B
+Bloom taxonomy level: Understanding
+Score: 0.6593006401833861
+
+Question 3: Cos'è la registrazione di un dispositivo IoT?
+A.  Il processo di controllare i dati raccolti dal dispositivo.
+B.  Il processo di inserire il dispositivo nell'ambiente fisico.
+C.  Il processo di rendere il dispositivo disponibile per l'utilizzo in rete.
+D.  Il processo di configurare il dispositivo per la raccolta dei dati.
+Correct answer: C
+Bloom taxonomy level: Understanding
+Score: 0.6497741638840597
+
+Question 4: Quali sono le caratteristiche di un sensore SMART?
+A.  Modalità di comunicazione unidirezionale.
+B.  Bassi costi di produzione.
+C.  Capacità di ricavare informazioni solo da una singola fonte.
+D.  Capacità di rilevare dati e prestazioni ottenibili.
+Correct answer: D
+Bloom taxonomy level: Applying
+Score: 0.7243380037325526
+
+Question 5: Qual è la funzione principale dei gateway nell'IoT?
+A.  Raccogliere dati e permettere di utilizzare al minimo le risorse per la comunicazione
+B.  Identificare gli oggetti nell'ambiente fisico
+C.  Controllo di un processo, seguire un'azione o influenzare le condizioni dell'ambiente esterno
+D.  Fornire i dati agli output
+Correct answer: A
+Bloom taxonomy level: Applying
+Score: 0.7028384540536189
+
+Question 6: Quali sono le problematiche legate all'utilizzo dei dispositivi IoT?
+A.  Costi elevati.
+B.  Problemi di privacy e sicurezza.
+C.  Impossibilità di riconfigurazione dei dispositivi.
+D.  Assenza di problemi derivanti da un utilizzo non efficiente dei dispositivi.
+Correct answer: B
+Bloom taxonomy level: Analyzing
+Score: 0.7361769777112025
+
+Question 7: Quali sono le caratteristiche di un attuatore?
+A.  Dispositivo di controllo dell'ambiente fisico in cui si trova.
+B.  Dispositivo di rilevamento che raccolgono informazioni dall'ambiente fisico in cui si trova.
+C.  Dispositivo per controllare un processo, eseguire un'azione o influenzare le condizioni dell'ambiente esterno in cui si trova.
+D.  Dispositivo che ricava informazioni solo da una singola fonte.
+Correct answer: C
+Bloom taxonomy level: Evaluating
+Score: 0.7370288285680786
+
+Question 8: Quali sono i vantaggi dell'utilizzo dei dispositivi IoT?
+A.  Maggiore complessità e maggiore costi.
+B.  Maggiore efficienza e miglioramento della qualità del lavoro.
+C.  Maggiore tempo richiesto per la raccolta dei dati e minore automazione.
+D.  Dati difficilmente accessibili e maggiore lavoro manuale.
+Correct answer: B
+Bloom taxonomy level: Evaluating
+Score: 0.7164504206899994
+

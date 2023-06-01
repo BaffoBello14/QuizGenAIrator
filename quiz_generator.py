@@ -43,12 +43,12 @@ class QuizGenerator:
     def __init__(self, num_questions_level, bloom_levels):
         super().__init__()
 
-        file_path = 'input/text.txt'
+        file_path = 'input/extracted_plain_text.txt'
         with open(file_path, encoding='utf-8') as file:
             file_contents = file.read()
         self.text = file_contents
 
-        file_path = 'input/query.txt'
+        file_path = 'input/main_query.txt'
         with open(file_path, encoding='utf-8') as file:
             file_contents = file.read()
         self.query = file_contents
@@ -81,27 +81,31 @@ class QuizGenerator:
         return self.text
 
     def find_language(self):
-        conversation = []
+        conversation = []  # List to store the conversation messages
 
-        prompt = self.text[:500] + " " + self.language_query + " "
-        conversation.append({'role': 'user', 'content': prompt})
+        prompt = self.text[:500] + " " + self.language_query + " "  # Create the prompt for language identification
+        conversation.append({'role': 'user', 'content': prompt})  # Add the user message with the prompt
 
+        # Call the Chat API to get the AI response
         response = openai.ChatCompletion.create(
             model=self.model_id,
             messages=conversation
         )
+
+        # Append the AI response to the conversation
         conversation.append(
             {'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
 
+        # Extract the identified language from the conversation and update self.language
         self.language = conversation[-1]['content'].strip()
 
-        if(self.language is not ["english", "french", "italian", "spanish", "german"]):
-            print(self.language + "is not supported!!!")
+        # Check if the identified language is supported
+        if self.language not in ["english", "french", "italian", "spanish", "german"]:
+            print(self.language + " is not supported!!!")
             exit()
 
     def generate(self):
-
-        file_path = 'results/raw_quiz.txt'
+        file_path = 'output/raw_quiz.txt'
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write("")
 
@@ -112,6 +116,7 @@ class QuizGenerator:
         text_partitions = []
         num_partitions = math.floor(len(self.text) / overlap_value)
 
+        # Divide the text into overlapping partitions
         for i in range(num_partitions):
             text_partitions.append(self.text[lower_index:upper_index])
             lower_index = lower_index + overlap_value
@@ -120,52 +125,49 @@ class QuizGenerator:
             text_partitions.append(self.text[lower_index:])
             num_partitions = num_partitions + 1
 
-        # the overlap is now represented by half partition
-        print("Text divided in", num_partitions, "overlapped partitions")
+        # Print the number of partitions created
+        print("Text divided into", num_partitions, "overlapped partitions")
 
         num_questions_level_partition = []
-
         tot_questions = 0
+
+        # Calculate the total number of questions needed for the given number of partitions
         for i in range(len(self.num_questions_level)):
             tot_questions += math.ceil(self.num_questions_level[i] / num_partitions)
 
         temp_query = "Generate " + str(tot_questions) + " questions classified by the Revised Bloom's Taxonomy:"
+
+        # Determine the number of questions for each level in each partition and update the temp_query
         for i in range(len(self.num_questions_level)):
             num_questions_level_partition.append(math.ceil(self.num_questions_level[i] / num_partitions))
             temp_query = temp_query + " " + str(num_questions_level_partition[i]) \
-                         + " questions must be of the level " + self.bloom_levels[i]
+                         + " questions must be of level " + self.bloom_levels[i]
             if i == (len(self.num_questions_level) - 1):
                 temp_query = temp_query + ". The language of the quiz must be: " + self.language
                 break
             temp_query = temp_query + ","
 
-        print("num x level partition", num_questions_level_partition)
-
+        # Generate questions for each partition
         for partition in text_partitions:
-
             response_is_ok = False
             content = ""
 
             while not response_is_ok:
-
                 conversation = []
 
-                # prompt = self.level_query + " " + temp_query + " " + self.query + " " + partition
                 prompt = temp_query + " " + self.query + " " + partition
                 conversation.append({'role': 'user', 'content': prompt})
                 print("TOKENS BEFORE RESPONSE", num_tokens_from_messages(conversation, self.model_id))
 
+                # Call the Chat API to get the AI response
                 response = openai.ChatCompletion.create(
                     model=self.model_id,
                     messages=conversation
                 )
+
                 conversation.append(
                     {'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
                 print("\tTOKENS WITH RESPONSE", num_tokens_from_messages(conversation, self.model_id))
-
-                # here
-                # conversation[-1]['content'].strip() deve contenere
-                # self.bloom_levels[i] per num_questions_level_partition[i] volte
 
                 for j in range(len(self.num_questions_level)):
                     content = conversation[-1]['content'].strip()
@@ -176,13 +178,14 @@ class QuizGenerator:
                     else:
                         response_is_ok = True
 
-                if response_is_ok == False:
+                if not response_is_ok:
                     print("\t\tWrong number of questions for levels!!!")
                     time.sleep(20)
 
             time.sleep(20)
 
-            file_path = 'results/raw_quiz.txt'
+            # Write the generated content to the output file
+            file_path = 'output/raw_quiz.txt'
             with open(file_path, 'a', encoding='utf-8') as file:
                 file.write(content)
                 file.write("\n\n")
@@ -190,14 +193,13 @@ class QuizGenerator:
         self.refactor(num_partitions, num_questions_level_partition)
 
     def refactor(self, num_partitions, num_questions_level_partition):
-
-        file_path = 'results/raw_quiz.txt'
+        # Read the contents of the raw_quiz.txt file
+        file_path = 'output/raw_quiz.txt'
         with open(file_path, encoding='utf-8') as file:
             file_contents = file.read()
         raw_quiz = file_contents
 
-        conversation = []
-
+        # Calculate the total number of questions needed for refactoring
         tot_questions = 0
         for value in num_questions_level_partition:
             tot_questions += value
@@ -205,10 +207,13 @@ class QuizGenerator:
 
         print("tot_questions", tot_questions)
 
+        # Create a prompt for the refactoring step
+        conversation = []
         prompt = raw_quiz + " " + self.refactor_query + " " + str(tot_questions) + "."
         conversation.append({'role': 'user', 'content': prompt})
         print("(Refactoring) TOKENS BEFORE RESPONSE", num_tokens_from_messages(conversation, self.model_id))
 
+        # Query the AI model for refactoring the quiz
         response = openai.ChatCompletion.create(
             model=self.model_id,
             messages=conversation
@@ -216,6 +221,8 @@ class QuizGenerator:
         conversation.append({'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
         print("\tTOKENS WITH RESPONSE", num_tokens_from_messages(conversation, self.model_id))
 
-        file_path = 'results/quiz.txt'
+        # Write the refactored quiz content to the refactored_quiz.txt file
+        file_path = 'output/refactored_quiz.txt'
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(conversation[-1]['content'].strip())
+

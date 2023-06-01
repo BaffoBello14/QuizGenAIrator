@@ -1,0 +1,125 @@
+1. Qual è il requisito fondante per la rete telefonica?
+A) Bit rate variabile
+B) Congestion Control
+C) Interattività
+D) Commutazione a pacchetto
+
+Correct answer: C
+Revised Bloom's Taxonomy level: Remembering 
+
+2. Cosa significa il paradigma dell'IoT?
+A) Avere una rete di dispositivi sensoriali passivi
+B) Avere oggetti riconoscibili, che comunicano dati su se stessi e accedono a dati aggregati di altri dispositivi
+C) Avere un sistema di sicurezza avanzato sui dispositivi IoT
+D) Avere una rete wireless connessa con internet
+
+Correct answer: B
+Revised Bloom's Taxonomy level: Understanding
+
+3. Qual è la funzione principale dei gateway nell'IoT?
+A) Raccogliere dati e permettere di utilizzare al minimo le risorse per la comunicazione
+B) Identificare gli oggetti nell'ambiente fisico
+C) Contr arollare un processo, seguire un'azione o influenzare le condizioni dell'ambiente esterno
+D) Fornire i dati agli output
+
+Correct answer: A
+Revised Bloom's Taxonomy level: Applying
+
+4. Quali regole di sicurezza si devono seguire per prevenire gli attacchi informatici ai dispositivi IoT?
+A) Utilizzare password e autenticazione robuste
+B) Fare attenzione a non utilizzare dispositivi IoT
+C) Non connettere i dispositivi IoT a internet
+D) Non utilizzare dispositivi IoT poco costosi
+
+Correct answer: A
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Quali sono le applicazioni dell'IoT nell'ambito industriale?
+A) Smart Home/Building, Smart City, Smart Car
+B) Smart Factory, Smart Logistics, Smart Lifecycle
+C) Smart Agriculture, Smart Healthcare, Smart Education
+D) Smart Energy, Smart Waste Management, Smart Retail
+
+Correct answer: B
+Revised Bloom's Taxonomy level: Evaluating
+
+1. What are the principles that make an object become a smart object?
+A) Having a recognizable shape
+B) Being able to fly
+C) Being able to communicate data about itself
+D) Having a human-like personality
+Correct answer: C
+Revised Bloom's Taxonomy level: Remembering
+
+2. Why is it important to be aware of privacy and security aspects when introducing IoT devices?
+A) Because IoT devices are very expensive
+B) Because IoT devices cannot be attacked
+C) Because IoT devices are not connected to any network
+D) Because IoT devices are potential entry points for cyber attacks
+Correct answer: D
+Revised Bloom's Taxonomy level: Understanding
+
+3. What are the basic rules to prevent cyber attacks on IoT devices?
+A) Avoid using passwords and authentication methods
+B) Share your data publicly
+C) Turn off encryption
+D) Use strong passwords and authentication methods, and encryption
+Correct answer: D
+Revised Bloom's Taxonomy level: Applying
+
+4. What are the risks related to connecting IoT devices to a network?
+A) There are no risks
+B) Risks related to privacy and security
+C) Risks related to high costs
+D) Risks related to poor device performance
+Correct answer: B
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Why is it important to update the software components of IoT devices?
+A) To increase the cost of the device
+B) To decrease the cost of the device
+C) To ensure maximum protection and privacy
+D) To decrease the performance of the device
+Correct answer: C
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Quali sono le caratteristiche chiave degli oggetti SMART?
+A) Poter rielaborare i dati raccolti solo da un singolo sensore.
+B) Comunicare in modalità unidirezionale.
+C) Essere riconfigurabili.
+D) Intraprendere azioni indipendenti dalle condizioni ambientali.
+Correct answer: C
+Revised Bloom's Taxonomy level: Remembering
+
+2. Cosa sono i sensori?
+A) Dispositivi periferici che raccolgono informazioni dall'ambiente esterno.
+B) Dispositivi di rilevamento che controllano un processo in modo autonomo.
+C) Dispositivi di controllo dell'ambiente fisico in cui si trovano.
+D) Dispositivi che raccolgono informazioni dall'ambiente fisico in cui si trovano.
+Correct answer: D
+Revised Bloom's Taxonomy level: Understanding
+
+3. Quali sono le caratteristiche di un sensore SMART?
+A) Modalità di comunicazione unidirezionale.
+B) Bassi costi di produzione.
+C) Capacità di ricavare informazioni solo da una singola fonte.
+D) Capacità di rilevare dati e prestazioni ottenibili.
+Correct answer: D
+Revised Bloom's Taxonomy level: Applying
+
+4. Quali sono le problematiche legate all'utilizzo dei dispositivi IoT?
+A) Costi elevati.
+B) Problemi di privacy e sicurezza.
+C) Impossibilità di riconfigurazione dei dispositivi.
+D) Assenza di problemi derivanti da un utilizzo non efficiente dei dispositivi.
+Correct answer: B
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Quali sono le caratteristiche di un attuatore?
+A) Dispositivo di controllo dell'ambiente fisico in cui si trova.
+B) Dispositivo di rilevamento che raccolgono informazioni dall'ambiente fisico in cui si trova.
+C) Dispositivo per controllare un processo, eseguire un'azione o influenzare le condizioni dell'ambiente esterno in cui si trova.
+D) Dispositivo che ricava informazioni solo da una singola fonte.
+Correct answer: C
+Revised Bloom's Taxonomy level: Evaluating
+
