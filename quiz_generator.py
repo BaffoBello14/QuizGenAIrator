@@ -95,9 +95,9 @@ class QuizGenerator:
 
         self.language = conversation[-1]['content'].strip()
 
-        if(self.language is not ["english", "french", "italian", "spanish", "german"]):
+        if(self.language not in ["english", "french", "italian", "spanish", "german"]):
             print(self.language + "is not supported!!!")
-            exit()
+            exit
 
     def generate(self):
 
