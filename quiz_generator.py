@@ -95,6 +95,10 @@ class QuizGenerator:
 
         self.language = conversation[-1]['content'].strip()
 
+        if(self.language is not ["english", "french", "italian", "spanish", "german"]):
+            print(self.language + "is not supported!!!")
+            exit()
+
     def generate(self):
 
         file_path = 'results/raw_quiz.txt'

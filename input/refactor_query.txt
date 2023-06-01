@@ -8,6 +8,16 @@ C) <option C>
 D) <option D>
 Correct answer: C
 Revised Bloom's Taxonomy level: Understanding
+
+2. <question text>?
+A) <option A>
+B) <option B>
+C) <option C>
+D) <option D>
+Correct answer: A
+Revised Bloom's Taxonomy level: Remembering
+
+and so on for the correct number of questions
 Do it for each question and do not delete any question.
 The questions must be the same provided,
 so the number of questions must be

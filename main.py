@@ -11,10 +11,10 @@ for i in range(len(bloom_levels)):
 
 print("num x level global", num_questions_level)
 
-pdf_reader = PDFReader('pdf/Modulo 2.1 - IoT 5pag ita.pdf')
+# pdf_reader = PDFReader('pdf/Modulo 2.1 - IoT 5pag ita.pdf')
 # pdf_reader = PDFReader('pdf/Modulo 2.1 - IoT 10pag.pdf')
 # pdf_reader = PDFReader('pdf/Modulo 2.1 - IoT.pdf')
-# pdf_reader = PDFReader('pdf/file7.pdf')
+pdf_reader = PDFReader('pdf/file2.pdf')
 pdf_reader.process_pdf()
 
 quiz_generator = QuizGenerator(num_questions_level, bloom_levels)
