@@ -1,72 +1,126 @@
-Question 1: Quali sono le caratteristiche chiave degli oggetti SMART?
-A.  Poter rielaborare i dati raccolti solo da un singolo sensore.
-B.  Comunicare in modalità unidirezionale.
-C.  Essere riconfigurabili.
-D.  Intraprendere azioni indipendenti dalle condizioni ambientali.
+Question 1: Qual è uno dei presupposti per considerare un oggetto come smart object?
+A.  Deve essere di colore verde
+B.  Deve essere fatto di plastica
+C.  Deve avere la capacità di comunicare dati su di sé
+D.  Deve essere dotato di un pulsante
 Correct answer: C
 Bloom taxonomy level: Remembering
-Score: 0.6711370657484399
+Score: 0.7117134897490677
 
-Question 2: Cosa significa il paradigma dell'IoT?
-A.  Avere una rete di dispositivi sensoriali passivi
-B.  Avere oggetti riconoscibili, che comunicano dati su se stessi e accedono a dati aggregati di altri dispositivi
-C.  Avere un sistema di sicurezza avanzato sui dispositivi IoT
-D.  Avere una rete wireless connessa con internet
-Correct answer: B
-Bloom taxonomy level: Understanding
-Score: 0.6593006401833861
+Question 2: Quali sono i principi alla base dei dispositivi considerati smart in Internet of Things (IoT)?
+A.  Identificazione, collegamento ad una rete e possibilità di elaborare informazioni aggregate da altri dispositivi.
+B.  Possibilità di connessione a lungo raggio e interattività.
+C.  Capacità di comunicare linguaggi di programmazione a basso e alto livello.
+D.  Riconoscibilità tramite sensori, attivazione di processi e uso di microcontrollori.
+Correct answer: A
+Bloom taxonomy level: Remembering
+Score: 0.711142824566308
 
-Question 3: Cos'è la registrazione di un dispositivo IoT?
-A.  Il processo di controllare i dati raccolti dal dispositivo.
-B.  Il processo di inserire il dispositivo nell'ambiente fisico.
-C.  Il processo di rendere il dispositivo disponibile per l'utilizzo in rete.
-D.  Il processo di configurare il dispositivo per la raccolta dei dati.
+Question 3: Quali sono le tecnologie di comunicazione utilizzate nell'IoT?
+A.  Wi-Fi, Bluetooth e NFC
+B.  Ethernet, USB e HDMI
+C.  VGA, DVI e DisplayPort
+D.  FM, AM e DAB
+Correct answer: A
+Bloom taxonomy level: Remembering
+Score: 0.5781437808369911
+
+Question 4: Quali sono le regole base per prevenire gli attacchi informatici nei confronti dei dispositivi IoT?
+A.  Monitoraggio e analisi costante dei dati aggregati.
+B.  Utilizzo di programmi antivirus costantemente attivi.
+C.  Password e metodi di autenticazioni robuste e cifratura.
+D.  Accesso indesiderato ai device di storage grazie all'uso di VPN.
 Correct answer: C
 Bloom taxonomy level: Understanding
-Score: 0.6497741638840597
+Score: 0.7575446385227864
 
-Question 4: Quali sono le caratteristiche di un sensore SMART?
-A.  Modalità di comunicazione unidirezionale.
-B.  Bassi costi di produzione.
-C.  Capacità di ricavare informazioni solo da una singola fonte.
-D.  Capacità di rilevare dati e prestazioni ottenibili.
-Correct answer: D
-Bloom taxonomy level: Applying
-Score: 0.7243380037325526
+Question 5: In cosa consiste la tecnologia LoRa nella trasmissione di dati nell'IoT?
+A.  Tecnologia di trasmissione di dati a corto raggio.
+B.  Tecnologia di trasmissione dati a lungo raggio e a bassa potenza.
+C.  Tecnologia di trasmissione dati attraverso la luce.
+D.  Tecnologia di trasmissione dati attraverso cavi in rame. 
+Correct answer: B
+Bloom taxonomy level: Understanding
+Score: 0.7408537867174113
 
-Question 5: Qual è la funzione principale dei gateway nell'IoT?
-A.  Raccogliere dati e permettere di utilizzare al minimo le risorse per la comunicazione
-B.  Identificare gli oggetti nell'ambiente fisico
-C.  Controllo di un processo, seguire un'azione o influenzare le condizioni dell'ambiente esterno
-D.  Fornire i dati agli output
+Question 6: In cosa consiste la tecnologia RFID utilizzata nell'IoT?
+A.  Riconoscimento di oggetti attraverso frequenze radio
+B.  Trasmissione di dati tramite luce
+C.  Trasmissione di dati tramite corrente elettrica
+D.  Legame tra dispositivi attraverso sensori
+Correct answer: A
+Bloom taxonomy level: Understanding
+Score: 0.663963629426398
+
+Question 7: In cosa consiste la soluzione di creare delle sottoreti in caso di attacco ad una parte della rete?
+A.  Limitare l'attacco alla porzione di rete interessata
+B.  Proteggere i dispositivi IoT dai possibili attacchi
+C.  Aumentare l'efficienza dei dispositivi IoT
+D.  Aumentare la velocità di elaborazione dei dati
 Correct answer: A
 Bloom taxonomy level: Applying
-Score: 0.7028384540536189
+Score: 0.7477747534386268
 
-Question 6: Quali sono le problematiche legate all'utilizzo dei dispositivi IoT?
-A.  Costi elevati.
-B.  Problemi di privacy e sicurezza.
-C.  Impossibilità di riconfigurazione dei dispositivi.
-D.  Assenza di problemi derivanti da un utilizzo non efficiente dei dispositivi.
-Correct answer: B
-Bloom taxonomy level: Analyzing
-Score: 0.7361769777112025
-
-Question 7: Quali sono le caratteristiche di un attuatore?
-A.  Dispositivo di controllo dell'ambiente fisico in cui si trova.
-B.  Dispositivo di rilevamento che raccolgono informazioni dall'ambiente fisico in cui si trova.
-C.  Dispositivo per controllare un processo, eseguire un'azione o influenzare le condizioni dell'ambiente esterno in cui si trova.
-D.  Dispositivo che ricava informazioni solo da una singola fonte.
+Question 8: In quale ambito industriale l'IoT permette il miglioramento del processo di sviluppo di nuovi prodotti tramite l'uso di dati aggregati?
+A.  Smart Factory.
+B.  Smart Logistics.
+C.  Smart Lifecycle.
+D.  Smart City.
 Correct answer: C
-Bloom taxonomy level: Evaluating
-Score: 0.7370288285680786
+Bloom taxonomy level: Applying
+Score: 0.5613816112636346
 
-Question 8: Quali sono i vantaggi dell'utilizzo dei dispositivi IoT?
-A.  Maggiore complessità e maggiore costi.
-B.  Maggiore efficienza e miglioramento della qualità del lavoro.
-C.  Maggiore tempo richiesto per la raccolta dei dati e minore automazione.
-D.  Dati difficilmente accessibili e maggiore lavoro manuale.
+Question 9: Qual è l'importanza del machine learning nell'IoT?
+A.  La capacità di adattarsi a nuove situazioni e di apprendere dagli errori.
+B.  La possibilità di elaborare grandi quantità di dati in poco tempo.
+C.  La capacità di comunicare con altri dispositivi smart e di raccogliere dati.
+D.  La possibilità di creare dispositivi autonoomi senza bisogno di un collegamento ad internet.
+Correct answer: A
+Bloom taxonomy level: Analyzing
+Score: 0.654174439004441
+
+Question 10: Quali sono i due nuovi paradigmi delle telecomunicazioni che permettono i progressi dell'IoT?
+A.  Network function virtualization e Edge computing.
+B.  Definizione software della rete e Voice over IP.
+C.  Cloud computing e Ritardo di trasmissione ridotto.
+D.  Banda larga ad 1 Gbit e Commutazione di circuiti.
+Correct answer: A
+Bloom taxonomy level: Analyzing
+Score: 0.6418099645001244
+
+Question 11: Quali sono le caratteristiche degli smart objects?
+A.  Possono fare telefonate
+B.  Possono trasformarsi in un robot
+C.  Possono rielaborare le informazioni
+D.  Possono emettere luce colorata
+Correct answer: C
+Bloom taxonomy level: Analyzing
+Score: 0.5964095700737347
+
+Question 12: Qual è il requisito fondamentale della rete telefonica rispetto alla variante digitale e come è stata superata la problematica del bit rate variabile?
+A.  La caratteristica principale è la commutazione a pacchetto e la problematica è stata superata grazie al Voice over IP.
+B.  La caratteristica principale è l'interattività e la problematica è stata superata grazie alla commutazione a pacchetto.
+C.  La comunicazione tra calcolatori è stata possibile solo tramite commutazione di circuito.
+D.  La rete telefonica non è stata adeguatamente aggiornata alle tecnologie digitali.
 Correct answer: B
 Bloom taxonomy level: Evaluating
-Score: 0.7164504206899994
+Score: 0.6859741155020991
+
+Question 13: Quali sono le problematiche relative all'utilizzo dei dispositivi IoT?
+A.  Costi ingenti
+B.  Problemi relativi alla memoria
+C.  Difficoltà nell'elaborazione dei dati
+D.  Problemi legati all'installazione dei dispositivi
+Correct answer: A
+Bloom taxonomy level: Evaluating
+Score: 0.6693739853270448
+
+Question 14: Quali sono le criticità riguardanti la sicurezza nell'IoT?
+A.  La presenza di vulnerabilità nei dispositivi e la mancanza di standard di sicurezza.
+B.  La mancanza di autonomia dei dispositivi e la scarsa qualità dei materiali.
+C.  La limitata capacità di elaborazione dati e la lentra integrazione in una rete.
+D.  La bassa efficacia dei sensori e la mancanza di memoria dei dispositivi.
+Correct answer: A
+Bloom taxonomy level: Evaluating
+Score: 0.6459304402516624
 

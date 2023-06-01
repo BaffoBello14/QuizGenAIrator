@@ -1,5 +1,5 @@
 import spacy
-
+import spacy.cli
 
 class QuizAnalyzer:
     def __init__(self, quiz, text):
@@ -9,14 +9,19 @@ class QuizAnalyzer:
 
         language = quiz.get_language()
         if language == "english":
+            spacy.cli.download("en_core_web_lg")
             self.nlp = spacy.load("en_core_web_lg")
         elif language == "italian":
+            spacy.cli.download("it_core_news_lg")
             self.nlp = spacy.load("it_core_news_lg")
         elif language == "french":
+            spacy.cli.download("fr_core_news_lg")
             self.nlp = spacy.load("fr_core_news_lg")
         elif language == "spanish":
+            spacy.cli.download("es_core_news_lg")
             self.nlp = spacy.load("es_core_news_lg")
         elif language == "german":
+            spacy.cli.download("de_core_news_lg")
             self.nlp = spacy.load("de_core_news_lg")
 
         self.text = text
