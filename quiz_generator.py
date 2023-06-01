@@ -99,16 +99,10 @@ class QuizGenerator:
         # Extract the identified language from the conversation and update self.language
         self.language = conversation[-1]['content'].strip()
 
-<<<<<<< HEAD
-        if(self.language not in ["english", "french", "italian", "spanish", "german"]):
-            print(self.language + "is not supported!!!")
-            exit
-=======
         # Check if the identified language is supported
         if self.language not in ["english", "french", "italian", "spanish", "german"]:
             print(self.language + " is not supported!!!")
             exit()
->>>>>>> 0095fc7bee848e0a0f682cbde2d81206698f2f89
 
     def generate(self):
         file_path = 'output/raw_quiz.txt'
