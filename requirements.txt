@@ -1,78 +1,41 @@
-aiohttp @ file:///C:/b/abs_c4zmy2l696/croot/aiohttp_1670009573673/work
-aiosignal @ file:///tmp/build/80754af9/aiosignal_1637843061372/work
-appdirs==1.4.4
-async-timeout @ file:///C:/b/abs_43ozhz2a8g/croots/recipe/async-timeout_1664876362767/work
-attrs @ file:///C:/b/abs_09s3y775ra/croot/attrs_1668696195628/work
-blis @ file:///C:/b/abs_0asxckc55t/croot/cython-blis_1684139877472/work
-Bottleneck @ file:///C:/Windows/Temp/abs_3198ca53-903d-42fd-87b4-03e6d03a8381yfwsuve8/croots/recipe/bottleneck_1657175565403/work
-brotlipy==0.7.0
-catalogue @ file:///C:/ci/catalogue_1651116429009/work
-certifi @ file:///C:/b/abs_4a0polqwty/croot/certifi_1683875377622/work/certifi
-cffi @ file:///C:/b/abs_49n3v2hyhr/croot/cffi_1670423218144/work
-charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
-click @ file:///C:/ci/click_1646056762388/work
-colorama @ file:///C:/b/abs_a9ozq0l032/croot/colorama_1672387194846/work
-confection @ file:///C:/b/abs_41ypt8t7st/croot/confection_1684136620764/work
-contourpy @ file:///C:/b/abs_d5rpy288vc/croots/recipe/contourpy_1663827418189/work
-cryptography @ file:///C:/b/abs_8ecplyc3n2/croot/cryptography_1677533105000/work
-cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
-cymem @ file:///C:/ci/cymem_1651231465795/work
-et-xmlfile==1.1.0
-fonttools==4.25.0
-frozenlist @ file:///C:/b/abs_2bb5uzghsi/croot/frozenlist_1670004511812/work
-idna @ file:///C:/b/abs_bdhbebrioa/croot/idna_1666125572046/work
-Jinja2 @ file:///C:/b/abs_7cdis66kl9/croot/jinja2_1666908141852/work
-joblib @ file:///C:/b/abs_1anqjntpan/croot/joblib_1685113317150/work
-kiwisolver @ file:///C:/b/abs_88mdhvtahm/croot/kiwisolver_1672387921783/work
-langcodes @ file:///opt/conda/conda-bld/langcodes_1643477751144/work
-MarkupSafe @ file:///C:/ci/markupsafe_1654508036328/work
-matplotlib @ file:///C:/b/abs_49b2acwxd4/croot/matplotlib-suite_1679593486357/work
-mkl-fft==1.3.6
-mkl-random @ file:///C:/Users/dev-admin/mkl/mkl_random_1682977971003/work
-mkl-service==2.4.0
-multidict @ file:///C:/b/abs_6cx_8w3cv2/croot/multidict_1665674238352/work
-munkres==1.1.4
-murmurhash @ file:///C:/ci/murmurhash_1651211593352/work
-numexpr @ file:///C:/b/abs_afm0oewmmt/croot/numexpr_1683221839116/work
-numpy @ file:///C:/Users/dev-admin/mkl/numpy_and_numpy_base_1682982345978/work
-openai @ file:///C:/b/abs_9fk8i1rav9/croot/openai_1682522412135/work
-openpyxl==3.0.10
-packaging @ file:///C:/b/abs_ed_kb9w6g4/croot/packaging_1678965418855/work
-pandas @ file:///C:/b/abs_b9kefbuby2/croot/pandas_1677835593760/work
-pandas-stubs @ file:///C:/b/abs_e2wu4hx157/croot/pandas-stubs_1676319806170/work
-pathy @ file:///C:/b/abs_3d0bk9z5_1/croot/pathy_1674585938637/work
-Pillow==9.4.0
-plotly @ file:///C:/ci/plotly_1658160673416/work
-pooch @ file:///tmp/build/80754af9/pooch_1623324770023/work
-preshed @ file:///C:/ci/preshed_1651222371453/work
-pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
-pydantic @ file:///C:/b/abs_70leqwndat/croot/pydantic_1667416131535/work
-pyOpenSSL @ file:///C:/b/abs_552w85x1jz/croot/pyopenssl_1677607703691/work
-pyparsing @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_7f_7lba6rl/croots/recipe/pyparsing_1661452540662/work
-PyPDF2 @ file:///C:/b/abs_09r7uvihrc/croots/recipe/pypdf2_1662469711628/work
-PySocks @ file:///C:/ci_310/pysocks_1642089375450/work
-python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
-pytz @ file:///C:/b/abs_22fofvpn1x/croot/pytz_1671698059864/work
+aiohttp==3.8.4
+aiosignal==1.3.1
+async-timeout==4.0.2
+attrs==23.1.0
+blis==0.7.9
+catalogue==2.0.8
+certifi==2023.5.7
+charset-normalizer==3.1.0
+click==8.1.3
+colorama==0.4.6
+confection==0.0.4
+cymem==2.0.7
+frozenlist==1.3.3
+idna==3.4
+Jinja2==3.1.2
+langcodes==3.3.0
+MarkupSafe==2.1.2
+multidict==6.0.4
+murmurhash==1.0.9
+numpy==1.24.3
+openai==0.27.7
+packaging==23.1
+pathy==0.10.1
+preshed==3.0.8
+pydantic==1.10.8
+PyPDF2==3.0.1
 regex==2023.5.5
-requests @ file:///C:/b/abs_41owkd5ymz/croot/requests_1682607524657/work
-scikit-learn @ file:///C:/b/abs_38k7ridbgr/croot/scikit-learn_1684954723009/work
-scipy==1.10.1
-shellingham @ file:///C:/b/abs_c3l_fe1lnk/croot/shellingham_1669142179061/work
-six @ file:///tmp/build/80754af9/six_1644875935023/work
-smart-open @ file:///C:/ci/smart_open_1651235038100/work
-spacy @ file:///C:/b/abs_2dtks5gwjb/croot/spacy_1684329083461/work
-spacy-legacy @ file:///C:/b/abs_03fuap2pri/croot/spacy-legacy_1684141127990/work
-spacy-loggers @ file:///C:/b/abs_d6x_m5j2nj/croot/spacy-loggers_1684139141178/work
-srsly @ file:///C:/b/abs_b3qa060_tx/croot/srsly_1677855565246/work
-tenacity @ file:///C:/b/abs_ddkoa9nju6/croot/tenacity_1682972298929/work
-thinc @ file:///C:/b/abs_57lmcu9n14/croot/thinc_1684243959753/work
-threadpoolctl @ file:///Users/ktietz/demo/mc3/conda-bld/threadpoolctl_1629802263681/work
+requests==2.31.0
+smart-open==6.3.0
+spacy==3.5.3
+spacy-legacy==3.0.12
+spacy-loggers==1.0.4
+srsly==2.4.6
+thinc==8.1.10
 tiktoken==0.4.0
-tqdm @ file:///C:/b/abs_f76j9hg7pv/croot/tqdm_1679561871187/work
-typer @ file:///C:/ci/typer_1651228630216/work
-types-pytz @ file:///C:/b/abs_e3rdamg6_o/croot/types-pytz_1665514258134/work
-typing_extensions @ file:///C:/b/abs_a1bb332wcs/croot/typing_extensions_1681939523095/work
-urllib3 @ file:///C:/b/abs_3ce53vrdcr/croot/urllib3_1680254693505/work
-wasabi @ file:///C:/ci/wasabi_1651216439282/work
-win-inet-pton @ file:///C:/ci_310/win_inet_pton_1642658466512/work
-yarl @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_e5nlunspj6/croots/recipe/yarl_1661437086516/work
+tqdm==4.65.0
+typer==0.7.0
+typing_extensions==4.6.2
+urllib3==2.0.2
+wasabi==1.1.1
+yarl==1.9.2

@@ -1,120 +1,120 @@
-1. Quali sono i principi alla base dei dispositivi considerati smart in Internet of Things (IoT)?
-A) Identificazione, collegamento ad una rete e possibilità di elaborare informazioni aggregate da altri dispositivi.
-B) Possibilità di connessione a lungo raggio e interattività.
-C) Capacità di comunicare linguaggi di programmazione a basso e alto livello.
-D) Riconoscibilità tramite sensori, attivazione di processi e uso di microcontrollori.
-Correct answer: A
+1. Quali sono i tre presupposti affinché un oggetto possa essere considerato smart object?
+A) Essere connesso ad una rete, avere componenti hardware aggiornate, essere di facile utilizzo
+B) Raccolta di informazioni personali, comunicazione costante con altri oggetti, controllo dei dispositivi circostanti
+C) Capacità di identificazione, comunicazione di dati su di sé, accesso a dati aggregati di altri dispositivi
+D) Presenza di sensori, microcontrollori integrati, gateway per la raccolta dei dati
+Correct answer: C
 Revised Bloom's Taxonomy level: Remembering
 
-2. Quali sono le regole base per prevenire gli attacchi informatici nei confronti dei dispositivi IoT?
-A) Monitoraggio e analisi costante dei dati aggregati.
-B) Utilizzo di programmi antivirus costantemente attivi.
-C) Password e metodi di autenticazioni robuste e cifratura.
-D) Accesso indesiderato ai device di storage grazie all'uso di VPN.
-Correct answer: C
-Revised Bloom's Taxonomy level: Understanding 
-
-3. In quale ambito industriale l'IoT permette il miglioramento del processo di sviluppo di nuovi prodotti tramite l'uso di dati aggregati?
-A) Smart Factory.
-B) Smart Logistics.
-C) Smart Lifecycle.
-D) Smart City.
-Correct answer: C
-Revised Bloom's Taxonomy level: Applying
-
-4. Quali sono i due nuovi paradigmi delle telecomunicazioni che permettono i progressi dell'IoT?
-A) Network function virtualization e Edge computing.
-B) Definizione software della rete e Voice over IP.
-C) Cloud computing e Ritardo di trasmissione ridotto.
-D) Banda larga ad 1 Gbit e Commutazione di circuiti.
-Correct answer: A
-Revised Bloom's Taxonomy level: Analyzing
-
-5. Qual è il requisito fondamentale della rete telefonica rispetto alla variante digitale e come è stata superata la problematica del bit rate variabile?
-A) La caratteristica principale è la commutazione a pacchetto e la problematica è stata superata grazie al Voice over IP.
-B) La caratteristica principale è l'interattività e la problematica è stata superata grazie alla commutazione a pacchetto.
-C) La comunicazione tra calcolatori è stata possibile solo tramite commutazione di circuito.
-D) La rete telefonica non è stata adeguatamente aggiornata alle tecnologie digitali.
+2. Qual è il paradigma che sta dietro all'IoT?
+A) Network function virtualization
+B) Edge computing
+C) Cloud computing
+D) Software defined networking
 Correct answer: B
-Revised Bloom's Taxonomy level: Evaluating
-
-1. Qual è uno dei presupposti per considerare un oggetto come smart object?
-A) Deve essere di colore verde
-B) Deve essere fatto di plastica
-C) Deve avere la capacità di comunicare dati su di sé
-D) Deve essere dotato di un pulsante
-Correct answer: C
-Revised Bloom's Taxonomy level: Remembering
-
-2. Qual è uno dei temi importanti riguardanti l'IoT?
-A) La tecnologia dei sensori
-B) L'autonomia dei dispositivi
-C) La sicurezza e privacy
-D) La velocità di elaborazione dei dati
-Correct answer: C
 Revised Bloom's Taxonomy level: Understanding
 
-3. In cosa consiste la soluzione di creare delle sottoreti in caso di attacco ad una parte della rete?
-A) Limitare l'attacco alla porzione di rete interessata
-B) Proteggere i dispositivi IoT dai possibili attacchi
-C) Aumentare l'efficienza dei dispositivi IoT
-D) Aumentare la velocità di elaborazione dei dati
-Correct answer: A
-Revised Bloom's Taxonomy level: Applying
-
-4. Quali sono le caratteristiche degli smart objects?
-A) Possono fare telefonate
-B) Possono trasformarsi in un robot
-C) Possono rielaborare le informazioni
-D) Possono emettere luce colorata
-Correct answer: C
-Revised Bloom's Taxonomy level: Analyzing
-
-5. Quali sono le problematiche relative all'utilizzo dei dispositivi IoT?
-A) Costi ingenti
-B) Problemi relativi alla memoria
-C) Difficoltà nell'elaborazione dei dati
-D) Problemi legati all'installazione dei dispositivi
-Correct answer: A
-Revised Bloom's Taxonomy level: Evaluating
-
-1. Qual è una delle caratteristiche degli oggetti smart menzionati nel testo?
-A) Possono essere utilizzati solo connessi alla rete internet
-B) Non necessitano di alimentazione per funzionare
-C) Possono rielaborare le informazioni
-D) Non possono trasmettere dati in tempo reale
-Correct answer: C
-Revised Bloom's Taxonomy level: Remembering
-
-2. Cos'è un sensore?
-A) Un dispositivo che permette la comunicazione tra dispositivi smart
-B) Un dispositivo che trasmette dati in tempo reale
-C) Un dispositivo di rilevamento che raccolgono informazioni dall'ambiente fisico in cui si trovano
-D) Un dispositivo di energia necessario per far funzionare gli oggetti smart
-Correct answer: C
-Revised Bloom's Taxonomy level: Understanding
-
-3. In cosa consiste il duplice ruolo di alcuni dispositivi periferici?
-A) Consentono il controllo dei processi e l'influenza sull'ambiente esterno
-B) Effettuano la raccolta dati dell'ambiente fisico ed effettuano il controllo
-C) Sono utilizzati solo come dispositivi di rilevamento
-D) Non possono essere utilizzati per l'influenza sulle condizioni ambientali
+3. Quali sono le due regole base per prevenire attacchi a dispositivi IoT?
+A) Utilizzo di componenti hardware aggiornati, creazione di sottoreti
+B) Cifratura e utilizzo di autenticazioni robuste
+C) Utilizzo di password difficili e filtraggio MAC
+D) Implementazione di firewall e antivirus
 Correct answer: B
 Revised Bloom's Taxonomy level: Applying
 
-4. In quali contesti è stato attuato l'utilizzo di oggetti smart?
-A) Solo in quello del traffico routier
-B) Solo in quello del turismo
-C) Solo in quello della gestione delle utenze domestiche
-D) In vari contesti, come quello del turismo, del traffico e della gestione delle utenze domestiche
+4. Quali sono le potenziali conseguenze della congestione dei buffer di dati nella rete di telecomunicazioni?
+A) Aumento del bit rate, maggiore efficienza nella commutazione di circuito
+B) Riduzione del delay nella trasmissione dei pacchetti di dati
+C) Possibile congestione dei buffer e necessità di controllo di congestione
+D) Maggiore interattività tra gli oggetti connessi alla rete
+Correct answer: C
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Perché è importante avere consapevolezza dei limiti e delle possibilità di protezione dall'esterno dei dispositivi IoT?
+A) Per evitare la spesa di costi elevati per la protezione dei dispositivi
+B) Per conoscere le vulnerabilità dei dispositivi e migliorare la loro protezione
+C) Per limitare l'accesso ai dati raccolti dai dispositivi IoT
+D) Per evitare la connessione dei dispositivi alle reti di telecomunicazione
+Correct answer: B
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Qual è uno dei presupposti per considerare un oggetto uno smart object?
+A) Non avere la capacità di comunicare dati su di sé
+B) Non essere riconoscibili
+C) Avere la capacità di comunicare dati su di sé
+D) Avere la capacità di elaborare i dati
+Correct answer: C
+Revised Bloom's Taxonomy level: Remembering
+
+2. Perché è importante trattare gli aspetti legati alla privacy quando si introducono dispositivi IoT?
+A) Per evitare di raccogliere dati sui dispositivi
+B) Per proteggere i dispositivi IoT da attacchi informatici
+C) Per evitare di compromettere la sicurezza dell'azienda
+D) Per evitare che i dispositivi IoT siano fonti di ingenti moli di dati
+Correct answer: D
+Revised Bloom's Taxonomy level: Understanding
+
+3. Quali sono alcune regole base per prevenire gli attacchi informatici ai dispositivi IoT?
+A) Usare password e metodi di autenticazione deboli
+B) Non cifrare i dati
+C) Usare password e metodi di autenticazione robuste
+D) Non aggiornare le componenti hardware dei dispositivi IoT
+Correct answer: C
+Revised Bloom's Taxonomy level: Applying
+
+4. Qual è uno dei punti di attacco potenziale ai dispositivi IoT?
+A) La memoria del dispositivo
+B) La comunicazione affidabile
+C) La presenza di dispositivi di rilevamento
+D) La connessione ad una rete
 Correct answer: D
 Revised Bloom's Taxonomy level: Analyzing
 
-5. Quali sono le problematiche connesse all'utilizzo di dispositivi smart?
+5. Perché i dispositivi IoT spesso sono sottovalutati?
+A) Perché non sono in grado di rilevare informazioni
+B) Perché rappresentano dei prolungamenti di capacità percettiva delle persone
+C) Perché non sono connessi ad una rete
+D) Perché sono dispositivi costosi e complessi
+Correct answer: B
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Qual è una delle caratteristiche degli oggetti smart?
+A) Essere usati solo in modo unidirezionale
+B) Non rielaborare le informazioni
+C) Poter rielaborare le informazioni
+D) Non avere la capacità di trasmettere dati in tempo reale
+Correct answer: C
+Revised Bloom's Taxonomy level: Remembering
+
+2. Cosa sono i sensori?
+A) Dispositivi per controllare un processo
+B) Dispositivi di rilevamento che raccolgono informazioni dall'ambiente fisico
+C) Dispositivi che elaborano dati
+D) Dispositivi che comunicano in modo unidirezionale
+Correct answer: B
+Revised Bloom's Taxonomy level: Understanding
+
+3. In quale dei casi seguenti i dispositivi IoT potrebbero avere implicazioni non efficienti?
+A) Quando vengono usati come contatori di tipo digitale in casa
+B) Quando vengono usati come monumenti intelligenti per fornire informazioni ai turisti
+C) Quando vengono usati per effettuare il monitoraggio del traffico delle auto
+D) Quando vengono usati come sistemi di rilevamento per autovetture
+Correct answer: A
+Revised Bloom's Taxonomy level: Applying
+
+4. Qual è una delle problematiche dell'utilizzo dei dispositivi IoT?
 A) Costi ingenti
-B) Problemi di privacy e sicurezza
-C) Implicazioni derivanti da un utilizzo non efficiente dei dispositivi
-D) Tutte le opzioni sopra elencate
+B) Grande facilità di utilizzo per gli utenti
+C) Nessun rischio per quanto riguarda la privacy e la sicurezza
+D) Nessuno degli altri elencati
+Correct answer: A
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Quali sono le caratteristiche chiave dei sensori SMART?
+A) Solo tecnologia di sensing
+B) Solo alimentazione
+C) Solo elaborazione e memoria
+D) Tecnologia di sensing, alimentazione, elaborazione e memoria, e comunicazione
 Correct answer: D
 Revised Bloom's Taxonomy level: Evaluating
 

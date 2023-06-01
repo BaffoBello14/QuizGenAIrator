@@ -1,84 +1,30 @@
 Question 1: Qual è uno dei presupposti per considerare un oggetto come smart object?
-A.  Deve essere di colore verde
-B.  Deve essere fatto di plastica
-C.  Deve avere la capacità di comunicare dati su di sé
-D.  Deve essere dotato di un pulsante
+A.  Deve essere costoso 
+B.  Non deve avere la capacità di comunicare dati su di sé
+C.  Deve essere riconoscibile
+D.  Non deve avere la capacità di accedere a dati aggregati di altri dispositivi
 
-Question 2: Quali sono i principi alla base dei dispositivi considerati smart in Internet of Things (IoT)?
-A.  Identificazione, collegamento ad una rete e possibilità di elaborare informazioni aggregate da altri dispositivi.
-B.  Possibilità di connessione a lungo raggio e interattività.
-C.  Capacità di comunicare linguaggi di programmazione a basso e alto livello.
-D.  Riconoscibilità tramite sensori, attivazione di processi e uso di microcontrollori.
+Question 2: Cosa sono i sensori?
+A.  Dispositivi di rilevamento che raccolgono informazioni dall'ambiente fisico in cui si trovano
+B.  Dispositivi per inviare messaggi
+C.  Dispositivi per fare videochiamate
+D.  Dispositivi di navigazione
 
-Question 3: Quali sono le tecnologie di comunicazione utilizzate nell'IoT?
-A.  Wi-Fi, Bluetooth e NFC
-B.  Ethernet, USB e HDMI
-C.  VGA, DVI e DisplayPort
-D.  FM, AM e DAB
+Question 3: In che modo gli oggetti smart possono intraprendere azioni conseguenti ad eventi?
+A.  Non possono intraprendere nessuna azione
+B.  Solo tramite compra online
+C.  Grazie a dei sensori integrati
+D.  Solo tramite la connessione Wi-Fi
 
-Question 4: Quali sono le regole base per prevenire gli attacchi informatici nei confronti dei dispositivi IoT?
-A.  Monitoraggio e analisi costante dei dati aggregati.
-B.  Utilizzo di programmi antivirus costantemente attivi.
-C.  Password e metodi di autenticazioni robuste e cifratura.
-D.  Accesso indesiderato ai device di storage grazie all'uso di VPN.
+Question 4: Quali sono le caratteristiche degli oggetti smart?
+A.  Essere bellissimi e costosi
+B.  Poter rielaborare i dati solo in modalità unidirezionale
+C.  Essere immobili
+D.  Poter rielaborare le informazioni, comunicare in modalità bidirezionale, essere riconfigurabili, intraprendere azioni conseguenti ad eventi e trasmettere dati in tempo reale
 
-Question 5: In cosa consiste la tecnologia LoRa nella trasmissione di dati nell'IoT?
-A.  Tecnologia di trasmissione di dati a corto raggio.
-B.  Tecnologia di trasmissione dati a lungo raggio e a bassa potenza.
-C.  Tecnologia di trasmissione dati attraverso la luce.
-D.  Tecnologia di trasmissione dati attraverso cavi in rame. 
-
-Question 6: In cosa consiste la tecnologia RFID utilizzata nell'IoT?
-A.  Riconoscimento di oggetti attraverso frequenze radio
-B.  Trasmissione di dati tramite luce
-C.  Trasmissione di dati tramite corrente elettrica
-D.  Legame tra dispositivi attraverso sensori
-
-Question 7: In cosa consiste la soluzione di creare delle sottoreti in caso di attacco ad una parte della rete?
-A.  Limitare l'attacco alla porzione di rete interessata
-B.  Proteggere i dispositivi IoT dai possibili attacchi
-C.  Aumentare l'efficienza dei dispositivi IoT
-D.  Aumentare la velocità di elaborazione dei dati
-
-Question 8: In quale ambito industriale l'IoT permette il miglioramento del processo di sviluppo di nuovi prodotti tramite l'uso di dati aggregati?
-A.  Smart Factory.
-B.  Smart Logistics.
-C.  Smart Lifecycle.
-D.  Smart City.
-
-Question 9: Qual è l'importanza del machine learning nell'IoT?
-A.  La capacità di adattarsi a nuove situazioni e di apprendere dagli errori.
-B.  La possibilità di elaborare grandi quantità di dati in poco tempo.
-C.  La capacità di comunicare con altri dispositivi smart e di raccogliere dati.
-D.  La possibilità di creare dispositivi autonoomi senza bisogno di un collegamento ad internet.
-
-Question 10: Quali sono i due nuovi paradigmi delle telecomunicazioni che permettono i progressi dell'IoT?
-A.  Network function virtualization e Edge computing.
-B.  Definizione software della rete e Voice over IP.
-C.  Cloud computing e Ritardo di trasmissione ridotto.
-D.  Banda larga ad 1 Gbit e Commutazione di circuiti.
-
-Question 11: Quali sono le caratteristiche degli smart objects?
-A.  Possono fare telefonate
-B.  Possono trasformarsi in un robot
-C.  Possono rielaborare le informazioni
-D.  Possono emettere luce colorata
-
-Question 12: Qual è il requisito fondamentale della rete telefonica rispetto alla variante digitale e come è stata superata la problematica del bit rate variabile?
-A.  La caratteristica principale è la commutazione a pacchetto e la problematica è stata superata grazie al Voice over IP.
-B.  La caratteristica principale è l'interattività e la problematica è stata superata grazie alla commutazione a pacchetto.
-C.  La comunicazione tra calcolatori è stata possibile solo tramite commutazione di circuito.
-D.  La rete telefonica non è stata adeguatamente aggiornata alle tecnologie digitali.
-
-Question 13: Quali sono le problematiche relative all'utilizzo dei dispositivi IoT?
-A.  Costi ingenti
-B.  Problemi relativi alla memoria
-C.  Difficoltà nell'elaborazione dei dati
-D.  Problemi legati all'installazione dei dispositivi
-
-Question 14: Quali sono le criticità riguardanti la sicurezza nell'IoT?
-A.  La presenza di vulnerabilità nei dispositivi e la mancanza di standard di sicurezza.
-B.  La mancanza di autonomia dei dispositivi e la scarsa qualità dei materiali.
-C.  La limitata capacità di elaborazione dati e la lentra integrazione in una rete.
-D.  La bassa efficacia dei sensori e la mancanza di memoria dei dispositivi.
+Question 5: Quali sono alcune delle problematiche legate all'utilizzo degli IoT devices?
+A.  Prezzi bassi e rispetto della privacy 
+B.  Costi ingenti, problematiche di privacy e sicurezza, e implicazioni derivanti da un utilizzo non efficiente dei dispositivi 
+C.  Problemi legati alla velocità di connessione
+D.  Nessuna delle precedenti 
 
