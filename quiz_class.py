@@ -8,7 +8,7 @@ class Quiz:
         self.questions = []
         self.language = language
 
-        file_path = 'results/quiz.txt'
+        file_path = 'output/refactored_quiz.txt'
         with open(file_path, encoding='utf-8') as file:
             content = file.read()
 
@@ -28,12 +28,12 @@ class Quiz:
             # Add the question to the quiz object
             self.add_question(question, answers, correct_answer, level)
 
-    def get_language(self):
-        return self.language
-
     def add_question(self, question, answers, correct_answer, level):
         new_question = Question(question, answers, correct_answer, level)
         self.questions.append(new_question)
+
+    def get_language(self):
+        return self.language
 
     def get_questions(self):
         return self.questions
@@ -44,32 +44,36 @@ class Quiz:
         else:
             return None
 
-    def print_quiz(self):
-        for i, question in enumerate(self.questions, start=1):
-            print(f"Question {i}:", question.get_text())
-            options = question.get_answers()
-            for j, option in enumerate(options, start=1):
-                print(f"{chr(64 + j)}. {option}")
-            print()
-
-    def print_complete_quiz(self):
-        for i, question in enumerate(self.questions, start=1):
-            print(f"Question {i}:", question.get_text())
-            options = question.get_answers()
-            for j, option in enumerate(options, start=1):
-                print(f"{chr(64 + j)}. {option}")
-            print(f"Correct answer:", question.get_correct_answer())  # to remove
-            print(f"Bloom taxonomy level:", question.get_level())  # to remove
-            print(f"Score:", question.get_score())  # to remove
-            print()
-
-    def print_correct_answers(self):
-        for i, question in enumerate(self.questions, start=1):
-            print(f"Correct answer for question {i}:", question.get_correct_answer())
-        print()
-
     def get_num_questions(self):
         return len(self.questions)
+
+    def get_quiz_as_string(self):
+        quiz_text = ""
+        for i, question in enumerate(self.questions, start=1):
+            quiz_text += f"Question {i}: {question.get_text()}\n"
+            options = question.get_answers()
+            for j, option in enumerate(options, start=1):
+                quiz_text += f"{chr(64 + j)}. {option}\n"
+            quiz_text += "\n"
+        return quiz_text
+
+    def get_complete_quiz_as_string(self):
+        quiz_text = ""
+        for i, question in enumerate(self.questions, start=1):
+            quiz_text += f"Question {i}: {question.get_text()}\n"
+            options = question.get_answers()
+            for j, option in enumerate(options, start=1):
+                quiz_text += f"{chr(64 + j)}. {option}\n"
+            quiz_text += f"Correct answer: {question.get_correct_answer()}\n"
+            quiz_text += f"Bloom taxonomy level: {question.get_level()}\n"
+            quiz_text += f"Score: {question.get_score()}\n\n"
+        return quiz_text
+
+    def get_correct_answers_as_string(self):
+        answers_text = ""
+        for i, question in enumerate(self.questions, start=1):
+            answers_text += f"Correct answer for question {i}: {question.get_correct_answer()}\n"
+        return answers_text
 
     def print_num_questions_for_each_level(self, bloom_levels):
         count_questions_by_level = {}
@@ -88,26 +92,44 @@ class Quiz:
         print()
 
     def select_questions(self, num_questions_level, bloom_levels):
-        selected_questions_by_level = {}
+        selected_questions_by_level = {}  # Dictionary to store selected questions for each level
 
-        sorted_questions_by_level = {}
+        sorted_questions_by_level = {}  # Dictionary to store questions sorted by level
 
+        # Sort questions by level
         for question in self.questions:
             level = question.get_level()
             if level not in sorted_questions_by_level:
                 sorted_questions_by_level[level] = []
             sorted_questions_by_level[level].append(question)
 
+        # Sort questions within each level by score in descending order
         for level, level_questions in sorted_questions_by_level.items():
             sorted_questions_by_level[level] = sorted(level_questions, key=lambda q: q.get_score(), reverse=True)
 
+        # Select the specified number of questions for each level
         for level, level_questions in sorted_questions_by_level.items():
-            num_questions = num_questions_level[bloom_levels.index(level)]
-            selected_questions = level_questions[:num_questions]
+            num_questions = num_questions_level[bloom_levels.index(level)]  # Get the number of questions for the level
+            selected_questions = level_questions[:num_questions]  # Select the top questions
             selected_questions_by_level[level] = selected_questions
 
-        self.questions = []
+        self.questions = []  # Clear the existing questions list
 
+        # Populate self.questions with the selected questions
         for level, level_questions in selected_questions_by_level.items():
             for question in level_questions:
                 self.questions.append(question)
+
+    def generate_files(self):
+
+        file_path = 'output/final_quiz.txt'
+        with open(file_path, 'w', encoding='utf-8') as file:
+            file.write(self.get_complete_quiz_as_string())
+
+        file_path = 'results/questions.txt'
+        with open(file_path, 'w', encoding='utf-8') as file:
+            file.write(self.get_quiz_as_string())
+
+        file_path = 'results/answers.txt'
+        with open(file_path, 'w', encoding='utf-8') as file:
+            file.write(self.get_correct_answers_as_string())
