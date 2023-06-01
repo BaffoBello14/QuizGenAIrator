@@ -1,143 +1,143 @@
-1. Cosa si intende per connessione degli oggetti nell'IoT?
-A) La capacità degli oggetti di elaborare i dati di altri dispositivi.
-B) L'identificazione degli oggetti in base alle loro caratteristiche.
-C) La possibilità degli oggetti di comunicare dati su loro stessi.
-D) La funzione degli attuatori nell'ambiente fisico.
+1. Quali sono i principi alla base dell'Internet of Things?
+A) Capacità di volare, innata intelligenza, capacità di comunicare con gli alieni
+B) Capacità di cucinare, conoscenza della grammatica tedesca, abilità di suonare il pianoforte
+C) Capacità di essere riconosciuti, comunicare dati su loro stessi, accedere a dati aggregati di altri dispositivi
+D) Capacità di nuotare, conoscenza della fotografia, abilità di parlare spagnolo
 Correct answer: C
 Revised Bloom's Taxonomy level: Remembering
 
-2. Quali regole base sono necessarie per prevenire gli attacchi informatici nel mondo dell'IoT?
-A) Autenticazione forte e connessione sicura.
-B) Password deboli e dati non criptati.
-C) Accesso ad altri dispositivi e elaborazione di dati.
-D) Raccolta di informazioni dalla rete e analisi del traffico.
+2. Qual è uno dei requisiti principali per prevenire gli attacchi informatici in dispositivi IoT?
+A) Scrivere la password sui social network
+B) Cifrare la password con un codice troppo semplice
+C) Utilizzare password e metodi di autenticazioni robuste
+D) Non usare password, ma affidarsi alla sicurezza dei dispositivi stessi
+Correct answer: C
+Revised Bloom's Taxonomy level: Understanding
+
+3. Come funziona l'Edge computing?
+A) L'elaborazione dei dati avviene su un server lontano dal sensore
+B) L'elaborazione dei dati avviene su un server più vicino possibile al dove i dati vengono richiesti
+C) L'elaborazione dei dati avviene solamente nella rete cloud
+D) L'elaborazione dei dati avviene solo nei dispositivi di storage
+Correct answer: B
+Revised Bloom's Taxonomy level: Applying
+
+4. Quali sono gli elementi base dell'Internet of Things descritti nella dispensa?
+A) Insetti, pneumatici, gelato
+B) Sensori, attuatori, microcontrollori, gateway, carrier
+C) Cuffie, piante grasse, pasta al forno
+D) Biciclette, frigoriferi, matite
+Correct answer: B
+Revised Bloom's Taxonomy level: Applying
+
+5. Qual è l'evoluzione della rete telefonica?
+A) L'Internet via satellite
+B) La commutazione a pacchetto
+C) L'uso di soli telefoni cellulari
+D) La creazione di telefoni senza fili
+Correct answer: B
+Revised Bloom's Taxonomy level: Analyzing
+
+6. In quale settore l'IoT trova applicazione nel mondo industriale?
+A) La creazione di videogiochi
+B) La produzione di cosmetici
+C) La tracciabilità e monitoraggio della filiera, end -of-life management, miglioria del processo di sviluppo di nuovi prodotti
+D) L'agricoltura biologica
+Correct answer: C
+Revised Bloom's Taxonomy level: Evaluating
+
+7. Quali sono i tre presupposti per considerare un oggetto come smart object?
+A) Devono essere economici, devono avere connettività 5G, devono essere realizzati in materiali ecologici,
+B) Devono essere di marca, devono essere facili da utilizzare, devono avere una lunga durata,
+C) Devono essere riconoscibili, devono avere la capacità di comunicare dati su loro stessi, devono poter accedere a dati aggregati di altri dispositivi,
+D) Devono essere colorati, devono avere forme particolari, devono essere leggeri.
+Correct answer: C
+Revised Bloom's Taxonomy level: Remembering
+
+8. Quali sono i due tipi di possibilità di connessione degli smart objects?
+A) Aereo e marittimo,
+B) A corto raggio e a piedi,
+C) A corto raggio e a lungo raggio,
+D) A energia solare e a batteria.
+Correct answer: C
+Revised Bloom's Taxonomy level: Understanding
+
+9. Come si chiamano i sensori che raccolgono informazioni dall'ambiente fisico in cui si trovano?
+A) Actuatori,
+B) Microprocessori,
+C) Sensori smart,
+D) Dispositivi di rilevamento.
+Correct answer: C
+Revised Bloom's Taxonomy level: Applying
+
+10. Qual è una delle regole base per proteggere i dispositivi IoT dagli attacchi esterni?
+A) Proteggere solo i dispositivi per acquisire i dati,
+B) Utilizzare password e metodi di autenticazioni deboli,
+C) Non custodire i dispositivi in luoghi sicuri,
+D) Utilizzare la cifratura (encryption).
+Correct answer: D
+Revised Bloom's Taxonomy level: Applying
+
+11. Quali sono le problematiche connesse all'utilizzo dei dispositivi IoT?
+A) Personalizzazione e sicurezza
+B) Costi limitati e ottimizzazione dell'energia
+C) Costi ingenti, problematiche di privacy e sicurezza, implicazioni derivanti da un utilizzo non efficiente dei dispositivi
+D) Affidabilità e sicurezza delle comunicazioni
+Correct answer: C
+Revised Bloom's Taxonomy level: Applying
+
+12. Quali sono le caratteristiche degli oggetti smart?
+A) Poter rielaborare le informazioni, comunicare in modalità bidirezionale, avere una forma accattivante
+B) Essere riconfigurabili, avere una forma ergonomica, svolgere un'azione conseguente ad un evento
+C) Poter rielaborare le informazioni, comunicare in modalità bidirezionale, essere riconfigurabili, intraprendere azioni conseguenti ad eventi, trasmettere dati in real-time
+D) Essere dotati di memoria interna, avere una forma innovativa, svolgere diverse azioni in simultanea
+Correct answer: C
+Revised Bloom's Taxonomy level: Analyzing
+
+13. Cosa permette di fare l'autovettura che comunica i suoi dati sul tipo di guida?
+A) Monitoraggio del traffico
+B) Fornire informazioni utili alle assicurazioni
+C) Evitare la lettura fisica dei contatori elettrici
+D) Comunicare al turista le informazioni sulla sua storia
+Correct answer: B
+Revised Bloom's Taxonomy level: Evaluating
+
+14. Qual è uno dei vantaggi dell'Edge computing?
+A) Possibilità di elaborare grandi quantità di dati in pochissimo tempo
+B) Possibilità di immagazzinare i dati raccolti senza limiti di spazio
+C) Possibilità di elaborare i dati su un server lontano dal sensore
+D) Possibilità di elaborare i dati su un server più vicino possibile al dove i dati vengono richiesti
+Correct answer: D
+Revised Bloom's Taxonomy level: Understanding
+
+15. Qual è uno dei limiti dell'Internet delle cose?
+A) Non esistono limiti, è una tecnologia infallibile
+B) Abuso di dati personali da parte delle aziende fornite dei dispositivi IoT
+C) Difficoltà di reperimento dei dispositivi stessi sul mercato
+D) Impossibilità di connessione con altri dispositivi presenti nella propria abitazione
+Correct answer: B
+Revised Bloom's Taxonomy level: Understanding
+
+16. Cos'è l'RFID?
+A) Una tecnologia di comunicazione wireless a corto raggio
+B) Un sistema di posizionamento globale
+C) Un dispositivo per la sicurezza fisica di un ambiente
+D) Un metodo di criptazione dei messaggi
 Correct answer: A
-Revised Bloom's Taxonomy level: Understanding
-
-3. Qual è il paradigma di calcolo attualmente adottato nell'ambito dell'IoT?
-A) Cloud computing.
-B) Edge computing.
-C) Edge storage.
-D) Artificial intelligence.
-Correct answer: B
-Revised Bloom's Taxonomy level: Applying
-
-4. Quali sono i due nuovi paradigmi delle telecomunicazioni alla base dei progressi dell'IoT?
-A) Software define networking e network function virtualization.
-B) Cloud computing e big data analytics.
-C) Machine learning e deep learning.
-D) Blockchain e internet security.
-Correct answer: A
-Revised Bloom's Taxonomy level: Analyzing
-
-5. Quali sono le possibili applicazioni dell'IoT nell'ambito industriale?
-A) Smart Home e Smart Building.
-B) Smart Healthcare e Smart Education.
-C) Smart Factory e Smart Logistics.
-D) Smart Retail e Smart Marketing.
-Correct answer: C
-Revised Bloom's Taxonomy level: Analyzing
-
-6. Qual è il principale rischio legato all'introduzione dei dispositivi IoT?
-A) La perdita di dati.
-B) Gli attacchi informatici.
-C) La saturazione della rete.
-D) La concorrenza sul mercato.
-Correct answer: B
-Revised Bloom's Taxonomy level: Evaluating
-
-1. Cos'è la definizione di smart object?
-A) Dispositivi che non possono essere riconosciuti.
-B) Dispositivi che non comunicano dati su di loro.
-C) Dispositivi che devono essere riconoscibili, comunicare dati su di loro e accedere a dati aggregati di altri dispositivi.
-D) Dispositivi che non possono accedere a dati aggregati di altri dispositivi.
-Correct answer: C
 Revised Bloom's Taxonomy level: Remembering
 
-2. Quali sono i presupposti per considerare un dispositivo come smart object?
-A) Deve essere connesso ad internet.
-B) Deve avere una batteria ricaricabile.
-C) Deve essere riconoscibile, comunicare dati su di sé e accedere a dati aggregati di altri dispositivi.
-D) Deve essere in grado di svolgere una sola funzione.
-Correct answer: C
-Revised Bloom's Taxonomy level: Understanding
-
-3. In quale settore ha maggiore rilevanza l'IoT?
-A) Settore alimentare.
-B) Settore immobiliare.
-C) Settore degli elettrodomestici.
-D) Settore tecnologico.
-Correct answer: D
-Revised Bloom's Taxonomy level: Applying
-
-4. Qual è l'importanza della sicurezza e della privacy nell'IoT?
-A) Non sono importanti.
-B) Sono importanti solo per alcune categorie di dispositivi.
-C) Sono importanti perché i dispositivi IoT sono fonti di ingenti moli di dati.
-D) Sono importanti solo per i dispositivi IoT utilizzati in ambito medico.
-Correct answer: C
-Revised Bloom's Taxonomy level: Analyzing
-
-5. Quali sono le regole base per la prevenzione di attacchi informatici attraverso dispositivi IoT?
-A) Non sono necessarie regole specifiche.
-B) Utilizzo di password e metodi di autenticazione robusti, e cifratura.
-C) Utilizzo di password semplici e metodi di autenticazione debole, e cifratura.
-D) Non utilizzare dispositivi IoT per la trasmissione di dati.
-Correct answer: B
-Revised Bloom's Taxonomy level: Analyzing
-
-6. Quali sono le caratteristiche chiave degli oggetti smart?
-A) Riconoscere solo l'ambiente fisico in cui si trovano.
-B) Comunicare solo in modalità unidirezionale.
-C) Non essere riconfigurabili.
-D) Poter rielaborare le informazioni, comunicare in modalità bidirezionale, essere riconfigurabili, intraprendere azioni conseguenti ad eventi e trasmettere dati in real-time.
-Correct answer: D
-Revised Bloom's Taxonomy level: Evaluating
-
-1. Quali sono le caratteristiche degli oggetti smart che permettono di rielaborare le informazioni?
-A) Poter intraprendere azioni conseguenti ad eventi.
-B) Essere riconfigurabili.
-C) Poter rielaborare le informazioni.
-D) Comunicare in modalità bidirezionale.
-Correct answer: C
-Revised Bloom's Taxonomy level: Remembering
-
-2. Che problema può causare un utilizzo non efficiente dei dispositivi IoT?
-A) Costi ingenti.
-B) Problemi di privacy e sicurezza.
-C) Implicazioni derivanti da un utilizzo non efficiente dei dispositivi.
-D) Tutte le risposte sono corrette.
-Correct answer: D
-Revised Bloom's Taxonomy level: Understanding
-
-3. Cosa sono gli attuatori?
-A) Dispositivi di rilevamento.
-B) Dispositivi di memoria.
-C) Dispositivi per controllare un processo o eseguire un'azione.
-D) Tutte le risposte sono sbagliate.
+17. Qual è l'utilizzo degli attuatori?
+A) Raccogliere informazioni dall'ambiente fisico
+B) Monitorare il traffico in tempo reale
+C) Azionare un dispositivo
+D) Elaborare i dati raccolti
 Correct answer: C
 Revised Bloom's Taxonomy level: Applying
 
-4. Quali sono le caratteristiche degli oggetti smart che permettono di trasmettere dati in tempo reale?
-A) Poter intraprendere azioni conseguenti ad eventi.
-B) Essere riconfigurabili.
-C) Poter rielaborare le informazioni.
-D) Trasmettere dati in real-time, ovvero in tempo reale.
-Correct answer: D
-Revised Bloom's Taxonomy level: Analyzing
-
-5. Quali sono le problematiche degli oggetti smart che comunicano informazioni sulla storia di un monumento?
-A) Costi ingenti.
-B) Problemi di privacy e sicurezza.
-C) Implicazioni derivanti da un utilizzo non efficiente dei dispositivi.
-D) Nessuna delle risposte è corretta.
+18. Come funzionano i microcontrollori?
+A) Raccolgono informazioni dall'ambiente esterno
+B) Elaborano i dati raccolti dai sensori
+C) Azionano i dispositivi connessi in rete
+D) Nessuna delle precedenti
 Correct answer: B
-Revised Bloom's Taxonomy level: Analyzing
-
-6. Quali sono le caratteristiche degli oggetti smart che determinano il tipo di dato o dati rilevabili?
-A) Elaborazione e memoria.
-B) Comunicazione.
-C) Tecnologia di sensing.
-D) Alimentazione.
-Correct answer: C
-Revised Bloom's Taxonomy level: Evaluating
+Revised Bloom's Taxonomy level: Understanding

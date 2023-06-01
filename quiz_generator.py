@@ -183,7 +183,9 @@ class QuizGenerator:
                 file.write(content)
                 file.write("\n\n")
 
-    def refactor(self):
+        self.refactor(num_partitions, num_questions_level_partition)
+
+    def refactor(self, num_partitions, num_questions_level_partition):
 
         file_path = 'results/raw_quiz.txt'
         with open(file_path, encoding='utf-8') as file:
@@ -192,9 +194,14 @@ class QuizGenerator:
 
         conversation = []
 
-        # temp_query = "The language of the quiz must be: " + self.language
+        tot_questions = 0
+        for value in num_questions_level_partition:
+            tot_questions += value
+        tot_questions *= num_partitions
 
-        prompt = raw_quiz + " " + self.refactor_query
+        print("tot_questions", tot_questions)
+
+        prompt = raw_quiz + " " + self.refactor_query + " " + str(tot_questions) + "."
         conversation.append({'role': 'user', 'content': prompt})
         print("(Refactoring) TOKENS BEFORE RESPONSE", num_tokens_from_messages(conversation, self.model_id))
 

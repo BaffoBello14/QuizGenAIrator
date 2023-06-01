@@ -50,6 +50,15 @@ class Quiz:
             options = question.get_answers()
             for j, option in enumerate(options, start=1):
                 print(f"{chr(64 + j)}. {option}")
+            print()
+
+    def print_complete_quiz(self):
+        for i, question in enumerate(self.questions, start=1):
+            print(f"Question {i}:", question.get_text())
+            options = question.get_answers()
+            for j, option in enumerate(options, start=1):
+                print(f"{chr(64 + j)}. {option}")
+            print(f"Correct answer:", question.get_correct_answer())  # to remove
             print(f"Bloom taxonomy level:", question.get_level())  # to remove
             print(f"Score:", question.get_score())  # to remove
             print()

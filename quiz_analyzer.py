@@ -1,5 +1,4 @@
 import spacy
-import enchant
 
 
 class QuizAnalyzer:
@@ -7,8 +6,8 @@ class QuizAnalyzer:
         super().__init__()
 
         self.quiz = quiz
+
         language = quiz.get_language()
-        
         if language == "english":
             self.nlp = spacy.load("en_core_web_trf")
         elif language == "italian":
@@ -19,34 +18,9 @@ class QuizAnalyzer:
         self.text = text
 
         # Define weights for similarity, coherence, and clarity
-        self.similarity_weight = 0.6
-        self.coherence_weight = 0.3
-        self.clarity_weight = 0.1
-
-    def compare_text_quiz(self):
-        # Implementa una logica di confronto testo-quiz
-        text_doc = self.nlp(self.text)
-
-        for i in range(self.quiz.get_num_questions()):
-
-            question_text = self.quiz.get_question(i).get_text()
-            question_doc = self.nlp(question_text)
-            similarity_score = text_doc.similarity(question_doc)  # Calcola la similarità del coseno
-            # print("Question:", question_text)
-            # print("Similarity Score:", similarity_score)
-
-            self.quiz.get_question(i).set_score(similarity_score)
-
-            for j in range(self.quiz.get_question(i).get_num_answers()):
-                answer_text = self.quiz.get_question(i).get_answer(j)
-                answer_doc = self.nlp(answer_text)
-
-                similarity_score = text_doc.similarity(answer_doc)  # Calcola la similarità del coseno
-                # print("\tAnswer:", answer_text)
-                # print("\tSimilarity Score:", similarity_score)
-
-            # print(self.quiz.get_question(i).get_correct_answer(), self.quiz.get_question(i).get_correct_answer_text())
-            # print()
+        self.similarity_weight = 0.6    # TEXT <-> QUESTION + ANSWERS
+        self.coherence_weight = 0.3     # ANSWERS <-> QUESTION
+        self.clarity_weight = 0.1       # tokens
 
     def calculate_weighted_standing(self):
 
@@ -85,7 +59,7 @@ class QuizAnalyzer:
 
             question.set_score(weighted_standing)
 
-            print(question.get_text())
+            '''print(question.get_text())
             print("\tsimilarity_score: ", similarity_score)
             print("\tcoherence_score: ", coherence_score)
-            print("\tclarity_score", clarity_score)
+            print("\tclarity_score", clarity_score)'''
