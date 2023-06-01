@@ -1,54 +1,66 @@
-Title: "Quiz Generation from Academic Text using Generative AI: A Spacy NLP Evaluation"
-Authors: [List of authors]
-
 Introduction
 
 Background and motivation
 Objectives and scope
 Overview of the paper's structure
+State of the Art
+2.1 Quiz Generation Techniques
+- Overview of existing approaches for quiz generation, including rule-based, retrieval-based, and generative methods
+- Discussion on the advantages and limitations of each technique
+- Identification of the gaps and challenges in quiz generation from academic text
+
+2.2 Natural Language Processing in Quiz Generation
+- Examination of the role of natural language processing (NLP) in quiz generation tasks
+- Overview of NLP techniques commonly used, such as named entity recognition, part-of-speech tagging, or syntactic parsing
+- Discussion on how NLP enhances the quality and relevance of generated quiz questions
+
+2.3 AI and NLP Tools/Frameworks
+- Survey of AI tools and frameworks commonly employed in quiz generation and NLP tasks, including OpenAI APIs and Spacy
+- Explanation of the benefits and functionalities provided by these tools in the context of quiz generation from academic text
+
 Description of the Process
-2.1 Data Collection
+3.1 Data Collection
 - Explanation of the sources and methods used to extract text from academic papers, PDFs, and dispenses
 - Discussion on the challenges and considerations in data collection
 
-2.2 Preprocessing
+3.2 Preprocessing
 - Overview of the preprocessing techniques applied to the extracted text
 - Description of any text cleaning, normalization, or formatting steps performed
 - Integration of Spacy NLP for text processing and analysis
 
-2.3 Quiz Generation using Generative AI
+3.3 Quiz Generation using Generative AI
 - Explanation of the generative AI approach used to create multiple-choice questions from the preprocessed text
 - Discussion on the selection of appropriate models and techniques for generating quiz questions
 - Details on how the generative AI models were integrated into the workflow
 
 Evaluation Methodology
-3.1 Spacy NLP Integration
+4.1 Spacy NLP Integration
 - Overview of the integration of Spacy NLP for quiz evaluation and analysis
 - Description of the specific Spacy NLP features used, such as named entity recognition, part-of-speech tagging, or dependency parsing
 
-3.2 Evaluation Metrics
+4.2 Evaluation Metrics
 - Explanation of the metrics used to assess the quality and relevance of the generated quiz questions
 - Discussion on how the Spacy NLP analysis was used to evaluate the quizzes
 
 Results and Findings
-4.1 Analysis of Generated Quizzes
+5.1 Analysis of Generated Quizzes
 - Presentation of the generated quizzes and their characteristics
 - Discussion on the effectiveness of the generative AI approach in creating meaningful and accurate quiz questions
 
-4.2 Evaluation Results using Spacy NLP
+5.2 Evaluation Results using Spacy NLP
 - Evaluation of the quizzes using Spacy NLP features and metrics
 - Analysis of the quiz quality and relevance based on the NLP evaluation
 
 Discussion
-5.1 Originality and Open Issues
+6.1 Originality and Open Issues
 - Discussion on the original contributions of the project and the identified open issues in quiz generation from academic text
 - Suggestions for future research and improvements in the field
 
-5.2 Autonomy in Data Collection
+6.2 Autonomy in Data Collection
 - Reflection on the autonomy and independence demonstrated in the data collection process
 - Challenges encountered and lessons learned
 
-5.3 Expertise in Preprocessing and Algorithms
+6.3 Expertise in Preprocessing and Algorithms
 - Evaluation of the expertise demonstrated in the preprocessing techniques and the application of generative AI algorithms
 - Analysis of the strengths and limitations of the approach used
 
