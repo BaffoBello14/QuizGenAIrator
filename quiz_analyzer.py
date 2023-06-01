@@ -8,8 +8,13 @@ class QuizAnalyzer:
 
         self.quiz = quiz
         language = quiz.get_language()
-        # if (language) cambiare libreria
-        self.nlp = spacy.load("it_core_news_lg")
+        
+        if language == "english":
+            self.nlp = spacy.load("en_core_web_trf")
+        elif language == "italian":
+            self.nlp = spacy.load("it_core_news_lg")
+        elif language == "french":
+            self.nlp = spacy.load("fr_dep_news_trf")
 
         self.text = text
 
