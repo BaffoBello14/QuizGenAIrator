@@ -1,135 +1,99 @@
-Question 1: Quali sono i dispositivi che possono essere collegati alla rete IoT?
-A.  Solo smartphone e tablet
-B.  Solo computer e laptop
-C.  Qualsiasi dispositivo che supporti la connettività Internet
-D.  Solo i dispositivi prodotti in un determinato periodo temporale
+Question 1: Qual è uno dei presupposti per considerare un oggetto come smart object?
+A.  Avere forme stravaganti
+B.  Essere di colore nero
+C.  Essere riconoscibili
+D.  Essere privi di connessione
 Correct answer: C
 Bloom taxonomy level: Remembering
-Score: 0.7185427870113861
+Score: 0.6742899119261068
 
-Question 2: Quali sono i presupposti per considerare un oggetto smart?
-A.  Non è necessario che sia riconoscibile
-B.  Non deve avere la capacità di comunicare dati su se stesso
-C.  Deve essere riconoscibile e avere la capacità di comunicare dati su se stesso e deve poter accedere a dati aggregati di altri dispositivi
-D.  Deve essere tangibile
-Correct answer: C
+Question 2: What is one of the key features of smart objects?
+A.  Being able to reprocess information
+B.  Reducing costs
+C.  Ensuring safety
+D.  None of the above
+Correct answer: A
 Bloom taxonomy level: Remembering
-Score: 0.6868973855391769
+Score: 0.2936884116048285
 
-Question 3: Quali sono i presupposti per considerare un oggetto smart?
-A.  Non è necessario che sia tangibile
-B.  Non deve avere la capacità di comunicare dati su se stesso
-C.  Deve essere riconoscibile e avere la capacità di comunicare dati su se stesso e deve poter accedere a dati aggregati di altri dispositivi
-D.  Deve essere opaco
-Correct answer: C
+Question 3: What is the definition of Internet of Things (IoT)?
+A.  The extension of the concept of internet to concrete objects and places
+B.  The use of social media to communicate 
+C.  The development of virtual reality
+D.  The creation of robots with artificial intelligence
+Correct answer: A
 Bloom taxonomy level: Remembering
-Score: 0.6845108797590804
+Score: 0.289681328626362
 
-Question 4: Quali sono le caratteristiche fondamentali dell'edge computing nella tecnologia IoT?
-A.  Efficienza energetica e riduzione dei costi
-B.  Eccellenza dei dati e maggiore sicurezza
-C.  Maggiore velocità di elaborazione dei dati e riduzione dei tempi di latenza
-D.  Maggiore accessibilità dei dati e maggiore affidabilità
+Question 4: Qual è uno dei temi importanti riguardo all'Internet of Things?
+A.  L'estetica dei dispositivi smart
+B.  L'importanza di avere molti dispositivi smart
+C.  La sicurezza e privacy
+D.  L'aumento delle dimensioni degli oggetti smart
 Correct answer: C
 Bloom taxonomy level: Understanding
-Score: 0.6922319565904793
+Score: 0.5256386934756093
 
-Question 5: Quali sono le caratteristiche chiave della tecnologia Bluetooth Low Energy (BLE)?
-A.  Bassi consumi e lungo raggio di copertura
-B.  Alti consumi e breve raggio di copertura
-C.  Bassi consumi e breve raggio di copertura
-D.  Alti consumi e lungo raggio di copertura
-Correct answer: A
+Question 5: What types of devices are microcontrollers?
+A.  Input detection devices
+B.  Output controlling devices
+C.  Electronic devices integrated on a single circuit
+D.  Data storage devices
+Correct answer: C
 Bloom taxonomy level: Understanding
-Score: 0.6092431936538487
+Score: 0.3220500685755052
 
-Question 6: Qual è una delle problematiche legate all'utilizzo di soluzioni IoT attuate?
-A.  Una facile disponibilità
-B.  Costi ingenti
-C.  Scarsa funzionalità
-D.  Riservatezza dei dati non garantita
-Correct answer: B
-Bloom taxonomy level: Applying
-Score: 0.7110632694271775
-
-Question 7: Quali sono le caratteristiche chiave dei sensori smart elencate?
-A.  Tecnologia di volo
-B.  Alimentazione a benzina
-C.  Tecnologia di sensing, alimentazione, elaborazione e memoria, comunicazione
-D.  Comunicazione con gli alieni
-Correct answer: C
-Bloom taxonomy level: Applying
-Score: 0.6855361892821521
-
-Question 8: In che modo si può prevenire un attacco informatico ai dispositivi IoT?
-A.  Non ci sono modi per prevenirli
-B.  Utilizzando solo password e metodi di autenticazione deboli
-C.  Non utilizzando la cifratura (encryption)
-D.  Utilizzando password e metodi di autenticazione robuste e la cifratura (encryption)
+Question 6: Qual è la soluzione per prevenire gli attacchi informatici ai dispositivi IoT?
+A.  Nessuna soluzione è possibile
+B.  Utilizzare password deboli
+C.  Utilizzare autenticazioni non robuste
+D.  Utilizzare password e metodi di autenticazioni robuste
 Correct answer: D
 Bloom taxonomy level: Applying
-Score: 0.6574462396009408
+Score: 0.7198558286711815
 
-Question 9: Quali sono le caratteristiche chiave dei sensori SMART?
-A.  Solo l'alimentazione
-B.  Solo la comunicazione
-C.  Tecnologia di sensing, alimentazione, elaborazione e memoria, comunicazione
-D.  Solo la tecnologia di sensing
-Correct answer: C
-Bloom taxonomy level: Applying
-Score: 0.6407426385904661
-
-Question 10: Quali sono le problematiche riscontrate nell'utilizzo dei dispositivi IoT?
-A.  Prezzi bassi
-B.  Sicurezza e privacy
-C.  Utilizzo efficiente dei dispositivi
-D.  Comunicazione affidabile
-Correct answer: B
+Question 7: Secondo il testo, invece di essere dispositivi sensoriali passivi, come possono essere visti i dispositivi IoT?
+A.  Come strumenti che possono portare ad avere un occhio all'interno di un ambiente in cui fisicamente non si può essere
+B.  Come oggetti costosi e senza utilità
+C.  Come strumenti che non hanno alcuna funzione
+D.  Come oggetti che non possono essere attaccati
+Correct answer: A
 Bloom taxonomy level: Analyzing
-Score: 0.672568498757534
+Score: 0.7586626054664505
 
-Question 11: Quali sono i fattori che influenzano la durata della batteria dei dispositivi IoT?
-A.  Solo il tipo di dispositivo
-B.  Solo l'utilizzo di antenne
-C.  Solo il tipo di connettività utilizzata
-D.  Il tipo di dispositivo, l'utilizzo di antenne e il tipo di connettività utilizzata
+Question 8: What is the difference between edge computing and cloud computing in IoT?
+A.  Edge computing is a distributed model where data processing occurs as close as possible to where the data is requested, while cloud computing is a paradigm of on-demand services offered by a provider to a customer through the internet.
+B.  Edge computing is a centralized model where data processing occurs far from where the data is requested, while cloud computing is a paradigm of on-demand services offered by a provider to a customer outside the internet.
+C.  Edge computing is a model of services offered on-site, while cloud computing is a model of services offered remotely.
+D.  Edge computing and cloud computing are the same thing in IoT.
+Correct answer: A
+Bloom taxonomy level: Analyzing
+Score: 0.4283677349662157
+
+Question 9: Quali sono le caratteristiche chiave degli oggetti smart?
+A.  Poter cambiare forma attraverso l'intelligenza artificiale
+B.  Poter parlare
+C.  Trasmettere dati solo in tempo virtuale
+D.  Poter rielaborare le informazioni, comunicare in modalità bidirezionale, essere riconfigurabili, intraprendere azioni conseguenti ad eventi, trasmettere dati in real-time
 Correct answer: D
-Bloom taxonomy level: Analyzing
-Score: 0.6502620449409078
-
-Question 12: Quali sono le implicazioni dell'utilizzo non efficiente dei dispositivi IoT?
-A.  Nessuna implicazione
-B.  Problemi di sicurezza e privacy
-C.  Utilizzo efficiente dei dispositivi
-D.  Comunicazione affidabile
-Correct answer: B
 Bloom taxonomy level: Evaluating
-Score: 0.7519181372906302
+Score: 0.708863026829448
 
-Question 13: Quali sono i vantaggi della tecnologia IoT nell'ambito della Smart City?
-A.  Riduzione dell'inquinamento ambientale e maggiore sicurezza
-B.  Maggiore produzione di rifiuti e maggiore traffico veicolare
-C.  Aumento dei costi degli immobili e maggiore utilizzo delle risorse idriche
-D.  Riduzione dei luoghi culturali e aumento delle zone industriali
+Question 10: What is the purpose of Zerynth platform in IoT?
+A.  To bridge the gap between hardware and cloud, enabling a series of services provided by third parties.
+B.  To produce microcontrollers with low-level programming languages.
+C.  To provide a solution to protect IoT devices against potential attacks.
+D.  To allow devices to communicate with other devices over long distances.
 Correct answer: A
 Bloom taxonomy level: Evaluating
-Score: 0.7073993599232891
+Score: 0.3750925388053459
 
-Question 14: Quali sono le due tipologie di dispositivi IoT che possono essere utilizzati nella Smart Logistics?
-A.  Sensori e attuatori
-B.  Smart Factory e Smart Lifecycle
-C.  Tag RFID e sensoristica, GPS/GPRS
-D.  Elaborazione e memoria, comunicazione
-Correct answer: C
+Question 11: What is one of the key features of SMART sensors?
+A.  Power supply
+B.  Security protection
+C.  Communication
+D.  Reconfigurability
+Correct answer: A
 Bloom taxonomy level: Evaluating
-Score: 0.6669315955801194
-
-Question 15: Quali sono gli attuatori?
-A.  Dispositivi di rilevamento
-B.  Dispositivi per controllare un processo
-C.  Dispositivi per rilevare e controllare un processo
-D.  Dispositivi per misurare un processo
-Correct answer: B
-Bloom taxonomy level: Evaluating
-Score: 0.5976583932333237
+Score: 0.1933171017818852
 
