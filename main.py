@@ -22,7 +22,6 @@ for i in range(len(bloom_levels)):
 print()
 
 # PDFReader object declaration passing to it the pdf from which extract the text
-# pdf_reader = PDFReader('pdf/Modulo 2.1 - IoT.pdf')
 file_path = filedialog.askopenfilename(defaultextension=".pdf", filetypes=[("PDF", "*.pdf")])
 if not file_path:
     exit()

@@ -1,5 +1,6 @@
+import PyPDF2
+import subprocess
 from question_class import Question
-
 
 class Quiz:
     def __init__(self, language):
@@ -122,7 +123,6 @@ class Quiz:
                 self.questions.append(question)
 
     def generate_files(self):
-
         file_path = 'output/final_quiz.txt'
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(self.get_complete_quiz_as_string())
@@ -135,5 +135,14 @@ class Quiz:
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(self.get_correct_answers_as_string())
 
-        print("The multi choice quiz was generated correctly.")
-        print("To see the questions and the answers consult the 'results' folder.")
+        # Convert the files to PDF using PyPDF2
+        pdf_path = 'results/questions.pdf'
+        merger = PyPDF2.PdfFileMerger()
+        merger.append('results/questions.txt')
+        merger.write(pdf_path)
+        merger.close()
+
+        # Open the PDF file
+        subprocess.Popen([pdf_path], shell=True)
+
+        print("The multi-choice quiz was generated correctly.")
