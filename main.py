@@ -2,6 +2,7 @@ from quiz_analyzer import QuizAnalyzer
 from quiz_class import Quiz
 from quiz_generator import QuizGenerator
 from pdf_reader import PDFReader
+from tkinter import filedialog
 
 # declaration of the Revised Bloom's Taxonomy levels
 bloom_levels = ["Remembering", "Understanding", "Applying", "Analyzing", "Evaluating"]
@@ -22,7 +23,11 @@ print()
 
 # PDFReader object declaration passing to it the pdf from which extract the text
 # pdf_reader = PDFReader('pdf/Modulo 2.1 - IoT.pdf')
-pdf_reader = PDFReader('pdf/Modulo 2.1 - IoT 5pag.pdf')
+file_path = filedialog.askopenfilename(defaultextension=".pdf", filetypes=[("PDF", "*.pdf")])
+if not file_path:
+    exit()
+
+pdf_reader = PDFReader(file_path)
 pdf_reader.process_pdf()
 
 # QuizGenerator object declaration passing to it the number of questions for each level and the Bloom's levels
