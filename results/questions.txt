@@ -1,30 +1,90 @@
-Question 1: Qual è uno dei presupposti per considerare un oggetto come smart object?
-A.  Deve essere costoso 
-B.  Non deve avere la capacità di comunicare dati su di sé
-C.  Deve essere riconoscibile
-D.  Non deve avere la capacità di accedere a dati aggregati di altri dispositivi
+Question 1: Quali sono i dispositivi che possono essere collegati alla rete IoT?
+A.  Solo smartphone e tablet
+B.  Solo computer e laptop
+C.  Qualsiasi dispositivo che supporti la connettività Internet
+D.  Solo i dispositivi prodotti in un determinato periodo temporale
 
-Question 2: Cosa sono i sensori?
-A.  Dispositivi di rilevamento che raccolgono informazioni dall'ambiente fisico in cui si trovano
-B.  Dispositivi per inviare messaggi
-C.  Dispositivi per fare videochiamate
-D.  Dispositivi di navigazione
+Question 2: Quali sono i presupposti per considerare un oggetto smart?
+A.  Non è necessario che sia riconoscibile
+B.  Non deve avere la capacità di comunicare dati su se stesso
+C.  Deve essere riconoscibile e avere la capacità di comunicare dati su se stesso e deve poter accedere a dati aggregati di altri dispositivi
+D.  Deve essere tangibile
 
-Question 3: In che modo gli oggetti smart possono intraprendere azioni conseguenti ad eventi?
-A.  Non possono intraprendere nessuna azione
-B.  Solo tramite compra online
-C.  Grazie a dei sensori integrati
-D.  Solo tramite la connessione Wi-Fi
+Question 3: Quali sono i presupposti per considerare un oggetto smart?
+A.  Non è necessario che sia tangibile
+B.  Non deve avere la capacità di comunicare dati su se stesso
+C.  Deve essere riconoscibile e avere la capacità di comunicare dati su se stesso e deve poter accedere a dati aggregati di altri dispositivi
+D.  Deve essere opaco
 
-Question 4: Quali sono le caratteristiche degli oggetti smart?
-A.  Essere bellissimi e costosi
-B.  Poter rielaborare i dati solo in modalità unidirezionale
-C.  Essere immobili
-D.  Poter rielaborare le informazioni, comunicare in modalità bidirezionale, essere riconfigurabili, intraprendere azioni conseguenti ad eventi e trasmettere dati in tempo reale
+Question 4: Quali sono le caratteristiche fondamentali dell'edge computing nella tecnologia IoT?
+A.  Efficienza energetica e riduzione dei costi
+B.  Eccellenza dei dati e maggiore sicurezza
+C.  Maggiore velocità di elaborazione dei dati e riduzione dei tempi di latenza
+D.  Maggiore accessibilità dei dati e maggiore affidabilità
 
-Question 5: Quali sono alcune delle problematiche legate all'utilizzo degli IoT devices?
-A.  Prezzi bassi e rispetto della privacy 
-B.  Costi ingenti, problematiche di privacy e sicurezza, e implicazioni derivanti da un utilizzo non efficiente dei dispositivi 
-C.  Problemi legati alla velocità di connessione
-D.  Nessuna delle precedenti 
+Question 5: Quali sono le caratteristiche chiave della tecnologia Bluetooth Low Energy (BLE)?
+A.  Bassi consumi e lungo raggio di copertura
+B.  Alti consumi e breve raggio di copertura
+C.  Bassi consumi e breve raggio di copertura
+D.  Alti consumi e lungo raggio di copertura
+
+Question 6: Qual è una delle problematiche legate all'utilizzo di soluzioni IoT attuate?
+A.  Una facile disponibilità
+B.  Costi ingenti
+C.  Scarsa funzionalità
+D.  Riservatezza dei dati non garantita
+
+Question 7: Quali sono le caratteristiche chiave dei sensori smart elencate?
+A.  Tecnologia di volo
+B.  Alimentazione a benzina
+C.  Tecnologia di sensing, alimentazione, elaborazione e memoria, comunicazione
+D.  Comunicazione con gli alieni
+
+Question 8: In che modo si può prevenire un attacco informatico ai dispositivi IoT?
+A.  Non ci sono modi per prevenirli
+B.  Utilizzando solo password e metodi di autenticazione deboli
+C.  Non utilizzando la cifratura (encryption)
+D.  Utilizzando password e metodi di autenticazione robuste e la cifratura (encryption)
+
+Question 9: Quali sono le caratteristiche chiave dei sensori SMART?
+A.  Solo l'alimentazione
+B.  Solo la comunicazione
+C.  Tecnologia di sensing, alimentazione, elaborazione e memoria, comunicazione
+D.  Solo la tecnologia di sensing
+
+Question 10: Quali sono le problematiche riscontrate nell'utilizzo dei dispositivi IoT?
+A.  Prezzi bassi
+B.  Sicurezza e privacy
+C.  Utilizzo efficiente dei dispositivi
+D.  Comunicazione affidabile
+
+Question 11: Quali sono i fattori che influenzano la durata della batteria dei dispositivi IoT?
+A.  Solo il tipo di dispositivo
+B.  Solo l'utilizzo di antenne
+C.  Solo il tipo di connettività utilizzata
+D.  Il tipo di dispositivo, l'utilizzo di antenne e il tipo di connettività utilizzata
+
+Question 12: Quali sono le implicazioni dell'utilizzo non efficiente dei dispositivi IoT?
+A.  Nessuna implicazione
+B.  Problemi di sicurezza e privacy
+C.  Utilizzo efficiente dei dispositivi
+D.  Comunicazione affidabile
+
+Question 13: Quali sono i vantaggi della tecnologia IoT nell'ambito della Smart City?
+A.  Riduzione dell'inquinamento ambientale e maggiore sicurezza
+B.  Maggiore produzione di rifiuti e maggiore traffico veicolare
+C.  Aumento dei costi degli immobili e maggiore utilizzo delle risorse idriche
+D.  Riduzione dei luoghi culturali e aumento delle zone industriali
+
+Question 14: Quali sono le due tipologie di dispositivi IoT che possono essere utilizzati nella Smart Logistics?
+A.  Sensori e attuatori
+B.  Smart Factory e Smart Lifecycle
+C.  Tag RFID e sensoristica, GPS/GPRS
+D.  Elaborazione e memoria, comunicazione
+
+Question 15: Quali sono gli attuatori?
+A.  Dispositivi di rilevamento
+B.  Dispositivi per controllare un processo
+C.  Dispositivi per rilevare e controllare un processo
+D.  Dispositivi per misurare un processo
 

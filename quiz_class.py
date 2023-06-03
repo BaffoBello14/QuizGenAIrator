@@ -1,6 +1,5 @@
 from question_class import Question
 
-
 class Quiz:
     def __init__(self, language):
         super().__init__()
@@ -133,3 +132,5 @@ class Quiz:
         file_path = 'results/answers.txt'
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(self.get_correct_answers_as_string())
+        
+        print("The quiz has been successfully generated!")
