@@ -1,8 +1,9 @@
 .vscode/
-result/
 __pycache__/
 output/
+results/
 input/extracted_plain_text.txt
+input/text.txt
 pdf/Modulo 2.1 - IoT 5pag ita.pdf
 pdf/Modulo 2.1 - IoT 5pag.pdf
 pdf/Modulo 2.1 - IoT 10pag.pdf
