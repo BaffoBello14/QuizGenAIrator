@@ -13,7 +13,7 @@ for i in range(len(bloom_levels)):
     num_questions_level.append(int(input(message)))
 
 # PDFReader object declaration passing to it the pdf from which extract the text
-pdf_reader = PDFReader('pdf/file0.pdf')
+pdf_reader = PDFReader('pdf/file7.pdf')
 pdf_reader.process_pdf()
 
 # QuizGenerator object declaration passing to it the number of questions for each level and the Bloom's levels

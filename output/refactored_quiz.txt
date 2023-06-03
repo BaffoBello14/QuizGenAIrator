@@ -1,167 +1,119 @@
-1. Quali sono i presupposti per considerare un oggetto smart?
-A) Non è necessario che sia riconoscibile
-B) Non deve avere la capacità di comunicare dati su se stesso
-C) Deve essere riconoscibile e avere la capacità di comunicare dati su se stesso e deve poter accedere a dati aggregati di altri dispositivi
-D) Deve essere tangibile
+1. What does digital transformation contribute to?
+A) Decrease in economic growth
+B) Decrease in competitiveness of goods and services
+C) Increase in economic growth
+D) Decrease in global innovation capabilities
 Correct answer: C
 Revised Bloom's Taxonomy level: Remembering
 
-2. Quali sono le possibilità di connessione degli smart objects?
-A) Solo a lungo raggio
-B) Solo a corto raggio
-C) Sia a corto che a lungo raggio
-D) Non possono essere connessi ad altri dispositivi
+2. Why is it necessary to digitize marketing activity?
+A) Consumers prefer non-digital channels
+B) Businesses prefer non-digital channels
+C) Consumers prefer brands and companies that utilize digital channels
+D) Digital channels are not effective for marketing
 Correct answer: C
 Revised Bloom's Taxonomy level: Understanding
 
-3. In che modo si può prevenire un attacco informatico ai dispositivi IoT?
-A) Non ci sono modi per prevenirli
-B) Utilizzando solo password e metodi di autenticazione deboli
-C) Non utilizzando la cifratura (encryption)
-D) Utilizzando password e metodi di autenticazione robuste e la cifratura (encryption)
-Correct answer: D
-Revised Bloom's Taxonomy level: Applying
-
-4. Quali sono le problematiche riscontrate nell'utilizzo dei dispositivi IoT?
-A) Prezzi bassi
-B) Sicurezza e privacy
-C) Utilizzo efficiente dei dispositivi
-D) Comunicazione affidabile
-Correct answer: B
-Revised Bloom's Taxonomy level: Analyzing
-
-5. Quali sono le caratteristiche chiave dei sensori SMART?
-A) Solo l'alimentazione
-B) Solo la comunicazione
-C) Tecnologia di sensing, alimentazione, elaborazione e memoria, comunicazione
-D) Solo la tecnologia di sensing
+3. How does digitization impact sales activities?
+A) Negatively
+B) No impact
+C) Positively
+D) Marginally
 Correct answer: C
 Revised Bloom's Taxonomy level: Applying
 
-6. Quali sono le implicazioni dell'utilizzo non efficiente dei dispositivi IoT?
-A) Nessuna implicazione
-B) Problemi di sicurezza e privacy
-C) Utilizzo efficiente dei dispositivi
-D) Comunicazione affidabile
-Correct answer: B
-Revised Bloom's Taxonomy level: Evaluating
-
-7. Quali sono le due tipologie di dispositivi IoT che possono essere utilizzati nella Smart Logistics?
-A) Sensori e attuatori
-B) Smart Factory e Smart Lifecycle
-C) Tag RFID e sensoristica, GPS/GPRS
-D) Elaborazione e memoria, comunicazione
-Correct answer: C
-Revised Bloom's Taxonomy level: Evaluating
-
-8. Qual è una delle caratteristiche chiave degli oggetti smart elencati?
-A) Essere luminosi
-B) Poter volare
-C) Poter rielaborare le informazioni
-D) Essere componibili
-Correct answer: C
-Revised Bloom's Taxonomy level: Remembering 
-
-9. Cosa significa IoT?
-A) Internet Of Toys
-B) Internet Of Things
-C) Internet Of Tickets
-D) Internet Of Time
-Correct answer: B
-Revised Bloom's Taxonomy level: Understanding 
-
-10. Qual è una delle problematiche legate all'utilizzo di soluzioni IoT attuate?
-A) Una facile disponibilità
-B) Costi ingenti
-C) Scarsa funzionalità
-D) Riservatezza dei dati non garantita
-Correct answer: B
-Revised Bloom's Taxonomy level: Applying 
-
-11. Quali sono le caratteristiche chiave dei sensori smart elencate?
-A) Tecnologia di volo
-B) Alimentazione a benzina
-C) Tecnologia di sensing, alimentazione, elaborazione e memoria, comunicazione
-D) Comunicazione con gli alieni
-Correct answer: C
-Revised Bloom's Taxonomy level: Applying 
-
-12. Come possono essere utilizzati i dati raccolti dai contatori digitali?
-A) Per migliorare la qualità dell'aria
-B) Per ricavare la posizione del sole
-C) Per fare previsioni sul traffico
-D) Per ricavare le abitudini dell'utente
-Correct answer: D
-Revised Bloom's Taxonomy level: Evaluating 
-
-13. Quali sono gli attuatori?
-A) Dispositivi di rilevamento
-B) Dispositivi per controllare un processo
-C) Dispositivi per rilevare e controllare un processo
-D) Dispositivi per misurare un processo
-Correct answer: B
-Revised Bloom's Taxonomy level: Evaluating 
-
-14. Cosa significa la sigla IoT?
-A) Idea Of Technology
-B) Internet Of Things
-C) Intelligence Of Technology
-D) Innovation Of Technology
-Correct answer: B
+4. What specific advantages does digitizing sale of electronic tickets offer?
+A) Facilitation of communication between customers and staff
+B) Inability to receive real-time data on seat availability
+C) Inability to plan and organize required number of trains according to customer requests
+D) Decreased accessibility of services to consumers
+Correct answer: A
 Revised Bloom's Taxonomy level: Analyzing
 
-15. Quali sono i presupposti per considerare un oggetto smart?
-A) Non è necessario che sia tangibile
-B) Non deve avere la capacità di comunicare dati su se stesso
-C) Deve essere riconoscibile e avere la capacità di comunicare dati su se stesso e deve poter accedere a dati aggregati di altri dispositivi
-D) Deve essere opaco
+5. What challenges do modern organizations face in implementing a digital business model?
+A) Lack of fear of change
+B) Lack of funding
+C) Too many directions and possibilities to choose from
+D) High level of staff competence in digitalization
+Correct answer: C
+Revised Bloom's Taxonomy level: Evaluating
+
+6. What is the definition of digitalization according to Honore?
+A) The optimization of business processes with physical solutions
+B) The optimization of business with marketing solutions
+C) The optimization of business with software and IT solutions
+D) The optimization of business with design solutions
 Correct answer: C
 Revised Bloom's Taxonomy level: Remembering
 
-16. Quali sono le caratteristiche chiave della tecnologia Bluetooth Low Energy (BLE)?
-A) Bassi consumi e lungo raggio di copertura
-B) Alti consumi e breve raggio di copertura
-C) Bassi consumi e breve raggio di copertura
-D) Alti consumi e lungo raggio di copertura
-Correct answer: A
+7. Why do consumers increasingly value their time according to the passage?
+A) Because they want to wait longer for feedback
+B) Because they don't want well-designed information resources
+C) Because they need instant feedback and well-designed information resources
+D) Because they want a group approach rather than individual attention
+Correct answer: C
 Revised Bloom's Taxonomy level: Understanding
 
-17. Quali sono i vantaggi della tecnologia IoT nell'ambito della Smart City?
-A) Riduzione dell'inquinamento ambientale e maggiore sicurezza
-B) Maggiore produzione di rifiuti e maggiore traffico veicolare
-C) Aumento dei costi degli immobili e maggiore utilizzo delle risorse idriche
-D) Riduzione dei luoghi culturali e aumento delle zone industriali
-Correct answer: A
-Revised Bloom's Taxonomy level: Evaluating
+8. How can companies meet the high needs of clients according to the passage?
+A) By slowing down the digitalization of their business processes
+B) By ignoring the expectations of customers regarding speed and quality of service provision
+C) By accelerating the digitalization of their business processes
+D) By not using software and IT solutions to optimize their business
+Correct answer: C
+Revised Bloom's Taxonomy level: Applying
 
-18. Quali sono i principali fattori da considerare per la sicurezza nell'utilizzo dei dispositivi IoT?
-A) La quantità di dati raccolti e la loro origine
-B) La disponibilità online dei dati raccolti e la loro natura
-C) La qualità dei dati raccolti e la loro tipologia
-D) La localizzazione dei dati raccolti e la loro quantità
-Correct answer: B
+9. What are the main goals and objectives of the research for determining the parameters of the influence of digitalization on sales activity?
+A) To reduce the competitiveness of the company, goods, and services in the domestic and foreign markets
+B) To decrease sales of goods and services
+C) To slow down all business processes
+D) To increase the competitiveness of the company, goods, and services in the domestic and foreign markets and to promote efficient production
+Correct answer: D
 Revised Bloom's Taxonomy level: Analyzing
 
-19. Quali sono i dispositivi che possono essere collegati alla rete IoT?
-A) Solo smartphone e tablet
-B) Solo computer e laptop
-C) Qualsiasi dispositivo che supporti la connettività Internet
-D) Solo i dispositivi prodotti in un determinato periodo temporale
+10. According to the passage, what are the main components of digitalization?
+A) Cost structure and key partnerships
+B) Consumer segments and sources of income
+C) Channels of sale of goods and services and the structure of relations with consumers
+D) All of the above
+Correct answer: D
+Revised Bloom's Taxonomy level: Evaluating
+
+11. What is the first step of business process digitalization?
+A) Promoting efficient production
+B) Checking and analyzing the effectiveness of digital solution
+C) Defining and analyzing the main goals and objectives
+D) Selecting and implementing digital technologies
 Correct answer: C
 Revised Bloom's Taxonomy level: Remembering
 
-20. Quali sono le caratteristiche fondamentali dell'edge computing nella tecnologia IoT?
-A) Efficienza energetica e riduzione dei costi
-B) Eccellenza dei dati e maggiore sicurezza
-C) Maggiore velocità di elaborazione dei dati e riduzione dei tempi di latenza
-D) Maggiore accessibilità dei dati e maggiore affidabilità
-Correct answer: C
+12. What are the benefits of digitalization of business processes?
+A) More rational use of unavailable resources
+B) Decrease in sales of goods and services
+C) Reduction in economic security
+D) Increasing competitiveness of the company in domestic and foreign markets
+Correct answer: D
 Revised Bloom's Taxonomy level: Understanding
 
-21. Quali sono i fattori che influenzano la durata della batteria dei dispositivi IoT?
-A) Solo il tipo di dispositivo
-B) Solo l'utilizzo di antenne
-C) Solo il tipo di connettività utilizzata
-D) Il tipo di dispositivo, l'utilizzo di antenne e il tipo di connettività utilizzata
-Correct answer: D
+13. Which of the following is a sub-goal of the goal of level 2 in the developed "tree of goals" for determining the parameters of the influence of digitalization on sales activity?
+A) Choice of methodological apparatus for research
+B) Development of information support
+C) Analysis and synthesis of the sales system
+D) Identification of main trends in development
+Correct answer: C
+Revised Bloom's Taxonomy level: Applying
+
+14. What is the main objective of the research of the influence of digitalization on sales activity?
+A) Increasing economic security
+B) Acceleration of all business processes
+C) Determination of the parameters of digitalization
+D) Promotion of efficient production
+Correct answer: C
 Revised Bloom's Taxonomy level: Analyzing
+
+15. Which method can be used for implementing the developed comparative system of the influence of digitalization on sales activity?
+A) Logical method
+B) Informal method
+C) Quantitative method
+D) Symbolic method
+Correct answer: C
+Revised Bloom's Taxonomy level: Evaluating
