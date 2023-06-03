@@ -53,11 +53,6 @@ class QuizGenerator:
             file_contents = file.read()
         self.query = file_contents
 
-        file_path = 'input/level_query.txt'
-        with open(file_path, encoding='utf-8') as file:
-            file_contents = file.read()
-        self.level_query = file_contents
-
         file_path = 'input/language_query.txt'
         with open(file_path, encoding='utf-8') as file:
             file_contents = file.read()
@@ -101,7 +96,7 @@ class QuizGenerator:
 
         # Check if the identified language is supported
         if self.language not in ["english", "french", "italian", "spanish", "german"]:
-            print(self.language + " is not supported!!!")
+            print(self.language + " is not supported. Please specify another file.")
             exit()
 
     def generate(self):
@@ -125,9 +120,6 @@ class QuizGenerator:
             text_partitions.append(self.text[lower_index:])
             num_partitions = num_partitions + 1
 
-        # Print the number of partitions created
-        print("Text divided into", num_partitions, "overlapped partitions")
-
         num_questions_level_partition = []
         tot_questions = 0
 
@@ -148,16 +140,18 @@ class QuizGenerator:
             temp_query = temp_query + ","
 
         # Generate questions for each partition
+        counter = 1
         for partition in text_partitions:
             response_is_ok = False
-            content = ""
+
+            print("Elaborating the partition of text number", counter, "of", num_partitions)
+            counter += 1
 
             while not response_is_ok:
                 conversation = []
 
                 prompt = temp_query + " " + self.query + " " + partition
                 conversation.append({'role': 'user', 'content': prompt})
-                print("TOKENS BEFORE RESPONSE", num_tokens_from_messages(conversation, self.model_id))
 
                 # Call the Chat API to get the AI response
                 response = openai.ChatCompletion.create(
@@ -167,11 +161,14 @@ class QuizGenerator:
 
                 conversation.append(
                     {'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
-                print("\tTOKENS WITH RESPONSE", num_tokens_from_messages(conversation, self.model_id))
+                content = conversation[-1]['content'].strip()
 
+                # here starts a new conversation passing the single partition's quiz to refactor
+                refactored_content = self.partition_refactor(content, num_questions_level_partition)
+
+                # check for each Bloom's level if the correct number of questions was generated
                 for j in range(len(self.num_questions_level)):
-                    content = conversation[-1]['content'].strip()
-                    num_occurrences = content.count(self.bloom_levels[j])
+                    num_occurrences = refactored_content.count(self.bloom_levels[j])
                     if num_occurrences != num_questions_level_partition[j]:
                         response_is_ok = False
                         break
@@ -179,7 +176,6 @@ class QuizGenerator:
                         response_is_ok = True
 
                 if not response_is_ok:
-                    print("\t\tWrong number of questions for levels!!!")
                     time.sleep(20)
 
             time.sleep(20)
@@ -187,31 +183,22 @@ class QuizGenerator:
             # Write the generated content to the output file
             file_path = 'output/raw_quiz.txt'
             with open(file_path, 'a', encoding='utf-8') as file:
-                file.write(content)
+                file.write(refactored_content)
                 file.write("\n\n")
 
-        self.refactor(num_partitions, num_questions_level_partition)
+        print()
 
-    def refactor(self, num_partitions, num_questions_level_partition):
-        # Read the contents of the raw_quiz.txt file
-        file_path = 'output/raw_quiz.txt'
-        with open(file_path, encoding='utf-8') as file:
-            file_contents = file.read()
-        raw_quiz = file_contents
+    def partition_refactor(self, partition_text, num_questions_level_partition):
 
         # Calculate the total number of questions needed for refactoring
         tot_questions = 0
         for value in num_questions_level_partition:
             tot_questions += value
-        tot_questions *= num_partitions
-
-        print("tot_questions", tot_questions)
 
         # Create a prompt for the refactoring step
         conversation = []
-        prompt = raw_quiz + " " + self.refactor_query + " " + str(tot_questions) + "."
+        prompt = partition_text + " " + self.refactor_query + " " + str(tot_questions) + "."
         conversation.append({'role': 'user', 'content': prompt})
-        print("(Refactoring) TOKENS BEFORE RESPONSE", num_tokens_from_messages(conversation, self.model_id))
 
         # Query the AI model for refactoring the quiz
         response = openai.ChatCompletion.create(
@@ -219,10 +206,7 @@ class QuizGenerator:
             messages=conversation
         )
         conversation.append({'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
-        print("\tTOKENS WITH RESPONSE", num_tokens_from_messages(conversation, self.model_id))
+        refactored_content = conversation[-1]['content'].strip()
+        time.sleep(20)
 
-        # Write the refactored quiz content to the refactored_quiz.txt file
-        file_path = 'output/refactored_quiz.txt'
-        with open(file_path, 'w', encoding='utf-8') as file:
-            file.write(conversation[-1]['content'].strip())
-
+        return refactored_content

@@ -1,5 +1,6 @@
 from question_class import Question
 
+
 class Quiz:
     def __init__(self, language):
         super().__init__()
@@ -7,7 +8,7 @@ class Quiz:
         self.questions = []
         self.language = language
 
-        file_path = 'output/refactored_quiz.txt'
+        file_path = 'output/raw_quiz.txt'
         with open(file_path, encoding='utf-8') as file:
             content = file.read()
 
@@ -17,6 +18,8 @@ class Quiz:
         # Process each question text
         for question_text in question_texts:
             question_lines = question_text.strip().split('\n')
+            if question_lines[0] == '':
+                break
 
             # Extract the question and answers
             question = question_lines[0][question_lines[0].index('. ') + 2:]
@@ -84,10 +87,9 @@ class Quiz:
                     count += 1
             count_questions_by_level[level] = count
 
-        print("Number of questions for each Bloom level")
         for level in bloom_levels:
             count = count_questions_by_level[level]
-            print(f"Level {level} : {count}")
+            print(f"Questions for level {level}: {count}")
         print()
 
     def select_questions(self, num_questions_level, bloom_levels):
@@ -132,5 +134,6 @@ class Quiz:
         file_path = 'results/answers.txt'
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(self.get_correct_answers_as_string())
-        
-        print("The quiz has been successfully generated!")
+
+        print("The multi choice quiz was generated correctly.")
+        print("To see the questions and the answers consult the 'results' folder.")

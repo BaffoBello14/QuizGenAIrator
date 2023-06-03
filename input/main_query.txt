@@ -8,7 +8,7 @@ A) <option A>
 B) <option B>
 C) <option C>
 D) <option D>
-Correct answer: C
+Correct answer: <correct option>
 Revised Bloom's Taxonomy level: Understanding
 Only empty line after the correct answer, before the next question.
 You don't have to put an empty line between last option and the correct answer.
