@@ -1,13 +1,16 @@
-import PyPDF2
-import subprocess
+from fpdf import FPDF
 from question_class import Question
+import tkinter as tk
+from tkinter import filedialog
+
 
 class Quiz:
-    def __init__(self, language):
+    def __init__(self, language, output_function):
         super().__init__()
 
         self.questions = []
         self.language = language
+        self.output_function = output_function
 
         file_path = 'output/raw_quiz.txt'
         with open(file_path, encoding='utf-8') as file:
@@ -58,6 +61,7 @@ class Quiz:
             for j, option in enumerate(options, start=1):
                 quiz_text += f"{chr(64 + j)}. {option}\n"
             quiz_text += "\n"
+        quiz_text = quiz_text.replace("’", "'")
         return quiz_text
 
     def get_complete_quiz_as_string(self):
@@ -70,6 +74,7 @@ class Quiz:
             quiz_text += f"Correct answer: {question.get_correct_answer()}\n"
             quiz_text += f"Bloom taxonomy level: {question.get_level()}\n"
             quiz_text += f"Score: {question.get_score()}\n\n"
+        quiz_text = quiz_text.replace("’", "'")
         return quiz_text
 
     def get_correct_answers_as_string(self):
@@ -90,8 +95,8 @@ class Quiz:
 
         for level in bloom_levels:
             count = count_questions_by_level[level]
-            print(f"Questions for level {level}: {count}")
-        print()
+            self.output_function(f"Questions for level {level}: {count}")
+        self.output_function()
 
     def select_questions(self, num_questions_level, bloom_levels):
         selected_questions_by_level = {}  # Dictionary to store selected questions for each level
@@ -135,14 +140,37 @@ class Quiz:
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(self.get_correct_answers_as_string())
 
-        # Convert the files to PDF using PyPDF2
-        pdf_path = 'results/questions.pdf'
-        merger = PyPDF2.PdfFileMerger()
-        merger.append('results/questions.txt')
-        merger.write(pdf_path)
-        merger.close()
+        root = tk.Tk()
+        root.withdraw()  # Hide the main window
 
-        # Open the PDF file
-        subprocess.Popen([pdf_path], shell=True)
+        path = filedialog.askdirectory()
+        if not path:
+            path = "results"
 
-        print("The multi-choice quiz was generated correctly.")
+        # Create a PDF object
+        pdf = FPDF()
+        pdf.add_page()
+
+        # Set the font and size for the PDF
+        pdf.set_font("Arial", size=12)
+
+        # Write the content to the PDF
+        pdf.multi_cell(0, 10, self.get_quiz_as_string(), 'UTF-8')
+
+        # Save the PDF file
+        pdf.output(path + '/questions.pdf', 'F')
+
+        # Create a PDF object
+        pdf = FPDF()
+        pdf.add_page()
+
+        # Set the font and size for the PDF
+        pdf.set_font("Arial", size=12)
+
+        # Write the content to the PDF
+        pdf.multi_cell(0, 10, self.get_correct_answers_as_string(), 'UTF-8')
+
+        # Save the PDF file
+        pdf.output(path + '/answers.pdf', 'F')
+
+        self.output_function("The multi-choice quiz has been successfully generated.")

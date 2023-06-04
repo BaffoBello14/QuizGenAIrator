@@ -5,7 +5,6 @@ import tiktoken
 
 openai.api_key = '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'
 
-
 def num_tokens_from_messages(messages, model="gpt-3.5-turbo-0301"):
     """Returns the number of tokens used by a list of messages."""
     try:
@@ -40,7 +39,7 @@ def num_tokens_from_messages(messages, model="gpt-3.5-turbo-0301"):
 
 
 class QuizGenerator:
-    def __init__(self, num_questions_level, bloom_levels):
+    def __init__(self, num_questions_level, bloom_levels, output_function):
         super().__init__()
 
         file_path = 'input/extracted_plain_text.txt'
@@ -65,6 +64,7 @@ class QuizGenerator:
 
         self.num_questions_level = num_questions_level
         self.bloom_levels = bloom_levels
+        self.output_function = output_function
         self.model_id = 'gpt-3.5-turbo'
         self.language = ""
         self.find_language()
@@ -96,7 +96,7 @@ class QuizGenerator:
 
         # Check if the identified language is supported
         if self.language not in ["english", "french", "italian", "spanish", "german"]:
-            print(self.language + " is not supported. Please specify another file.")
+            self.output_function(self.language + " is not supported. Please select another file.")
             exit()
 
     def generate(self):
@@ -144,7 +144,7 @@ class QuizGenerator:
         for partition in text_partitions:
             response_is_ok = False
 
-            print("Elaborating the partition of text number", counter, "of", num_partitions)
+            self.output_function("Elaborating the partition of text number " + str(counter) + " of " + str(num_partitions))
             counter += 1
 
             while not response_is_ok:
@@ -162,6 +162,10 @@ class QuizGenerator:
                 conversation.append(
                     {'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
                 content = conversation[-1]['content'].strip()
+
+                if num_tokens_from_messages(conversation, self.model_id) > 4097:
+                    response_is_ok = False
+                    break
 
                 # here starts a new conversation passing the single partition's quiz to refactor
                 refactored_content = self.partition_refactor(content, num_questions_level_partition)
@@ -186,7 +190,7 @@ class QuizGenerator:
                 file.write(refactored_content)
                 file.write("\n\n")
 
-        print()
+        self.output_function()
 
     def partition_refactor(self, partition_text, num_questions_level_partition):
 
@@ -197,7 +201,8 @@ class QuizGenerator:
 
         # Create a prompt for the refactoring step
         conversation = []
-        prompt = partition_text + " " + self.refactor_query + " " + str(tot_questions) + "."
+        prompt = partition_text + " " + self.refactor_query + " " + str(tot_questions) + ". "
+        prompt += "The language of the quiz must be: " + self.language
         conversation.append({'role': 'user', 'content': prompt})
 
         # Query the AI model for refactoring the quiz

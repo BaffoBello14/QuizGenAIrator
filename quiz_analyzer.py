@@ -1,69 +1,48 @@
 import spacy
 
-
 class QuizAnalyzer:
-    def __init__(self, quiz, text):
+    def __init__(self, quiz, text, output_function):
         super().__init__()
 
         self.quiz = quiz
+        self.output_function = output_function
 
         language = quiz.get_language()
         if language == "english":
             if not spacy.util.is_package("en_core_web_lg"):
-                while(True):
-                    print("English package is not installed!")
-                    yn = input("Do you want to install it? [y][n]")
-                    if(yn == "y" or yn == "Y"):
-                        spacy.cli.download("en_core_web_lg")
-                        break
-                    elif(yn == "n" or yn == "N"):
-                        exit()              
+                self.output_function("English package is not installed!")
+                self.output_function("Downloading English language package in progress...")
+                spacy.cli.download("en_core_web_lg")
+                self.output_function("Package installed")
             self.nlp = spacy.load("en_core_web_lg")
         elif language == "italian":
             if not spacy.util.is_package("it_core_news_lg"):
-                while(True):
-                    print("Italian package is not installed!")
-                    yn = input("Do you want to install it? [y][n]")
-                    if(yn == "y" or yn == "Y"):
-                        spacy.cli.download("it_core_news_lg")
-                        break
-                    elif(yn == "n" or yn == "N"):
-                        exit()
+                self.output_function("Italian package is not installed!")
+                self.output_function("Downloading Italian language package in progress...")
+                spacy.cli.download("it_core_news_lg")
+                self.output_function("Package installed")
             self.nlp = spacy.load("it_core_news_lg")
         elif language == "french":
             if not spacy.util.is_package("fr_core_news_lg"):
-                while(True):
-                    print("French package is not installed!")
-                    yn = input("Do you want to install it? [y][n]")
-                    if(yn == "y" or yn == "Y"):
-                        spacy.cli.download("fr_core_news_lg")
-                        break
-                    elif(yn == "n" or yn == "N"):
-                        exit()
+                self.output_function("French package is not installed!")
+                self.output_function("Downloading French language package in progress...")
+                spacy.cli.download("fr_core_news_lg")
+                self.output_function("Package installed")
             self.nlp = spacy.load("fr_core_news_lg")
         elif language == "spanish":
             if not spacy.util.is_package("es_core_news_lg"):
-                while(True):
-                    print("Spanish package is not installed!")
-                    yn = input("Do you want to install it? [y][n]")
-                    if(yn == "y" or yn == "Y"):
-                        spacy.cli.download("es_core_news_lg")
-                        break
-                    elif(yn == "n" or yn == "N"):
-                        exit()
+                self.output_function("Spanish package is not installed!")
+                self.output_function("Downloading Spanish language package in progress...")
+                spacy.cli.download("es_core_news_lg")
+                self.output_function("Package installed")
             self.nlp = spacy.load("es_core_news_lg")
         elif language == "german":
             if not spacy.util.is_package("de_core_news_lg"):
-                while(True):
-                    print("German package is not installed!")
-                    yn = input("Do you want to install it? [y][n]")
-                    if(yn == "y" or yn == "Y"):
-                        spacy.cli.download("de_core_news_lg")
-                        break
-                    elif(yn == "n" or yn == "N"):
-                        exit()
+                self.output_function("German package is not installed!")
+                self.output_function("Downloading German language package in progress...")
+                spacy.cli.download("de_core_news_lg")
+                self.output_function("Package installed")
             self.nlp = spacy.load("de_core_news_lg")
-
 
         self.text = text
 
@@ -73,9 +52,10 @@ class QuizAnalyzer:
         self.clarity_weight = 0.1       # for the comparison based on tokens
 
     def calculate_weighted_standing(self):
-
+        counter = 1
         for question in self.quiz.get_questions():
-
+            self.output_function("Evaluating question " + str(counter) + " of " + str(len(self.quiz.get_questions())))
+            counter += 1
             # comparison: TEXT <-> QUESTION + ANSWERS
             # Combine the question and options into a single string
             question_text = question.get_text() + ' '.join(question.get_answers())
@@ -83,7 +63,6 @@ class QuizAnalyzer:
             doc_combined = self.nlp(question_text)
             # Calculate the similarity between the combined text and the text
             similarity_score = doc_combined.similarity(self.nlp(self.text))
-
             # comparison: ANSWERS <-> QUESTION
             # Combine the question and options into a single string
             answers_text = ' '.join(question.get_answers())
