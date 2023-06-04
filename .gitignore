@@ -1,7 +1,11 @@
 .vscode/
 __pycache__/
-output/
-results/
+output/final_quiz.txt
+output/raw_quiz.txt
+results/questions.pdf
+results/questions.txt
+results/answers.pdf
+results/answers.txt
 input/extracted_plain_text.txt
 pdf/Modulo 2.1 - IoT 5pag ita.pdf
 pdf/Modulo 2.1 - IoT 5pag.pdf
