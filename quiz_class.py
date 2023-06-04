@@ -2,7 +2,7 @@ from fpdf import FPDF
 from question_class import Question
 import tkinter as tk
 from tkinter import filedialog
-
+import os
 
 class Quiz:
     def __init__(self, language, output_function):
@@ -128,6 +128,10 @@ class Quiz:
                 self.questions.append(question)
 
     def generate_files(self):
+        results_dir = 'results'
+        if not os.path.exists(results_dir):
+            os.makedirs(results_dir)
+        
         file_path = 'output/final_quiz.txt'
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(self.get_complete_quiz_as_string())

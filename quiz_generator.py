@@ -2,6 +2,7 @@ import math
 import time
 import openai
 import tiktoken
+import os
 
 openai.api_key = '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'
 
@@ -100,6 +101,10 @@ class QuizGenerator:
             exit()
 
     def generate(self):
+        output_dir = 'output'
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+        
         file_path = 'output/raw_quiz.txt'
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write("")
