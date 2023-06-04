@@ -1,13 +1,35 @@
-import PyPDF2
-import subprocess
+from fpdf import FPDF
 from question_class import Question
+from googletrans import Translator
+import tkinter as tk
+from tkinter import filedialog
+
+
+def translate(language, text_to_translate):
+
+    lang = 'en'
+    if language == "italian":
+        lang = 'it'
+    elif language == "french":
+        lang = 'fr'
+    elif language == "spanish":
+        lang = 'es'
+    elif language == "german":
+        lang = 'de'
+
+    translator = Translator()
+    translation = translator.translate(text_to_translate, dest=lang)
+
+    return translation.text
+
 
 class Quiz:
-    def __init__(self, language):
+    def __init__(self, language, output_function):
         super().__init__()
 
         self.questions = []
         self.language = language
+        self.output_function = output_function
 
         file_path = 'output/raw_quiz.txt'
         with open(file_path, encoding='utf-8') as file:
@@ -28,8 +50,13 @@ class Quiz:
             correct_answer = question_lines[-2][-1]
             level = question_lines[-1].split(": ")[-1].strip()
 
+            translated_question = translate(self.language, question)
+            translated_answers = []
+            for answer in answers:
+                translated_answers.append(translate(self.language, answer))
+
             # Add the question to the quiz object
-            self.add_question(question, answers, correct_answer, level)
+            self.add_question(translated_question, translated_answers, correct_answer, level)
 
     def add_question(self, question, answers, correct_answer, level):
         new_question = Question(question, answers, correct_answer, level)
@@ -90,8 +117,8 @@ class Quiz:
 
         for level in bloom_levels:
             count = count_questions_by_level[level]
-            print(f"Questions for level {level}: {count}")
-        print()
+            self.output_function(f"Questions for level {level}: {count}")
+        self.output_function()
 
     def select_questions(self, num_questions_level, bloom_levels):
         selected_questions_by_level = {}  # Dictionary to store selected questions for each level
@@ -135,14 +162,39 @@ class Quiz:
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(self.get_correct_answers_as_string())
 
-        # Convert the files to PDF using PyPDF2
-        pdf_path = 'results/questions.pdf'
-        merger = PyPDF2.PdfFileMerger()
-        merger.append('results/questions.txt')
-        merger.write(pdf_path)
-        merger.close()
+        # here
+        root = tk.Tk()
+        root.withdraw()  # Hide the main window
 
-        # Open the PDF file
-        subprocess.Popen([pdf_path], shell=True)
+        path = filedialog.askdirectory()
+        if not path:
+            path = "results"
+            # Do something with the selected path
 
-        print("The multi-choice quiz was generated correctly.")
+        # Create a PDF object
+        pdf = FPDF()
+        pdf.add_page()
+
+        # Set the font and size for the PDF
+        pdf.set_font("Arial", size=12)
+
+        # Write the content to the PDF
+        pdf.multi_cell(0, 10, self.get_quiz_as_string())
+
+        # Save the PDF file
+        pdf.output(path + '/questions.pdf')
+
+        # Create a PDF object
+        pdf = FPDF()
+        pdf.add_page()
+
+        # Set the font and size for the PDF
+        pdf.set_font("Arial", size=12)
+
+        # Write the content to the PDF
+        pdf.multi_cell(0, 10, self.get_correct_answers_as_string())
+
+        # Save the PDF file
+        pdf.output(path + '/answers.pdf')
+
+        self.output_function("The multi-choice quiz has been successfully generated.")

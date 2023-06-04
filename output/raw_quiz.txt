@@ -1,120 +1,168 @@
-1. What is the definition of Internet of Things (IoT)?
-A) The extension of the concept of internet to concrete objects and places
-B) The use of social media to communicate 
-C) The development of virtual reality
-D) The creation of robots with artificial intelligence
-Correct answer: A
+1. Cos'è l'Internet of Things?
+A) Un sistema operativo per computer.
+B) Una rete di telecomunicazioni mobile.
+C) Una rete di oggetti connessi che comunicano tra loro.
+D) Una piattaforma IoT.
+Correct answer: C
 Revised Bloom's Taxonomy level: Remembering
 
-2. What types of devices are microcontrollers?
-A) Input detection devices
-B) Output controlling devices
-C) Electronic devices integrated on a single circuit
-D) Data storage devices
+2. Qual è la problematica principale riguardante la sicurezza e privacy nell'IoT?
+A) Mancanza di dispositivi input.
+B) Congestione dei buffer di dati.
+C) Rischi di attacchi informatici.
+D) Tempi di trasmissione troppo lunghi.
 Correct answer: C
 Revised Bloom's Taxonomy level: Understanding
 
-3. Which is the main rule to prevent potential attacks in any type of device?
-A) Use a firewall
-B) Use encryption
-C) Close the device with a physical lock
-D) Use a strong password
+3. Come si chiama il dispositivo output che controlla un processo o un'azione nell'ambiente esterno?
+A) Microcontrollore.
+B) Gateway.
+C) Sensore.
+D) Attuatore.
+Correct answer: D
+Revised Bloom's Taxonomy level: Applying
+
+4. Qual è il modello di calcolo dell'IoT che avviene più vicino possibile al sensore?
+A) Cloud Computing.
+B) Edge Computing.
+C) Software Defined Networking.
+D) Network Function Virtualization.
+Correct answer: B
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Qual è la tecnologia di rete utilizzata per la connessione degli oggetti e il trasferimento di dati nell'IoT?
+A) Wi-Fi.
+B) Java.
+C) Cloud Computing.
+D) Voice over IP.
+Correct answer: A
+Revised Bloom's Taxonomy level: Analyzing
+
+6. Qual è la soluzione che permette di evitare la congestione dei buffer di dati nella commutazione a pacchetto?
+A) Congestion Control.
+B) Autenticazioni robuste.
+C) Commutazione di circuito.
+D) Interattività.
+Correct answer: A
+Revised Bloom's Taxonomy level: Evaluating
+
+7. Qual è la piattaforma IoT basata su programmazione dei microcontrollori con linguaggio Python?
+A) Zerynth.
+B) Natech.
+C) Ubidots.
+D) 4zerobox.
+Correct answer: A
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Quali sono i principi fondamentali che definiscono un oggetto smart?
+A) Deve essere economico
+B) Deve essere di colore verde
+C) Deve essere in grado di comunicare dati su se stesso e accedere ai dati aggregati degli altri dispositivi
+D) Deve essere leggero
+Correct answer: C
+Revised Bloom's Taxonomy level: Remembering
+
+2. Cos'è l'IoT?
+A) Una nuova serie di videogiochi
+B) Un nuovo modo di cucinare
+C) Una nuova tecnologia che permette la connessione di oggetti al mondo virtuale
+D) Una nuova specie di insetti
+Correct answer: C
+Revised Bloom's Taxonomy level: Understanding
+
+3. In quale ambito l'IoT consente il controllo avanzato della produzione?
+A) Smart City
+B) Smart Logistics
+C) Smart Factory
+D) Smart Home/Building
+Correct answer: C
+Revised Bloom's Taxonomy level: Applying
+
+4. Qual è il meccanismo utilizzato da Google Maps per raccogliere dati sul traffico?
+A) Sensori intelligenti
+B) GPRS
+C) Tag RFID
+D) Cellulari connessi alla rete
+Correct answer: D
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Quali sono le soluzioni per prevenire gli attacchi informatici ai dispositivi IoT?
+A) Password e metodi di autenticazione robuste
+B) Non connettere i dispositivi alla rete
+C) Non utilizzare dispositivi IoT
+D) Non aggiornare i dispositivi
+Correct answer: A
+Revised Bloom's Taxonomy level: Analyzing
+
+6. Qual è uno dei rischi derivanti dall'utilizzo di dispositivi smart?
+A) La facilità di utilizzo
+B) L'efficienza nella raccolta di dati
+C) Problemi di sicurezza e privacy
+D) L'aumento della produttività
+Correct answer: C
+Revised Bloom's Taxonomy level: Evaluating
+
+7. Cosa rappresentano i dispositivi IoT?
+A) Oggetti in grado di riconoscere se stessi
+B) Oggetti che non presentano rischi per la sicurezza e la privacy
+C) Oggetti economici
+D) Oggetti che consentono di avere un occhio all'interno di un ambiente in cui fisicamente non si può essere
+Correct answer: D
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Qual è una delle capacità chiave degli oggetti smart riportate nel testo?
+A) Poter rielaborare le informazioni
+B) Comunicare solo in modo unidirezionale
+C) Essere monofunzionali
+D) Non intraprendere azioni conseguenti ad eventi
+Correct answer: A
+Revised Bloom's Taxonomy level: Remembering
+
+2. Quali problematiche sono elencate nel testo riguardo all'utilizzo degli oggetti smart?
+A) Costi minimi
+B) Problemi di privacy e sicurezza
+C) Azioni immediate conseguenti ad eventi inattesi
+D) Utilizzo efficiente dei dispositivi
+Correct answer: B
+Revised Bloom's Taxonomy level: Understanding
+
+3. Cosa sono gli attuatori?
+A) Dispositivi di rilevamento che raccolgono informazioni dall'ambiente fisico in cui si trovano
+B) Dispositivi per effettuare il controllo di un processo o influire sulle condizioni dell'ambiente esterno in cui si trovano
+C) Dispositivi che raccogliere dati dell'ambiente fisico ed effettuare il controllo
+D) Dispositivi di memoria che permettono di vedere gli ultimi dati
 Correct answer: B
 Revised Bloom's Taxonomy level: Applying
 
-4. What is the difference between edge computing and cloud computing in IoT?
-A) Edge computing is a distributed model where data processing occurs as close as possible to where the data is requested, while cloud computing is a paradigm of on-demand services offered by a provider to a customer through the internet.
-B) Edge computing is a centralized model where data processing occurs far from where the data is requested, while cloud computing is a paradigm of on-demand services offered by a provider to a customer outside the internet.
-C) Edge computing is a model of services offered on-site, while cloud computing is a model of services offered remotely.
-D) Edge computing and cloud computing are the same thing in IoT.
-Correct answer: A
+4. Quali sono le caratteristiche dei sensori smart riportate nel testo?
+A) Solo la tecnologia di sensing e l'alimentazione
+B) Solo l'elaborazione e la memoria e la comunicazione
+C) Solo la comunicazione e l'alimentazione
+D) Tutte le precedenti
+Correct answer: D
 Revised Bloom's Taxonomy level: Analyzing
 
-5. What is the purpose of Zerynth platform in IoT?
-A) To bridge the gap between hardware and cloud, enabling a series of services provided by third parties.
-B) To produce microcontrollers with low-level programming languages.
-C) To provide a solution to protect IoT devices against potential attacks.
-D) To allow devices to communicate with other devices over long distances.
-Correct answer: A
+5. Cosa permette di fare un contatore digitale presente in casa?
+A) Rilevare la posizione dell'utente
+B) Fornire l'entità dei consumi dell'utente
+C) Controllo di un processo in casa
+D) Intraprendere azioni conseguenti ad eventi
+Correct answer: B
+Revised Bloom's Taxonomy level: Analyzing
+
+6. In cosa consiste la tecnologia di sensing dei sensori SMART?
+A) Nell'elaborazione dei dati rilevati
+B) Nel tipo di dato o dati rilevabili e le prestazioni ottenibili
+C) Nell'autonomia e durata di funzionamento del dispositivo
+D) Nella possibilità di stabilire una comunicazione affidabile, sicura e protetta per mezzo della rete
+Correct answer: B
 Revised Bloom's Taxonomy level: Evaluating
 
-1. Qual è uno dei presupposti per considerare un oggetto come smart object?
-A) Avere forme stravaganti
-B) Essere di colore nero
-C) Essere riconoscibili
-D) Essere privi di connessione
+7. Quali problematiche derivano dall'utilizzo non efficiente dei dispositivi smart?
+A) Probabilmente costi maggiori dell'oggetto
+B) Nessuna problematica
+C) Problemi di sicurezza
+D) Scarsità di dati rilevanti
 Correct answer: C
-Revised Bloom's Taxonomy level: Remembering
-
-2. Qual è uno dei temi importanti riguardo all'Internet of Things?
-A) L'estetica dei dispositivi smart
-B) L'importanza di avere molti dispositivi smart
-C) La sicurezza e privacy
-D) L'aumento delle dimensioni degli oggetti smart
-Correct answer: C
-Revised Bloom's Taxonomy level: Understanding
-
-3. Qual è la soluzione per prevenire gli attacchi informatici ai dispositivi IoT?
-A) Nessuna soluzione è possibile
-B) Utilizzare password deboli
-C) Utilizzare autenticazioni non robuste
-D) Utilizzare password e metodi di autenticazioni robuste
-Correct answer: D
-Revised Bloom's Taxonomy level: Applying
-
-4. Secondo il testo, invece di essere dispositivi sensoriali passivi, come possono essere visti i dispositivi IoT?
-A) Come strumenti che possono portare ad avere un occhio all'interno di un ambiente in cui fisicamente non si può essere
-B) Come oggetti costosi e senza utilità
-C) Come strumenti che non hanno alcuna funzione
-D) Come oggetti che non possono essere attaccati
-Correct answer: A
-Revised Bloom's Taxonomy level: Analyzing
-
-5. Quali sono le caratteristiche chiave degli oggetti smart?
-A) Poter cambiare forma attraverso l'intelligenza artificiale
-B) Poter parlare
-C) Trasmettere dati solo in tempo virtuale
-D) Poter rielaborare le informazioni, comunicare in modalità bidirezionale, essere riconfigurabili, intraprendere azioni conseguenti ad eventi, trasmettere dati in real-time
-Correct answer: D
-Revised Bloom's Taxonomy level: Evaluating
-
-1. What is one of the key features of smart objects?
-A) Being able to reprocess information
-B) Reducing costs
-C) Ensuring safety
-D) None of the above
-Correct answer: A
-Revised Bloom's Taxonomy level: Remembering
-
-2. What are sensors?
-A) Control devices of a process
-B) Devices for detecting data from the physical environment and performing control
-C) Devices for collecting information from the physical environment they are in
-D) None of the above
-Correct answer: C
-Revised Bloom's Taxonomy level: Understanding
-
-3. What is one of the current cases of added intelligence to various contexts?
-A) Reading the physical readout of digital meters in the home
-B) Communicating the magnitude of consumption
-C) Providing information not only for traffic monitoring, but also useful data for insurance
-D) None of the above
-Correct answer: C
-Revised Bloom's Taxonomy level: Applying
-
-4. What is one of the problems of the IoT world currently?
-A) High costs
-B) High security
-C) Efficient use of devices
-D) None of the above
-Correct answer: A
-Revised Bloom's Taxonomy level: Analyzing
-
-5. What is one of the key features of SMART sensors?
-A) Power supply
-B) Security protection
-C) Communication
-D) Reconfigurability
-Correct answer: A
 Revised Bloom's Taxonomy level: Evaluating
 

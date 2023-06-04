@@ -1,66 +1,90 @@
-Question 1: Qual è uno dei presupposti per considerare un oggetto come smart object?
-A.  Avere forme stravaganti
-B.  Essere di colore nero
-C.  Essere riconoscibili
-D.  Essere privi di connessione
+Question 1: Quali sono i principi fondamentali che definiscono un oggetto smart?
+A. Deve essere economico
+B. Deve essere di colore verde
+C. Deve essere in grado di comunicare dati su se stesso e accedere ai dati aggregati degli altri dispositivi
+D. Deve essere leggero
 
-Question 2: What is one of the key features of smart objects?
-A.  Being able to reprocess information
-B.  Reducing costs
-C.  Ensuring safety
-D.  None of the above
+Question 2: Quali problematiche sono elencate nel testo riguardo all'utilizzo degli oggetti smart?
+A. Costi minimi
+B. Problemi di privacy e sicurezza
+C. Azioni immediate conseguenti ad eventi inattesi
+D. Utilizzo efficiente dei dispositivi
 
-Question 3: What is the definition of Internet of Things (IoT)?
-A.  The extension of the concept of internet to concrete objects and places
-B.  The use of social media to communicate 
-C.  The development of virtual reality
-D.  The creation of robots with artificial intelligence
+Question 3: Qual è la problematica principale riguardante la sicurezza e privacy nell'IoT?
+A. Mancanza di dispositivi input.
+B. Congestione dei buffer di dati.
+C. Rischi di attacchi informatici.
+D. Tempi di trasmissione troppo lunghi.
 
-Question 4: Qual è uno dei temi importanti riguardo all'Internet of Things?
-A.  L'estetica dei dispositivi smart
-B.  L'importanza di avere molti dispositivi smart
-C.  La sicurezza e privacy
-D.  L'aumento delle dimensioni degli oggetti smart
+Question 4: Cosa sono gli attuatori?
+A. Dispositivi di rilevamento che raccolgono informazioni dall'ambiente fisico in cui si trovano
+B. Dispositivi per effettuare il controllo di un processo o influire sulle condizioni dell'ambiente esterno in cui si trovano
+C. Dispositivi che raccogliere dati dell'ambiente fisico ed effettuare il controllo
+D. Dispositivi di memoria che permettono di vedere gli ultimi dati
 
-Question 5: What types of devices are microcontrollers?
-A.  Input detection devices
-B.  Output controlling devices
-C.  Electronic devices integrated on a single circuit
-D.  Data storage devices
+Question 5: In quale ambito l'IoT consente il controllo avanzato della produzione?
+A. Città intelligente
+B. Logistica intelligente
+C. Fabbrica intelligente
+D. Smart Home/Building
 
-Question 6: Qual è la soluzione per prevenire gli attacchi informatici ai dispositivi IoT?
-A.  Nessuna soluzione è possibile
-B.  Utilizzare password deboli
-C.  Utilizzare autenticazioni non robuste
-D.  Utilizzare password e metodi di autenticazioni robuste
+Question 6: Come si chiama il dispositivo output che controlla un processo o un'azione nell'ambiente esterno?
+A. Microcontrollore.
+B. Gateway.
+C. Sensore.
+D. Attuatore.
 
-Question 7: Secondo il testo, invece di essere dispositivi sensoriali passivi, come possono essere visti i dispositivi IoT?
-A.  Come strumenti che possono portare ad avere un occhio all'interno di un ambiente in cui fisicamente non si può essere
-B.  Come oggetti costosi e senza utilità
-C.  Come strumenti che non hanno alcuna funzione
-D.  Come oggetti che non possono essere attaccati
+Question 7: Cosa permette di fare un contatore digitale presente in casa?
+A. Rilevare la posizione dell'utente
+B. Fornire l'entità dei consumi dell'utente
+C. Controllo di un processo in casa
+D. Intraprendere azioni conseguenti ad eventi
 
-Question 8: What is the difference between edge computing and cloud computing in IoT?
-A.  Edge computing is a distributed model where data processing occurs as close as possible to where the data is requested, while cloud computing is a paradigm of on-demand services offered by a provider to a customer through the internet.
-B.  Edge computing is a centralized model where data processing occurs far from where the data is requested, while cloud computing is a paradigm of on-demand services offered by a provider to a customer outside the internet.
-C.  Edge computing is a model of services offered on-site, while cloud computing is a model of services offered remotely.
-D.  Edge computing and cloud computing are the same thing in IoT.
+Question 8: Qual è il modello di calcolo dell'IoT che avviene più vicino possibile al sensore?
+A. Cloud computing.
+B. EDGE CALCING.
+C. Networking definito dal software.
+D. Virtualizzazione della funzione di rete.
 
-Question 9: Quali sono le caratteristiche chiave degli oggetti smart?
-A.  Poter cambiare forma attraverso l'intelligenza artificiale
-B.  Poter parlare
-C.  Trasmettere dati solo in tempo virtuale
-D.  Poter rielaborare le informazioni, comunicare in modalità bidirezionale, essere riconfigurabili, intraprendere azioni conseguenti ad eventi, trasmettere dati in real-time
+Question 9: Quali sono le soluzioni per prevenire gli attacchi informatici ai dispositivi IoT?
+A. Password e metodi di autenticazione robuste
+B. Non connettere i dispositivi alla rete
+C. Non utilizzare dispositivi IoT
+D. Non aggiornare i dispositivi
 
-Question 10: What is the purpose of Zerynth platform in IoT?
-A.  To bridge the gap between hardware and cloud, enabling a series of services provided by third parties.
-B.  To produce microcontrollers with low-level programming languages.
-C.  To provide a solution to protect IoT devices against potential attacks.
-D.  To allow devices to communicate with other devices over long distances.
+Question 10: Qual è la tecnologia di rete utilizzata per la connessione degli oggetti e il trasferimento di dati nell'IoT?
+A. Wifi.
+B. Giava.
+C. Cloud computing.
+D. Voice su IP.
 
-Question 11: What is one of the key features of SMART sensors?
-A.  Power supply
-B.  Security protection
-C.  Communication
-D.  Reconfigurability
+Question 11: In cosa consiste la tecnologia di sensing dei sensori SMART?
+A. Nell'elaborazione dei dati rilevati
+B. Nel tipo di dato o dati rilevabili e le prestazioni ottenibili
+C. Nell'autonomia e durata di funzionamento del dispositivo
+D. Nella possibilità di stabilire una comunicazione affidabile, sicura e protetta per mezzo della rete
+
+Question 12: Quali problematiche derivano dall'utilizzo non efficiente dei dispositivi smart?
+A. Probabilmente costi maggiori dell'oggetto
+B. Nessuna problematica
+C. Problemi di sicurezza
+D. Scarsità di dati rilevanti
+
+Question 13: Qual è la soluzione che permette di evitare la congestione dei buffer di dati nella commutazione a pacchetto?
+A. Controllo della congestione.
+B. Autenticazioni robuste.
+C. Commutazione di circuito.
+D. Interattività.
+
+Question 14: Qual è uno dei rischi derivanti dall'utilizzo di dispositivi smart?
+A. La facilità di utilizzo
+B. L'efficienza nella raccolta di dati
+C. Problemi di sicurezza e privacy
+D. L'aumento della produttività
+
+Question 15: Cosa rappresentano i dispositivi IoT?
+A. Oggetti in grado di riconoscere se stessi
+B. Oggetti che non presentano rischi per la sicurezza e la privacy
+C. Oggetti economici
+D. Oggetti che consentono di avere un occhio all'interno di un ambiente in cui fisicamente non si può essere
 
