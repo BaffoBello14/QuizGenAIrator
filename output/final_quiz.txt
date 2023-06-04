@@ -1,99 +1,270 @@
-Question 1: Qual è uno dei presupposti per considerare un oggetto come smart object?
-A.  Avere forme stravaganti
-B.  Essere di colore nero
-C.  Essere riconoscibili
-D.  Essere privi di connessione
-Correct answer: C
+Question 1: Quali sono le condizioni ambientali che un sensore per pianti industriali deve essere in grado di resistere?
+A.  Il sensore deve essere in grado di resistere all'accumulo di polvere e sporcizia.
+B.  Il sensore deve essere in grado di resistere all'umidità.
+C.  Il sensore deve essere in grado di resistere all'accumulo di olio.
+D.  Tutte le precedenti.
+Correct answer: D
 Bloom taxonomy level: Remembering
-Score: 0.6742899119261068
+Score: 0.7760152785674005
 
-Question 2: What is one of the key features of smart objects?
-A.  Being able to reprocess information
-B.  Reducing costs
-C.  Ensuring safety
-D.  None of the above
+Question 2: Qual è la definizione di sensibilità di un sensore?
+A.  La variazione incrementale del parametro di ingresso rilevabile nel segnale di uscita
+B.  La differenza massima tra il valore effettivo e il valore indicato in uscita al sensore
+C.  Il massimo e il minimo valore misurabile del parametro applicato
+D.  L'ingresso minimo del parametro fisico che creerà una variazione rilevabile dell'uscita
+Correct answer: D
+Bloom taxonomy level: Remembering
+Score: 0.7072974721523119
+
+Question 3: Qual è il presupposto necessario per far imparare alla rete ad riconoscere gli stimoli fotografici della macchina?
+A.  I dati devono essere tutti della stessa auto
+B.  Gli esempi devono essere diversificati
+C.  La rete non ha bisogno di esempi
+D.  La rete usa già algoritmi di riconoscimento automatico
+Correct answer: B
+Bloom taxonomy level: Remembering
+Score: 0.6780023562155515
+
+Question 4: Qual è uno dei principali rischi legati ai dispositivi IoT?
+A.  Mal funzionamento dell'interfaccia
+B.  Sottostima delle loro funzioni
+C.  Sovraccarico di informazioni
+D.  Impossibilità di connessione ai device
+Correct answer: B
+Bloom taxonomy level: Remembering
+Score: 0.6691158315729252
+
+Question 5: Qual è il problema che comporta la necessità del linguaggio di alto livello?
+A.  Il programmatore non ricorda tutto ciò che ha scritto
+B.  I microcontrollori sono troppo complessi da programmare
+C.  Il codice del programma deve essere sempre cancellato
+D.  I dispositivi smart non hanno abbastanza capacità di memoria
 Correct answer: A
 Bloom taxonomy level: Remembering
-Score: 0.2936884116048285
+Score: 0.6489372567796402
 
-Question 3: What is the definition of Internet of Things (IoT)?
-A.  The extension of the concept of internet to concrete objects and places
-B.  The use of social media to communicate 
-C.  The development of virtual reality
-D.  The creation of robots with artificial intelligence
+Question 6: Quali sono i requisiti fondamentali per considerare un oggetto uno smart object nell'IoT?
+A.  Capacità di elaborare dati e password
+B.  Connessione e microcontrollori
+C.  Identificazione, connessione e capacità di elaborare dati
+D.  Gateway e carrier
+Correct answer: C
+Bloom taxonomy level: Understanding
+Score: 0.7130507899263501
+
+Question 7: Qual è il concetto alla base del Machine Learning?
+A.  Implementare statistiche in un algoritmo
+B.  Migliorare la performance di un algoritmo nell'identificare pattern nei dati
+C.  Risolvere problemi senza istruzioni esplicite
+D.  Trovare una struttura negli input forniti senza input etichettati
+Correct answer: B
+Bloom taxonomy level: Understanding
+Score: 0.6940974303085056
+
+Question 8: Quali sono i requisiti della commutazione di pacchetto?
+A.  Flusso costante di bit e interattività
+B.  Elevata utilizzazione della linea e bit rate variabile
+C.  Controllo della congestione e silenzi
+D.  Time Division Multiplexing e rete fibra ottica
+Correct answer: B
+Bloom taxonomy level: Understanding
+Score: 0.6903517858652379
+
+Question 9: Cosa non è possibile fare con la rete di RFID?
+A.  Standardizzarla
+B.  Costruirla ad hoc in base al contesto e alle esigenze
+C.  Utilizzarla in ogni dominio
+D.  Utilizzarla come una rete generalista
+Correct answer: D
+Bloom taxonomy level: Understanding
+Score: 0.6866870947093503
+
+Question 10: In cosa consiste la tecnologia dei MEMS?
+A.  Dispositivi di varia natura integrati su uno stesso substrato di materiale semiconduttore
+B.  Sistemi di comunicazione a basso costo
+C.  Sensori indossabili per il monitoraggio dei parametri fisici dell'utente
+D.  Reti di adattamento per antenne array
 Correct answer: A
-Bloom taxonomy level: Remembering
-Score: 0.289681328626362
-
-Question 4: Qual è uno dei temi importanti riguardo all'Internet of Things?
-A.  L'estetica dei dispositivi smart
-B.  L'importanza di avere molti dispositivi smart
-C.  La sicurezza e privacy
-D.  L'aumento delle dimensioni degli oggetti smart
-Correct answer: C
 Bloom taxonomy level: Understanding
-Score: 0.5256386934756093
+Score: 0.6793808132148509
 
-Question 5: What types of devices are microcontrollers?
-A.  Input detection devices
-B.  Output controlling devices
-C.  Electronic devices integrated on a single circuit
-D.  Data storage devices
-Correct answer: C
+Question 11: Cosa significa il termine Edge computing?
+A.  Un modello di calcolo distribuito nel quale l'elaborazione dei dati avviene più vicino possibile a dove i dati vengono richiesti.
+B.  Un paradigma di erogazione di servizi offerti su richiesta da un fornitore ad un cliente finale attraverso la rete internet.
+C.  Uno strato di intermediazione di dispositivi IoT rispetto a quelli di cloud.
+D.  Uno studio della fisica che coinvolge l'interazione della radiazione elettromagnetica con i sistemi meccanici.
+Correct answer: A
 Bloom taxonomy level: Understanding
-Score: 0.3220500685755052
+Score: 0.6639997391228001
 
-Question 6: Qual è la soluzione per prevenire gli attacchi informatici ai dispositivi IoT?
-A.  Nessuna soluzione è possibile
-B.  Utilizzare password deboli
-C.  Utilizzare autenticazioni non robuste
-D.  Utilizzare password e metodi di autenticazioni robuste
+Question 12: Qual è la migliore soluzione per limitare gli effetti di un attacco informatico ad una rete aziendale?
+A.  Implementare delle sottoreti
+B.  Creare connessioni sicure tra i device
+C.  Ridurre il numero di device connessi
+D.  Disconnettere i device vulnerabili
+Correct answer: A
+Bloom taxonomy level: Understanding
+Score: 0.6602298306461393
+
+Question 13: In che cosa consiste il paradigma dell'Edge computing nell'IoT?
+A.  In un modello distribuito dove l'elaborazione dei dati avviene il più lontano possibile dai dati stessi
+B.  In un paradigma di erogazione di servizi offerti su richiesta da un fornitore a un cliente finale attraverso la rete internet
+C.  In una soluzione che permette la connessione ad internet e il trasferimento di dati ad un server di storage
+D.  In un modello distribuito dove l'elaborazione dei dati avviene più vicino possibile a dove i dati vengono richiesti (in prossimità del sensore)
 Correct answer: D
 Bloom taxonomy level: Applying
-Score: 0.7198558286711815
+Score: 0.7355701909867443
 
-Question 7: Secondo il testo, invece di essere dispositivi sensoriali passivi, come possono essere visti i dispositivi IoT?
-A.  Come strumenti che possono portare ad avere un occhio all'interno di un ambiente in cui fisicamente non si può essere
-B.  Come oggetti costosi e senza utilità
-C.  Come strumenti che non hanno alcuna funzione
-D.  Come oggetti che non possono essere attaccati
+Question 14: Cosa permette di fare un sistema IoT come Natech Escape?
+A.  Permette di produrre nuove macchinette del caffè
+B.  Permette di rilevare le pressioni atmosferiche
+C.  Permette di allontanare la fauna selvatica
+D.  Permette di programmare l'hardware
+Correct answer: C
+Bloom taxonomy level: Applying
+Score: 0.690035006583824
+
+Question 15: Qual è la soluzione che ha permesso di risolvere il problema di congestione dei buffer di dati?
+A.  Commutazione di circuito
+B.  Commutazione a pacchetto
+C.  Compressione dei dati
+D.  Cifratura dei dati
+Correct answer: B
+Bloom taxonomy level: Applying
+Score: 0.6856947237381509
+
+Question 16: Qual è l'obiettivo dell'apprendimento per rinforzo?
+A.  Dividere un insieme di input in gruppi
+B.  Trovare una struttura negli input forniti senza input etichettati
+C.  Interagire con un ambiente dinamico per raggiungere un obiettivo
+D.  Associare gli input ad una o più classi
+Correct answer: C
+Bloom taxonomy level: Applying
+Score: 0.6716910044602461
+
+Question 17: Come si può proteggere un dispositivo IoT dagli accessi indesiderati?
+A.  Attivare la crittografia dei dati
+B.  Utilizzare reti virtuali private
+C.  Tenere aggiornato il software del dispositivo
+D.  Cambiare frequentemente la posizione del dispositivo
+Correct answer: C
+Bloom taxonomy level: Applying
+Score: 0.6392026470310399
+
+Question 18: Che ruolo hanno i robot 4.0 nell'IoT?
+A.  Sono solo strumenti di navigazione autonoma
+B.  Sono solo dispositivi per l'interazione sociale
+C.  Sono racchiusi in una rete di agenti proattivi
+D.  Sono sistemi autonomi con sensori per la percezione dell'ambiente e software per la pianificazione e l'apprendimento
+Correct answer: D
+Bloom taxonomy level: Applying
+Score: 0.6318955672269407
+
+Question 19: Qual è la differenza tra la linearità di un sensore e la linearità dinamica?
+A.  La linearità si riferisce alla misura in cui la curva effettiva di un sensore devia dalla curva ideale, mentre la linearità dinamica si riferisce alla misura della capacità di un sensore di seguire variazioni rapide nel parametro di ingresso
+B.  La linearità si riferisce alla misura della capacità di un sensore di seguire variazioni rapide nel parametro di ingresso, mentre la linearità dinamica si riferisce alla misura in cui la curva effettiva di un sensore devia dalla curva ideale
+C.  La linearità si riferisce alla misura di ripetibilità di una misurazione, mentre la linearità dinamica si riferisce alla pendenza della curva caratteristica di uscita
+D.  La linearità si riferisce alla capacità di un sensore di rilevare un ingresso minimo del parametro fisico che creerà una variazione rilevabile dell'uscita, mentre la linearità dinamica si riferisce alla capacità di un sensore di seguire variazioni rapide del parametro di ingresso
 Correct answer: A
 Bloom taxonomy level: Analyzing
-Score: 0.7586626054664505
+Score: 0.7608401989003657
 
-Question 8: What is the difference between edge computing and cloud computing in IoT?
-A.  Edge computing is a distributed model where data processing occurs as close as possible to where the data is requested, while cloud computing is a paradigm of on-demand services offered by a provider to a customer through the internet.
-B.  Edge computing is a centralized model where data processing occurs far from where the data is requested, while cloud computing is a paradigm of on-demand services offered by a provider to a customer outside the internet.
-C.  Edge computing is a model of services offered on-site, while cloud computing is a model of services offered remotely.
-D.  Edge computing and cloud computing are the same thing in IoT.
+Question 20: Quali sono i costi derivanti dall'utilizzo di IoT?
+A.  Soltanto gli hardware
+B.  Solo il servizio di gestione
+C.  Solo i network services
+D.  Hardware, servizio di gestione e network services
+Correct answer: D
+Bloom taxonomy level: Analyzing
+Score: 0.702523696571053
+
+Question 21: Quali sono le regole base per prevenire gli attacchi informatici nei confronti di dispositivi IoT?
+A.  Cifratura e gateway
+B.  Microcontrollori e autenticazioni robuste
+C.  Password e elaborazione dei dati
+D.  Password e cifratura
+Correct answer: D
+Bloom taxonomy level: Analyzing
+Score: 0.6939113485954858
+
+Question 22: Quali sono le opportunità derivanti dall'utilizzo di una piattaforma IoT?
+A.  Creare nuovi fonti di ricavo
+B.  Creare reti metalliche
+C.  Generare grafici e dashboard
+D.  Fare sondaggi soggettivi
 Correct answer: A
 Bloom taxonomy level: Analyzing
-Score: 0.4283677349662157
+Score: 0.6814691831606342
 
-Question 9: Quali sono le caratteristiche chiave degli oggetti smart?
-A.  Poter cambiare forma attraverso l'intelligenza artificiale
-B.  Poter parlare
-C.  Trasmettere dati solo in tempo virtuale
-D.  Poter rielaborare le informazioni, comunicare in modalità bidirezionale, essere riconfigurabili, intraprendere azioni conseguenti ad eventi, trasmettere dati in real-time
+Question 23: Quale delle seguenti applicazioni dell'RFID consente di seguire oggetti in movimento?
+A.  Sensing
+B.  Localizzazione
+C.  Tracking
+D.  Delay tolerant networks
+Correct answer: C
+Bloom taxonomy level: Analyzing
+Score: 0.6728813593060184
+
+Question 24: Quali sono i requisiti fondamentali di Internet?
+A.  intelligenza e sicurezza
+B.  integrità dei dati e flessibilità
+C.  alta velocità e affidabilità
+D.  compatibilità e standardizzazione
+Correct answer: B
+Bloom taxonomy level: Analyzing
+Score: 0.6613279970168485
+
+Question 25: In che modo la piattaforma Zerynth semplifica il lavoro del programmatore IoT?
+A.  Offrendo codice Assembly
+B.  Permettendo di scrivere codice Python convertibile in codice C
+C.  Offrendo hardware a basso costo
+D.  Semplificando il debugging del codice
+Correct answer: B
+Bloom taxonomy level: Analyzing
+Score: 0.6543332512186927
+
+Question 26: Qual è la principale differenza tra la commutazione di circuito e la commutazione di pacchetto?
+A.  La commutazione di circuito è più efficiente della commutazione di pacchetto
+B.  La commutazione di pacchetto è più economica della commutazione di circuito
+C.  La commutazione di circuito è basata sull'allocazione di tubi per un servizio monodirezionale e interattivo, mentre la commutazione di pacchetto si basa sulla bufferizzazione delle unità operative per sfruttare la linea al meglio
+D.  La commutazione di pacchetto prevede l'utilizzo della radiofrequenza, mentre la commutazione di circuito è basata sull'utilizzo del cavo elettrico
+Correct answer: C
+Bloom taxonomy level: Evaluating
+Score: 0.7957587425245167
+
+Question 27: Quali sono i pilastri di una piattaforma IoT resilienti e sicuri?
+A.  Hardware completo e software facile da usare
+B.  Linguaggio di basso livello e dispositivi smart
+C.  Hardware, software e Cloud completi
+D.  Resilienza attuale e alta aspettativa degli utenti
+Correct answer: C
+Bloom taxonomy level: Evaluating
+Score: 0.7427158075422793
+
+Question 28: Qual è il concetto alla base degli Agenti Intelligenti?
+A.  Interagire solo con l'ambiente circostante ed essere reattivo agli stimoli di tale ambiente
+B.  Essere in grado di comunicare solo con esseri umani
+C.  Essere in grado di prendere decisioni e di conseguenza di agire in modo autonomo
+D.  Essere in grado di eseguire compiti solo con istruzioni esplicite
+Correct answer: C
+Bloom taxonomy level: Evaluating
+Score: 0.7291128026822027
+
+Question 29: Cosa permette di fare la tecnologia VoIP?
+A.  Condividere programmi da remoto
+B.  Effettuare una conversazione tramite Internet
+C.  Rendere più efficiente la commutazione di circuito
+D.  Serializzare i telefoni per tenere il "tubo" sempre pieno
+Correct answer: B
+Bloom taxonomy level: Evaluating
+Score: 0.7078762324097531
+
+Question 30: Qual è l'importanza della sicurezza e della privacy nel mondo IoT?
+A.  Non è importante
+B.  È importante solo se si opera in ambito aziendale
+C.  È importante solo in caso di attacchi informatici
+D.  È importante per prevenire attacchi informatici e proteggere i dati degli utenti
 Correct answer: D
 Bloom taxonomy level: Evaluating
-Score: 0.708863026829448
-
-Question 10: What is the purpose of Zerynth platform in IoT?
-A.  To bridge the gap between hardware and cloud, enabling a series of services provided by third parties.
-B.  To produce microcontrollers with low-level programming languages.
-C.  To provide a solution to protect IoT devices against potential attacks.
-D.  To allow devices to communicate with other devices over long distances.
-Correct answer: A
-Bloom taxonomy level: Evaluating
-Score: 0.3750925388053459
-
-Question 11: What is one of the key features of SMART sensors?
-A.  Power supply
-B.  Security protection
-C.  Communication
-D.  Reconfigurability
-Correct answer: A
-Bloom taxonomy level: Evaluating
-Score: 0.1933171017818852
+Score: 0.7048564226902966
 
