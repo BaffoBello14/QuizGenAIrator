@@ -1,90 +1,180 @@
-Question 1: Quali sono i principi fondamentali che definiscono un oggetto smart?
-A. Deve essere economico
-B. Deve essere di colore verde
-C. Deve essere in grado di comunicare dati su se stesso e accedere ai dati aggregati degli altri dispositivi
-D. Deve essere leggero
+Question 1: Quali sono le condizioni ambientali che un sensore per pianti industriali deve essere in grado di resistere?
+A.  Il sensore deve essere in grado di resistere all'accumulo di polvere e sporcizia.
+B.  Il sensore deve essere in grado di resistere all'umidità.
+C.  Il sensore deve essere in grado di resistere all'accumulo di olio.
+D.  Tutte le precedenti.
 
-Question 2: Quali problematiche sono elencate nel testo riguardo all'utilizzo degli oggetti smart?
-A. Costi minimi
-B. Problemi di privacy e sicurezza
-C. Azioni immediate conseguenti ad eventi inattesi
-D. Utilizzo efficiente dei dispositivi
+Question 2: Qual è la definizione di sensibilità di un sensore?
+A.  La variazione incrementale del parametro di ingresso rilevabile nel segnale di uscita
+B.  La differenza massima tra il valore effettivo e il valore indicato in uscita al sensore
+C.  Il massimo e il minimo valore misurabile del parametro applicato
+D.  L'ingresso minimo del parametro fisico che creerà una variazione rilevabile dell'uscita
 
-Question 3: Qual è la problematica principale riguardante la sicurezza e privacy nell'IoT?
-A. Mancanza di dispositivi input.
-B. Congestione dei buffer di dati.
-C. Rischi di attacchi informatici.
-D. Tempi di trasmissione troppo lunghi.
+Question 3: Qual è il presupposto necessario per far imparare alla rete ad riconoscere gli stimoli fotografici della macchina?
+A.  I dati devono essere tutti della stessa auto
+B.  Gli esempi devono essere diversificati
+C.  La rete non ha bisogno di esempi
+D.  La rete usa già algoritmi di riconoscimento automatico
 
-Question 4: Cosa sono gli attuatori?
-A. Dispositivi di rilevamento che raccolgono informazioni dall'ambiente fisico in cui si trovano
-B. Dispositivi per effettuare il controllo di un processo o influire sulle condizioni dell'ambiente esterno in cui si trovano
-C. Dispositivi che raccogliere dati dell'ambiente fisico ed effettuare il controllo
-D. Dispositivi di memoria che permettono di vedere gli ultimi dati
+Question 4: Qual è uno dei principali rischi legati ai dispositivi IoT?
+A.  Mal funzionamento dell'interfaccia
+B.  Sottostima delle loro funzioni
+C.  Sovraccarico di informazioni
+D.  Impossibilità di connessione ai device
 
-Question 5: In quale ambito l'IoT consente il controllo avanzato della produzione?
-A. Città intelligente
-B. Logistica intelligente
-C. Fabbrica intelligente
-D. Smart Home/Building
+Question 5: Qual è il problema che comporta la necessità del linguaggio di alto livello?
+A.  Il programmatore non ricorda tutto ciò che ha scritto
+B.  I microcontrollori sono troppo complessi da programmare
+C.  Il codice del programma deve essere sempre cancellato
+D.  I dispositivi smart non hanno abbastanza capacità di memoria
 
-Question 6: Come si chiama il dispositivo output che controlla un processo o un'azione nell'ambiente esterno?
-A. Microcontrollore.
-B. Gateway.
-C. Sensore.
-D. Attuatore.
+Question 6: Quali sono i requisiti fondamentali per considerare un oggetto uno smart object nell'IoT?
+A.  Capacità di elaborare dati e password
+B.  Connessione e microcontrollori
+C.  Identificazione, connessione e capacità di elaborare dati
+D.  Gateway e carrier
 
-Question 7: Cosa permette di fare un contatore digitale presente in casa?
-A. Rilevare la posizione dell'utente
-B. Fornire l'entità dei consumi dell'utente
-C. Controllo di un processo in casa
-D. Intraprendere azioni conseguenti ad eventi
+Question 7: Qual è il concetto alla base del Machine Learning?
+A.  Implementare statistiche in un algoritmo
+B.  Migliorare la performance di un algoritmo nell'identificare pattern nei dati
+C.  Risolvere problemi senza istruzioni esplicite
+D.  Trovare una struttura negli input forniti senza input etichettati
 
-Question 8: Qual è il modello di calcolo dell'IoT che avviene più vicino possibile al sensore?
-A. Cloud computing.
-B. EDGE CALCING.
-C. Networking definito dal software.
-D. Virtualizzazione della funzione di rete.
+Question 8: Quali sono i requisiti della commutazione di pacchetto?
+A.  Flusso costante di bit e interattività
+B.  Elevata utilizzazione della linea e bit rate variabile
+C.  Controllo della congestione e silenzi
+D.  Time Division Multiplexing e rete fibra ottica
 
-Question 9: Quali sono le soluzioni per prevenire gli attacchi informatici ai dispositivi IoT?
-A. Password e metodi di autenticazione robuste
-B. Non connettere i dispositivi alla rete
-C. Non utilizzare dispositivi IoT
-D. Non aggiornare i dispositivi
+Question 9: Cosa non è possibile fare con la rete di RFID?
+A.  Standardizzarla
+B.  Costruirla ad hoc in base al contesto e alle esigenze
+C.  Utilizzarla in ogni dominio
+D.  Utilizzarla come una rete generalista
 
-Question 10: Qual è la tecnologia di rete utilizzata per la connessione degli oggetti e il trasferimento di dati nell'IoT?
-A. Wifi.
-B. Giava.
-C. Cloud computing.
-D. Voice su IP.
+Question 10: In cosa consiste la tecnologia dei MEMS?
+A.  Dispositivi di varia natura integrati su uno stesso substrato di materiale semiconduttore
+B.  Sistemi di comunicazione a basso costo
+C.  Sensori indossabili per il monitoraggio dei parametri fisici dell'utente
+D.  Reti di adattamento per antenne array
 
-Question 11: In cosa consiste la tecnologia di sensing dei sensori SMART?
-A. Nell'elaborazione dei dati rilevati
-B. Nel tipo di dato o dati rilevabili e le prestazioni ottenibili
-C. Nell'autonomia e durata di funzionamento del dispositivo
-D. Nella possibilità di stabilire una comunicazione affidabile, sicura e protetta per mezzo della rete
+Question 11: Cosa significa il termine Edge computing?
+A.  Un modello di calcolo distribuito nel quale l'elaborazione dei dati avviene più vicino possibile a dove i dati vengono richiesti.
+B.  Un paradigma di erogazione di servizi offerti su richiesta da un fornitore ad un cliente finale attraverso la rete internet.
+C.  Uno strato di intermediazione di dispositivi IoT rispetto a quelli di cloud.
+D.  Uno studio della fisica che coinvolge l'interazione della radiazione elettromagnetica con i sistemi meccanici.
 
-Question 12: Quali problematiche derivano dall'utilizzo non efficiente dei dispositivi smart?
-A. Probabilmente costi maggiori dell'oggetto
-B. Nessuna problematica
-C. Problemi di sicurezza
-D. Scarsità di dati rilevanti
+Question 12: Qual è la migliore soluzione per limitare gli effetti di un attacco informatico ad una rete aziendale?
+A.  Implementare delle sottoreti
+B.  Creare connessioni sicure tra i device
+C.  Ridurre il numero di device connessi
+D.  Disconnettere i device vulnerabili
 
-Question 13: Qual è la soluzione che permette di evitare la congestione dei buffer di dati nella commutazione a pacchetto?
-A. Controllo della congestione.
-B. Autenticazioni robuste.
-C. Commutazione di circuito.
-D. Interattività.
+Question 13: In che cosa consiste il paradigma dell'Edge computing nell'IoT?
+A.  In un modello distribuito dove l'elaborazione dei dati avviene il più lontano possibile dai dati stessi
+B.  In un paradigma di erogazione di servizi offerti su richiesta da un fornitore a un cliente finale attraverso la rete internet
+C.  In una soluzione che permette la connessione ad internet e il trasferimento di dati ad un server di storage
+D.  In un modello distribuito dove l'elaborazione dei dati avviene più vicino possibile a dove i dati vengono richiesti (in prossimità del sensore)
 
-Question 14: Qual è uno dei rischi derivanti dall'utilizzo di dispositivi smart?
-A. La facilità di utilizzo
-B. L'efficienza nella raccolta di dati
-C. Problemi di sicurezza e privacy
-D. L'aumento della produttività
+Question 14: Cosa permette di fare un sistema IoT come Natech Escape?
+A.  Permette di produrre nuove macchinette del caffè
+B.  Permette di rilevare le pressioni atmosferiche
+C.  Permette di allontanare la fauna selvatica
+D.  Permette di programmare l'hardware
 
-Question 15: Cosa rappresentano i dispositivi IoT?
-A. Oggetti in grado di riconoscere se stessi
-B. Oggetti che non presentano rischi per la sicurezza e la privacy
-C. Oggetti economici
-D. Oggetti che consentono di avere un occhio all'interno di un ambiente in cui fisicamente non si può essere
+Question 15: Qual è la soluzione che ha permesso di risolvere il problema di congestione dei buffer di dati?
+A.  Commutazione di circuito
+B.  Commutazione a pacchetto
+C.  Compressione dei dati
+D.  Cifratura dei dati
+
+Question 16: Qual è l'obiettivo dell'apprendimento per rinforzo?
+A.  Dividere un insieme di input in gruppi
+B.  Trovare una struttura negli input forniti senza input etichettati
+C.  Interagire con un ambiente dinamico per raggiungere un obiettivo
+D.  Associare gli input ad una o più classi
+
+Question 17: Come si può proteggere un dispositivo IoT dagli accessi indesiderati?
+A.  Attivare la crittografia dei dati
+B.  Utilizzare reti virtuali private
+C.  Tenere aggiornato il software del dispositivo
+D.  Cambiare frequentemente la posizione del dispositivo
+
+Question 18: Che ruolo hanno i robot 4.0 nell'IoT?
+A.  Sono solo strumenti di navigazione autonoma
+B.  Sono solo dispositivi per l'interazione sociale
+C.  Sono racchiusi in una rete di agenti proattivi
+D.  Sono sistemi autonomi con sensori per la percezione dell'ambiente e software per la pianificazione e l'apprendimento
+
+Question 19: Qual è la differenza tra la linearità di un sensore e la linearità dinamica?
+A.  La linearità si riferisce alla misura in cui la curva effettiva di un sensore devia dalla curva ideale, mentre la linearità dinamica si riferisce alla misura della capacità di un sensore di seguire variazioni rapide nel parametro di ingresso
+B.  La linearità si riferisce alla misura della capacità di un sensore di seguire variazioni rapide nel parametro di ingresso, mentre la linearità dinamica si riferisce alla misura in cui la curva effettiva di un sensore devia dalla curva ideale
+C.  La linearità si riferisce alla misura di ripetibilità di una misurazione, mentre la linearità dinamica si riferisce alla pendenza della curva caratteristica di uscita
+D.  La linearità si riferisce alla capacità di un sensore di rilevare un ingresso minimo del parametro fisico che creerà una variazione rilevabile dell'uscita, mentre la linearità dinamica si riferisce alla capacità di un sensore di seguire variazioni rapide del parametro di ingresso
+
+Question 20: Quali sono i costi derivanti dall'utilizzo di IoT?
+A.  Soltanto gli hardware
+B.  Solo il servizio di gestione
+C.  Solo i network services
+D.  Hardware, servizio di gestione e network services
+
+Question 21: Quali sono le regole base per prevenire gli attacchi informatici nei confronti di dispositivi IoT?
+A.  Cifratura e gateway
+B.  Microcontrollori e autenticazioni robuste
+C.  Password e elaborazione dei dati
+D.  Password e cifratura
+
+Question 22: Quali sono le opportunità derivanti dall'utilizzo di una piattaforma IoT?
+A.  Creare nuovi fonti di ricavo
+B.  Creare reti metalliche
+C.  Generare grafici e dashboard
+D.  Fare sondaggi soggettivi
+
+Question 23: Quale delle seguenti applicazioni dell'RFID consente di seguire oggetti in movimento?
+A.  Sensing
+B.  Localizzazione
+C.  Tracking
+D.  Delay tolerant networks
+
+Question 24: Quali sono i requisiti fondamentali di Internet?
+A.  intelligenza e sicurezza
+B.  integrità dei dati e flessibilità
+C.  alta velocità e affidabilità
+D.  compatibilità e standardizzazione
+
+Question 25: In che modo la piattaforma Zerynth semplifica il lavoro del programmatore IoT?
+A.  Offrendo codice Assembly
+B.  Permettendo di scrivere codice Python convertibile in codice C
+C.  Offrendo hardware a basso costo
+D.  Semplificando il debugging del codice
+
+Question 26: Qual è la principale differenza tra la commutazione di circuito e la commutazione di pacchetto?
+A.  La commutazione di circuito è più efficiente della commutazione di pacchetto
+B.  La commutazione di pacchetto è più economica della commutazione di circuito
+C.  La commutazione di circuito è basata sull'allocazione di tubi per un servizio monodirezionale e interattivo, mentre la commutazione di pacchetto si basa sulla bufferizzazione delle unità operative per sfruttare la linea al meglio
+D.  La commutazione di pacchetto prevede l'utilizzo della radiofrequenza, mentre la commutazione di circuito è basata sull'utilizzo del cavo elettrico
+
+Question 27: Quali sono i pilastri di una piattaforma IoT resilienti e sicuri?
+A.  Hardware completo e software facile da usare
+B.  Linguaggio di basso livello e dispositivi smart
+C.  Hardware, software e Cloud completi
+D.  Resilienza attuale e alta aspettativa degli utenti
+
+Question 28: Qual è il concetto alla base degli Agenti Intelligenti?
+A.  Interagire solo con l'ambiente circostante ed essere reattivo agli stimoli di tale ambiente
+B.  Essere in grado di comunicare solo con esseri umani
+C.  Essere in grado di prendere decisioni e di conseguenza di agire in modo autonomo
+D.  Essere in grado di eseguire compiti solo con istruzioni esplicite
+
+Question 29: Cosa permette di fare la tecnologia VoIP?
+A.  Condividere programmi da remoto
+B.  Effettuare una conversazione tramite Internet
+C.  Rendere più efficiente la commutazione di circuito
+D.  Serializzare i telefoni per tenere il "tubo" sempre pieno
+
+Question 30: Qual è l'importanza della sicurezza e della privacy nel mondo IoT?
+A.  Non è importante
+B.  È importante solo se si opera in ambito aziendale
+C.  È importante solo in caso di attacchi informatici
+D.  È importante per prevenire attacchi informatici e proteggere i dati degli utenti
 

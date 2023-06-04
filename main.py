@@ -3,61 +3,47 @@ from quiz_class import Quiz
 from quiz_generator import QuizGenerator
 from pdf_reader import PDFReader
 from tkinter import Tk, filedialog, Button, Entry, Frame, Label, StringVar, IntVar, Text, Scrollbar
-
+import threading
+import queue
 
 # Funzione per l'output nel widget di testo
 def output(message=""):
-    formatted_message = f"{message}\n"
-    output_box.config(state="normal")
-    output_box.insert("end", formatted_message)
-    output_box.see("end")
-    output_box.config(state="disabled")
+    if message == "":
+        formatted_message = f"{message}\n"
+    else:
+        formatted_message = f"**{message}**\n"
+
+    # Aggiunge il messaggio alla coda
+    output_box_queue.put(formatted_message)
 
 
-# Funzione per selezionare il file PDF
+# Function to select PDF file
 def select_pdf_file():
     file_path = filedialog.askopenfilename(defaultextension=".pdf", filetypes=[("PDF", "*.pdf")])
     if file_path:
         pdf_entry.delete(0, "end")
         pdf_entry.insert("end", file_path)
 
+# Funzione del thread di generazione del quiz
+def generate_quiz_thread(quiz_generator, num_questions_level, bloom_levels):
+    quiz_generator.generate()
 
-# Funzione per generare il quiz
-def generate_quiz():
-    bloom_levels = ["Remembering", "Understanding", "Applying", "Analyzing", "Evaluating"]
-    num_questions_level = [
-        remembering_var.get(),
-        understanding_var.get(),
-        applying_var.get(),
-        analyzing_var.get(),
-        evaluating_var.get()
-    ]
-
-    tot_questions = 0
-    for value in num_questions_level:
-        tot_questions += value
-
-    if tot_questions <= 0:
-        return
-
-    file_path = pdf_entry.get()
-
-    if not file_path:
-        return
-
-    # PDFReader object declaration passing to it the pdf from which extract the text
-    pdf_reader = PDFReader(file_path)
-    pdf_reader.process_pdf()
-
-    # QuizGenerator object declaration passing to it the number of questions for each level and the Bloom's levels
-    quiz_generator = QuizGenerator(num_questions_level, bloom_levels, output)
-    # quiz_generator.generate()
+    # Recupera i dati necessari dalla generazione del quiz
+    quiz_language = quiz_generator.get_language()
+    starting_text = quiz_generator.get_starting_text()
 
     # Quiz object declaration passing to it the language in which the quiz is written
-    quiz = Quiz(quiz_generator.get_language(), output)
+    quiz = Quiz(quiz_language, output)
+
+    # Schedula l'esecuzione del codice successivo alla generazione del quiz nel thread principale
+    window.after(0, process_generated_quiz, quiz, starting_text, bloom_levels, num_questions_level)
+
+
+# Funzione per processare il quiz generato nel thread principale
+def process_generated_quiz(quiz, starting_text, bloom_levels, num_questions_level):
 
     # QuizAnalyzer declaration passing to it the generated quiz and the starting text
-    quiz_analyzer = QuizAnalyzer(quiz, quiz_generator.get_starting_text(), output)
+    quiz_analyzer = QuizAnalyzer(quiz, starting_text, output)
     quiz_analyzer.calculate_weighted_standing()
 
     output("Number of available questions for each Revised Bloom's Taxonomy level, before the selection.")
@@ -71,6 +57,70 @@ def generate_quiz():
 
     quiz.generate_files()
 
+    # Abilita nuovamente i pulsanti e le caselle di inserimento
+    select_pdf_button.config(state='normal')
+    remembering_entry.config(state='normal')
+    understanding_entry.config(state='normal')
+    applying_entry.config(state='normal')
+    analyzing_entry.config(state='normal')
+    evaluating_entry.config(state='normal')
+    generate_quiz_button.config(state='normal')
+
+
+# Funzione per generare il quiz
+def generate_quiz():
+    bloom_levels = ["Remembering", "Understanding", "Applying", "Analyzing", "Evaluating"]
+    num_questions_level = [
+        remembering_var.get(),
+        understanding_var.get(),
+        applying_var.get(),
+        analyzing_var.get(),
+        evaluating_var.get()
+    ]
+
+    tot_questions = sum(num_questions_level)
+    if tot_questions <= 0:
+        output("Please select at least one question")
+        return
+
+    file_path = pdf_entry.get()
+
+    if not file_path:
+        output("Please select a PDF file")
+        return
+
+    # PDFReader object declaration passing to it the pdf from which extract the text
+    pdf_reader = PDFReader(file_path)
+    pdf_reader.process_pdf()
+
+    # QuizGenerator object declaration passing to it the number of questions for each level and the Bloom's levels
+    quiz_generator = QuizGenerator(num_questions_level, bloom_levels, output)
+
+    # Create a thread for quiz generation
+    generate_thread = threading.Thread(target=generate_quiz_thread, args=(quiz_generator, num_questions_level, bloom_levels,))
+    generate_thread.start()
+
+    # Disabilita i pulsanti e le caselle di inserimento
+    select_pdf_button.config(state='disabled')
+    remembering_entry.config(state='disabled')
+    understanding_entry.config(state='disabled')
+    applying_entry.config(state='disabled')
+    analyzing_entry.config(state='disabled')
+    evaluating_entry.config(state='disabled')
+    generate_quiz_button.config(state='disabled')
+
+# Funzione per l'aggiornamento dell'interfaccia utente con i messaggi di output
+def update_output_box():
+    while True:
+        # Controlla se ci sono messaggi nella coda
+        if not output_box_queue.empty():
+            formatted_message = output_box_queue.get()
+
+            # Aggiorna l'interfaccia utente con il messaggio di output
+            output_box.config(state="normal")
+            output_box.insert("end", formatted_message)
+            output_box.see("end")
+            output_box.config(state="disabled")
 
 # Creazione della finestra principale
 window = Tk()
@@ -150,6 +200,13 @@ output_scrollbar.pack(side="right", fill="y")
 
 output_box.config(yscrollcommand=output_scrollbar.set)
 output_box.config(state="disabled")
+
+# Aggiunta di una coda per la comunicazione tra thread
+output_box_queue = queue.Queue()
+
+# Avvia il thread per l'aggiornamento dell'interfaccia utente
+update_thread = threading.Thread(target=update_output_box)
+update_thread.start()
 
 # Esecuzione della finestra principale
 window.mainloop()

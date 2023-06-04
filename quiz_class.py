@@ -1,26 +1,7 @@
 from fpdf import FPDF
 from question_class import Question
-from googletrans import Translator
 import tkinter as tk
 from tkinter import filedialog
-
-
-def translate(language, text_to_translate):
-
-    lang = 'en'
-    if language == "italian":
-        lang = 'it'
-    elif language == "french":
-        lang = 'fr'
-    elif language == "spanish":
-        lang = 'es'
-    elif language == "german":
-        lang = 'de'
-
-    translator = Translator()
-    translation = translator.translate(text_to_translate, dest=lang)
-
-    return translation.text
 
 
 class Quiz:
@@ -50,13 +31,8 @@ class Quiz:
             correct_answer = question_lines[-2][-1]
             level = question_lines[-1].split(": ")[-1].strip()
 
-            translated_question = translate(self.language, question)
-            translated_answers = []
-            for answer in answers:
-                translated_answers.append(translate(self.language, answer))
-
             # Add the question to the quiz object
-            self.add_question(translated_question, translated_answers, correct_answer, level)
+            self.add_question(question, answers, correct_answer, level)
 
     def add_question(self, question, answers, correct_answer, level):
         new_question = Question(question, answers, correct_answer, level)
@@ -85,6 +61,7 @@ class Quiz:
             for j, option in enumerate(options, start=1):
                 quiz_text += f"{chr(64 + j)}. {option}\n"
             quiz_text += "\n"
+        quiz_text = quiz_text.replace("’", "'")
         return quiz_text
 
     def get_complete_quiz_as_string(self):
@@ -97,6 +74,7 @@ class Quiz:
             quiz_text += f"Correct answer: {question.get_correct_answer()}\n"
             quiz_text += f"Bloom taxonomy level: {question.get_level()}\n"
             quiz_text += f"Score: {question.get_score()}\n\n"
+        quiz_text = quiz_text.replace("’", "'")
         return quiz_text
 
     def get_correct_answers_as_string(self):
@@ -162,14 +140,12 @@ class Quiz:
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(self.get_correct_answers_as_string())
 
-        # here
         root = tk.Tk()
         root.withdraw()  # Hide the main window
 
         path = filedialog.askdirectory()
         if not path:
             path = "results"
-            # Do something with the selected path
 
         # Create a PDF object
         pdf = FPDF()
@@ -179,10 +155,10 @@ class Quiz:
         pdf.set_font("Arial", size=12)
 
         # Write the content to the PDF
-        pdf.multi_cell(0, 10, self.get_quiz_as_string())
+        pdf.multi_cell(0, 10, self.get_quiz_as_string(), 'UTF-8')
 
         # Save the PDF file
-        pdf.output(path + '/questions.pdf')
+        pdf.output(path + '/questions.pdf', 'F')
 
         # Create a PDF object
         pdf = FPDF()
@@ -192,9 +168,9 @@ class Quiz:
         pdf.set_font("Arial", size=12)
 
         # Write the content to the PDF
-        pdf.multi_cell(0, 10, self.get_correct_answers_as_string())
+        pdf.multi_cell(0, 10, self.get_correct_answers_as_string(), 'UTF-8')
 
         # Save the PDF file
-        pdf.output(path + '/answers.pdf')
+        pdf.output(path + '/answers.pdf', 'F')
 
         self.output_function("The multi-choice quiz has been successfully generated.")

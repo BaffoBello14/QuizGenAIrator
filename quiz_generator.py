@@ -163,6 +163,10 @@ class QuizGenerator:
                     {'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
                 content = conversation[-1]['content'].strip()
 
+                if num_tokens_from_messages(conversation, self.model_id) > 4097:
+                    response_is_ok = False
+                    break
+
                 # here starts a new conversation passing the single partition's quiz to refactor
                 refactored_content = self.partition_refactor(content, num_questions_level_partition)
 
@@ -197,7 +201,8 @@ class QuizGenerator:
 
         # Create a prompt for the refactoring step
         conversation = []
-        prompt = partition_text + " " + self.refactor_query + " " + str(tot_questions) + "."
+        prompt = partition_text + " " + self.refactor_query + " " + str(tot_questions) + ". "
+        prompt += "The language of the quiz must be: " + self.language
         conversation.append({'role': 'user', 'content': prompt})
 
         # Query the AI model for refactoring the quiz

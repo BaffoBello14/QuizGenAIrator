@@ -1,168 +1,600 @@
 1. Cos'è l'Internet of Things?
-A) Un sistema operativo per computer.
-B) Una rete di telecomunicazioni mobile.
-C) Una rete di oggetti connessi che comunicano tra loro.
-D) Una piattaforma IoT.
-Correct answer: C
-Revised Bloom's Taxonomy level: Remembering
-
-2. Qual è la problematica principale riguardante la sicurezza e privacy nell'IoT?
-A) Mancanza di dispositivi input.
-B) Congestione dei buffer di dati.
-C) Rischi di attacchi informatici.
-D) Tempi di trasmissione troppo lunghi.
-Correct answer: C
-Revised Bloom's Taxonomy level: Understanding
-
-3. Come si chiama il dispositivo output che controlla un processo o un'azione nell'ambiente esterno?
-A) Microcontrollore.
-B) Gateway.
-C) Sensore.
-D) Attuatore.
-Correct answer: D
-Revised Bloom's Taxonomy level: Applying
-
-4. Qual è il modello di calcolo dell'IoT che avviene più vicino possibile al sensore?
-A) Cloud Computing.
-B) Edge Computing.
-C) Software Defined Networking.
-D) Network Function Virtualization.
+A) Un modello di elaborazione del dato
+B) L'estensione del concetto di Internet al mondo degli oggetti concreti
+C) Un dispositivo input di rilevamento di informazioni dall'ambiente fisico
+D) Un paradigma di erogazione di servizi offerti su richiesta da un fornitore a un cliente finale attraverso la rete internet
 Correct answer: B
-Revised Bloom's Taxonomy level: Analyzing
-
-5. Qual è la tecnologia di rete utilizzata per la connessione degli oggetti e il trasferimento di dati nell'IoT?
-A) Wi-Fi.
-B) Java.
-C) Cloud Computing.
-D) Voice over IP.
-Correct answer: A
-Revised Bloom's Taxonomy level: Analyzing
-
-6. Qual è la soluzione che permette di evitare la congestione dei buffer di dati nella commutazione a pacchetto?
-A) Congestion Control.
-B) Autenticazioni robuste.
-C) Commutazione di circuito.
-D) Interattività.
-Correct answer: A
-Revised Bloom's Taxonomy level: Evaluating
-
-7. Qual è la piattaforma IoT basata su programmazione dei microcontrollori con linguaggio Python?
-A) Zerynth.
-B) Natech.
-C) Ubidots.
-D) 4zerobox.
-Correct answer: A
-Revised Bloom's Taxonomy level: Evaluating
-
-1. Quali sono i principi fondamentali che definiscono un oggetto smart?
-A) Deve essere economico
-B) Deve essere di colore verde
-C) Deve essere in grado di comunicare dati su se stesso e accedere ai dati aggregati degli altri dispositivi
-D) Deve essere leggero
-Correct answer: C
 Revised Bloom's Taxonomy level: Remembering
 
-2. Cos'è l'IoT?
-A) Una nuova serie di videogiochi
-B) Un nuovo modo di cucinare
-C) Una nuova tecnologia che permette la connessione di oggetti al mondo virtuale
-D) Una nuova specie di insetti
+2. Quali sono i requisiti fondamentali per considerare un oggetto uno smart object nell'IoT?
+A) Capacità di elaborare dati e password
+B) Connessione e microcontrollori
+C) Identificazione, connessione e capacità di elaborare dati
+D) Gateway e carrier
 Correct answer: C
 Revised Bloom's Taxonomy level: Understanding
 
-3. In quale ambito l'IoT consente il controllo avanzato della produzione?
-A) Smart City
-B) Smart Logistics
-C) Smart Factory
-D) Smart Home/Building
-Correct answer: C
+3. In che cosa consiste il paradigma dell'Edge computing nell'IoT?
+A) In un modello distribuito dove l'elaborazione dei dati avviene il più lontano possibile dai dati stessi
+B) In un paradigma di erogazione di servizi offerti su richiesta da un fornitore a un cliente finale attraverso la rete internet
+C) In una soluzione che permette la connessione ad internet e il trasferimento di dati ad un server di storage
+D) In un modello distribuito dove l'elaborazione dei dati avviene più vicino possibile a dove i dati vengono richiesti (in prossimità del sensore)
+Correct answer: D
 Revised Bloom's Taxonomy level: Applying
 
-4. Qual è il meccanismo utilizzato da Google Maps per raccogliere dati sul traffico?
-A) Sensori intelligenti
-B) GPRS
-C) Tag RFID
-D) Cellulari connessi alla rete
+4. Quali sono le regole base per prevenire gli attacchi informatici nei confronti di dispositivi IoT?
+A) Cifratura e gateway
+B) Microcontrollori e autenticazioni robuste
+C) Password e elaborazione dei dati
+D) Password e cifratura
 Correct answer: D
 Revised Bloom's Taxonomy level: Analyzing
 
-5. Quali sono le soluzioni per prevenire gli attacchi informatici ai dispositivi IoT?
-A) Password e metodi di autenticazione robuste
-B) Non connettere i dispositivi alla rete
-C) Non utilizzare dispositivi IoT
-D) Non aggiornare i dispositivi
+5. Qual è la soluzione trovata per la congestione dei buffer di dati utilizzata dalla rete telefonica e di quella dati?
+A) Cloud computing
+B) A corto raggio
+C) Edge computing
+D) Commutazione a pacchetto
+Correct answer: D
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Quali sono i presupposti per considerare un oggetto come smart object?
+A) Capacità di connessione
+B) Capacità di processamento
+C) Capacità di volo
+D) Capacità di teleporto
+Correct answer: A
+Revised Bloom's Taxonomy level: Remembering
+
+2. Quali sono le due nuove tecnologie delle telecomunicazioni presentate nella dispensa?
+A) Hardware e software
+B) Networking e virtualizzazione
+C) Criptazione e decostruzione
+D) Modulazione e demodulazione
+Correct answer: B
+Revised Bloom's Taxonomy level: Understanding
+
+3. Qual è la soluzione che ha permesso di risolvere il problema di congestione dei buffer di dati?
+A) Commutazione di circuito
+B) Commutazione a pacchetto
+C) Compressione dei dati
+D) Cifratura dei dati
+Correct answer: B
+Revised Bloom's Taxonomy level: Applying
+
+4. Quali sono le caratteristiche dei sensori SMART?
+A) Tecnologia di sensing, autonomia, elaborazione, memoria
+B) Potere, ricchezza, bellezza, fama
+C) Cura dell'ambiente, sostenibilità, energia rinnovabile, convenience
+D) Prestigio, casualità, contrasto, rumore
 Correct answer: A
 Revised Bloom's Taxonomy level: Analyzing
 
-6. Qual è uno dei rischi derivanti dall'utilizzo di dispositivi smart?
-A) La facilità di utilizzo
-B) L'efficienza nella raccolta di dati
+5. Qual è l'importanza della sicurezza e della privacy nel mondo IoT?
+A) Non è importante
+B) È importante solo se si opera in ambito aziendale
+C) È importante solo in caso di attacchi informatici
+D) È importante per prevenire attacchi informatici e proteggere i dati degli utenti
+Correct answer: D
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Qual è uno dei principali rischi legati ai dispositivi IoT?
+A) Mal funzionamento dell'interfaccia
+B) Sottostima delle loro funzioni
+C) Sovraccarico di informazioni
+D) Impossibilità di connessione ai device
+Correct answer: B
+Revised Bloom's Taxonomy level: Remembering
+
+2. Qual è la migliore soluzione per limitare gli effetti di un attacco informatico ad una rete aziendale?
+A) Implementare delle sottoreti
+B) Creare connessioni sicure tra i device
+C) Ridurre il numero di device connessi
+D) Disconnettere i device vulnerabili
+Correct answer: A
+Revised Bloom's Taxonomy level: Understanding
+
+3. Come si può proteggere un dispositivo IoT dagli accessi indesiderati?
+A) Attivare la crittografia dei dati
+B) Utilizzare reti virtuali private
+C) Tenere aggiornato il software del dispositivo
+D) Cambiare frequentemente la posizione del dispositivo
+Correct answer: C
+Revised Bloom's Taxonomy level: Applying
+
+4. Quali sono i fattori chiave nella scelta dei sensori?
+A) Costo e precisione
+B) Usabilità e affidabilità
+C) Resistenza elettrica e termica
+D) Gamma e sensibilità
+Correct answer: A
+Revised Bloom's Taxonomy level: Analyzing 
+
+5. Quali sono i principali rischi legati all'utilizzo dei sensori IoT?
+A) Problemi di scarsa compatibilità
+B) Costi eccessivi per la manutenzione
 C) Problemi di sicurezza e privacy
-D) L'aumento della produttività
+D) Difficoltà nella raccolta dei dati
 Correct answer: C
 Revised Bloom's Taxonomy level: Evaluating
 
-7. Cosa rappresentano i dispositivi IoT?
-A) Oggetti in grado di riconoscere se stessi
-B) Oggetti che non presentano rischi per la sicurezza e la privacy
-C) Oggetti economici
-D) Oggetti che consentono di avere un occhio all'interno di un ambiente in cui fisicamente non si può essere
+1. Qual è la definizione di sensibilità di un sensore?
+A) La variazione incrementale del parametro di ingresso rilevabile nel segnale di uscita
+B) La differenza massima tra il valore effettivo e il valore indicato in uscita al sensore
+C) Il massimo e il minimo valore misurabile del parametro applicato
+D) L’ingresso minimo del parametro fisico che creerà una variazione rilevabile dell’uscita
 Correct answer: D
-Revised Bloom's Taxonomy level: Evaluating
-
-1. Qual è una delle capacità chiave degli oggetti smart riportate nel testo?
-A) Poter rielaborare le informazioni
-B) Comunicare solo in modo unidirezionale
-C) Essere monofunzionali
-D) Non intraprendere azioni conseguenti ad eventi
-Correct answer: A
 Revised Bloom's Taxonomy level: Remembering
 
-2. Quali problematiche sono elencate nel testo riguardo all'utilizzo degli oggetti smart?
-A) Costi minimi
-B) Problemi di privacy e sicurezza
-C) Azioni immediate conseguenti ad eventi inattesi
-D) Utilizzo efficiente dei dispositivi
-Correct answer: B
+2. In cosa consiste la tecnologia dei MEMS?
+A) Dispositivi di varia natura integrati su uno stesso substrato di materiale semiconduttore
+B) Sistemi di comunicazione a basso costo
+C) Sensori indossabili per il monitoraggio dei parametri fisici dell'utente
+D) Reti di adattamento per antenne array
+Correct answer: A
 Revised Bloom's Taxonomy level: Understanding
 
-3. Cosa sono gli attuatori?
-A) Dispositivi di rilevamento che raccolgono informazioni dall'ambiente fisico in cui si trovano
-B) Dispositivi per effettuare il controllo di un processo o influire sulle condizioni dell'ambiente esterno in cui si trovano
-C) Dispositivi che raccogliere dati dell'ambiente fisico ed effettuare il controllo
-D) Dispositivi di memoria che permettono di vedere gli ultimi dati
+3. Come sono collegati i dispositivi IoT tra loro?
+A) Tramite una rete Wi-Fi
+B) Tramite un nodo centrale chiamato Gateway
+C) Tramite una connessione cellulare
+D) Tramite un cavo Ethernet
 Correct answer: B
 Revised Bloom's Taxonomy level: Applying
 
-4. Quali sono le caratteristiche dei sensori smart riportate nel testo?
-A) Solo la tecnologia di sensing e l'alimentazione
-B) Solo l'elaborazione e la memoria e la comunicazione
-C) Solo la comunicazione e l'alimentazione
+4. Qual è la differenza tra la linearità di un sensore e la linearità dinamica?
+A) La linearità si riferisce alla misura in cui la curva effettiva di un sensore devia dalla curva ideale, mentre la linearità dinamica si riferisce alla misura della capacità di un sensore di seguire variazioni rapide nel parametro di ingresso
+B) La linearità si riferisce alla misura della capacità di un sensore di seguire variazioni rapide nel parametro di ingresso, mentre la linearità dinamica si riferisce alla misura in cui la curva effettiva di un sensore devia dalla curva ideale
+C) La linearità si riferisce alla misura di ripetibilità di una misurazione, mentre la linearità dinamica si riferisce alla pendenza della curva caratteristica di uscita
+D) La linearità si riferisce alla capacità di un sensore di rilevare un ingresso minimo del parametro fisico che creerà una variazione rilevabile dell’uscita, mentre la linearità dinamica si riferisce alla capacità di un sensore di seguire variazioni rapide del parametro di ingresso
+Correct answer: A
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Quali sono i fattori chiave nella scelta dei sensori?
+A) L'uscita del sensore e la sua interfaccia con l'elettronica di misurazione e controllo
+B) La gamma dinamica e l'accuratezza del sensore
+C) La precisione della misurazione e la sensibilità del sensore
+D) Costo e modo di collegamento alla rete
+Correct answer: A
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Quali sono i tipi di grandezze fisiche che i sensori possono misurare?
+A) Solo grandezze meccaniche
+B) Solo grandezze termiche
+C) Solo grandezze ottiche
+D) Grandezze meccaniche, termiche, biologiche, chimiche, ottiche e magnetiche
+Correct answer: D
+Revised Bloom's Taxonomy level: Remembering
+
+2. Cosa significa il termine Edge computing?
+A) Un modello di calcolo distribuito nel quale l'elaborazione dei dati avviene più vicino possibile a dove i dati vengono richiesti.
+B) Un paradigma di erogazione di servizi offerti su richiesta da un fornitore ad un cliente finale attraverso la rete internet.
+C) Uno strato di intermediazione di dispositivi IoT rispetto a quelli di cloud.
+D) Uno studio della fisica che coinvolge l'interazione della radiazione elettromagnetica con i sistemi meccanici.
+Correct answer: A
+Revised Bloom's Taxonomy level: Understanding
+
+3. Qual è l'applicazione dei Bio-MEMS?
+A) Realizzare micromotori elettrici nel campo della chimica e della bioingegneria.
+B) Realizzare proiettori e display avanzati.
+C) Rilevare movimenti ed attività del corpo umano.
+D) Eseguire analisi biomedicali/biologiche in maniera veloce ed efficiente.
+Correct answer: D
+Revised Bloom's Taxonomy level: Applying
+
+4. Quali sono le 3 dimensioni della digitalizzazione del manifatturiero?
+A) lo smart product, il business model, l'intelligenza artificiale.
+B) lo smart product, la robotica collaborativa, il Digital Twin. 
+C) lo smart manufacturing, il business model, la robotica collaborativa.
+D) lo smart manufacturing, lo smart product, la fotonica.
+Correct answer: B
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Cosa forniscono i sensori intelligenti e comunicanti nell'Industria 4.0?
+A) Il supporto necessario per implementare un sistema autonomo e intercomunicante.
+B) Il supporto per la produzione di grandi quantitativo di energia.
+C) Il supporto per la creazione di reti di connessione tra impianti industriali.
+D) Il supporto per la realizzazione di automobili elettriche. 
+Correct answer: A
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Quali sono le condizioni ambientali che un sensore per pianti industriali deve essere in grado di resistere?
+A) Il sensore deve essere in grado di resistere all'accumulo di polvere e sporcizia.
+B) Il sensore deve essere in grado di resistere all'umidità.
+C) Il sensore deve essere in grado di resistere all'accumulo di olio.
+D) Tutte le precedenti.
+Risposta corretta: D
+Livello di tassonomia di Bloom: Remembering
+
+2. Qual è il vantaggio principale dell'Edge Computing?
+A) Tempi di risposta molto più rapidi.
+B) Riduzione del traffico di dati.
+C) Maggiore resilienza in caso di interruzione della connessione dati.
+D) Tutte le precedenti.
+Risposta corretta: D
+Livello di tassonomia di Bloom: Understanding
+
+3. In che modo l'Intelligenza Artificiale viene utilizzata nell'IoT?
+A) Per la produzione di oggetti smart.
+B) Per la costruzione di reti neurali artificiali.
+C) Per l'analisi, la predizione e la simulazione della filiera.
+D) Tutte le precedenti.
+Risposta corretta: C
+Livello di tassonomia di Bloom: Applying
+
+4. Quali sono i limiti del Machine Learning nell'IoT?
+A) Potenza computazionale richiesta elevata.
+B) Energia richiesta elevata.
+C) Tempi di risposta richiesti variabili.
+D) Tutte le precedenti.
+Risposta corretta: D
+Livello di tassonomia di Bloom: Analyzing
+
+5. Quali sono le principali caratteristiche del Deep Learning?
+A) Utilizza vari livelli di unità non lineari a cascata.
+B) Ciascun livello successivo utilizza l'uscita del livello precedente come input.
+C) Può essere di tipo supervisionato o non supervisionato.
+D) Tutte le precedenti.
+Risposta corretta: D
+Livello di tassonomia di Bloom: Evaluating
+
+1. Qual è l'obiettivo dell'Artificial Intelligence?
+A) Scrivere un programma che mimetizzi l'intelligenza umana
+B) Risolvere tutti i problemi dell'umanità
+C) Creare un'intelligenza superiore a quella umana
+D) Far comunicare i computer tra loro
+Correct answer: A
+Revised Bloom's Taxonomy level: Remembering
+
+2. Qual è il concetto alla base del Machine Learning?
+A) Implementare statistiche in un algoritmo
+B) Migliorare la performance di un algoritmo nell'identificare pattern nei dati
+C) Risolvere problemi senza istruzioni esplicite
+D) Trovare una struttura negli input forniti senza input etichettati
+Correct answer: B
+Revised Bloom's Taxonomy level: Understanding
+
+3. Qual è l'obiettivo dell'apprendimento per rinforzo?
+A) Dividere un insieme di input in gruppi
+B) Trovare una struttura negli input forniti senza input etichettati
+C) Interagire con un ambiente dinamico per raggiungere un obiettivo
+D) Associare gli input ad una o più classi
+Correct answer: C
+Revised Bloom's Taxonomy level: Applying
+
+4. Come funziona il Deep Learning?
+A) Utilizza solo un livello di unità non lineari per svolgere compiti di estrazione di caratteristiche
+B) Utilizza una struttura lineare per svolgere compiti di classificazione
+C) Utilizza livelli di unità non lineari a cascata per svolgere compiti di estrazione di caratteristiche e di trasformazione
+D) Utilizza un algoritmo di apprendimento supervisionato per svolgere compiti di clustering
+Correct answer: C
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Qual è il concetto alla base degli Agenti Intelligenti?
+A) Interagire solo con l'ambiente circostante ed essere reattivo agli stimoli di tale ambiente
+B) Essere in grado di comunicare solo con esseri umani
+C) Essere in grado di prendere decisioni e di conseguenza di agire in modo autonomo
+D) Essere in grado di eseguire compiti solo con istruzioni esplicite
+Correct answer: C
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Qual è il presupposto necessario per far imparare alla rete ad riconoscere gli stimoli fotografici della macchina?
+A) I dati devono essere tutti della stessa auto
+B) Gli esempi devono essere diversificati
+C) La rete non ha bisogno di esempi
+D) La rete usa già algoritmi di riconoscimento automatico
+Correct answer: B
+Revised Bloom's Taxonomy level: Remembering
+
+2. Cosa sono gli Agenti Intelligenti?
+A) Sistemi software capaci di interagire con l'ambiente circostante
+B) Sistemi software con applicazione militare
+C) Un nuovo tipo di macchine intelligenti
+D) Un nuovo tipo di software per la gestione dei dati aziendali
+Correct answer: A
+Revised Bloom's Taxonomy level: Understanding
+
+3. Che ruolo hanno i robot 4.0 nell'IoT?
+A) Sono solo strumenti di navigazione autonoma
+B) Sono solo dispositivi per l'interazione sociale
+C) Sono racchiusi in una rete di agenti proattivi
+D) Sono sistemi autonomi con sensori per la percezione dell'ambiente e software per la pianificazione e l'apprendimento
+Correct answer: D
+Revised Bloom's Taxonomy level: Applying
+
+4. Quali sono le piattaforme di elaborazione dei dati sensoriali nell'Edge Computing?
+A) SoC
+B) MCU
+C) Entrambi
+D) Non ci sono piattaforme di elaborazione nel Edge Computing
+Correct answer: C
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Qual è uno dei requisiti fondamentali di Internet?
+A) Un bit rate costante
+B) L'utilizzo di un tubo per la trasmissione del bit rate
+C) Un'interfaccia semplificata
+D) L'integrità dei dati
+Correct answer: D
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Quali sono le caratteristiche della rete telefonica?
+A) non ha requisiti stringenti sul bit rate
+B) ha requisiti stringenti sul bit rate
+C) ha una banda infinita
+D) comunica solo in digitale
+Correct answer: B
+Revised Bloom's Taxonomy level: Remembering
+
+2. Qual è la rete che presenta una struttura gerarchica del protocollo Internet con TCP, IP e l'hardware?
+A) Rete telefonica
+B) Rete televisiva
+C) Rete di dati
+D) Internet
+Correct answer: D
+Revised Bloom's Taxonomy level: Understanding
+
+3. Come viene risolto il problema del bit rate non costante nella rete telefonica?
+A) Con la commutazione di pacchetto
+B) Con il voice detection
+C) Con la commutazione statistica
+D) Con il congestion control
+Correct answer: C
+Revised Bloom's Taxonomy level: Applying
+
+4. Quali sono i requisiti fondamentali di Internet?
+A) intelligenza e sicurezza
+B) integrità dei dati e flessibilità
+C) alta velocità e affidabilità
+D) compatibilità e standardizzazione
+Correct answer: B
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Cosa permette di fare la tecnologia VoIP?
+A) Condividere programmi da remoto
+B) Effettuare una conversazione tramite Internet
+C) Rendere più efficiente la commutazione di circuito
+D) Serializzare i telefoni per tenere il "tubo" sempre pieno
+Correct answer: B
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Qual è la prima vera rete di dati della storia?
+A) Rete Internet
+B) Rete Telefonica
+C) Rete Televisiva
+D) Sistema SAGE
+Correct answer: D
+Revised Bloom's Taxonomy level: Remembering
+
+2. Qual è il concetto alla base della commutazione di pacchetto?
+A) Time Division Multiplexing
+B) Bufferizzazione delle unità operative
+C) Circuiti fisici point-to-point
+D) Ralloccamento di tubi per servizio monodirezionale e interattivo
+Correct answer: B
+Revised Bloom's Taxonomy level: Understanding
+
+3. Qual è la valvola utilizzata per il controllo della congestione nella rete Internet?
+A) TSP
+B) Voice Detection
+C) Time Division Multiplexing
+D) Circuiti fisici point-to-point
+Correct answer: A
+Revised Bloom's Taxonomy level: Applying
+
+4. Quale delle seguenti applicazioni dell'RFID consente di seguire oggetti in movimento?
+A) Sensing
+B) Localizzazione
+C) Tracking
+D) Delay tolerant networks
+Correct answer: C
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Qual è la principale differenza tra la commutazione di circuito e la commutazione di pacchetto?
+A) La commutazione di circuito è più efficiente della commutazione di pacchetto
+B) La commutazione di pacchetto è più economica della commutazione di circuito
+C) La commutazione di circuito è basata sull'allocazione di tubi per un servizio monodirezionale e interattivo, mentre la commutazione di pacchetto si basa sulla bufferizzazione delle unità operative per sfruttare la linea al meglio
+D) La commutazione di pacchetto prevede l'utilizzo della radiofrequenza, mentre la commutazione di circuito è basata sull'utilizzo del cavo elettrico
+Correct answer: C
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Qual è stato il principale svantaggio della rete telefonica AMPS (Advanced Mobile Phone System)?
+A) Bassa capacità di trasmissione di dati
+B) Alta incidenza di chiamate interrotte
+C) Scarso supporto a servizi multimediali
+D) Ridotta copertura geografica
+Correct answer: B
+Revised Bloom's Taxonomy level: Remembering
+
+2. Quali sono i requisiti della commutazione di pacchetto?
+A) Flusso costante di bit e interattività
+B) Elevata utilizzazione della linea e bit rate variabile
+C) Controllo della congestione e silenzi
+D) Time Division Multiplexing e rete fibra ottica
+Correct answer: B
+Revised Bloom's Taxonomy level: Understanding
+
+3. Come funziona la tecnologia RFID?
+A) Trasmettendo energia ad un oggetto passivo
+B) Invocando servizi nel cloud
+C) Registrando informazioni su una memoria flash
+D) Con la modulazione delle onde radio
+Correct answer: A
+Revised Bloom's Taxonomy level: Applying
+
+4. Quali sono i costi derivanti dall'utilizzo di IoT?
+A) Soltanto gli hardware
+B) Solo il servizio di gestione
+C) Solo i network services
+D) Hardware, servizio di gestione e network services
+Correct answer: D
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Qual è la definizione di IoT secondo l'ITU?
+A) Un'infrastruttura globale che abilita nuovi servizi avanzati grazie all'interconnessione di oggetti fisici e virtuali
+B) Una rete di sensori connessi al cloud
+C) Una piattaforma che abilita il web servicing dentro gli oggetti
+D) Un sistema di sensori wireless distribuiti
+Correct answer: A
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Qual è l'ente che definisce gli standard nelle telecomunicazioni?
+A) ITA
+B) UNESCO
+C) ITU
+D) UNICEF
+Correct answer: C
+Revised Bloom's Taxonomy level: Remembering
+
+2. Cosa non è possibile fare con la rete di RFID?
+A) Standardizzarla
+B) Costruirla ad hoc in base al contesto e alle esigenze
+C) Utilizzarla in ogni dominio
+D) Utilizzarla come una rete generalista
+Correct answer: D
+Revised Bloom's Taxonomy level: Understanding
+
+3. Quali sono i principali costi derivanti dall'Internet of Things?
+A) Gli hardware
+B) Il servizio di gestione
+C) Network services
+D) Tutte le precedenti
+Correct answer: D
+Revised Bloom's Taxonomy level: Applying
+
+4. Quali sono gli aspetti più complessi riguardanti l'IoT?
+A) La gestione
+B) L'affidabilità
+C) La sicurezza
 D) Tutte le precedenti
 Correct answer: D
 Revised Bloom's Taxonomy level: Analyzing
 
-5. Cosa permette di fare un contatore digitale presente in casa?
-A) Rilevare la posizione dell'utente
-B) Fornire l'entità dei consumi dell'utente
-C) Controllo di un processo in casa
-D) Intraprendere azioni conseguenti ad eventi
-Correct answer: B
-Revised Bloom's Taxonomy level: Analyzing
-
-6. In cosa consiste la tecnologia di sensing dei sensori SMART?
-A) Nell'elaborazione dei dati rilevati
-B) Nel tipo di dato o dati rilevabili e le prestazioni ottenibili
-C) Nell'autonomia e durata di funzionamento del dispositivo
-D) Nella possibilità di stabilire una comunicazione affidabile, sicura e protetta per mezzo della rete
+5. Qual è il valore che sta nelle idee dell'IoT?
+A) La tecnologia
+B) Lo sviluppo complessivo
+C) La programmabilità della rete
+D) La sicurezza della rete
 Correct answer: B
 Revised Bloom's Taxonomy level: Evaluating
 
-7. Quali problematiche derivano dall'utilizzo non efficiente dei dispositivi smart?
-A) Probabilmente costi maggiori dell'oggetto
-B) Nessuna problematica
-C) Problemi di sicurezza
-D) Scarsità di dati rilevanti
+1. A quale generazione apparteneva la comunicazione voce digitale?
+A) Prima generazione
+B) Seconda generazione
+C) Terza generazione
+D) Quarta generazione
+Correct answer: B
+Revised Bloom's Taxonomy level: Remembering
+
+2. Qual è il bit rate del 5G?
+A) 100 megabit/s
+B) 200 megabit/s
+C) 1 gigabit/s
+D) 10 gigabit/s
+Correct answer: C
+Revised Bloom's Taxonomy level: Understanding
+
+3. Qual è il vantaggio del Beamforming?
+A) Aumento dell'inquinamento elettromagnetico
+B) Maggiore consumo energetico
+C) Maggiore copertura della rete
+D) Maggiore latenza nella trasmissione dei dati
+Correct answer: C
+Revised Bloom's Taxonomy level: Applying
+
+4. In che modo la piattaforma Zerynth semplifica il lavoro del programmatore IoT?
+A) Offrendo codice Assembly
+B) Permettendo di scrivere codice Python convertibile in codice C
+C) Offrendo hardware a basso costo
+D) Semplificando il debugging del codice
+Correct answer: B
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Qual è l'obiettivo delle reti 5G?
+A) Essere una piattaforma abilitante di nuovi servizi
+B) Sostituire la rete fissa
+C) Essere una rete di trasporto di bit
+D) Ridurre la densità delle small-cells
+Correct answer: A
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Qual è il ruolo della piattaforma Zerynth nell'IoT?
+A) Gestisce la fauna selvatica
+B) Rileva lo stato di salute delle piante
+C) Visualizza i dati in real-time
+D) Fornisce un ponte tra l'hardware e il Cloud
+Risposta corretta: D
+Revised Bloom's Taxonomy level: Remembering
+
+2. Quali sono gli elementi hardware che popolano i dispositivi smart?
+A) Sensori e attuatori
+B) Reti neurali e software
+C) Reti metalliche e fertilizzanti
+D) Banda acustica e reti elettrificate
+Risposta corretta: A
+Revised Bloom's Taxonomy level: Understanding
+
+3. Cosa permette di fare un sistema IoT come Natech Escape?
+A) Permette di produrre nuove macchinette del caffè
+B) Permette di rilevare le pressioni atmosferiche
+C) Permette di allontanare la fauna selvatica
+D) Permette di programmare l'hardware
+Risposta corretta: C
+Revised Bloom's Taxonomy level: Applying
+
+4. Quali sono le opportunità derivanti dall'utilizzo di una piattaforma IoT?
+A) Creare nuovi fonti di ricavo
+B) Creare reti metalliche
+C) Generare grafici e dashboard
+D) Fare sondaggi soggettivi
+Risposta corretta: A
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Quali sono i pilastri di una piattaforma IoT resilienti e sicuri?
+A) Hardware completo e software facile da usare
+B) Linguaggio di basso livello e dispositivi smart
+C) Hardware, software e Cloud completi
+D) Resilienza attuale e alta aspettativa degli utenti
+Risposta corretta: C
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Qual è il problema che comporta la necessità del linguaggio di alto livello?
+A) Il programmatore non ricorda tutto ciò che ha scritto
+B) I microcontrollori sono troppo complessi da programmare
+C) Il codice del programma deve essere sempre cancellato
+D) I dispositivi smart non hanno abbastanza capacità di memoria
+Correct answer: A
+Revised Bloom's Taxonomy level: Remembering
+
+2. Come si definiscono le aspettative degli utenti rispetto alle varie tecnologie?
+A) Andamento regolare
+B) Sempre in aumento
+C) A picchi
+D) Statiche
+Correct answer: C
+Revised Bloom's Taxonomy level: Understanding
+
+3. A cosa serve la piattaforma IoT?
+A) Aumentare la fidelizzazione del cliente
+B) Ridurre il numero di prodotti venduti
+C) Sfruttare i dati dei prodotti generati
+D) Sondaggi alla clientela
+Correct answer: C
+Revised Bloom's Taxonomy level: Applying
+
+4. Quali aziende traggono maggiori benefici dall'IoT?
+A) Aziende di software
+B) Aziende di servizi di pulizia
+C) Aziende di prodotto
+D) Aziende di trasporto
+Correct answer: C
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Quali sono i pilastri del concetto di piattaforma IoT per affrontare il rischio?
+A) Alti costi
+B) Complicata da usare
+C) Resiliente
+D) Inesistente
 Correct answer: C
 Revised Bloom's Taxonomy level: Evaluating
 
