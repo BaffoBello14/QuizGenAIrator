@@ -7,7 +7,6 @@ import os
 openai.apy_key = ""
 time_to_wait = 15
 
-
 def num_tokens_from_messages(messages, model="gpt-3.5-turbo-0301"):
     """Returns the number of tokens used by a list of messages."""
     try:
@@ -176,6 +175,8 @@ class QuizGenerator:
                 conversation.append(
                     {'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
                 content = conversation[-1]['content'].strip()
+
+                print(content)
 
                 if num_tokens_from_messages(conversation, self.model_id) > 4097:
                     break
