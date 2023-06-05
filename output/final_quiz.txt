@@ -1,0 +1,135 @@
+Question 1: Qual è la caratteristica dell'uomo descritta come "lenta evoluzione delle sue facoltà psichiche e spirituali"?
+A.  la sexualità tardiva.
+B.  la longevità della vita.
+C.  la necessità di essere guidato dall'esterno.
+D.  la necessità di essere in relazione con gli altri.
+Correct answer: C
+Bloom taxonomy level: Remembering
+Score: 0.78212851758423
+
+Question 2: Qual è l'oggetto di studio della metafisica?
+A.  La natura dell'uomo
+B.  Il comportamento umano
+C.  Ciò che costituisce l'essenza prima del reale
+D.  Il funzionamento del pensiero
+Correct answer: C
+Bloom taxonomy level: Remembering
+Score: 0.63390473347436
+
+Question 3: Cos'è la filosofia?
+A.  Un modo per non porsi domande
+B.  Uno studio sulla realtà
+C.  Un metodo di ricerca scientifica
+D.  Una terapia per la mente
+Correct answer: B
+Bloom taxonomy level: Remembering
+Score: 0.6051956868071577
+
+Question 4: Secondo il testo, qual è la caratteristica che distingue l'uomo dall'animale, soprattutto nella sua spiritualità?
+A.  La capacità di modellare la materia in modo creativo.
+B.  La longevità della vita.
+C.  La volontà libera.
+D.  L'intellezione e l'autocoscienza.
+Correct answer: D
+Bloom taxonomy level: Understanding
+Score: 0.7691770974056936
+
+Question 5: Cos'è la dialettica, secondo la filosofia hegeliana?
+A.  Il processo di creazione artistica
+B.  Il ragionamento deduttivo
+C.  La tensione tra tesi e antitesi che conduce alla sintesi
+D.  L'arte della persuasione retorica
+Correct answer: C
+Bloom taxonomy level: Understanding
+Score: 0.7049403056242105
+
+Question 6: Qual è la differenza qualitativa tra l'uomo e gli animali?
+A.  La postura eretta
+B.  La ragione capace di rivolgersi a qualsiasi cosa
+C.  Lo stare in piedi
+D.  La capacità di ridere e piangere
+Correct answer: B
+Bloom taxonomy level: Understanding
+Score: 0.6798328178115571
+
+Question 7: Qual è la caratteristica dell'uomo descritta come "essere autocoscienza e libero di seguire o contravvenire alle sue pulsioni"?
+A.  La necessità di essere guidato dall'esterno.
+B.  La longevità della vita.
+C.  La volontà libera.
+D.  La lenta evoluzione delle sue facoltà psichiche e spirituali.
+Correct answer: C
+Bloom taxonomy level: Applying
+Score: 0.7835486510180041
+
+Question 8: Qual è la teoria che si è imposta in genere nella biologia odierna?
+A.  La teoria della fisica quantistica
+B.  La teoria della relatività di Einstein
+C.  La teoria della gravità di Newton
+D.  La teoria evoluzionistica di Charles Darwin
+Correct answer: D
+Bloom taxonomy level: Applying
+Score: 0.7056795451862068
+
+Question 9: In cosa consisteva la richiesta dell'oracolo di Delfi per risolvere la peste a Tebe?
+A.  La morte di Edipo.
+B.  La morte di Giocasta.
+C.  La morte di Laio.
+D.  La morte di Tiresia.
+Correct answer: C
+Bloom taxonomy level: Applying
+Score: 0.6762783203112158
+
+Question 10: Qual è la principale differenza corporea tra uomo e animale?
+A.  La peluria
+B.  La postura eretta
+C.  La presa di precisione
+D.  La dentatura da rapace
+Correct answer: B
+Bloom taxonomy level: Analyzing
+Score: 0.643392795105383
+
+Question 11: Qual è il rapporto tra filosofia e scienze?
+A.  La filosofia si occupa solo degli aspetti generali, mentre le scienze sono specializzate in ambiti specifici
+B.  La filosofia si oppone alle scienze, considerandole troppo riduttive
+C.  La filosofia e le scienze sono complementari, ma la filosofia cerca di sintetizzarle
+D.  La filosofia e le scienze sono completamente indipendenti l'una dall'altra
+Correct answer: C
+Bloom taxonomy level: Analyzing
+Score: 0.6392625079258283
+
+Question 12: Qual è la caratteristica che distingue le parole umane da quelle degli animali?
+A.  Sono sempre disponibili anche per indicare qualcosa di assente.
+B.  Sono formate da un insieme unico di consonanti e vocali.
+C.  Possono comunicare concetti astratti.
+D.  Tutte le precedenti.
+Correct answer: D
+Bloom taxonomy level: Analyzing
+Score: 0.6268518843602437
+
+Question 13: Qual è l'oggetto di studio della filosofia della storia?
+A.  La natura dell'uomo
+B.  Il fenomeno religioso
+C.  Struttura, funzione e significato della società e dello stato
+D.  L'essenza e i limiti della conoscenza scientifica
+Correct answer: C
+Bloom taxonomy level: Evaluating
+Score: 0.7653203056297202
+
+Question 14: Secondo il testo, qual è la caratteristica dell'uomo che lo differenzia maggiormente dall'animale?
+A.  La sua spiritualità e razionalità.
+B.  La sua capacità di apprendimento e insegnamento.
+C.  La sua longevità della vita.
+D.  La sua capacità di modellare la materia in modo creativo.
+Correct answer: A
+Bloom taxonomy level: Evaluating
+Score: 0.7265216084903465
+
+Question 15: Quali sono le tre cose che, secondo Adolf Portmann, distinguono l'uomo dall'animale?
+A.  Lo stare in piedi, il ridere e la scelta delle sollecitazioni
+B.  Lo stare in piedi, il parlare e il pensare
+C.  La peluria, la presa di precisione e la civiltà
+D.  Il cervello grande, la laringe abbassata e la cultura
+Correct answer: B
+Bloom taxonomy level: Evaluating
+Score: 0.6069198707356762
+
