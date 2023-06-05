@@ -4,7 +4,7 @@ import openai
 import tiktoken
 import os
 
-openai.api_key = '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'
+openai.apy_key = ""
 
 def num_tokens_from_messages(messages, model="gpt-3.5-turbo-0301"):
     """Returns the number of tokens used by a list of messages."""
@@ -40,8 +40,10 @@ def num_tokens_from_messages(messages, model="gpt-3.5-turbo-0301"):
 
 
 class QuizGenerator:
-    def __init__(self, num_questions_level, bloom_levels, output_function):
+    def __init__(self, num_questions_level, bloom_levels, output_function, openai_api_key):
         super().__init__()
+
+        openai.api_key  = openai_api_key
 
         file_path = 'input/extracted_plain_text.txt'
         with open(file_path, encoding='utf-8') as file:

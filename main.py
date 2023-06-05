@@ -6,17 +6,6 @@ from tkinter import Tk, filedialog, Button, Entry, Frame, Label, StringVar, IntV
 import threading
 import queue
 
-# Funzione per l'output nel widget di testo
-def output(message=""):
-    if message == "":
-        formatted_message = f"{message}\n"
-    else:
-        formatted_message = f"**{message}**\n"
-
-    # Aggiunge il messaggio alla coda
-    output_box_queue.put(formatted_message)
-
-
 # Function to select PDF file
 def select_pdf_file():
     file_path = filedialog.askopenfilename(defaultextension=".pdf", filetypes=[("PDF", "*.pdf")])
@@ -24,7 +13,6 @@ def select_pdf_file():
         pdf_entry.delete(0, "end")
         pdf_entry.insert("end", file_path)
 
-# Funzione del thread di generazione del quiz
 def generate_quiz_thread(quiz_generator, num_questions_level, bloom_levels):
     quiz_generator.generate()
 
@@ -38,36 +26,7 @@ def generate_quiz_thread(quiz_generator, num_questions_level, bloom_levels):
     # Schedula l'esecuzione del codice successivo alla generazione del quiz nel thread principale
     window.after(0, process_generated_quiz, quiz, starting_text, bloom_levels, num_questions_level)
 
-
-# Funzione per processare il quiz generato nel thread principale
-def process_generated_quiz(quiz, starting_text, bloom_levels, num_questions_level):
-
-    # QuizAnalyzer declaration passing to it the generated quiz and the starting text
-    quiz_analyzer = QuizAnalyzer(quiz, starting_text, output)
-    quiz_analyzer.calculate_weighted_standing()
-
-    output("Number of available questions for each Revised Bloom's Taxonomy level, before the selection.")
-    quiz.print_num_questions_for_each_level(bloom_levels)
-
-    # selection of desired number of questions for each level from the quiz (selecting the best ones)
-    quiz.select_questions(num_questions_level, bloom_levels)
-
-    output("Number of questions for each Revised Bloom's Taxonomy level for the final quiz.")
-    quiz.print_num_questions_for_each_level(bloom_levels)
-
-    quiz.generate_files()
-
-    # Abilita nuovamente i pulsanti e le caselle di inserimento
-    select_pdf_button.config(state='normal')
-    remembering_entry.config(state='normal')
-    understanding_entry.config(state='normal')
-    applying_entry.config(state='normal')
-    analyzing_entry.config(state='normal')
-    evaluating_entry.config(state='normal')
-    generate_quiz_button.config(state='normal')
-
-
-# Funzione per generare il quiz
+# Function to generate the quiz
 def generate_quiz():
     bloom_levels = ["Remembering", "Understanding", "Applying", "Analyzing", "Evaluating"]
     num_questions_level = [
@@ -89,18 +48,25 @@ def generate_quiz():
         output("Please select a PDF file")
         return
 
+    openai_key = key_entry.get()  # Get the value entered in the OpenAI key input field
+
+    # Verify if an OpenAI key has been entered
+    if not openai_key:
+        output("Please enter an OpenAI key")
+        return
+
     # PDFReader object declaration passing to it the pdf from which extract the text
     pdf_reader = PDFReader(file_path)
     pdf_reader.process_pdf()
 
-    # QuizGenerator object declaration passing to it the number of questions for each level and the Bloom's levels
-    quiz_generator = QuizGenerator(num_questions_level, bloom_levels, output)
+    # QuizGenerator object declaration passing to it the number of questions for each level, Bloom's levels, output function, and the OpenAI key
+    quiz_generator = QuizGenerator(num_questions_level, bloom_levels, output, openai_key)
 
     # Create a thread for quiz generation
     generate_thread = threading.Thread(target=generate_quiz_thread, args=(quiz_generator, num_questions_level, bloom_levels,))
     generate_thread.start()
 
-    # Disabilita i pulsanti e le caselle di inserimento
+    # Disable buttons and input fields
     select_pdf_button.config(state='disabled')
     remembering_entry.config(state='disabled')
     understanding_entry.config(state='disabled')
@@ -108,50 +74,85 @@ def generate_quiz():
     analyzing_entry.config(state='disabled')
     evaluating_entry.config(state='disabled')
     generate_quiz_button.config(state='disabled')
+    key_entry.config(state='disabled')
 
-# Funzione per l'aggiornamento dell'interfaccia utente con i messaggi di output
+# Function for thread-safe output to the text widget
+def output(message=""):
+    if message == "":
+        formatted_message = f"{message}\n"
+    else:
+        formatted_message = f"**{message}**\n"
+
+    # Add the message to the queue
+    output_box_queue.put(formatted_message)
+
+# Function to process the generated quiz in the main thread
+def process_generated_quiz(quiz, starting_text, bloom_levels, num_questions_level):
+
+    # QuizAnalyzer declaration passing to it the generated quiz and the starting text
+    quiz_analyzer = QuizAnalyzer(quiz, starting_text, output)
+    quiz_analyzer.calculate_weighted_standing()
+
+    output("Number of available questions for each Revised Bloom's Taxonomy level, before the selection.")
+    quiz.print_num_questions_for_each_level(bloom_levels)
+
+    # Selection of desired number of questions for each level from the quiz (selecting the best ones)
+    quiz.select_questions(num_questions_level, bloom_levels)
+
+    output("Number of questions for each Revised Bloom's Taxonomy level for the final quiz.")
+    quiz.print_num_questions_for_each_level(bloom_levels)
+
+    quiz.generate_files()
+
+    # Enable buttons and input fields
+    select_pdf_button.config(state='normal')
+    remembering_entry.config(state='normal')
+    understanding_entry.config(state='normal')
+    applying_entry.config(state='normal')
+    analyzing_entry.config(state='normal')
+    evaluating_entry.config(state='normal')
+    generate_quiz_button.config(state='normal')
+    key_entry.config(state='normal')
+
+# Function for updating the output text box in the user interface
 def update_output_box():
     while True:
-        # Controlla se ci sono messaggi nella coda
+        # Check if there are messages in the queue
         if not output_box_queue.empty():
             formatted_message = output_box_queue.get()
 
-            # Aggiorna l'interfaccia utente con il messaggio di output
+            # Update the user interface with the output message
             output_box.config(state="normal")
             output_box.insert("end", formatted_message)
             output_box.see("end")
             output_box.config(state="disabled")
 
-# Creazione della finestra principale
+# Create the main window
 window = Tk()
-window.title("Quiz Generation")
+window.title("Quiz GenAIrator")
 
-# Frame per il percorso del file PDF
+# Frame for the PDF file selection
 pdf_frame = Frame(window)
 pdf_frame.pack(pady=10)
 
-# Casella di testo per il percorso del file PDF
 pdf_label = Label(pdf_frame, text="Select PDF")
 pdf_label.pack(side="left")
 pdf_entry = Entry(pdf_frame, width=50)
 pdf_entry.pack(side="left")
 
-# Pulsante per selezionare il file PDF
 select_pdf_button = Button(pdf_frame, text="Select PDF", command=select_pdf_file)
 select_pdf_button.pack(side="left")
 
-# Frame per la selezione dei livelli di Bloom
+# Frame for the Bloom's levels selection
 bloom_frame = Frame(window)
 bloom_frame.pack(pady=10)
 
-# Variabili per i livelli di Bloom
 remembering_var = IntVar()
 understanding_var = IntVar()
 applying_var = IntVar()
 analyzing_var = IntVar()
 evaluating_var = IntVar()
 
-# Etichette per i livelli di Bloom
 remembering_label = Label(bloom_frame, text="Remembering:")
 remembering_label.grid(row=0, column=0, padx=10)
 understanding_label = Label(bloom_frame, text="Understanding:")
@@ -163,7 +164,6 @@ analyzing_label.grid(row=3, column=0, padx=10)
 evaluating_label = Label(bloom_frame, text="Evaluating:")
 evaluating_label.grid(row=4, column=0, padx=10)
 
-# Caselle di testo per i livelli di Bloom
 remembering_entry = Entry(bloom_frame, width=5, textvariable=remembering_var)
 remembering_entry.grid(row=0, column=1, padx=10)
 understanding_entry = Entry(bloom_frame, width=5, textvariable=understanding_var)
@@ -175,38 +175,48 @@ analyzing_entry.grid(row=3, column=1, padx=10)
 evaluating_entry = Entry(bloom_frame, width=5, textvariable=evaluating_var)
 evaluating_entry.grid(row=4, column=1, padx=10)
 
-# Pulsante per generare il quiz
 generate_quiz_button = Button(window, text="Generate Quiz", command=generate_quiz)
 generate_quiz_button.pack(pady=10)
 
-# Etichetta per il risultato del generatore del quiz
 result_label = StringVar()
 result_label.set("")
 result_display = Label(window, textvariable=result_label)
 result_display.pack()
 
-# Box di output
+# Frame for OpenAI key input
+key_frame = Frame(window)
+key_frame.pack(pady=10)
+
+key_label = Label(key_frame, text="OpenAI Key:")
+key_label.pack(side="left")
+key_entry = Entry(key_frame, width=50)
+key_entry.pack(side="left")
+
 output_frame = Frame(window)
 output_frame.pack(pady=10)
 
 output_label = Label(output_frame, text="Output:")
 output_label.pack()
 
+# Text widget for displaying the output
 output_box = Text(output_frame, width=80, height=10)
-output_box.pack(side="left", fill="both", expand=True)
+output_box.pack(side="left", fill="y")
 
-output_scrollbar = Scrollbar(output_frame, command=output_box.yview)
-output_scrollbar.pack(side="right", fill="y")
+# Scrollbar for the output text widget
+output_scrollbar = Scrollbar(output_frame)
+output_scrollbar.pack(side="left", fill="y")
 
+# Configure the output text widget to use the scrollbar
 output_box.config(yscrollcommand=output_scrollbar.set)
-output_box.config(state="disabled")
+output_scrollbar.config(command=output_box.yview)
 
-# Aggiunta di una coda per la comunicazione tra thread
+# Create a queue for thread-safe communication of output messages
 output_box_queue = queue.Queue()
 
-# Avvia il thread per l'aggiornamento dell'interfaccia utente
-update_thread = threading.Thread(target=update_output_box)
-update_thread.start()
+# Create a thread to update the output text box in the user interface
+update_output_thread = threading.Thread(target=update_output_box)
+update_output_thread.daemon = True
+update_output_thread.start()
 
-# Esecuzione della finestra principale
+# Start the main loop
 window.mainloop()

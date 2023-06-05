@@ -3,6 +3,7 @@ from question_class import Question
 import tkinter as tk
 from tkinter import filedialog
 import os
+import re
 
 class Quiz:
     def __init__(self, language, output_function):
@@ -19,11 +20,16 @@ class Quiz:
         # Split the content into individual questions
         question_texts = content.split('\n\n')
 
+        pattern = r'^\d+\.'
+
         # Process each question text
         for question_text in question_texts:
             question_lines = question_text.strip().split('\n')
             if question_lines[0] == '':
                 break
+            if not re.match(pattern, question_lines[0]):
+                for i in range(7):
+                    question_lines[i] = question_lines[i+1]
 
             # Extract the question and answers
             question = question_lines[0][question_lines[0].index('. ') + 2:]
