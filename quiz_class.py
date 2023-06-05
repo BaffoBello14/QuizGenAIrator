@@ -4,6 +4,61 @@ import tkinter as tk
 from tkinter import filedialog
 import os
 import re
+from langdetect import detect
+
+
+def translate_bloom_levels(text):
+    terms_en = ["Remembering", "Understanding", "Applying", "Analyzing", "Evaluating"]
+    terms_it = ["Ricordare", "Comprendere", "Applicare", "Analizzare", "Valutare"]
+    terms_es = ["Recordar", "Comprender", "Aplicar", "Analizar", "Evaluar"]
+    terms_fr = ["Mémoriser", "Comprendre", "Appliquer", "Analyser", "Évaluer"]
+    terms_de = ["Wissen", "Verstehen", "Anwenden", "Analysieren", "Evaluieren"]
+
+    for term in text.split():
+
+        term_language = detect(term)
+
+        if term_language != 'en':
+            index = -1
+            if term in terms_it:
+                index = terms_it.index(term)
+            elif term in terms_es:
+                index = terms_it.index(term)
+            elif term in terms_fr:
+                index = terms_it.index(term)
+            elif term in terms_de:
+                index = terms_it.index(term)
+            if not index == -1:
+                text = text.replace(term, terms_en[index])
+
+    return text
+
+
+def preprocess_question_lines(question_lines):
+    pattern = r'^\d+\.'
+    # if the complete question has less than 7 lines it is not actually a question
+    if len(question_lines) < 7:
+        return None
+    # if the complete question has more than 7 lines
+    # is necessary to remove any lines that precedes the question
+    if len(question_lines) > 7:
+        lines_to_remove = []
+        for single_line in question_lines:
+            if not re.match(pattern, single_line):
+                lines_to_remove.append(single_line)
+            else:
+                break
+        for line in lines_to_remove:
+            question_lines.remove(line)
+    # if the complete question still has more than 7 lines
+    # is necessary to remove any lines that follow the question
+    if len(question_lines) > 7:
+        question_lines = question_lines[0:6]
+    # to translate terms in Bloom line
+    question_lines[6] = translate_bloom_levels(question_lines[6])
+
+    return question_lines
+
 
 class Quiz:
     def __init__(self, language, output_function):
@@ -20,16 +75,13 @@ class Quiz:
         # Split the content into individual questions
         question_texts = content.split('\n\n')
 
-        pattern = r'^\d+\.'
-
         # Process each question text
         for question_text in question_texts:
             question_lines = question_text.strip().split('\n')
-            if question_lines[0] == '':
-                break
-            if not re.match(pattern, question_lines[0]):
-                for i in range(7):
-                    question_lines[i] = question_lines[i+1]
+
+            question_lines = preprocess_question_lines(question_lines)
+            if question_lines is None:
+                continue
 
             # Extract the question and answers
             question = question_lines[0][question_lines[0].index('. ') + 2:]
@@ -119,6 +171,19 @@ class Quiz:
         # Sort questions within each level by score in descending order
         for level, level_questions in sorted_questions_by_level.items():
             sorted_questions_by_level[level] = sorted(level_questions, key=lambda q: q.get_score(), reverse=True)
+
+        unique_scores = []
+        for level, level_questions in sorted_questions_by_level.items():
+            indexes_to_remove = []
+            index = 0
+            for question in level_questions:
+                if question.get_score() not in unique_scores:
+                    unique_scores.append(question.get_score())
+                else:
+                    indexes_to_remove.append(index)
+                index += 1
+            for index_to_remove in indexes_to_remove:
+                level_questions.pop(index_to_remove)
 
         # Select the specified number of questions for each level
         for level, level_questions in sorted_questions_by_level.items():

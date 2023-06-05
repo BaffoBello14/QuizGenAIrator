@@ -6,6 +6,7 @@ from tkinter import Tk, filedialog, Button, Entry, Frame, Label, StringVar, IntV
 import threading
 import queue
 
+
 # Function to select PDF file
 def select_pdf_file():
     file_path = filedialog.askopenfilename(defaultextension=".pdf", filetypes=[("PDF", "*.pdf")])
@@ -13,8 +14,12 @@ def select_pdf_file():
         pdf_entry.delete(0, "end")
         pdf_entry.insert("end", file_path)
 
+
 def generate_quiz_thread(quiz_generator, num_questions_level, bloom_levels):
-    quiz_generator.generate()
+
+    # HERE PARTITION NUMBER
+
+    # quiz_generator.generate(1)
 
     # Recupera i dati necessari dalla generazione del quiz
     quiz_language = quiz_generator.get_language()
@@ -25,6 +30,7 @@ def generate_quiz_thread(quiz_generator, num_questions_level, bloom_levels):
 
     # Schedula l'esecuzione del codice successivo alla generazione del quiz nel thread principale
     window.after(0, process_generated_quiz, quiz, starting_text, bloom_levels, num_questions_level)
+
 
 # Function to generate the quiz
 def generate_quiz():
@@ -63,7 +69,8 @@ def generate_quiz():
     quiz_generator = QuizGenerator(num_questions_level, bloom_levels, output, openai_key)
 
     # Create a thread for quiz generation
-    generate_thread = threading.Thread(target=generate_quiz_thread, args=(quiz_generator, num_questions_level, bloom_levels,))
+    generate_thread = threading.Thread(target=generate_quiz_thread,
+                                       args=(quiz_generator, num_questions_level, bloom_levels,))
     generate_thread.start()
 
     # Disable buttons and input fields
@@ -76,6 +83,7 @@ def generate_quiz():
     generate_quiz_button.config(state='disabled')
     key_entry.config(state='disabled')
 
+
 # Function for thread-safe output to the text widget
 def output(message=""):
     if message == "":
@@ -86,20 +94,18 @@ def output(message=""):
     # Add the message to the queue
     output_box_queue.put(formatted_message)
 
+
 # Function to process the generated quiz in the main thread
 def process_generated_quiz(quiz, starting_text, bloom_levels, num_questions_level):
-
     # QuizAnalyzer declaration passing to it the generated quiz and the starting text
     quiz_analyzer = QuizAnalyzer(quiz, starting_text, output)
     quiz_analyzer.calculate_weighted_standing()
 
-    output("Number of available questions for each Revised Bloom's Taxonomy level, before the selection.")
-    quiz.print_num_questions_for_each_level(bloom_levels)
-
     # Selection of desired number of questions for each level from the quiz (selecting the best ones)
     quiz.select_questions(num_questions_level, bloom_levels)
 
-    output("Number of questions for each Revised Bloom's Taxonomy level for the final quiz.")
+    output()
+    output("Number of questions for each Revised Bloom's Taxonomy level.")
     quiz.print_num_questions_for_each_level(bloom_levels)
 
     quiz.generate_files()
@@ -114,6 +120,7 @@ def process_generated_quiz(quiz, starting_text, bloom_levels, num_questions_leve
     generate_quiz_button.config(state='normal')
     key_entry.config(state='normal')
 
+
 # Function for updating the output text box in the user interface
 def update_output_box():
     while True:
@@ -126,6 +133,7 @@ def update_output_box():
             output_box.insert("end", formatted_message)
             output_box.see("end")
             output_box.config(state="disabled")
+
 
 # Create the main window
 window = Tk()
