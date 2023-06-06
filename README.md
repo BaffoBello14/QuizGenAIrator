@@ -1,2 +1,2 @@
-# BPM
-BPM2023!
+# QuizGenAIrator
+Business and Project Management's project A.A. 22/23
