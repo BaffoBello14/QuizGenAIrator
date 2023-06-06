@@ -39,7 +39,6 @@ def num_tokens_from_messages(messages, model="gpt-3.5-turbo-0301"):
     num_tokens += 3  # every reply is primed with <|start|>assistant<|message|>
     return num_tokens
 
-
 class QuizGenerator:
     def __init__(self, num_questions_level, bloom_levels, output_function, openai_api_key):
         super().__init__()

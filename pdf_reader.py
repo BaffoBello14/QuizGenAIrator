@@ -1,7 +1,6 @@
 import PyPDF2
 import re
 
-
 class PDFReader:
     def __init__(self, file_path):
         super().__init__()

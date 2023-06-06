@@ -6,7 +6,6 @@ import os
 import re
 from langdetect import detect
 
-
 def translate_bloom_levels(text):
     terms_en = ["Remembering", "Understanding", "Applying", "Analyzing", "Evaluating"]
     terms_it = ["Ricordare", "Comprendere", "Applicare", "Analizzare", "Valutare"]
@@ -33,7 +32,6 @@ def translate_bloom_levels(text):
 
     return text
 
-
 def preprocess_question_lines(question_lines):
     pattern = r'^\d+\.'
     # if the complete question has less than 7 lines it is not actually a question
@@ -58,7 +56,6 @@ def preprocess_question_lines(question_lines):
     question_lines[6] = translate_bloom_levels(question_lines[6])
 
     return question_lines
-
 
 class Quiz:
     def __init__(self, language, output_function):

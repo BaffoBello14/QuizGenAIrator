@@ -1,4 +1,3 @@
-
 class Question:
     def __init__(self, question, answers, correct_answer, level):
         super().__init__()

@@ -6,7 +6,6 @@ from tkinter import Tk, filedialog, Button, Entry, Frame, Label, StringVar, IntV
 import threading
 import queue
 
-
 # Function to select PDF file
 def select_pdf_file():
     file_path = filedialog.askopenfilename(defaultextension=".pdf", filetypes=[("PDF", "*.pdf")])
