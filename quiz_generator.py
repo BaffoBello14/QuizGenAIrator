@@ -5,7 +5,7 @@ import tiktoken
 import os
 
 openai.apy_key = ""
-time = 15
+time_to_wait = 17
 
 
 def num_tokens_from_messages(messages, model="gpt-3.5-turbo-0301"):
@@ -41,11 +41,28 @@ def num_tokens_from_messages(messages, model="gpt-3.5-turbo-0301"):
     return num_tokens
 
 
+def already_existing_questions(string1, string2):
+    lines1 = string1.split("\n")
+    lines2 = string2.split("\n")
+
+    # Verifica la condivisione di cinque linee uguali
+    for i in range(len(lines1) - 4):
+        # Prendi cinque linee consecutive dalla prima stringa
+        substring1 = lines1[i:i+5]
+        for j in range(len(lines2) - 4):
+            # Prendi cinque linee consecutive dalla seconda stringa
+            substring2 = lines2[j:j+5]
+            # Confronta le sottostringhe
+            if substring1 == substring2:
+                return True
+    return False
+
+
 class QuizGenerator:
     def __init__(self, num_questions_level, bloom_levels, output_function, openai_api_key):
         super().__init__()
 
-        openai.api_key  = openai_api_key
+        openai.api_key = openai_api_key
 
         file_path = 'input/extracted_plain_text.txt'
         with open(file_path, encoding='utf-8') as file:
@@ -104,14 +121,15 @@ class QuizGenerator:
             self.output_function(self.language + " is not supported. Please select another file.")
             exit()
 
-    def generate(self, num_partition_to_start):
+    def generate(self, num_partition_to_start=1):
         output_dir = 'output'
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
-        
-        file_path = 'output/raw_quiz.txt'
-        with open(file_path, 'w', encoding='utf-8') as file:
-            file.write("")
+
+        if num_partition_to_start == 1:
+            file_path = 'output/raw_quiz.txt'
+            with open(file_path, 'w', encoding='utf-8') as file:
+                file.write("")
 
         limit_len = 11000
         overlap_value = math.floor(limit_len / 2)
@@ -120,7 +138,7 @@ class QuizGenerator:
         text_partitions = []
         num_partitions = math.floor(len(self.text) / overlap_value)
 
-        # Divide the text into overlapping partitions
+        # Divide the text into overlapped partitions
         for i in range(num_partitions):
             text_partitions.append(self.text[lower_index:upper_index])
             lower_index = lower_index + overlap_value
@@ -155,7 +173,7 @@ class QuizGenerator:
             self.output_function(
                 "Elaborating the partition of text number " + str(i+1) + " of " + str(num_partitions))
 
-        for partition in text_partitions[num_partition_to_start:]:
+        for partition in text_partitions[num_partition_to_start-1:]:
             response_is_ok = False
 
             self.output_function("Elaborating the partition of text number " + str(counter) + " of " + str(num_partitions))
@@ -177,28 +195,34 @@ class QuizGenerator:
                     {'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
                 content = conversation[-1]['content'].strip()
 
-                print(content)
-
                 if num_tokens_from_messages(conversation, self.model_id) > 4097:
                     response_is_ok = False
-                    break
+                else:
+                    # here starts a new conversation passing the single partition's quiz to refactor
+                    refactored_content = self.partition_refactor(content, num_questions_level_partition)
 
-                # here starts a new conversation passing the single partition's quiz to refactor
-                refactored_content = self.partition_refactor(content, num_questions_level_partition)
+                    # check the uniqueness of questions
+                    file_path = 'output/raw_quiz.txt'
+                    with open(file_path, encoding='utf-8') as file:
+                        existing_questions = file.read()
 
-                # check for each Bloom's level if the correct number of questions was generated
-                for j in range(len(self.num_questions_level)):
-                    num_occurrences = refactored_content.count(self.bloom_levels[j])
-                    if num_occurrences != num_questions_level_partition[j]:
+                    if already_existing_questions(refactored_content, existing_questions):
                         response_is_ok = False
-                        break
                     else:
-                        response_is_ok = True
+
+                        # check for each Bloom's level if the correct number of questions was generated
+                        for j in range(len(self.num_questions_level)):
+                            num_occurrences = refactored_content.count(self.bloom_levels[j])
+                            if num_occurrences != num_questions_level_partition[j]:
+                                response_is_ok = False
+                                break
+                            else:
+                                response_is_ok = True
 
                 if not response_is_ok:
-                    time.sleep(time)
+                    time.sleep(time_to_wait)
 
-            time.sleep(time)
+            time.sleep(time_to_wait)
 
             # Write the generated content to the output file
             file_path = 'output/raw_quiz.txt'
@@ -229,6 +253,6 @@ class QuizGenerator:
         )
         conversation.append({'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
         refactored_content = conversation[-1]['content'].strip()
-        time.sleep(time)
+        time.sleep(time_to_wait)
 
         return refactored_content

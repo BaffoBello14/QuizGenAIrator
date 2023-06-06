@@ -1,360 +1,400 @@
-1. Cos'è la filosofia?
-A) Un modo per non porsi domande
-B) Uno studio sulla realtà
-C) Un metodo di ricerca scientifica
-D) Una terapia per la mente
+1. Qual è l'origine della parola "filosofia"?
+A) Presentazione sistematica delle concezioni del mondo dei filosofi 
+B) Porre delle domande e interrogarsi 
+C) Studio storico-culturale dei principali pensatori dell'Occidente 
+D) Esposizione delle visioni del mondo dei filosofi
 Correct answer: B
 Revised Bloom's Taxonomy level: Remembering
 
-2. Qual è il metodo della filosofia?
-A) Osservazione, riflessione, argomentazione, linguaggio
-B) Sperimentazione, analisi, calcolo, modellizzazione
-C) Memorizzazione, ripetizione, elaborazione, verifica
-D) Intuizione, empatia, creatività, immaginazione
+2. Cosa significa filosofare secondo il significato originario del termine?
+A) Amare la sapienza 
+B) Poter far parte dell'élite intellettuale 
+C) Imparare a codificare sistematicamente le proprie opinioni 
+D) Discutere con esperti di un argomento
 Correct answer: A
+Revised Bloom's Taxonomy level: Understanding 
+
+3. In cosa consiste il metodo del filosofare?
+A) Riflettete sulla realtà, studiare i pensatori del passato, osservare la realtà, argomentare 
+B) Osservare la realtà, leggere i testi dei pensatori del passato, interrogarsi, utilizzare il linguaggio quotidiano 
+C) Osservare la realtà, riflettere sulla realtà, argomentare, leggere i testi dei pensatori del passato 
+D) Riflettere sulla realtà, interrogarsi, utilizzare il linguaggio quotidiano, studiare la storia dell'Occidente
+Correct answer: A
+Revised Bloom's Taxonomy level: Applying
+
+4. Qual è alla base del filosofare, secondo la descrizione data nel testo?
+A) La necessità di sopperire alla propria costitutiva "carenza istintuale"
+B) La consapevolezza della complessità della realtà
+C) L'idoneità intellettuale dell'individuo
+D) L'ispirazione a diventare un esperto in un determinato campo
+Correct answer: B
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Qual è uno dei due aspetti distintivi della filosofia, come descritto nel testo?
+A) La volontà di capire gli altri attraverso l'osservazione diretta 
+B) La ricerca della comprensione della realtà e la saggezza di vita 
+C) La competizione con altre scienze per la verità 
+D) L'attenzione alle questioni materiali
+Correct answer: B
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Cosa significa filosofare?
+A) Conformarsi ai valori dominanti
+B) Porsi delle domande e riflettere sulla realtà
+C) Seguire un metodo prestabilito
+D) Ignorare i problemi della realtà
+Correct answer: B
+Revised Bloom's Taxonomy level: Remembering
+
+2. Qual è uno dei metodi fondamentali del filosofare?
+A) Semplicemente accettare ciò che dicono gli altri
+B) Rifarsi all'esperienza e osservare la realtà
+C) Creare la propria realtà soggettiva
+D) Sperimentare sostanze psicoattive
+Correct answer: B
 Revised Bloom's Taxonomy level: Understanding
 
-3. Come si può imparare a filosofare?
-A) Studiando solo la filosofia
-B) Entrando in dialogo con altri filosofi del presente
-C) Entrando in dialogo con filosofi del passato attraverso la lettura
-D) Seguendo solo la propria esperienza personale
+3. In che modo si può apprendere a filosofare?
+A) Dialogando solo con gli addetti ai lavori del presente
+B) Studiando solo la filosofia del passato
+C) Entrando in dialogo con i pensatori del presente e del passato
+D) Rinunciando alle proprie esperienze personali
 Correct answer: C
 Revised Bloom's Taxonomy level: Applying
 
-4. Qual è il rapporto tra filosofia e scienze?
-A) La filosofia si occupa solo degli aspetti generali, mentre le scienze sono specializzate in ambiti specifici
-B) La filosofia si oppone alle scienze, considerandole troppo riduttive
-C) La filosofia e le scienze sono complementari, ma la filosofia cerca di sintetizzarle
-D) La filosofia e le scienze sono completamente indipendenti l'una dall'altra
-Correct answer: C
+4. Come si definisce il rapporto tra filosofia e scienze?
+A) Le scienze si svolgono solo in ambiti specifici, mentre la filosofia è solo astratta
+B) La filosofia cerca di sintetizzare i risultati delle scienze utilizzando un approccio critico
+C) Le scienze ignorano la realtà, mentre la filosofia la studia
+D) La filosofia e le scienze sono due campi completamente distinti e indipendenti
+Correct answer: B
 Revised Bloom's Taxonomy level: Analyzing
 
-5. Qual è l'oggetto dell'estetica?
-A) Il comportamento umano
-B) La natura umana
-C) Il pensiero e la logica
-D) Il bello artistico e di natura
-Correct answer: D
+5. Qual è lo scopo dell'etica?
+A) Garantire un agire giusto e sensato e una convivenza sociale giusta e razionale
+B) Imporre norme morali rigide e autoritarie
+C) Solo descrivere e non prescrivere come comportarsi
+D) Regolare solo l'agire individuale, ma non la società
+Correct answer: A
 Revised Bloom's Taxonomy level: Evaluating
 
 1. Qual è l'oggetto di studio della metafisica?
 A) La natura dell'uomo
-B) Il comportamento umano
-C) Ciò che costituisce l'essenza prima del reale
-D) Il funzionamento del pensiero
+B) Il funzionamento della lingua
+C) Le strutture portanti della realtà
+D) Il comportamento umano
 Correct answer: C
+Revised Bloom's Taxonomy level: Remembering
+
+2. Qual è lo scopo dell'estetica?
+A) Indicare i fondamenti capaci di garantire un agire giusto, razionale e sensato.
+B) Determinare l'idea del bello e le forme che esso assume nelle arti e nella natura
+C) Analizzare ciò che costituisce l'essenza prima (o ultima) del reale.
+D) Occuparsi del problema della conoscenza.
+Correct answer: B
+Revised Bloom's Taxonomy level: Understanding
+
+3. In cosa consiste la filosofia del diritto?
+A) Analizza l'origine, lo sviluppo, il significato e la funzione della lingua.
+B) Si occupa del problema della conoscenza scientifica.
+C) Analizza struttura, funzione e significato della società e dello stato.
+D) Si occupa del problema della fondazione del diritto.
+Correct answer: D
+Revised Bloom's Taxonomy level: Applying
+
+4. Qual è la differenza tra religione e filosofia?
+A) La religione si basa sulla riflessione razionale, mentre la filosofia si fonda sulla rivelazione di Dio.
+B) La religione implica un'interpretazione complessiva del mondo, mentre la filosofia si basa sull'esperienza quotidiana del mondo.
+C) La religione si fonda su una rivelazione di Dio, mentre la filosofia usa solo il ragionamento razionale.
+D) La religione non si basa su alcuna autorità esterna, mentre la filosofia si basa su una tradizione.
+Correct answer: C
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Qual è lo scopo dell'etica?
+A) Indicare i fondamenti capaci di garantire un agire giusto, razionale e sensato.
+B) Determinare l'idea del bello e le forme che esso assume nelle arti e nella natura.
+C) Occuparsi del problema della conoscenza scientifica.
+D) Analizzare l'origine, lo sviluppo, il significato e la funzione della lingua.
+Correct answer: A
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Qual è il significato della parola gnoseologia?
+A) Scienza
+B) Conoscenza
+C) Filosofia
+D) Storia
+Correct answer: B
 Revised Bloom's Taxonomy level: Remembering
 
 2. Qual è la differenza tra religione e filosofia?
-A) La religione si basa sull'esperienza quotidiana del mondo, mentre la filosofia si basa sulla riflessione razionale
-B) La filosofia si basa sull'esperienza quotidiana del mondo, mentre la religione si basa sulla riflessione razionale
-C) La religione si fonda su una rivelazione divina, mentre la filosofia si fonda sulla tradizione
-D) La filosofia si fonda su una rivelazione divina, mentre la religione si fonda sulla tradizione
-Correct answer: C
+A) La religione si basa sulla riflessione razionale, mentre la filosofia si basa sulla rivelazione divina
+B) La religione si basa su una rivelazione divina, mentre la filosofia si basa sull'esperienza quotidiana del mondo
+C) La religione si occupa del problema della conoscenza scientifica, mentre la filosofia si occupa dell'ideologia
+D) La religione è una forma di critica dell'ideologia, mentre la filosofia si occupa della fondazione del diritto
+Correct answer: B
 Revised Bloom's Taxonomy level: Understanding
 
-3. Qual è lo scopo dell'etica?
-A) Indicare i fondamenti capaci di garantire un agire giusto, razionale e sensato
-B) Determinare l'idea del bello e le forme che esso assume nelle arti e nella natura
-C) Analizzare l'essenza e il significato dello sviluppo storico
-D) Occuparsi del funzionamento del pensiero
+3. Qual è il motore dell'evoluzione secondo Charles Darwin?
+A) La mutazione dei genotipi
+B) La teleologia
+C) L'evoluzione casuale
+D) La selezione degli individui più deboli
 Correct answer: A
 Revised Bloom's Taxonomy level: Applying
 
-4. Cosa significa il termine "gnoseologia"?
-A) Il problema della conoscenza
-B) Lo studio del funzionamento del pensiero
-C) L'analisi dell'origine e del significato della lingua
-D) L'analisi essenza e significato dello sviluppo storico
-Correct answer: A
+4. Qual è la caratteristica che distingue gli esseri viventi dalla materia morta?
+A) La capacità di crescere
+B) La capacità di moltiplicarsi
+C) La capacità di trasformarsi autonomamente grazie al metabolismo
+D) La capacità di rispondere con determinate reazioni a influssi esterni
+Correct answer: C
 Revised Bloom's Taxonomy level: Analyzing
 
-5. Qual è l'oggetto di studio della filosofia della storia?
-A) La natura dell'uomo
-B) Il fenomeno religioso
-C) Struttura, funzione e significato della società e dello stato
-D) L'essenza e i limiti della conoscenza scientifica
-Correct answer: C
+5. Cosa s'intende per ideologia?
+A) Ogni concezione religiosa, morale, politica o culturale socialmente condivisa
+B) Ogni teoria che tende a legittimare e stabilizzare i rapporti di dominio esistenti
+C) Ogni teoria che pretenda di spiegare la realtà nella sua totalità e prevedere il futuro
+D) Tutte le precedenti risposte sono corrette
+Correct answer: D
 Revised Bloom's Taxonomy level: Evaluating
-
-1. Qual è il significato del termine "ontologia"?
-A) Lo studio del significato delle parole
-B) L'analisi del comportamento umano
-C) La riflessione sull'essere e sull'esistenza
-D) Lo studio delle religioni
-Correct answer: C
-Revised Bloom's Taxonomy level: Understanding
-
-2. Chi è considerato il padre della filosofia occidentale?
-A) Platone
-B) Socrate
-C) Aristotele
-D) Eraclito
-Correct answer: B
-Revised Bloom's Taxonomy level: Remembering
-
-3. Quali sono i due principali rami della filosofia?
-A) Storia e metafisica
-B) Epistemologia e fisica
-C) Etica e estetica
-D) Logica e ontologia
-Correct answer: C
-Revised Bloom's Taxonomy level: Understanding
-
-4. Qual è il significato della parola greca "logos"?
-A) Natura
-B) Verità
-C) Ragione
-D) Spirito
-Correct answer: C
-Revised Bloom's Taxonomy level: Remembering
-
-5. Cos'è la dialettica, secondo la filosofia hegeliana?
-A) Il processo di creazione artistica
-B) Il ragionamento deduttivo
-C) La tensione tra tesi e antitesi che conduce alla sintesi
-D) L'arte della persuasione retorica
-Correct answer: C
-Revised Bloom's Taxonomy level: Understanding
 
 1. Qual è il luogo di nascita della filosofia?
 A) Roma
-B) Grecia
-C) Egitto
-D) Cina
+B) Atene
+C) Firenze
+D) Madrid
 Correct answer: B
 Revised Bloom's Taxonomy level: Remembering
 
-2. Quali sono le caratteristiche che distinguono la vita dalla materia inorganica?
-A) Crescita, riproduzione, motilità, dolore
-B) Crescita, riproduzione, eccitabilità, metabolismo
-C) Respirazione, nutrizione, metabolismo, dolore
-D) Respirazione, nutrizione, digestione, motilità
+2. Quali sono le caratteristiche che distinguono la vita dalla materia inorganica, secondo la biologia?
+A) capacità di moltiplicarsi e respirare
+B) crescita e riproduzione
+C) eccitabilità e metabolismo
+D) risposta agli influssi esterni e mutazioni
 Correct answer: B
 Revised Bloom's Taxonomy level: Understanding
 
-3. Qual è la teoria che si è imposta in genere nella biologia odierna?
-A) La teoria della fisica quantistica
-B) La teoria della relatività di Einstein
-C) La teoria della gravità di Newton
-D) La teoria evoluzionistica di Charles Darwin
+3. Qual è la teoria evoluzionistica a cui fa riferimento la biologia odierna?
+A) la teoria della creazione
+B) la teoria della costanza delle specie
+C) la teoria della mutabilità delle specie
+D) la teoria della selezione naturale
 Correct answer: D
 Revised Bloom's Taxonomy level: Applying
 
-4. Quali sono le principali differenze tra uomo e animale?
-A) La lunghezza delle gambe, la larghezza delle spalle
-B) La grandezza degli occhi, la forma del naso
-C) La capacità di ridere e piangere, la libertà d'azione
-D) La lunghezza dei capelli, la forma dei piedi
-Correct answer: C
+4. Quali sono le principali differenze tra uomo e animale, per quanto riguarda la costituzione corporea?
+A) postura eretta, presa di precisione e velocità
+B) peluria, organi specializzati e aspetto generale
+C) assenza di organi di combattimento, organi di senso deboli e movimento lento
+D) peluria rada, assenza di organi di combattimento e organi interni specializzati
+Correct answer: A
 Revised Bloom's Taxonomy level: Analyzing
 
-5. Qual è l'organo più sviluppato dell'intera natura organica?
-A) Il cuore
-B) Il fegato
-C) Il cervello
-D) I polmoni
-Correct answer: C
+5. Quali sono le differenze comportamentali tra l'uomo e l'animale?
+A) legame istintuale con l'ambiente e blocchi istintuali
+B) comportamento istintualmente determinato e libertà d'azione
+C) ridere e piangere e capacità di auto-trascendersi
+D) mancanza di limiti pulsionali istintuali e mancanza di misura nell'appagamento del piacere
+Correct answer: D
 Revised Bloom's Taxonomy level: Evaluating
 
-1. Qual è il tratto esteriore più vistoso che caratterizza l'uomo?
-A) La laringe abbassata
-B) La peluria
-C) La presa di precisione
-D) La postura eretta
-Correct answer: D
+1. Qual è la caratteristica esteriore più vistosa dell'uomo?
+A) La postura eretta
+B) La presa di precisione
+C) La rada peluria
+D) Gli organi esterni specializzati
+Correct answer: A
 Revised Bloom's Taxonomy level: Remembering
 
-2. Qual è la differenza qualitativa tra l'uomo e gli animali?
+2. Quali sono le due tipologie di differenze che distinguono l'uomo dagli animali?
+A) Differenze graduali e quantitative
+B) Differenze comportamentali e fisiche
+C) Differenze essenziali e quantitative
+D) Differenze estetiche e quantitative
+Correct answer: C
+Revised Bloom's Taxonomy level: Understanding
+
+3. Qual è l'elemento che distingue gli uomini dagli animali?
 A) La postura eretta
-B) La ragione capace di rivolgersi a qualsiasi cosa
-C) Lo stare in piedi
+B) Il linguaggio verbale
+C) La presa di precisione
 D) La capacità di ridere e piangere
 Correct answer: B
-Revised Bloom's Taxonomy level: Understanding
-
-3. L'andatura bipede ha consentito all'uomo di:
-A) Liberare le mani dalla deambulazione
-B) Diventare sessualmente maturo molto tardi
-C) Mostrare una minore specializzazione rispetto agli animali
-D) Avere una visione complessiva del mondo circostante
-Correct answer: A
 Revised Bloom's Taxonomy level: Applying
 
-4. Qual è la principale differenza corporea tra uomo e animale?
-A) La peluria
-B) La postura eretta
-C) La presa di precisione
-D) La dentatura da rapace
+4. Quali sono le differenze comportamentali tra l'uomo e l'animale?
+A) L'uomo ha un legame istintuale con l'ambiente, mentre l'animale no
+B) L'animale ha una ragione capace di rivolgere il suo interesse a qualsiasi cosa, mentre l'uomo no
+C) L'uomo presenta dei tratti particolari nell'anzianità, mentre l'animale no
+D) L'animale ha meno specializzazione negli organi esterni rispetto all'uomo
+Correct answer: A
+Revised Bloom's Taxonomy level: Analyzing
+
+5. Qual è la caratteristica che segna la fondamentale differenza dell'uomo dagli animali?
+A) La postura eretta
+B) La presa di precisione
+C) La spiritualità
+D) La capacità di ridere e piangere
+Correct answer: C
+Revised Bloom's Taxonomy level: Evaluating
+
+1. Qual è la caratteristica che distingue l'uomo dagli animali secondo Adolf Portmann?
+A) La capacità di parlare solo concetti concreti
+B) La longevità della vita dopo la pubertà
+C) Lo stare in piedi
+D) La razionalità e la libertà della volontà
+Correct answer: D
+Revised Bloom's Taxonomy level: Remembering
+
+2. Cosa significa il termine "mito"?
+A) Pensiero razionale
+B) Racconto fantastico
+C) Dimostrazione
+D) Realtà concreta
 Correct answer: B
-Revised Bloom's Taxonomy level: Analyzing
+Revised Bloom's Taxonomy level: Understanding
 
-5. Quali sono le tre cose che, secondo Adolf Portmann, distinguono l'uomo dall'animale?
-A) Lo stare in piedi, il ridere e la scelta delle sollecitazioni
-B) Lo stare in piedi, il parlare e il pensare
-C) La peluria, la presa di precisione e la civiltà
-D) Il cervello grande, la laringe abbassata e la cultura
+3. Di cosa si occupa l'anima nel mito della biga alata di Platone?
+A) Di affrontare i dilemmi morali
+B) Di contemplare le Idee nell'Iperuranio
+C) Di guidare i cavalli della concupiscenza
+D) Di ragionare in modo autonomo
 Correct answer: B
-Revised Bloom's Taxonomy level: Evaluating
-
-1. Qual è la caratteristica dell'uomo descritta come "lenta evoluzione delle sue facoltà psichiche e spirituali"?
-A) la sexualità tardiva.
-B) la longevità della vita.
-C) la necessità di essere guidato dall'esterno.
-D) la necessità di essere in relazione con gli altri.
-Correct answer: C
-Revised Bloom's Taxonomy level: Remembering
-
-2. Secondo il testo, qual è la caratteristica che distingue l'uomo dall'animale, soprattutto nella sua spiritualità?
-A) La capacità di modellare la materia in modo creativo.
-B) La longevità della vita.
-C) La volontà libera.
-D) L'intellezione e l'autocoscienza.
-Correct answer: D
-Revised Bloom's Taxonomy level: Understanding
-
-3. Qual è la caratteristica dell'uomo descritta come "essere autocoscienza e libero di seguire o contravvenire alle sue pulsioni"?
-A) La necessità di essere guidato dall'esterno.
-B) La longevità della vita.
-C) La volontà libera.
-D) La lenta evoluzione delle sue facoltà psichiche e spirituali.
-Correct answer: C
 Revised Bloom's Taxonomy level: Applying
 
-4. Qual è la caratteristica che distingue le parole umane da quelle degli animali?
-A) Sono sempre disponibili anche per indicare qualcosa di assente.
-B) Sono formate da un insieme unico di consonanti e vocali.
-C) Possono comunicare concetti astratti.
-D) Tutte le precedenti.
+4. Secondo il mito della caverna di Platone, cosa avviene quando un prigioniero viene liberato e vede la luce del sole?
+A) Rifiuta di tornare nella caverna
+B) Vuole portare fuori tutti i prigionieri con lui
+C) Resta abbagliato dalla luce e non vede nulla
+D) Ha bisogno di un periodo di adattamento per riabituarsi all'oscurità
 Correct answer: D
 Revised Bloom's Taxonomy level: Analyzing
 
-5. Secondo il testo, qual è la caratteristica dell'uomo che lo differenzia maggiormente dall'animale?
-A) La sua spiritualità e razionalità.
-B) La sua capacità di apprendimento e insegnamento.
-C) La sua longevità della vita.
-D) La sua capacità di modellare la materia in modo creativo.
-Correct answer: A
+5. Cosa distingue l'uomo dagli animali, secondo il testo?
+A) La capacità di parlare solo concetti concreti
+B) La longevità della vita dopo la pubertà
+C) La razionalità e la libertà della volontà
+D) La capacità di manipolare la materia solo in modo istintuale
+Correct answer: C
 Revised Bloom's Taxonomy level: Evaluating
 
-1. Qual è la caratteristica dell'uomo descritta come "lenta evoluzione delle sue facoltà psichiche e spirituali"?
-A) la sexualità tardiva.
-B) la longevità della vita.
-C) la necessità di essere guidato dall'esterno.
-D) la necessità di essere in relazione con gli altri.
-Correct answer: C
+1. Qual è una caratteristica che distingue l'uomo dagli animali?
+A) L'abilità di volare
+B) L'abilità di nuotare
+C) L'abilità di respirare sott'acqua
+D) L'abilità di usare il fuoco
+Correct answer: D
 Revised Bloom's Taxonomy level: Remembering
 
-2. Secondo il testo, qual è la caratteristica che distingue l'uomo dall'animale, soprattutto nella sua spiritualità?
-A) La capacità di modellare la materia in modo creativo.
-B) La longevità della vita.
-C) La volontà libera.
-D) L'intellezione e l'autocoscienza.
+2. Qual è il mito della caverna di Platone?
+A) Il mito dell'androgino
+B) Il mito della biga alata
+C) Il mito dell'immortalità dell'anima
+D) Il mito di un gruppo di prigionieri incatenati all'interno di una caverna
 Correct answer: D
 Revised Bloom's Taxonomy level: Understanding
 
-3. Qual è la caratteristica dell'uomo descritta come "essere autocoscienza e libero di seguire o contravvenire alle sue pulsioni"?
-A) La necessità di essere guidato dall'esterno.
-B) La longevità della vita.
-C) La volontà libera.
-D) La lenta evoluzione delle sue facoltà psichiche e spirituali.
-Correct answer: C
+3. Cosa fa l'auriga nella biga alata?
+A) Contempla l'Iperuranio
+B) Alimenta i cavalli
+C) Spriteggia il cavallo bianco
+D) Inferocisce il cavallo nero
+Correct answer: A
 Revised Bloom's Taxonomy level: Applying
 
-4. Qual è la caratteristica che distingue le parole umane da quelle degli animali?
-A) Sono sempre disponibili anche per indicare qualcosa di assente.
-B) Sono formate da un insieme unico di consonanti e vocali.
-C) Possono comunicare concetti astratti.
-D) Tutte le precedenti.
-Correct answer: D
+4. Cosa è accaduto al bambino di Laio dopo la sua nascita?
+A) È stato consegnato al santuario di Delfi
+B) È stato ucciso dal padre
+C) È stato consegnato a Polibo, re di Corinto
+D) È stato cresciuto dalla nutrice che lo allattava
+Correct answer: C
 Revised Bloom's Taxonomy level: Analyzing
 
-5. Secondo il testo, qual è la caratteristica dell'uomo che lo differenzia maggiormente dall'animale?
-A) La sua spiritualità e razionalità.
-B) La sua capacità di apprendimento e insegnamento.
-C) La sua longevità della vita.
-D) La sua capacità di modellare la materia in modo creativo.
-Correct answer: A
+5. Cosa ha provocato la morte di Laio nel mito di Edipo?
+A) Un'esplosione
+B) Un'impiccagione
+C) Un'avvelenamento
+D) Un'uccisione durante un alterco stradale
+Correct answer: D
 Revised Bloom's Taxonomy level: Evaluating
 
-1. Chi fu l'imperatore romano durante la costruzione del Colosseo?
-A) Augusto
-B) Tiberio
-C) Nerone
-D) Traiano
-Correct answer: C
-Revised Bloom's Taxonomy level: Remembering
+1. Quali erano i tre sessi esistenti nell'antichità secondo il mito dell'androgino di Aristofane?
+A) maschile, femminile, neutro
+B) maschile, femminile, androgino
+C) maschile, femminile, ermafrodito
+D) maschile, femminile, transgender
+Risposta corretta: B
+Livello della tassonomia di Bloom rivista: Remembering
 
-2. Qual era l'antico nome di Istanbul?
-A) Costantinopoli
-B) Atene
-C) Bisanzio
-D) Alessandria
-Correct answer: C
-Revised Bloom's Taxonomy level: Understanding
+2. Cosa significa il nome "Edipo"?
+A) uomo di potere
+B) uomo dall'aspetto potente
+C) uomo dai piedi gonfi
+D) uomo dalla mente astuta
+Risposta corretta: C
+Livello della tassonomia di Bloom rivista: Understanding
 
-3. Dove si trova la Cupola della Rocca di San Pietro?
-A) Firenze
-B) Venezia
-C) Roma
-D) Napoli
-Correct answer: C
-Revised Bloom's Taxonomy level: Applying
+3. Cosa predice l'oracolo di Delfi riguardo alla situazione di Tebe?
+A) La peste avrebbe colpito la città se Laio non fosse stato ucciso.
+B) La città sarebbe stata attaccata da un esercito straniero.
+C) Un grande incendio sarebbe divampato in città.
+D) Nessuna risposta è corretta.
+Risposta corretta: A
+Livello della tassonomia di Bloom rivista: Applying
 
-4. Chi è il pittore di capolavori come "La Gioconda" e "L'Ultima Cena"?
-A) Tiziano Vecellio
-B) Leonardo da Vinci
-C) Michelangelo Buonarroti
-D) Raphael Sanzio
+4. Chi uccide Laio e il cocchiere?
+A) Creonte
+B) Edipo
+C) Giocasta
+D) Tiresia
+Risposta corretta: B
+Livello della tassonomia di Bloom rivista: Analyzing
+
+5. Perché Edipo si cavò gli occhi?
+A) Perché sua moglie lo tradì con un altro uomo.
+B) Perché sua madre gli diede una cattiva notizia.
+C) Perché scoprì di aver ucciso il padre e sposato la madre.
+D) Perché i suoi figli lo disonorarono.
+Risposta corretta: C
+Livello della tassonomia di Bloom rivista: Evaluating
+
+1. Qual è la domanda posta dalla Sfinge a chiunque attraversi la sua strada?
+A) Qual è quell’essere che cammina prima a tre zampe, poi a quattro e, infine, a due?
+B) Qual è quell’essere che cammina dapprima a quattro zampe, poi a due e, infine, a tre?
+C) Qual è quell’essere che vola alto nel cielo, con lunghe piume colorate?
+D) Qual è quell’essere che striscia sul suolo, con lunghi artigli affilati?
 Correct answer: B
-Revised Bloom's Taxonomy level: Analyzing
-
-5. Quale scoppio di rabbia distrusse l'immenso vulcano Vesuvio nel 79 d.C.?
-A) Terremoto
-B) Esplosione nucleare
-C) Eruzione vulcanica
-D) Incendio boschivo
-Correct answer: C
-Revised Bloom's Taxonomy level: Evaluating
-
-1. Qual è la domanda posta dalla Sfinge?
-A) Qual è l'animale più veloce del mondo?
-B) Qual è l'animale più forte del mondo?
-C) Qual è l'essere che cammina dapprima a quattro zampe, poi a due e, infine, a tre?
-D) Qual è l'animale più intelligente del mondo?
-Correct answer: C
 Revised Bloom's Taxonomy level: Remembering
 
-2. Quale fu la soluzione data da Edipo all'enigma della Sfinge?
-A) L'elefante, perché possiede una proboscide molto lunga.
-B) Il leone, perché è l'animale più forte del mondo.
-C) L'uomo, perché egli cammina durante l'infanzia a quattro gambe, da grande a due e, da vecchio, si appoggia ad un bastone.
-D) L'uccello, perché ha le ali e può volare.
+2. Quale era la soluzione dell’indovinello?
+A) L'elefante
+B) La scimmia
+C) L'uomo
+D) Il cane
 Correct answer: C
 Revised Bloom's Taxonomy level: Understanding
 
-3. In cosa consisteva la richiesta dell'oracolo di Delfi per risolvere la peste a Tebe?
-A) La morte di Edipo.
-B) La morte di Giocasta.
-C) La morte di Laio.
-D) La morte di Tiresia.
-Correct answer: C
+3. Come Edipo risolve l'enigma della Sfinge?
+A) Chiedendo aiuto al popolo di Tebe
+B) Studiando attentamente l'enigma per giorni
+C) Ascoltando la soluzione da uno dei suoi consiglieri
+D) Comprendendo immediatamente la risposta
+Correct answer: D
 Revised Bloom's Taxonomy level: Applying
 
-4. Chi tentò di evitare di rispondere alla domanda di Edipo su chi fosse il colpevole della morte di Laio?
-A) Creonte.
-B) Giocasta.
-C) Tiresia.
-D) Polinice.
+4. Perché Edipo si cavò gli occhi?
+A) Per punirsi per aver ucciso Laio
+B) Per essere in grado di vedere meglio
+C) Per impedirsi di guardare sua madre
+D) Per far fronte alla peste che aveva colpito Tebe
 Correct answer: C
 Revised Bloom's Taxonomy level: Analyzing
 
-5. Cosa chiesero Eteocle e Polinice a Creonte dopo aver scoperto la storia dell'incesto di Edipo e Giocasta?
-A) Di cacciare il padre da Tebe.
-B) Di nominarli entrambi re di Tebe.
-C) Di condurre Edipo a processo per l'omicidio di Laio.
-D) Di chiedere perdono agli dei per il peccato dei genitori.
-Correct answer: A
+5. Qual è stata la reazione dei figli di Edipo quando hanno scoperto la storia dell'incesto?
+A) Hanno chiesto al padre di tornare a Tebe
+B) Hanno cercato di aiutare il padre a fuggire
+C) Hanno chiesto al re di Tebe di cacciare il padre dalla città
+D) Non hanno avuto alcuna reazione
+Correct answer: C
 Revised Bloom's Taxonomy level: Evaluating
 

@@ -184,6 +184,9 @@ class Quiz:
                 index += 1
             for index_to_remove in indexes_to_remove:
                 level_questions.pop(index_to_remove)
+                indexes_to_remove.remove(index_to_remove)
+                for index_to_update in indexes_to_remove:
+                    index_to_update -= 1
 
         # Select the specified number of questions for each level
         for level, level_questions in sorted_questions_by_level.items():

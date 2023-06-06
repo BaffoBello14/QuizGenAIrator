@@ -17,9 +17,7 @@ def select_pdf_file():
 
 def generate_quiz_thread(quiz_generator, num_questions_level, bloom_levels):
 
-    # HERE PARTITION NUMBER
-
-    # quiz_generator.generate(1)
+    quiz_generator.generate()
 
     # Recupera i dati necessari dalla generazione del quiz
     quiz_language = quiz_generator.get_language()
